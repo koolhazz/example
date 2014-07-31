@@ -1,0 +1,1 @@
+./Debug/weak.o ./Debug/main.o ./Debug/strong.o

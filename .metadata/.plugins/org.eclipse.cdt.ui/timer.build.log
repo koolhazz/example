@@ -1,0 +1,27 @@
+09:46:43 **** Incremental Build of configuration Debug for project timer ****
+make all 
+'Building file: ../TimerTest.cpp'
+'Invoking: GCC C++ Compiler'
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"TimerTest.d" -MT"TimerTest.d" -o "TimerTest.o" "../TimerTest.cpp"
+In file included from ../TimerTest.cpp:4:0:
+../timer.h:16:0: warning: "offsetof" redefined [enabled by default]
+ #define offsetof(TYPE, MEMBER) ((size_t) &((TYPE *)0)->MEMBER)
+ ^
+In file included from d:\mingw-4.8.1\include\time.h:21:0,
+                 from ../tools.h:5,
+                 from ../LinkList.h:13,
+                 from ../timer.h:10,
+                 from ../TimerTest.cpp:4:
+d:\mingw-4.8.1\lib\gcc\mingw32\4.8.1\include\stddef.h:413:0: note: this is the location of the previous definition
+ #define offsetof(TYPE, MEMBER) __builtin_offsetof (TYPE, MEMBER)
+ ^
+'Finished building: ../TimerTest.cpp'
+' '
+'Building target: timer.exe'
+'Invoking: MinGW C++ Linker'
+g++  -o "timer.exe"  ./LinkList.o ./Timer.o ./TimerTest.o   
+'Finished building target: timer.exe'
+' '
+
+09:46:47 Build Finished (took 4s.229ms)
+

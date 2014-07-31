@@ -1,0 +1,1 @@
+./Debug/main.o ./Debug/func_1.o ./Debug/func_2.o
