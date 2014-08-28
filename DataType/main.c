@@ -7,8 +7,8 @@ int main(int argc, char **argv)
 	
 	printf("I: %u\n", i);
 	
-	printf("sizeof('a'):%d \n", sizeof('a'));
-	printf("sizeof(1000.999): %d \n", sizeof(1000.999));
+	printf("sizeof('a'):%d \n", sizeof('a')); // sizeof char*
+	printf("sizeof(1000.999): %d \n", sizeof(1000.999)); // sizeof double
 	
 	system("pause");
 }

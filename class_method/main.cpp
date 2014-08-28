@@ -6,41 +6,41 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-	CBase* pBase = new CDev(2, 9);
-	
-	pBase->Show(); 
+	CBase* pBase = new CDev(2, 9); // base : 2 dev: 9
+
+	pBase->Show();
 	pBase->show_i(); /* 虚函数 调用子类的方法 */
 	pBase->age(); /* 非虚函数不是动态绑定，调用基类的方法 */
-	
+
 	delete pBase;
 
-	printf("\n");	
-	
+	printf("\n");
+
 	CDev* pDev = new CDev(2, 9);
 	pDev->age();
 	pDev->Show();
-	
+
 	delete pDev;
-	
-	printf("\n");	
-	
+
+	printf("\n");
+
 	pBase = new CBase(1);
-	
+
 	pBase->Show();
 	pBase->show_i(); /* 调用基类的方法 */
 	pBase->age(); /* 非虚函数不是动态绑定，调用基类的方法 */
-	
+
 	delete pBase;
-	
+
 	printf("\n");
-	
+
 	CDev dev(2, 10);
-	
+
 	dev.age();
-	
+
 	CBase::version();
-	
+
 	int i;
-	
+
 	cin >> i;
 }
