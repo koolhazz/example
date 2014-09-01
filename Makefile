@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ DataType - Debug ]----------"
-	@cd "E:\data\example\DataType" && $(MAKE) -f  "DataType.mk"
+	@echo "----------Building project:[ strstr_tuning - Debug ]----------"
+	@cd "strstr_tuning" && $(MAKE) -f  "strstr_tuning.mk"
 clean:
-	@echo "----------Cleaning project:[ DataType - Debug ]----------"
-	@cd "E:\data\example\DataType" && $(MAKE) -f  "DataType.mk" clean
+	@echo "----------Cleaning project:[ strstr_tuning - Debug ]----------"
+	@cd "strstr_tuning" && $(MAKE) -f  "strstr_tuning.mk" clean

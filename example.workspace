@@ -58,7 +58,7 @@
   <Project Name="copy_const_pointer" Path="copy_const_pointer/copy_const_pointer.project" Active="No"/>
   <Project Name="cout" Path="cout/cout.project" Active="No"/>
   <Project Name="cpp11" Path="cpp11/cpp11.project" Active="No"/>
-  <Project Name="DataType" Path="DataType/DataType.project" Active="Yes"/>
+  <Project Name="DataType" Path="DataType/DataType.project" Active="No"/>
   <Project Name="DataType_def" Path="DataType_def/DataType_def.project" Active="No"/>
   <Project Name="dump_binary" Path="dump_binary/dump_binary.project" Active="No"/>
   <Project Name="endian" Path="endian/endian.project" Active="No"/>
@@ -219,6 +219,7 @@
   <Project Name="vector_clear" Path="vector_clear/vector_clear.project" Active="No"/>
   <Project Name="void_zero" Path="void_zero/void_zero.project" Active="No"/>
   <Project Name="wildPointer" Path="wildPointer/wildPointer.project" Active="No"/>
+  <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -440,6 +441,7 @@
       <Project Name="vector_clear" ConfigName="Debug"/>
       <Project Name="void_zero" ConfigName="Debug"/>
       <Project Name="wildPointer" ConfigName="Debug"/>
+      <Project Name="strstr_tuning" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -661,6 +663,7 @@
       <Project Name="vector_clear" ConfigName="Release"/>
       <Project Name="void_zero" ConfigName="Release"/>
       <Project Name="wildPointer" ConfigName="Release"/>
+      <Project Name="strstr_tuning" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
