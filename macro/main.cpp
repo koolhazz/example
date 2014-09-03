@@ -33,7 +33,7 @@
 #define  ___ANONYMOUS1(type, var, line)  type  var##line
 #define  __ANONYMOUS0(type, line)  ___ANONYMOUS1(type, _anonymous, line)
 #define  ANONYMOUS(type)  __ANONYMOUS0(type, __LINE__)
-
+tat
 
 #define  _GET_FILE_NAME(f)   #f
 #define  GET_FILE_NAME(f)    _GET_FILE_NAME(f)

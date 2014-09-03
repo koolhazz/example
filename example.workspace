@@ -40,7 +40,7 @@
   <Project Name="c_opt_t" Path="c_opt_t/c_opt_t.project" Active="No"/>
   <Project Name="c_test" Path="c_test/c_test.project" Active="No"/>
   <Project Name="c11" Path="c11/c11.project" Active="No"/>
-  <Project Name="case_ex" Path="case_ex/case_ex.project" Active="No"/>
+  <Project Name="case_ex" Path="case_ex/case_ex.project" Active="Yes"/>
   <Project Name="Cast_str_num" Path="Cast_str_num/Cast_str_num.project" Active="No"/>
   <Project Name="chinese" Path="chinese/chinese.project" Active="No"/>
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
@@ -219,7 +219,7 @@
   <Project Name="vector_clear" Path="vector_clear/vector_clear.project" Active="No"/>
   <Project Name="void_zero" Path="void_zero/void_zero.project" Active="No"/>
   <Project Name="wildPointer" Path="wildPointer/wildPointer.project" Active="No"/>
-  <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="Yes"/>
+  <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
