@@ -13,14 +13,14 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=12/24/13
+Date                   :=09/11/14
 CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=g++
-SharedObjectLinkerName :=g++ -shared -fPIC
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe 
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
-DebugSwitch            :=-gstab
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -31,12 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="operator.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=windres
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe 
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,13 +49,13 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := g++
-CC       := gcc
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe 
+CC       := D:/MinGW-4.8.1/bin/gcc.exe 
 CXXFLAGS :=  -g $(Preprocessors)
 CFLAGS   :=  -g $(Preprocessors)
 ASFLAGS  := 
-AS       := as
+AS       := D:/MinGW-4.8.1/bin/as.exe 
 
 
 ##
@@ -63,7 +63,7 @@ AS       := as
 ##
 CodeLiteDir:=D:\Program Files\CodeLite
 UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/main$(ObjectSuffix) $(IntermediateDirectory)/Operator$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Operator.cc$(ObjectSuffix) 
 
 
 
@@ -90,21 +90,21 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/operator/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.cpp"
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/operator/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "main.cpp"
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
-$(IntermediateDirectory)/Operator$(ObjectSuffix): Operator.cc $(IntermediateDirectory)/Operator$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/operator/Operator.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Operator$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Operator$(DependSuffix): Operator.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Operator$(ObjectSuffix) -MF$(IntermediateDirectory)/Operator$(DependSuffix) -MM "Operator.cc"
+$(IntermediateDirectory)/Operator.cc$(ObjectSuffix): Operator.cc $(IntermediateDirectory)/Operator.cc$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/operator/Operator.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Operator.cc$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Operator.cc$(DependSuffix): Operator.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Operator.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/Operator.cc$(DependSuffix) -MM "Operator.cc"
 
-$(IntermediateDirectory)/Operator$(PreprocessSuffix): Operator.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Operator$(PreprocessSuffix) "Operator.cc"
+$(IntermediateDirectory)/Operator.cc$(PreprocessSuffix): Operator.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Operator.cc$(PreprocessSuffix) "Operator.cc"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -112,12 +112,8 @@ $(IntermediateDirectory)/Operator$(PreprocessSuffix): Operator.cc
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/Operator$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/Operator$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/Operator$(PreprocessSuffix)
+	$(RM) ./Debug/*$(ObjectSuffix)
+	$(RM) ./Debug/*$(DependSuffix)
 	$(RM) $(OutputFile)
 	$(RM) $(OutputFile).exe
 	$(RM) "../.build-debug/operator"

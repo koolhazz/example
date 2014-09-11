@@ -39,6 +39,8 @@ main(int argc, char **argv)
 	
 	cout << "OP: " << op(99) << endl;
 	
+	cout << "OP: " << (int)op << endl;
+	
 	op3 << op;
 	
 	cout << "OP3: " << op3.Show() << endl;

@@ -43,6 +43,8 @@ public:
 	friend ostream& operator << (ostream& out, const COperator& r) { out << r.i; return out;}
 	int Show() const { return i;} 
 	
+	operator int() { return i; } /* 类型转换操作符 */
+	
 	/* 必须定义为static 方法 new / delete 但是这里类的方法好像也可以，需要验证*/
 	void* operator new(size_t size, const char* func) /* 重载类的new 操作符 只影响该类*/
 	{

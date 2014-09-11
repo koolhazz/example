@@ -40,7 +40,7 @@
   <Project Name="c_opt_t" Path="c_opt_t/c_opt_t.project" Active="No"/>
   <Project Name="c_test" Path="c_test/c_test.project" Active="No"/>
   <Project Name="c11" Path="c11/c11.project" Active="No"/>
-  <Project Name="case_ex" Path="case_ex/case_ex.project" Active="Yes"/>
+  <Project Name="case_ex" Path="case_ex/case_ex.project" Active="No"/>
   <Project Name="Cast_str_num" Path="Cast_str_num/Cast_str_num.project" Active="No"/>
   <Project Name="chinese" Path="chinese/chinese.project" Active="No"/>
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
@@ -158,7 +158,7 @@
   <Project Name="packet" Path="packet/packet.project" Active="No"/>
   <Project Name="pointer_data_align" Path="pointer_data_align/pointer_data_align.project" Active="No"/>
   <Project Name="pointer_drift" Path="pointer_drift/pointer_drift.project" Active="No"/>
-  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="No"/>
+  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="Yes"/>
   <Project Name="pointer_sub_plus" Path="pointer_sub_plus/pointer_sub_plus.project" Active="No"/>
   <Project Name="pointer_tag" Path="pointer_tag/pointer_tag.project" Active="No"/>
   <Project Name="poniter_int" Path="poniter_int/poniter_int.project" Active="No"/>
@@ -220,6 +220,7 @@
   <Project Name="void_zero" Path="void_zero/void_zero.project" Active="No"/>
   <Project Name="wildPointer" Path="wildPointer/wildPointer.project" Active="No"/>
   <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="No"/>
+  <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -442,6 +443,7 @@
       <Project Name="void_zero" ConfigName="Debug"/>
       <Project Name="wildPointer" ConfigName="Debug"/>
       <Project Name="strstr_tuning" ConfigName="Debug"/>
+      <Project Name="noncopyable" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -664,6 +666,7 @@
       <Project Name="void_zero" ConfigName="Release"/>
       <Project Name="wildPointer" ConfigName="Release"/>
       <Project Name="strstr_tuning" ConfigName="Release"/>
+      <Project Name="noncopyable" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

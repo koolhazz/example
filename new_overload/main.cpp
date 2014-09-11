@@ -43,7 +43,7 @@ operator delete(void* ptr)
 {
     printf("func: %s\n", __FUNCTION__);
 	
-	::operator delete(ptr);
+	//::operator delete(ptr);
 	free(ptr);
 }
 
@@ -80,7 +80,7 @@ main(int argc, char **argv)
 	
 	GE_DELETE_ARRAY(pa);
 	
-	A* a = new A;
+	A* a = GE_NEW(A);//new A;
 	
 	a->show();
 	

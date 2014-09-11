@@ -13,10 +13,10 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=06/17/14
+Date                   :=09/11/14
 CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=D:\MinGW-4.8.1\bin\g++.exe 
-SharedObjectLinkerName :=D:\MinGW-4.8.1\bin\g++.exe -shared -fPIC
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe 
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -36,7 +36,7 @@ ObjectsFileList        :="pointer_plus_sub.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=D:\MinGW-4.8.1\bin\windres.exe 
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe 
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,13 +49,13 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:\MinGW-4.8.1\bin\ar.exe rcu
-CXX      := D:\MinGW-4.8.1\bin\g++.exe 
-CC       := D:\MinGW-4.8.1\bin\gcc.exe 
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe 
+CC       := D:/MinGW-4.8.1/bin/gcc.exe 
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := D:\MinGW-4.8.1\bin\as.exe 
+AS       := D:/MinGW-4.8.1/bin/as.exe 
 
 
 ##
@@ -104,9 +104,8 @@ $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
+	$(RM) ./Debug/*$(ObjectSuffix)
+	$(RM) ./Debug/*$(DependSuffix)
 	$(RM) $(OutputFile)
 	$(RM) $(OutputFile).exe
 	$(RM) "../.build-debug/pointer_plus_sub"
