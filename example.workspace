@@ -222,7 +222,9 @@
   <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="No"/>
   <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
   <Project Name="printf_string" Path="printf_string/printf_string.project" Active="No"/>
-  <Project Name="include_cpp" Path="include_cpp/include_cpp.project" Active="Yes"/>
+  <Project Name="include_cpp" Path="include_cpp/include_cpp.project" Active="No"/>
+  <Project Name="const_scope" Path="const_scope/const_scope.project" Active="No"/>
+  <Project Name="const_scope_cpp" Path="const_scope_cpp/const_scope_cpp.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -448,6 +450,8 @@
       <Project Name="noncopyable" ConfigName="Debug"/>
       <Project Name="printf_string" ConfigName="Debug"/>
       <Project Name="include_cpp" ConfigName="Debug"/>
+      <Project Name="const_scope" ConfigName="Debug"/>
+      <Project Name="const_scope_cpp" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -673,6 +677,8 @@
       <Project Name="noncopyable" ConfigName="Release"/>
       <Project Name="printf_string" ConfigName="Release"/>
       <Project Name="include_cpp" ConfigName="Release"/>
+      <Project Name="const_scope" ConfigName="Release"/>
+      <Project Name="const_scope_cpp" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
