@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ const_scope_cpp - Debug ]----------"
-	@cd "const_scope_cpp" && $(MAKE) -f  "const_scope_cpp.mk"
+	@echo "----------Building project:[ include_find - Debug ]----------"
+	@cd "include_find" && $(MAKE) -f  "include_find.mk"
 clean:
-	@echo "----------Cleaning project:[ const_scope_cpp - Debug ]----------"
-	@cd "const_scope_cpp" && $(MAKE) -f  "const_scope_cpp.mk" clean
+	@echo "----------Cleaning project:[ include_find - Debug ]----------"
+	@cd "include_find" && $(MAKE) -f  "include_find.mk" clean
