@@ -114,7 +114,7 @@ main(int argc, char **argv)
 	
 	
 	/* 2 * 10 */
-	char (*paaaaaa)[10] = malloc(sizeof *paaaaaa * 2);
+	char (*paaaaaa)[10] = malloc(sizeof(char[10]) * 2);//malloc(sizeof(char) * 10 * 2);//malloc(sizeof *paaaaaa * 2); // 
 	
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 10; j++)  {
@@ -167,6 +167,9 @@ main(int argc, char **argv)
 	}
 	
 	free(pppp);
+	
+	
+	
 	system("pause");
 	
 	return 0;

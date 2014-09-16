@@ -11,6 +11,7 @@ main(int argc, char **argv)
 	
 	
 	printf("&a[0]: 0x%x\n", &a[0]);
+	printf("sizeof a : %d\n", sizeof a);
 	
 	system("pause");
 	
