@@ -221,6 +221,10 @@
   <Project Name="wildPointer" Path="wildPointer/wildPointer.project" Active="No"/>
   <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="No"/>
   <Project Name="include_find" Path="include_find/include_find.project"/>
+  <Project Name="const_scope" Path="const_scope/const_scope.project" Active="No"/>
+  <Project Name="const_scope_cpp" Path="const_scope_cpp/const_scope_cpp.project" Active="No"/>
+  <Project Name="include_cpp" Path="include_cpp/include_cpp.project" Active="No"/>
+  <Project Name="printf_string" Path="printf_string/printf_string.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -449,6 +453,10 @@
       <Project Name="const_scope" ConfigName="Debug"/>
       <Project Name="const_scope_cpp" ConfigName="Debug"/>
       <Project Name="include_find" ConfigName="Debug"/>
+      <Project Name="const_scope" ConfigName="Debug"/>
+      <Project Name="const_scope_cpp" ConfigName="Debug"/>
+      <Project Name="include_cpp" ConfigName="Debug"/>
+      <Project Name="printf_string" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -677,6 +685,10 @@
       <Project Name="const_scope" ConfigName="Release"/>
       <Project Name="const_scope_cpp" ConfigName="Release"/>
       <Project Name="include_find" ConfigName="Release"/>
+      <Project Name="const_scope" ConfigName="Release"/>
+      <Project Name="const_scope_cpp" ConfigName="Release"/>
+      <Project Name="include_cpp" ConfigName="Release"/>
+      <Project Name="printf_string" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
