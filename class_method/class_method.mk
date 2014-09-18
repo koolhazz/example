@@ -13,10 +13,10 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=07/30/14
+Date                   :=09/18/14
 CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=D:\MinGW-4.8.1\bin\g++.exe 
-SharedObjectLinkerName :=D:\MinGW-4.8.1\bin\g++.exe -shared -fPIC
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe 
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -36,7 +36,7 @@ ObjectsFileList        :="class_method.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=D:\MinGW-4.8.1\bin\windres.exe 
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe 
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,13 +49,13 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:\MinGW-4.8.1\bin\ar.exe rcu
-CXX      := D:\MinGW-4.8.1\bin\g++.exe 
-CC       := D:\MinGW-4.8.1\bin\gcc.exe 
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe 
+CC       := D:/MinGW-4.8.1/bin/gcc.exe 
 CXXFLAGS :=  -g $(Preprocessors)
 CFLAGS   :=  -g $(Preprocessors)
 ASFLAGS  := 
-AS       := D:\MinGW-4.8.1\bin\as.exe 
+AS       := D:/MinGW-4.8.1/bin/as.exe 
 
 
 ##
@@ -112,12 +112,8 @@ $(IntermediateDirectory)/Base.cpp$(PreprocessSuffix): Base.cpp
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/Base$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/Base$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/Base$(PreprocessSuffix)
+	$(RM) ./Debug/*$(ObjectSuffix)
+	$(RM) ./Debug/*$(DependSuffix)
 	$(RM) $(OutputFile)
 	$(RM) $(OutputFile).exe
 	$(RM) "../.build-debug/class_method"

@@ -225,7 +225,8 @@
   <Project Name="const_scope_cpp" Path="const_scope_cpp/const_scope_cpp.project" Active="No"/>
   <Project Name="include_cpp" Path="include_cpp/include_cpp.project" Active="No"/>
   <Project Name="printf_string" Path="printf_string/printf_string.project" Active="No"/>
-  <Project Name="map_vector" Path="map_vector/map_vector.project" Active="Yes"/>
+  <Project Name="map_vector" Path="map_vector/map_vector.project" Active="No"/>
+  <Project Name="array_member" Path="array_member/array_member.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -459,6 +460,7 @@
       <Project Name="include_cpp" ConfigName="Debug"/>
       <Project Name="printf_string" ConfigName="Debug"/>
       <Project Name="map_vector" ConfigName="Debug"/>
+      <Project Name="array_member" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -692,6 +694,7 @@
       <Project Name="include_cpp" ConfigName="Release"/>
       <Project Name="printf_string" ConfigName="Release"/>
       <Project Name="map_vector" ConfigName="Release"/>
+      <Project Name="array_member" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

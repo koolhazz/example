@@ -18,9 +18,17 @@ public:
 	~Dev() { printf("Dev Freeed.\n");}
 	
 	/* 这里的virtual 可以不用添加，因为c++ 规定子类中和基本类声明一样的函数自动定义为virtual */
-	int val(int v = 2048) { printf("Dev return val: %d\n", v); return v; }
+	int val(int v = 2048) { printf("Dev return val: %d\n", v); return v; } /* 这里不加virtual Dev类型的指针使用Son实例赋值后，只能调用Dev的val */
 };
 
+
+class Son : public Dev {
+public:
+	Son() {}
+	~Son() { printf(__func__); }
+	
+	int val(int v = 4096) { printf("Son return val: %d\n", v); return v; }
+};
 /**/
 
 class Base_1 {
@@ -63,13 +71,19 @@ main(int argc, char **argv)
 		pd->val();
 	}
 	
-	/* 虚拟函数继承了“调用者所属类类型”  调用者是当前函数，所以没有权限 */
+	/* 虚拟函数继承了“调用者所属类类型”  调用者是当前函数，所以没有权限调用析构函数 */
 	{
 //		Base_1* pd = new Dev_1;
 //		
 //		delete pd;
 	}
 	
+	{
+		Base* pb = new Son;
+		pb->val();
+		
+		delete pb;
+	}
 	
 	system("pause");
 	

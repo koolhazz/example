@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/* struct 字段排列循序的不同，造成sizeof 大小不同 */
+
 struct A {
 	char 	a;
 	short 	b;
@@ -19,7 +21,7 @@ struct C {
 	short 	b; // 2
 } __attribute__((packed));
 
- struct D {
+struct D {
 	char 	a;
 	int		c;
 	short 	b;

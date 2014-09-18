@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ map_vector - Debug ]----------"
-	@cd "map_vector" && $(MAKE) -f  "map_vector.mk"
+	@echo "----------Building project:[ array_member - Debug ]----------"
+	@cd "array_member" && $(MAKE) -f  "array_member.mk"
 clean:
-	@echo "----------Cleaning project:[ map_vector - Debug ]----------"
-	@cd "map_vector" && $(MAKE) -f  "map_vector.mk" clean
+	@echo "----------Cleaning project:[ array_member - Debug ]----------"
+	@cd "array_member" && $(MAKE) -f  "array_member.mk" clean
