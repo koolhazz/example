@@ -226,7 +226,12 @@
   <Project Name="include_cpp" Path="include_cpp/include_cpp.project" Active="No"/>
   <Project Name="printf_string" Path="printf_string/printf_string.project" Active="No"/>
   <Project Name="map_vector" Path="map_vector/map_vector.project" Active="No"/>
-  <Project Name="array_member" Path="array_member/array_member.project" Active="Yes"/>
+  <Project Name="array_member" Path="array_member/array_member.project" Active="No"/>
+  <Project Name="variadic_template" Path="variadic_template/variadic_template.project" Active="No"/>
+  <Project Name="variadic_template_2" Path="variadic_template_2/variadic_template_2.project" Active="No"/>
+  <Project Name="variadic_template_3" Path="variadic_template_3/variadic_template_3.project" Active="No"/>
+  <Project Name="variadic_template_4" Path="variadic_template_4/variadic_template_4.project" Active="No"/>
+  <Project Name="printf_format" Path="printf_format/printf_format.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -461,6 +466,11 @@
       <Project Name="printf_string" ConfigName="Debug"/>
       <Project Name="map_vector" ConfigName="Debug"/>
       <Project Name="array_member" ConfigName="Debug"/>
+      <Project Name="variadic_template" ConfigName="Debug"/>
+      <Project Name="variadic_template_2" ConfigName="Debug"/>
+      <Project Name="variadic_template_3" ConfigName="Debug"/>
+      <Project Name="variadic_template_4" ConfigName="Debug"/>
+      <Project Name="printf_format" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -695,6 +705,11 @@
       <Project Name="printf_string" ConfigName="Release"/>
       <Project Name="map_vector" ConfigName="Release"/>
       <Project Name="array_member" ConfigName="Release"/>
+      <Project Name="variadic_template" ConfigName="Release"/>
+      <Project Name="variadic_template_2" ConfigName="Release"/>
+      <Project Name="variadic_template_3" ConfigName="Release"/>
+      <Project Name="variadic_template_4" ConfigName="Release"/>
+      <Project Name="printf_format" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

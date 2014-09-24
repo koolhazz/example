@@ -95,4 +95,6 @@
     <File Name="func.h"/>
     <File Name="func.cc"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

@@ -94,4 +94,6 @@
     <File Name="main.cpp"/>
     <File Name="const.cc"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

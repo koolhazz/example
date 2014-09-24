@@ -101,4 +101,6 @@
     <File Name="teststrstr.c"/>
     <File Name="defaultText.h"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>
