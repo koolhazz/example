@@ -33,7 +33,7 @@
 #define  ___ANONYMOUS1(type, var, line)  type  var##line
 #define  __ANONYMOUS0(type, line)  ___ANONYMOUS1(type, _anonymous, line)
 #define  ANONYMOUS(type)  __ANONYMOUS0(type, __LINE__)
-tat
+
 
 #define  _GET_FILE_NAME(f)   #f
 #define  GET_FILE_NAME(f)    _GET_FILE_NAME(f)
@@ -151,8 +151,11 @@ union luai_Cast { double l_d; long l_l; };
 #define lua_number2int(i,d) \
   { volatile union luai_Cast u; u.l_d = (d) + 6755399441055744.0; (i) = u.l_l; }
  
-#define __T_MAX(t) ((t)(~((t)0))) /* 类型的最大值 */
-
+#define __T_MAX(t) ((t)(~((t)0))) /* 类型的最大值 unsigned 类型*/
+/* int 类型的最大值 + 1  == 最小值 
+ * int 类型的最小值 - 1 == 最大值
+ * 
+ * */
 
 /* Test for polling API */
 #ifdef __linux__
@@ -163,9 +166,9 @@ union luai_Cast { double l_d; long l_l; };
 #define HAVE_KQUEUE 1
 #endif
 
-#if !defined(HAVE_EPOLL) && !defined(HAVE_KQUEUE)
-#error "system does not support epoll or kqueue API"
-#endif
+//#if !defined(HAVE_EPOLL) && !defined(HAVE_KQUEUE)
+//#error "system does not support epoll or kqueue API"
+//#endif
 /* ! Test for polling API */
 
 
@@ -217,6 +220,7 @@ int main(int argc, char **argv)
 	printf("K: %d\n", k);
 	
 	printf("int_max: %u\n", __T_MAX(unsigned int));
+	printf("int_max: %d\n", __T_MAX(int));
 	
 	
 	system("pause");
