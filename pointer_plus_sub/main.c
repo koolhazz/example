@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdint.h>
 
-#define index(a, b) ((unsigned long)b - (unsigned long)a) / sizeof *a
+#define index(a, b) ((unsigned long)b - (unsigned long)a) / sizeof *a /* 指针不过是保存了地址的整型变量 */
 
 int 
 main(int argc, char **argv)
@@ -32,6 +32,13 @@ main(int argc, char **argv)
 	printf("c + 2: %p\n", c + 2);
 	
 	
+	int i = 99999999;
+	char *cc = &i;
+	int *ii = cc;
+	
+	printf("ii: %d\n", *(int*)cc); // 按照 int 类型的宽度进行解引用
+	printf("ii: %d\n", *ii);
+	printf("ii: %d\n", *cc);
 	
 	system("pause");
 	

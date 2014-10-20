@@ -92,7 +92,12 @@ CExample3<T>::Add(U u)
 {
 }
 
-
+//template<class T> template <>
+//void
+//CExample3<T>::Add<int>(int i)
+//{
+//	
+//}
 
 
 

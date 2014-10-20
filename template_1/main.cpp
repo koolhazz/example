@@ -12,6 +12,15 @@ A::show(T t)
 	printf("Show\n");
 }
 
+template <>
+void
+A::show<int>(int i)
+{
+	
+}
+
+
+
 int 
 main(int argc, char **argv)
 {

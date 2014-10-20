@@ -158,7 +158,7 @@
   <Project Name="packet" Path="packet/packet.project" Active="No"/>
   <Project Name="pointer_data_align" Path="pointer_data_align/pointer_data_align.project" Active="No"/>
   <Project Name="pointer_drift" Path="pointer_drift/pointer_drift.project" Active="No"/>
-  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="No"/>
+  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="Yes"/>
   <Project Name="pointer_sub_plus" Path="pointer_sub_plus/pointer_sub_plus.project" Active="No"/>
   <Project Name="pointer_tag" Path="pointer_tag/pointer_tag.project" Active="No"/>
   <Project Name="poniter_int" Path="poniter_int/poniter_int.project" Active="No"/>
@@ -231,7 +231,7 @@
   <Project Name="variadic_template_2" Path="variadic_template_2/variadic_template_2.project" Active="No"/>
   <Project Name="variadic_template_3" Path="variadic_template_3/variadic_template_3.project" Active="No"/>
   <Project Name="variadic_template_4" Path="variadic_template_4/variadic_template_4.project" Active="No"/>
-  <Project Name="printf_format" Path="printf_format/printf_format.project" Active="Yes"/>
+  <Project Name="printf_format" Path="printf_format/printf_format.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>

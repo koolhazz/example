@@ -55,6 +55,16 @@ main(int argc, char **argv)
 	delete op5;
 	delete[] op6;
 	
+	COperator op7(99);
+	
+	cout << "op7[1]: " << op7[1] << endl;
+
+	op7[1] = 'c';
+	
+	cout << "op7[1]: " << op7[1] << endl;
+	
+	cout << "op7(): " << op7() << endl;
+	
 	int i;
 	
 	cin >> i;

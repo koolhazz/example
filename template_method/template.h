@@ -16,7 +16,7 @@ Add(T a, T b)
 //specialization
 template <>
 void
-Add(float a, float b)
+Add<float>(float a, float b)
 {
 	cout << "Is Float." << endl;
 }

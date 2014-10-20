@@ -13,7 +13,7 @@ public:
 	COperator();
 	~COperator();
 	
-	COperator(int value):i(value) {}
+	COperator(int value):i(value) { s = "chenbo"; }
 	
 	COperator& operator =(const COperator& rh); /* 成员函数类型的操作符函数，一个隐式的参数this指针 */
 	COperator& operator =(const int& value);
@@ -44,6 +44,10 @@ public:
 	int Show() const { return i;} 
 	
 	operator int() { return i; } /* 类型转换操作符 */
+	
+	char& operator[](unsigned int i) { return this->s[i]; }  /* 这里返回引用可以对s的值按照索引进行改写 */
+	
+	string& operator()() { return this->s; }
 	
 	/* 必须定义为static 方法 new / delete 但是这里类的方法好像也可以，需要验证*/
 	void* operator new(size_t size, const char* func) /* 重载类的new 操作符 只影响该类*/
