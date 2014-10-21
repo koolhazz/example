@@ -46,7 +46,7 @@
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
-  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
+  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="Yes"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
@@ -158,7 +158,7 @@
   <Project Name="packet" Path="packet/packet.project" Active="No"/>
   <Project Name="pointer_data_align" Path="pointer_data_align/pointer_data_align.project" Active="No"/>
   <Project Name="pointer_drift" Path="pointer_drift/pointer_drift.project" Active="No"/>
-  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="Yes"/>
+  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="No"/>
   <Project Name="pointer_sub_plus" Path="pointer_sub_plus/pointer_sub_plus.project" Active="No"/>
   <Project Name="pointer_tag" Path="pointer_tag/pointer_tag.project" Active="No"/>
   <Project Name="poniter_int" Path="poniter_int/poniter_int.project" Active="No"/>
@@ -232,6 +232,8 @@
   <Project Name="variadic_template_3" Path="variadic_template_3/variadic_template_3.project" Active="No"/>
   <Project Name="variadic_template_4" Path="variadic_template_4/variadic_template_4.project" Active="No"/>
   <Project Name="printf_format" Path="printf_format/printf_format.project" Active="No"/>
+  <Project Name="gcc_inline" Path="gcc_inline/gcc_inline.project"/>
+  <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -471,6 +473,8 @@
       <Project Name="variadic_template_3" ConfigName="Debug"/>
       <Project Name="variadic_template_4" ConfigName="Debug"/>
       <Project Name="printf_format" ConfigName="Debug"/>
+      <Project Name="gcc_inline" ConfigName="Debug"/>
+      <Project Name="noncopyable" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -710,6 +714,8 @@
       <Project Name="variadic_template_3" ConfigName="Release"/>
       <Project Name="variadic_template_4" ConfigName="Release"/>
       <Project Name="printf_format" ConfigName="Release"/>
+      <Project Name="gcc_inline" ConfigName="Release"/>
+      <Project Name="noncopyable" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
