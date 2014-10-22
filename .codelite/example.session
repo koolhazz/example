@@ -4,32 +4,6 @@
   <wxString Value="E:\data\example\example.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="E:\data\example\bit_operator\main.c" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="E:\data\example\operator\Operator.h" Name="FileName"/>
-      <int Value="29" Name="FirstVisibleLine"/>
-      <int Value="49" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds">
-        <IntVectorItem Value="53"/>
-        <IntVectorItem Value="59"/>
-        <IntVectorItem Value="66"/>
-        <IntVectorItem Value="72"/>
-      </IntVector>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="E:\data\example\template_method\template.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="20" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
       <wxString Value="E:\data\example\template_1\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="21" Name="CurrentLine"/>
@@ -108,8 +82,29 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="E:\data\example\class_inherit\main.cpp" Name="FileName"/>
-      <int Value="8" Name="FirstVisibleLine"/>
+      <int Value="68" Name="FirstVisibleLine"/>
       <int Value="100" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\data\example\printf_buffer\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="26" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\data\example\func_param_order\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="9" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\data\example\xxprintf\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="8" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

@@ -5,7 +5,7 @@
 ## Debug
 ProjectName            :=DataType
 ConfigurationName      :=Debug
-WorkspacePath          := "e:\data\new_example\example"
+WorkspacePath          := "E:\data\example"
 ProjectPath            := "E:\data\example\DataType"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=08/28/14
+Date                   :=10/22/14
 CodeLitePath           :="D:\Program Files\CodeLite"
 LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe 
 SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
@@ -108,6 +108,6 @@ clean:
 	$(RM) ./Debug/*$(DependSuffix)
 	$(RM) $(OutputFile)
 	$(RM) $(OutputFile).exe
-	$(RM) "../../new_example/example/.build-debug/DataType"
+	$(RM) "../.build-debug/DataType"
 
 

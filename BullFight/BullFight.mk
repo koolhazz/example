@@ -13,14 +13,14 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=05/22/14
+Date                   :=10/22/14
 CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=g++
-SharedObjectLinkerName :=g++ -shared -fPIC
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe 
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
-DebugSwitch            :=-gstab
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -31,12 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="BullFight.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=windres
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe 
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,13 +49,13 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := g++
-CC       := gcc
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe 
+CC       := D:/MinGW-4.8.1/bin/gcc.exe 
 CXXFLAGS :=  -g -O0 -Wall -std=c++0x $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall -std=c99 $(Preprocessors)
 ASFLAGS  := 
-AS       := as
+AS       := D:/MinGW-4.8.1/bin/as.exe 
 
 
 ##
@@ -63,7 +63,7 @@ AS       := as
 ##
 CodeLiteDir:=D:\Program Files\CodeLite
 UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/main$(ObjectSuffix) $(IntermediateDirectory)/Logic$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Logic.cc$(ObjectSuffix) 
 
 
 
@@ -90,21 +90,21 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/BullFight/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.cpp"
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/BullFight/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "main.cpp"
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
-$(IntermediateDirectory)/Logic$(ObjectSuffix): Logic.cc $(IntermediateDirectory)/Logic$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/BullFight/Logic.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Logic$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Logic$(DependSuffix): Logic.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Logic$(ObjectSuffix) -MF$(IntermediateDirectory)/Logic$(DependSuffix) -MM "Logic.cc"
+$(IntermediateDirectory)/Logic.cc$(ObjectSuffix): Logic.cc $(IntermediateDirectory)/Logic.cc$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/BullFight/Logic.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Logic.cc$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Logic.cc$(DependSuffix): Logic.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Logic.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/Logic.cc$(DependSuffix) -MM "Logic.cc"
 
-$(IntermediateDirectory)/Logic$(PreprocessSuffix): Logic.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Logic$(PreprocessSuffix) "Logic.cc"
+$(IntermediateDirectory)/Logic.cc$(PreprocessSuffix): Logic.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Logic.cc$(PreprocessSuffix) "Logic.cc"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -112,12 +112,8 @@ $(IntermediateDirectory)/Logic$(PreprocessSuffix): Logic.cc
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/Logic$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/Logic$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/Logic$(PreprocessSuffix)
+	$(RM) ./Debug/*$(ObjectSuffix)
+	$(RM) ./Debug/*$(DependSuffix)
 	$(RM) $(OutputFile)
 	$(RM) $(OutputFile).exe
 	$(RM) "../.build-debug/BullFight"

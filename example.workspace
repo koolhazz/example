@@ -46,7 +46,7 @@
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
-  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="Yes"/>
+  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
@@ -234,6 +234,9 @@
   <Project Name="printf_format" Path="printf_format/printf_format.project" Active="No"/>
   <Project Name="gcc_inline" Path="gcc_inline/gcc_inline.project"/>
   <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
+  <Project Name="printf_buffer" Path="printf_buffer/printf_buffer.project" Active="No"/>
+  <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
+  <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -475,6 +478,9 @@
       <Project Name="printf_format" ConfigName="Debug"/>
       <Project Name="gcc_inline" ConfigName="Debug"/>
       <Project Name="noncopyable" ConfigName="Debug"/>
+      <Project Name="printf_buffer" ConfigName="Debug"/>
+      <Project Name="func_param_order" ConfigName="Debug"/>
+      <Project Name="xxprintf" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -716,6 +722,9 @@
       <Project Name="printf_format" ConfigName="Release"/>
       <Project Name="gcc_inline" ConfigName="Release"/>
       <Project Name="noncopyable" ConfigName="Release"/>
+      <Project Name="printf_buffer" ConfigName="Release"/>
+      <Project Name="func_param_order" ConfigName="Release"/>
+      <Project Name="xxprintf" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
