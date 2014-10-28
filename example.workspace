@@ -237,6 +237,7 @@
   <Project Name="printf_buffer" Path="printf_buffer/printf_buffer.project" Active="No"/>
   <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="Yes"/>
+  <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -481,6 +482,7 @@
       <Project Name="printf_buffer" ConfigName="Debug"/>
       <Project Name="func_param_order" ConfigName="Debug"/>
       <Project Name="xxprintf" ConfigName="Debug"/>
+      <Project Name="strrep" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -725,6 +727,7 @@
       <Project Name="printf_buffer" ConfigName="Release"/>
       <Project Name="func_param_order" ConfigName="Release"/>
       <Project Name="xxprintf" ConfigName="Release"/>
+      <Project Name="strrep" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
