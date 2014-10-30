@@ -10,7 +10,7 @@
 int getfilesize()
 {
     int iresult;
-    struct _stat buf;
+    struct stat buf;
     iresult = stat(file_name,&buf);
     if(iresult == 0)
     {

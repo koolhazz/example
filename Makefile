@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ xxprintf - Debug ]----------"
-	@cd "xxprintf" && $(MAKE) -f  "xxprintf.mk"
+	@echo "----------Building project:[ file_size - Debug ]----------"
+	@cd "file_size" && $(MAKE) -f  "file_size.mk"
 clean:
-	@echo "----------Cleaning project:[ xxprintf - Debug ]----------"
-	@cd "xxprintf" && $(MAKE) -f  "xxprintf.mk" clean
+	@echo "----------Cleaning project:[ file_size - Debug ]----------"
+	@cd "file_size" && $(MAKE) -f  "file_size.mk" clean
