@@ -238,7 +238,8 @@
   <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
-  <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="Yes"/>
+  <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
+  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -485,6 +486,7 @@
       <Project Name="xxprintf" ConfigName="Debug"/>
       <Project Name="strrep" ConfigName="Debug"/>
       <Project Name="pointer_derefence" ConfigName="Debug"/>
+      <Project Name="class_method_3" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -731,6 +733,7 @@
       <Project Name="xxprintf" ConfigName="Release"/>
       <Project Name="strrep" ConfigName="Release"/>
       <Project Name="pointer_derefence" ConfigName="Release"/>
+      <Project Name="class_method_3" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

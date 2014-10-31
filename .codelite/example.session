@@ -1,22 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="E:\data\example\example.workspace">
-  <int Value="14" Name="m_selectedTab"/>
+  <int Value="3" Name="m_selectedTab"/>
   <wxString Value="E:\data\example\example.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
-    <TabInfo>
-      <wxString Value="E:\data\example\operator\main.cpp" Name="FileName"/>
-      <int Value="40" Name="FirstVisibleLine"/>
-      <int Value="64" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="E:\data\example\pointer_sub_plus\main.c" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
     <TabInfo>
       <wxString Value="E:\data\example\pointer_plus_sub\main.c" Name="FileName"/>
       <int Value="13" Name="FirstVisibleLine"/>
@@ -40,8 +26,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="E:\data\example\class_inherit\main.cpp" Name="FileName"/>
-      <int Value="77" Name="FirstVisibleLine"/>
-      <int Value="100" Name="CurrentLine"/>
+      <int Value="27" Name="FirstVisibleLine"/>
+      <int Value="40" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -68,7 +54,7 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="E:\data\example\strrep\main.c" Name="FileName"/>
-      <int Value="42" Name="FirstVisibleLine"/>
+      <int Value="48" Name="FirstVisibleLine"/>
       <int Value="71" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -82,7 +68,7 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="E:\data\example\bit_operator\main.c" Name="FileName"/>
-      <int Value="6" Name="FirstVisibleLine"/>
+      <int Value="0" Name="FirstVisibleLine"/>
       <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -103,8 +89,22 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="E:\data\example\file_size\main.c" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="FirstVisibleLine"/>
       <int Value="12" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\data\example\class_method_3\main.cpp" Name="FileName"/>
+      <int Value="27" Name="FirstVisibleLine"/>
+      <int Value="51" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="E:\data\example\class_method\Base.h" Name="FileName"/>
+      <int Value="6" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

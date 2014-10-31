@@ -21,11 +21,10 @@ public:
 private:
 	virtual void showme(); //这里是virtual 才能有多态的作用
 	void name() { cout << "base name: " << "base" << endl; }
-
+	
 public:
 	static void version();
 };
-
 
 class CDev : public CBase
 {
@@ -41,6 +40,7 @@ public:
 private:
 	virtual void showme();
 	void name() { cout << "dev name: " << "dev" << endl; }
+	
 };
 
 #endif

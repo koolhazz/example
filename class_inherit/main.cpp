@@ -84,7 +84,7 @@ main(int argc, char **argv)
 	/* 虚拟函数继承了“调用者所属类类型”  调用者是当前函数，所以没有权限调用析构函数 */
 	{
 //		Base_1* pd = new Dev_1;
-//		
+//		1
 //		delete pd;
 	}
 
