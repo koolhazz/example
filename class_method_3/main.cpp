@@ -8,6 +8,8 @@ public:
 	virtual ~Father() {}
 protected:
 	int id;
+	
+	void show() {} 
 };
 
 class Son : public Father {
@@ -23,6 +25,8 @@ public:
 	int get_father_id() { return Father::id; }
 protected:
 	int id;
+	
+
 };
 
 class Son_2 : public Father {
@@ -34,7 +38,7 @@ public:
 	{
 		//return f->id = id; 
 		/* 这里的代码只能访问本对象实例的基类的protected成员，不能访问其他对象实例的基类的保护成员
-		 * 访问Father::id,也就是该实例对象的继承的基类的protected成员
+		 * 访问Father::id,也就是该实例对象的继承的基类的protected成员, 也就是说对象实例也没有权限访问protected 成员;
 
 		 * */
 	}
@@ -50,6 +54,8 @@ int main(int argc, char **argv)
 	Father 	f(100);
 	Son		s(1000);
 	Son		s1(1001);
+	
+	f.show(); /* 对象实例也不能访问protected类型的成员 */
 	
 	s.compare(s1);
 	
