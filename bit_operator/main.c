@@ -20,6 +20,26 @@
 /* 绝对值 */
 #define _abs(a) ((a ^ (a >> 31)) - (a >> 31))
 
+// 设置开关值 |
+flag |= newvalue
+
+// 判断是否已经设置开关值
+flag &= newvalue;
+
+// 移除开关
+flag &= ~newvalue;
+
+// 判断两个值是否相等
+#define eq(a, b) !(a ^ b)
+
+// 翻转特定位  第一 第二位
+//10100001^00000110 = 10100111
+#define rbit(a, n) a ^ (1 << n)
+
+// 将某个变量清零
+#define zero(a) a ^ a
+
+
 /* base.h：基本操作的位运算实现 */  
 #ifndef BASE_H  
 #define BASE_H  

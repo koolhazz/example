@@ -239,7 +239,9 @@
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
-  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="Yes"/>
+  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
+  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
+  <Project Name="string_replace" Path="string_replace/string_replace.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -487,6 +489,8 @@
       <Project Name="strrep" ConfigName="Debug"/>
       <Project Name="pointer_derefence" ConfigName="Debug"/>
       <Project Name="class_method_3" ConfigName="Debug"/>
+      <Project Name="type_max_value" ConfigName="Debug"/>
+      <Project Name="string_replace" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -734,6 +738,8 @@
       <Project Name="strrep" ConfigName="Release"/>
       <Project Name="pointer_derefence" ConfigName="Release"/>
       <Project Name="class_method_3" ConfigName="Release"/>
+      <Project Name="type_max_value" ConfigName="Release"/>
+      <Project Name="string_replace" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
