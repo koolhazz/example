@@ -3,8 +3,8 @@
 
 #define int_max (1 << 31) - 1 // ~(1 << 31)
 #define uint_max (~0)
-#define ulong_max (~0)
-#define ulonglong_max (~0LLU)
+#define ulong_max ((unsigned long)~0UL) // (unsigned long)-1
+#define ulonglong_max (~0ULL) // (~0LLU)
 
 
 int main(int argc, char **argv)

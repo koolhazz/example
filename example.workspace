@@ -240,8 +240,8 @@
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
-  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
-  <Project Name="string_replace" Path="string_replace/string_replace.project" Active="Yes"/>
+  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="Yes"/>
+  <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
