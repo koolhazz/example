@@ -22,11 +22,11 @@ main(int argc, char **argv)
 	}
 	
 	for (int i = 0; i < 2; i++) {
-		delete[] *(pa + i);
-		
 		for (int j = 0; j < 3; j++) {
 			delete[] *(*(pa + i) + j);
-		}		
+		}
+
+		delete[] *(pa + i);
 	}
 
 	delete[] pa;
@@ -66,10 +66,10 @@ main(int argc, char **argv)
 		}
 	}
 	
-	delete[] paaa;
 	delete[] *paaa;
-	
-	int (*pppp)[10] = new int[2][10];
+	delete[] paaa;
+		
+	int (*pppp)[10] = new int[2][10]; // return int(*)[10]
 	
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 10; j++) {

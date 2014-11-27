@@ -5,7 +5,7 @@
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
   <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="No"/>
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
-  <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
+  <Project Name="array_new" Path="array_new/array_new.project" Active="Yes"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
   <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="No"/>
   <Project Name="array_sizeof" Path="array_sizeof/array_sizeof.project" Active="No"/>
@@ -240,7 +240,7 @@
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
-  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="Yes"/>
+  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">

@@ -126,13 +126,15 @@ main(int argc, char **argv)
 	free(paaaaaa);
 	
 	
-	int** pp = NULL; // 10 * 20
+	int** pp = NULL; // 10 * 10
 	
 	pp = (int**)malloc((sizeof *pp) * 10);
 	
 	for (int i = 0; i < 10; i++) {
 		*(pp + i) = malloc(sizeof(int) * 10);
 	}
+	
+	
 	
 	// int [1][10] === int* [1]    
 	

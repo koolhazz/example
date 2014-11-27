@@ -60,6 +60,7 @@ int main(int argc, char **argv)
 	
 	a.a = 1;
 	a.b = 1;
+	a.a = 2;
 	
 	printf("sizeof A: %zu\n", sizeof a);
 	printf("A:a: %d\n", a.a);
