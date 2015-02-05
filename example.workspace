@@ -3,9 +3,9 @@
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
-  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="No"/>
+  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="Yes"/>
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
-  <Project Name="array_new" Path="array_new/array_new.project" Active="Yes"/>
+  <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
   <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="No"/>
   <Project Name="array_sizeof" Path="array_sizeof/array_sizeof.project" Active="No"/>
@@ -242,6 +242,9 @@
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
   <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
+  <Project Name="statement" Path="statement/statement.project" Active="No"/>
+  <Project Name="policy_class" Path="policy_class/policy_class.project" Active="No"/>
+  <Project Name="ods" Path="ods/ods.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -491,6 +494,9 @@
       <Project Name="class_method_3" ConfigName="Debug"/>
       <Project Name="type_max_value" ConfigName="Debug"/>
       <Project Name="string_replace" ConfigName="Debug"/>
+      <Project Name="statement" ConfigName="Debug"/>
+      <Project Name="policy_class" ConfigName="Debug"/>
+      <Project Name="ods" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -740,6 +746,9 @@
       <Project Name="class_method_3" ConfigName="Release"/>
       <Project Name="type_max_value" ConfigName="Release"/>
       <Project Name="string_replace" ConfigName="Release"/>
+      <Project Name="statement" ConfigName="Release"/>
+      <Project Name="policy_class" ConfigName="Release"/>
+      <Project Name="ods" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

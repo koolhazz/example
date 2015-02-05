@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ array_new - Debug ]----------"
-	@cd "array_new" && $(MAKE) -f  "array_new.mk"
+	@echo "----------Building project:[ bit_operator - Debug ]----------"
+	@cd "bit_operator" && $(MAKE) -f  "bit_operator.mk"
 clean:
-	@echo "----------Cleaning project:[ array_new - Debug ]----------"
-	@cd "array_new" && $(MAKE) -f  "array_new.mk" clean
+	@echo "----------Cleaning project:[ bit_operator - Debug ]----------"
+	@cd "bit_operator" && $(MAKE) -f  "bit_operator.mk" clean

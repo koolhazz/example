@@ -55,11 +55,13 @@ int main(int argc, char **argv)
 	Son		s(1000);
 	Son		s1(1001);
 	
-	f.show(); /* 对象实例也不能访问protected类型的成员 */
+	//f.show(); /* 对象实例也不能访问protected类型的成员 */
 	
 	s.compare(s1);
 	
-	int id = f->id;  // 这里不允许，类的对象也没有访问protected 成员的权限，只有类的成员函数和友元函数才有权限
+	printf("father: %d\n", s1.get_father_id());
+	
+	//int id = f->id;  // 这里不允许，类的对象也没有访问protected 成员的权限，只有类的成员函数和友元函数才有权限
 
 	system("pause");
 	return 0;

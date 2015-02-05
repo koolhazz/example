@@ -21,6 +21,8 @@ struct A_1 {
 
 #pragma pack(pop)
 
+
+
 struct aligned {
 	int a;
 	long long b;
@@ -46,22 +48,22 @@ struct A{
 };
 
 struct B{
-  char a;
-  int b;
-  unsigned short c;
-  long d;
-  unsigned long long e;
-  char f;
-}__attribute__((aligned));
+	char 				a;
+	int 				b;
+	unsigned short 		c;
+	long 				d;
+	unsigned long long 	e;
+	char 				f;
+} __attribute__((aligned));
 
 struct C{
-  char a;
-  int b;
-  unsigned short c;
-  long d;
-  unsigned long long e;
-  char f;
-}__attribute__((aligned(1)));
+	char 					a;
+	int 					b;
+	unsigned short 			c;
+	long 					d;
+	unsigned long long 		e;
+	char 					f;
+} __attribute__((aligned(1)));
 
 
 struct D {

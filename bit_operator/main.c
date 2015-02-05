@@ -17,17 +17,26 @@
 /* 符号取反 */
 #define sign(a) (~(a) + 1)
 
+// 设置第n位
+#define set_bit(i, n) (i | (1 << n))
+
+// 清除第n位
+#define unset_bit(i, n) (i & ~(1 << n))
+
+// 翻转第n位
+#define reset_bit(i, n) (i ^ (1 << n))
+
 /* 绝对值 */
 #define _abs(a) ((a ^ (a >> 31)) - (a >> 31))
 
 // 设置开关值 |
-flag |= newvalue
+#define FL_SET(flag, value) flag |= value
 
-// 判断是否已经设置开关值
-flag &= newvalue;
+// 判断是否已经设置开关值 
+#define FL_IFSET(f, v) (f & v) 
 
 // 移除开关
-flag &= ~newvalue;
+#define FL_DSET(f, v) flag &= ~newvalue
 
 // 判断两个值是否相等
 #define eq(a, b) !(a ^ b)
