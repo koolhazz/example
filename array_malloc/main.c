@@ -39,7 +39,7 @@ main(int argc, char **argv)
 	//int* (*paa)[10] = (int* (*)[10])malloc(sizeof *paa * 2);
 	
 	for (unsigned int i = 0; i < 2; i++) {
-		for(unsigned int j = 0; j < 10;j++) {
+		for (unsigned int j = 0; j < 10;j++) {
 			*(*(paa + i) + j) = malloc(sizeof(int)); //数组元素分配 *(*(paa + i) + j)  == int*  *(paa + i) == int**
 			*(*(*(paa + i) + j)) = i * j;
 			
@@ -48,7 +48,7 @@ main(int argc, char **argv)
 	}
 	
 	for (unsigned int i = 0; i < 2; i++) {
-		for(unsigned int j = 0; j < 10;j++) {
+		for (unsigned int j = 0; j < 10;j++) {
 			free(*(*(paa + i) + j));
 		}
 	}	

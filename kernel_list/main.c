@@ -22,7 +22,7 @@ int main(int argc, char **argv){
 
 	/* 给mylist增加元素 */
 	for(i=5; i!=0; --i){
-		tmp= (struct kool_list *)malloc(sizeof(struct kool_list));
+		tmp = (struct kool_list *)malloc(sizeof(struct kool_list));
 		
 
 		/* 或者INIT_LIST_HEAD(&tmp->list); */
