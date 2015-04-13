@@ -61,7 +61,7 @@ int main(int argc, char **argv)
 	
 	printf("father: %d\n", s1.get_father_id());
 	
-	//int id = f->id;  // 这里不允许，类的对象也没有访问protected 成员的权限，只有类的成员函数和友元函数才有权限
+	//int id = f->id;  //这里不允许，类的对象也没有访问protected 成员的权限，只有类的成员函数和友元函数才有权限
 
 	system("pause");
 	return 0;

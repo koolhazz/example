@@ -15,13 +15,13 @@ main(int argc, char **argv)
 		timer_start(1, handle_timeout, &i, sizeof i);
 	}
 	
-/*	while(1) {
-		sleep(1);
-		
+	while(1) {
 		timer_run();
-	}*/
+	}
 	
-	timer_run();
+	//timer_run();
+	
+	system("pause");
 	
 	return 0;
 }

@@ -8,9 +8,9 @@ main(int argc, char **argv)
 {
 	unsigned long timers[10];
 	
-	for(int i = 0; i < 10; i++) {
+	for  (int i = 0; i < 10; i++) {
 		//printf("timer: 0x%p\n", timer_start(0, NULL, &i, sizeof i, false));
-		timer_start(0, NULL, &i, sizeof i, false);
+		timer_start(1, NULL, &i, sizeof i, false);
 	}
 	
 	// while(1) {
@@ -22,10 +22,12 @@ main(int argc, char **argv)
 	// for (int i = 0; i < 10; i++) {
 		// timer_stop(timers[i]);
 	// }
-
-	timer_run();
+	while (1) {
+		timer_run();
+	}
 	
 	//timer_list_del();
-		
+	
+	system("pause");	
 	return 0;
 }

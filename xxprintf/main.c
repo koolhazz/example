@@ -14,10 +14,12 @@ main(int argc, char **argv)
 	printf("NUMBER: %010d\n", 123456);
 	printf("NUMBER: %10d\n", 123456); // 最小输出宽度 10 小于的话就补0
 	printf("NUMBER: %10.4f\n", 123456.123456);
+	printf("NUBMER: %a\n", 123456);
 	
 	printf("STRING: %010.4s\n", "123456");
 	printf("STRING: %.10s\n", "123456");
 	printf("STRING: %*.*s\n", 10, 4, "123456");
+	
 	
 	
 	system("pause");

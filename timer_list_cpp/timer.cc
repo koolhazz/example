@@ -16,13 +16,15 @@ struct timer_s {
 	void				*data;
 } __attribute__((aligned(sizeof(long))));
 
+
+typedef unsigned long 					timer_key_t;
 typedef map<unsigned long, timer_t*> 	timer_list_t;
 typedef timer_list_t::iterator			timer_list_itr_t;
 
 #define now time(NULL)
 #define tdel(t) do { 					\
 	if (t->data) {						\
-		free(t->data);						\
+		free(t->data);					\
 		t->data = NULL;					\
 	}									\
 	free(t);							\

@@ -11,7 +11,11 @@ extern "C" {
 typedef void (*timeout_handler_t)(void*);
 
 unsigned long
-timer_start(unsigned long sec, timeout_handler_t handler, void* arg, unsigned int alen, bool isloop);
+timer_start(unsigned long sec, 
+			timeout_handler_t handler, 
+			void* arg, 
+			unsigned int alen, 
+			bool isloop);
 
 void 
 timer_stop(unsigned long id);

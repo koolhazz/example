@@ -11,5 +11,10 @@ WRITE(int, i);
 int main(int argc, char **argv)
 {
 	printf("hello world\n");
+	
+	int i = 0;
+	
+	
+	
 	return 0;
 }

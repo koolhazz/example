@@ -18,7 +18,7 @@ struct timer_s {
 
 typedef struct timer_list_s timer_list_t;
 struct timer_list_s {
-	timer_t			*tl;
+	timer_t	*tl;
 	time_t	curr; /* 当前时间，判断过期使用 */
 };
 
@@ -40,7 +40,7 @@ timer_list_t	*t;
 static inline void
 handle_timeout(void* arg)
 {
-	//printf("handler_timerout: %d\n", *(int*)arg);
+	printf("handler_timerout: %d\n", *(int*)arg);
 }
 
 static void 
@@ -132,10 +132,10 @@ timer_run()
 	t->curr = now;
 	
 	for (pos = head->next, n = pos->next ; pos != head; pos = n, n = n->next) {
-		//printf("pos: 0x%p\n", pos);
+		printf("pos: 0x%p\n", pos);
 		tr = tety(pos); //list_entry(pos, timer_t, entry);
 		if (tr) {
-			//printf("curr: %lu time: %lu\n", tr->time, t->curr);			
+			printf("curr: %lu time: %lu\n", tr->time, t->curr);			
 			if (t->curr - tr->time >= tr->expires) {
 				list_del(pos);
 				tr->handler(tr->data);

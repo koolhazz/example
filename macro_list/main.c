@@ -38,6 +38,6 @@ FLAG_LIST(FLAG_ACCESSOR)
 
 int main(int argc, char **argv)
 {
-	printf("hello world\n");
+	printf("hello world 中文\n");
 	return 0;
 }

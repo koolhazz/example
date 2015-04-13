@@ -1,6 +1,10 @@
 #ifndef __LIST_H
 #define __LIST_H
 
+#ifdef __cplusplus 
+extern "C" {
+#endif
+
 /* This file is from Linux Kernel (include/linux/list.h)
 * and modified by simply removing hardware prefetching of list items.
 * Here by copyright, credits attributed to wherever they belong.
@@ -243,5 +247,10 @@ n = list_entry(pos->member.next, typeof(*pos), member);    \
 &pos->member != (head);                     \
 pos = n, n = list_entry(n->member.next, typeof(*n), member))
 
+	
+#ifdef __cplusplus 
+}
+#endif	
+	
 #endif
 

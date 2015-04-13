@@ -3,7 +3,7 @@
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
-  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="Yes"/>
+  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="No"/>
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
   <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
@@ -46,7 +46,7 @@
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
-  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
+  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="Yes"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
@@ -245,6 +245,8 @@
   <Project Name="statement" Path="statement/statement.project" Active="No"/>
   <Project Name="policy_class" Path="policy_class/policy_class.project" Active="No"/>
   <Project Name="ods" Path="ods/ods.project" Active="No"/>
+  <Project Name="is_number" Path="is_number/is_number.project" Active="No"/>
+  <Project Name="const_array" Path="const_array/const_array.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -497,6 +499,8 @@
       <Project Name="statement" ConfigName="Debug"/>
       <Project Name="policy_class" ConfigName="Debug"/>
       <Project Name="ods" ConfigName="Debug"/>
+      <Project Name="is_number" ConfigName="Debug"/>
+      <Project Name="const_array" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -749,6 +753,8 @@
       <Project Name="statement" ConfigName="Release"/>
       <Project Name="policy_class" ConfigName="Release"/>
       <Project Name="ods" ConfigName="Release"/>
+      <Project Name="is_number" ConfigName="Release"/>
+      <Project Name="const_array" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
