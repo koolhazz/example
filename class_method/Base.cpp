@@ -56,6 +56,8 @@ CDev::~CDev()
 void
 CDev::show_i()
 {
+	cout << "invoke base method: " << endl;
+	CBase::show_i();
 	cout << "is dev" << endl;
 	cout << "i: " << i << endl;
 }

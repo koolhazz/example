@@ -7,6 +7,7 @@ main(int argc, char **argv)
 	char *temp = "1234567890";
 	
 	char buff[11] = {0};
+	int r;
 	
 	sprintf(buff, "%.2s", temp); // ".2"表示最大宽度
 	printf("buff: %s\n", buff);
@@ -19,8 +20,12 @@ main(int argc, char **argv)
 	printf("STRING: %010.4s\n", "123456");
 	printf("STRING: %.10s\n", "123456");
 	printf("STRING: %*.*s\n", 10, 4, "123456");
+	printf("STRING: %*.*s\n", 10, 10);
+	printf("STRING: %*.*s %n\n", 10, 4, "123456", &r);
 	
-	
+	printf("NUMBER: %#lx\n", 123456);
+	printf("NUMBER: %ld\n", 123456);
+	printf("NUMBER: 0%lo\n", 123456);
 	
 	system("pause");
 	return 0;

@@ -119,7 +119,7 @@ __attribute__((aligned(8))) int y;
 int __attribute__((aligned(8))) z;
 
 int 
-main(int argc, char **argv){
+main(int argc, char **argv) {
 	printf("sizeof(struct A) = %zu, sizeof(struct B) = %zu, sizeof(struct C) = %zu, sizeof(struct D) = %zu, sizeof(struct E) = %zu, sizeof(struct F) = %zu \
 	sizeof(struct aligned) = %zu sizeof(struct aligned_2) = %zu sizeof(struct packed_1) = %zu sizeof(struct A_1) = %zu sizeof(struct aligned_3) = %zu sizeof(aligned_t) = %zu \
 	sizeof(aligned_2_t) = %zu sizeof(aligned_3_t) = %zu sizeof(aligned_4_t) = %zu\n", 

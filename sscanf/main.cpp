@@ -3,7 +3,10 @@
 
 int main(int argc, char **argv)
 {
-	char buf[512] = {0};
+	char 	buf[512] = {0};
+	int 	pos = 0;
+	int 	year = 0;
+	
 	{
 		sscanf("123456 ", "%s", buf);
 		printf("%s\n", buf);
@@ -73,6 +76,13 @@ int main(int argc, char **argv)
 	printf("month: %d\n", current_date_2.month);
 	printf("day: %d\n", current_date_2.day);
 	printf("year: %d\n", current_date_2.year);
+	
+	{
+		sscanf("Log_20150429_1.log", "Log_%d_%d.log", &year, &pos);
+		printf("Date: %d\n", year);
+		printf("Pos: %d\n", pos);
+	}
+	
 	
 	system("pause");
 	

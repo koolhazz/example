@@ -19,6 +19,7 @@ int main(int argc, char **argv)
 	CDev* pDev = new CDev(2, 9);
 	pDev->age();
 	pDev->Show();
+	pDev->show_i();
 
 	delete pDev;
 
