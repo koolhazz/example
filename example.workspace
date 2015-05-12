@@ -176,7 +176,7 @@
   <Project Name="skiplist" Path="skiplist/skiplist.project" Active="No"/>
   <Project Name="smaz" Path="smaz/smaz.project" Active="No"/>
   <Project Name="sort" Path="sort/sort.project" Active="No"/>
-  <Project Name="sscanf" Path="sscanf/sscanf.project" Active="Yes"/>
+  <Project Name="sscanf" Path="sscanf/sscanf.project" Active="No"/>
   <Project Name="static_assert" Path="static_assert/static_assert.project" Active="No"/>
   <Project Name="std_unordered_map_sort" Path="std_unordered_map_sort/std_unordered_map_sort.project" Active="No"/>
   <Project Name="stl" Path="stl/stl.project" Active="No"/>
@@ -247,6 +247,7 @@
   <Project Name="ods" Path="ods/ods.project" Active="No"/>
   <Project Name="is_number" Path="is_number/is_number.project" Active="No"/>
   <Project Name="const_array" Path="const_array/const_array.project"/>
+  <Project Name="map_compare" Path="map_compare/map_compare.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -501,6 +502,7 @@
       <Project Name="ods" ConfigName="Debug"/>
       <Project Name="is_number" ConfigName="Debug"/>
       <Project Name="const_array" ConfigName="Debug"/>
+      <Project Name="map_compare" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -755,6 +757,10 @@
       <Project Name="ods" ConfigName="Release"/>
       <Project Name="is_number" ConfigName="Release"/>
       <Project Name="const_array" ConfigName="Release"/>
+      <Project Name="map_compare" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
+  <Environment>
+    <![CDATA[]]>
+  </Environment>
 </CodeLite_Workspace>

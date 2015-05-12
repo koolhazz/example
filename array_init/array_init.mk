@@ -13,13 +13,13 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=03/07/14
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=gcc
-SharedObjectLinkerName :=gcc -shared -fPIC
+Date                   :=11/05/2015
+CodeLitePath           :="d:\Program Files\CodeLite"
+LinkerName             :=g++
+SharedObjectLinkerName :=g++ -shared -fPIC
 ObjectSuffix           :=.o
-DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
+DependSuffix           :=
+PreprocessSuffix       :=.i
 DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
@@ -31,7 +31,7 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="array_init.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
@@ -49,8 +49,8 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := gcc
+AR       := ar rcu
+CXX      := g++
 CC       := gcc
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
@@ -61,9 +61,8 @@ AS       := as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/main$(ObjectSuffix) 
+CodeLiteDir:=d:\Program Files\CodeLite
+Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
 
 
@@ -90,25 +89,15 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.c $(IntermediateDirectory)/main$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/array_init/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.c"
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c 
+	$(CC) $(SourceSwitch) "E:/data/example/array_init/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "main.c"
-
-
--include $(IntermediateDirectory)/*$(DependSuffix)
 ##
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/array_init"
+	$(RM) -r ./Debug/
 
 

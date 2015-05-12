@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace>
+  <WorkspaceParserFlags flags="3"/>
+  <WorkspaceParserPaths/>
+  <Environment Name="&lt;Use Defaults&gt;"/>
   <SubversionPath>
     <![CDATA[E:\data\example]]>
   </SubversionPath>
