@@ -68,7 +68,7 @@ main(int argc, char **argv)
 	RN();
 	//验证虚函数的默认参数
 	{
-		Base* pb  = new Dev;
+		Base* pb  = new Dev;`1
 		
 		pb->val(); /* 这里的参数默认值是1024，函数的调用时动态的，但是参数的赋值是静态的，这里默认参数采用Base::val的1024进行赋值 */
 		

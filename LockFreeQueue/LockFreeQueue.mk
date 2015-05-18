@@ -13,14 +13,14 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=2013/1/21
+Date                   :=18/05/2015
 CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=g++
-SharedObjectLinkerName :=g++ -shared -fPIC
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
-DebugSwitch            :=-gstab
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -31,10 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
-ObjectsFileList        :="E:\data\example\LockFreeQueue\LockFreeQueue.txt"
+PreprocessOnlySwitch   :=-E
+ObjectsFileList        :="LockFreeQueue.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
+RcCmpOptions           := 
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -45,21 +47,26 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := g++
-CC       := gcc
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe
+CC       := D:/MinGW-4.8.1/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := D:/MinGW-4.8.1/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
 CodeLiteDir:=d:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects=$(IntermediateDirectory)/main$(ObjectSuffix) $(IntermediateDirectory)/test_blocking_q$(ObjectSuffix) $(IntermediateDirectory)/test_lock_free_q$(ObjectSuffix) $(IntermediateDirectory)/test_lock_free_single_producer_q$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/test_blocking_q.cpp$(ObjectSuffix) $(IntermediateDirectory)/test_lock_free_q.cpp$(ObjectSuffix) $(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(ObjectSuffix) 
+
+
+
+Objects=$(Objects0) 
 
 ##
 ## Main Build Targets 
@@ -70,7 +77,7 @@ all: $(OutputFile)
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
 	@$(MakeDirCommand) $(@D)
 	@echo "" > $(IntermediateDirectory)/.d
-	@echo $(Objects) > $(ObjectsFileList)
+	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 $(IntermediateDirectory)/.d:
@@ -82,37 +89,37 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "E:/data/example/LockFreeQueue/main.cpp"
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "E:/data/example/LockFreeQueue/main.cpp"
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
-$(IntermediateDirectory)/test_blocking_q$(ObjectSuffix): test_blocking_q.cpp $(IntermediateDirectory)/test_blocking_q$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/test_blocking_q.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test_blocking_q$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/test_blocking_q$(DependSuffix): test_blocking_q.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test_blocking_q$(ObjectSuffix) -MF$(IntermediateDirectory)/test_blocking_q$(DependSuffix) -MM "E:/data/example/LockFreeQueue/test_blocking_q.cpp"
+$(IntermediateDirectory)/test_blocking_q.cpp$(ObjectSuffix): test_blocking_q.cpp $(IntermediateDirectory)/test_blocking_q.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/test_blocking_q.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test_blocking_q.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/test_blocking_q.cpp$(DependSuffix): test_blocking_q.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test_blocking_q.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/test_blocking_q.cpp$(DependSuffix) -MM "test_blocking_q.cpp"
 
-$(IntermediateDirectory)/test_blocking_q$(PreprocessSuffix): test_blocking_q.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test_blocking_q$(PreprocessSuffix) "E:/data/example/LockFreeQueue/test_blocking_q.cpp"
+$(IntermediateDirectory)/test_blocking_q.cpp$(PreprocessSuffix): test_blocking_q.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test_blocking_q.cpp$(PreprocessSuffix) "test_blocking_q.cpp"
 
-$(IntermediateDirectory)/test_lock_free_q$(ObjectSuffix): test_lock_free_q.cpp $(IntermediateDirectory)/test_lock_free_q$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/test_lock_free_q.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test_lock_free_q$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/test_lock_free_q$(DependSuffix): test_lock_free_q.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test_lock_free_q$(ObjectSuffix) -MF$(IntermediateDirectory)/test_lock_free_q$(DependSuffix) -MM "E:/data/example/LockFreeQueue/test_lock_free_q.cpp"
+$(IntermediateDirectory)/test_lock_free_q.cpp$(ObjectSuffix): test_lock_free_q.cpp $(IntermediateDirectory)/test_lock_free_q.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/test_lock_free_q.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test_lock_free_q.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/test_lock_free_q.cpp$(DependSuffix): test_lock_free_q.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test_lock_free_q.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/test_lock_free_q.cpp$(DependSuffix) -MM "test_lock_free_q.cpp"
 
-$(IntermediateDirectory)/test_lock_free_q$(PreprocessSuffix): test_lock_free_q.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test_lock_free_q$(PreprocessSuffix) "E:/data/example/LockFreeQueue/test_lock_free_q.cpp"
+$(IntermediateDirectory)/test_lock_free_q.cpp$(PreprocessSuffix): test_lock_free_q.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test_lock_free_q.cpp$(PreprocessSuffix) "test_lock_free_q.cpp"
 
-$(IntermediateDirectory)/test_lock_free_single_producer_q$(ObjectSuffix): test_lock_free_single_producer_q.cpp $(IntermediateDirectory)/test_lock_free_single_producer_q$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/test_lock_free_single_producer_q.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test_lock_free_single_producer_q$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/test_lock_free_single_producer_q$(DependSuffix): test_lock_free_single_producer_q.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test_lock_free_single_producer_q$(ObjectSuffix) -MF$(IntermediateDirectory)/test_lock_free_single_producer_q$(DependSuffix) -MM "E:/data/example/LockFreeQueue/test_lock_free_single_producer_q.cpp"
+$(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(ObjectSuffix): test_lock_free_single_producer_q.cpp $(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/LockFreeQueue/test_lock_free_single_producer_q.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(DependSuffix): test_lock_free_single_producer_q.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(DependSuffix) -MM "test_lock_free_single_producer_q.cpp"
 
-$(IntermediateDirectory)/test_lock_free_single_producer_q$(PreprocessSuffix): test_lock_free_single_producer_q.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test_lock_free_single_producer_q$(PreprocessSuffix) "E:/data/example/LockFreeQueue/test_lock_free_single_producer_q.cpp"
+$(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(PreprocessSuffix): test_lock_free_single_producer_q.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/test_lock_free_single_producer_q.cpp$(PreprocessSuffix) "test_lock_free_single_producer_q.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -120,20 +127,6 @@ $(IntermediateDirectory)/test_lock_free_single_producer_q$(PreprocessSuffix): te
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/test_blocking_q$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/test_blocking_q$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/test_blocking_q$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/test_lock_free_q$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/test_lock_free_q$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/test_lock_free_q$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/test_lock_free_single_producer_q$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/test_lock_free_single_producer_q$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/test_lock_free_single_producer_q$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "E:\data\example\.build-debug\LockFreeQueue"
+	$(RM) -r ./Debug/
 
 

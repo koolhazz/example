@@ -21,11 +21,15 @@ ___builtin_apply(int a, int b)
 	__builtin_return(result);
 }
 
+#define LIKELY(x)   __builtin_expect(!!(x), 1) /*  !! 两个感叹号作用就是将x转换成bool类型*/
+#define UNLIKELY(x) __builtin_expect(!!(x), 0)
+
 
 int main(int argc, char **argv)
 {
 	printf("R: %d\n", ___builtin_apply(10, 20));
 	
+    printf("BOOL: %d\n", !!(10));
 	system("pause");
 	
 	return 0;

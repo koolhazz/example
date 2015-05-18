@@ -28,7 +28,7 @@ int main(int argc, char **argv)
 	pt(a);
 	pt(ppp);
 	pt('a');
-	
+
 	system("pause");
 	
 	return 0;

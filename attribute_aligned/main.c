@@ -47,7 +47,7 @@ struct A{
   char f;               //1B
 };
 
-struct B{
+struct B {
 	char 				a;
 	int 				b;
 	unsigned short 		c;
@@ -56,7 +56,7 @@ struct B{
 	char 				f;
 } __attribute__((aligned));
 
-struct C{
+struct C {
 	char 					a;
 	int 					b;
 	unsigned short 			c;
@@ -93,6 +93,15 @@ struct F {
   char f;
 } __attribute__((packed));
 
+struct G {
+  char                  a;
+  int                   b;
+  unsigned short        c;
+  long                  d;
+  unsigned long long    e;
+  char                  f;
+} __attribute((aligned(1), packed)); /* 同 #pragma pack(push, 1) */
+
 typedef struct aligned aligned_t; /* struct aligned 定义了aligned属性，这里不需要定义 */
 
 typedef struct T {
@@ -122,10 +131,10 @@ int
 main(int argc, char **argv) {
 	printf("sizeof(struct A) = %zu, sizeof(struct B) = %zu, sizeof(struct C) = %zu, sizeof(struct D) = %zu, sizeof(struct E) = %zu, sizeof(struct F) = %zu \
 	sizeof(struct aligned) = %zu sizeof(struct aligned_2) = %zu sizeof(struct packed_1) = %zu sizeof(struct A_1) = %zu sizeof(struct aligned_3) = %zu sizeof(aligned_t) = %zu \
-	sizeof(aligned_2_t) = %zu sizeof(aligned_3_t) = %zu sizeof(aligned_4_t) = %zu\n", 
+	sizeof(aligned_2_t) = %zu sizeof(aligned_3_t) = %zu sizeof(aligned_4_t) = %zu sizeof(struct G) = %zu sizeof x: %zu sizeof y: %zu sizeof z: %zu\n", 
 	sizeof(struct A), sizeof(struct B), sizeof(struct C), sizeof(struct D), sizeof(struct E), sizeof(struct F), 
 	sizeof(struct aligned), sizeof(struct aligned_2), sizeof(struct packed_1), sizeof(struct A_1), sizeof(struct aligned_3), sizeof(aligned_t), 
-	sizeof(aligned_2_t), sizeof(aligned_3_t), sizeof(aligned_3_t));
+	sizeof(aligned_2_t), sizeof(aligned_3_t), sizeof(aligned_4_t), sizeof(struct G), sizeof x, sizeof y, sizeof z);
 
 	system("pause");
 	

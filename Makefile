@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ map_compare - Debug ]----------"
-	@cd "map_compare" && $(MAKE) -f  "map_compare.mk"
+	@echo "----------Building project:[ pointer_derefence - Debug ]----------"
+	@cd "pointer_derefence" && $(MAKE) -f  "pointer_derefence.mk"
 clean:
-	@echo "----------Cleaning project:[ map_compare - Debug ]----------"
-	@cd "map_compare" && $(MAKE) -f  "map_compare.mk" clean
+	@echo "----------Cleaning project:[ pointer_derefence - Debug ]----------"
+	@cd "pointer_derefence" && $(MAKE) -f  "pointer_derefence.mk" clean

@@ -13,13 +13,13 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=2013/4/23
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=gcc
-SharedObjectLinkerName :=gcc -shared -fPIC
+Date                   :=18/05/2015
+CodeLitePath           :="d:\Program Files\CodeLite"
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
+PreprocessSuffix       :=.i
 DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
@@ -31,12 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="attribute_weak.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=windres
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -47,21 +47,22 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := gcc
-CC       := gcc
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe
+CC       := D:/MinGW-4.8.1/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall -std=c99 $(Preprocessors)
+ASFLAGS  := 
+AS       := D:/MinGW-4.8.1/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/weak$(ObjectSuffix) $(IntermediateDirectory)/main$(ObjectSuffix) $(IntermediateDirectory)/strong$(ObjectSuffix) 
+CodeLiteDir:=d:\Program Files\CodeLite
+Objects0=$(IntermediateDirectory)/weak.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/strong.c$(ObjectSuffix) 
 
 
 
@@ -88,29 +89,29 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/weak$(ObjectSuffix): weak.c $(IntermediateDirectory)/weak$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/attribute_weak/weak.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/weak$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/weak$(DependSuffix): weak.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/weak$(ObjectSuffix) -MF$(IntermediateDirectory)/weak$(DependSuffix) -MM "weak.c"
+$(IntermediateDirectory)/weak.c$(ObjectSuffix): weak.c $(IntermediateDirectory)/weak.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/attribute_weak/weak.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/weak.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/weak.c$(DependSuffix): weak.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/weak.c$(ObjectSuffix) -MF$(IntermediateDirectory)/weak.c$(DependSuffix) -MM "weak.c"
 
-$(IntermediateDirectory)/weak$(PreprocessSuffix): weak.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/weak$(PreprocessSuffix) "weak.c"
+$(IntermediateDirectory)/weak.c$(PreprocessSuffix): weak.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/weak.c$(PreprocessSuffix) "weak.c"
 
-$(IntermediateDirectory)/main$(ObjectSuffix): main.c $(IntermediateDirectory)/main$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/attribute_weak/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.c"
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/attribute_weak/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "main.c"
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
 
-$(IntermediateDirectory)/strong$(ObjectSuffix): strong.c $(IntermediateDirectory)/strong$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/attribute_weak/strong.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/strong$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/strong$(DependSuffix): strong.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/strong$(ObjectSuffix) -MF$(IntermediateDirectory)/strong$(DependSuffix) -MM "strong.c"
+$(IntermediateDirectory)/strong.c$(ObjectSuffix): strong.c $(IntermediateDirectory)/strong.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/attribute_weak/strong.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/strong.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/strong.c$(DependSuffix): strong.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/strong.c$(ObjectSuffix) -MF$(IntermediateDirectory)/strong.c$(DependSuffix) -MM "strong.c"
 
-$(IntermediateDirectory)/strong$(PreprocessSuffix): strong.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/strong$(PreprocessSuffix) "strong.c"
+$(IntermediateDirectory)/strong.c$(PreprocessSuffix): strong.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/strong.c$(PreprocessSuffix) "strong.c"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -118,17 +119,6 @@ $(IntermediateDirectory)/strong$(PreprocessSuffix): strong.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/weak$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/weak$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/weak$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/strong$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/strong$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/strong$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/attribute_weak"
+	$(RM) -r ./Debug/
 
 

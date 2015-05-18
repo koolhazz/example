@@ -152,4 +152,6 @@
     <File Name="YFastTrie.cpp"/>
     <File Name="YFastTrie.h"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

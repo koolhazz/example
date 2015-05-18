@@ -13,18 +13,25 @@ public:
 };
 
 typedef void (*F)(void);
+typedef F** farray_t;
 
 static void
 vtable_test_2()
 {
-	Base b;
-	
+	Base        b;
+	farray_t    ft;
+    
 	int** pvt = (int**)&b; // vtable address是一个二维数组，数组元素是函数指针
-	
+	ft = (farray_t)&b;
+    
 	printf("vtable address: %p\n", pvt);
 	printf("function: %p\n", *(pvt + 0) + 0);
 	printf("function: %p\n", *(pvt + 0) + 1);
 	printf("function: %p\n", *(pvt + 0) + 2);
+    
+    printf("function: %p\n", *(ft + 0) + 0);
+	printf("function: %p\n", *(ft + 0) + 1);
+	printf("function: %p\n", *(ft + 0) + 2);
 	
 	F f = (F)(*(*(pvt + 0) + 0)); // pvt[0][0]
 	f();

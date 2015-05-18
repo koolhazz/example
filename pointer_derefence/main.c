@@ -26,7 +26,14 @@ int main(int argc, char **argv)
 		printf("pp.p is full.\n");
 	}	
 	
-	
+	int **ppp;
+    int temp[10][10] = {0};
+    
+    ppp = (int**)&temp;
+    
+    
+    printf("%p\n", *(int*)*((int*)ppp));
+    
 	system("pause");
 	return 0;
 }

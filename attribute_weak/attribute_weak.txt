@@ -1,1 +1,1 @@
-./Debug/weak.o ./Debug/main.o ./Debug/strong.o
+./Debug/weak.c.o ./Debug/main.c.o ./Debug/strong.c.o   
