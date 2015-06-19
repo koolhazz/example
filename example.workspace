@@ -206,7 +206,7 @@
   <Project Name="timer_list_cpp" Path="timer_list_cpp/timer_list_cpp.project" Active="No"/>
   <Project Name="Tree" Path="Tree/Tree.project" Active="No"/>
   <Project Name="typedef" Path="typedef/typedef.project" Active="No"/>
-  <Project Name="typeid" Path="typeid/typeid.project" Active="No"/>
+  <Project Name="typeid" Path="typeid/typeid.project" Active="Yes"/>
   <Project Name="typeof" Path="typeof/typeof.project" Active="No"/>
   <Project Name="union" Path="union/union.project" Active="No"/>
   <Project Name="url_code" Path="url_code/url_code.project" Active="No"/>
@@ -238,7 +238,7 @@
   <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
-  <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="Yes"/>
+  <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
   <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
@@ -248,6 +248,17 @@
   <Project Name="is_number" Path="is_number/is_number.project" Active="No"/>
   <Project Name="const_array" Path="const_array/const_array.project"/>
   <Project Name="map_compare" Path="map_compare/map_compare.project" Active="No"/>
+  <Environment>
+    <![CDATA[]]>
+  </Environment>
+  <Project Name="array_address" Path="array_address/array_address.project" Active="No"/>
+  <Project Name="operator_string" Path="operator_string/operator_string.project" Active="No"/>
+  <Project Name="exception_2" Path="exception_2/exception_2.project" Active="No"/>
+  <Project Name="exception_3" Path="exception_3/exception_3.project" Active="No"/>
+  <Project Name="c11_example" Path="c11_example/c11_example.project"/>
+  <Project Name="struct_union" Path="struct_union/struct_union.project"/>
+  <Project Name="printf_template" Path="printf_template/printf_template.project" Active="No"/>
+  <Project Name="bit_op" Path="bit_op/bit_op.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -503,6 +514,14 @@
       <Project Name="is_number" ConfigName="Debug"/>
       <Project Name="const_array" ConfigName="Debug"/>
       <Project Name="map_compare" ConfigName="Debug"/>
+      <Project Name="array_address" ConfigName="Debug"/>
+      <Project Name="operator_string" ConfigName="Debug"/>
+      <Project Name="exception_2" ConfigName="Debug"/>
+      <Project Name="exception_3" ConfigName="Debug"/>
+      <Project Name="c11_example" ConfigName="Debug"/>
+      <Project Name="struct_union" ConfigName="Debug"/>
+      <Project Name="printf_template" ConfigName="Debug"/>
+      <Project Name="bit_op" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -758,9 +777,14 @@
       <Project Name="is_number" ConfigName="Release"/>
       <Project Name="const_array" ConfigName="Release"/>
       <Project Name="map_compare" ConfigName="Release"/>
+      <Project Name="array_address" ConfigName="Release"/>
+      <Project Name="operator_string" ConfigName="Release"/>
+      <Project Name="exception_2" ConfigName="Release"/>
+      <Project Name="exception_3" ConfigName="Release"/>
+      <Project Name="c11_example" ConfigName="Release"/>
+      <Project Name="struct_union" ConfigName="Release"/>
+      <Project Name="printf_template" ConfigName="Release"/>
+      <Project Name="bit_op" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Environment>
-    <![CDATA[]]>
-  </Environment>
 </CodeLite_Workspace>

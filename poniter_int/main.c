@@ -9,11 +9,15 @@ int main(int argc, char **argv)
 	int *p = &i;
 	
 	uintptr_t j = p;
+    i = p;
+    
+    void* data = (void*)i;
 	
-	printf("I: %d\n", i);
+	printf("I: %x\n", i);
 	printf("J: %x\n", j);
 	
-	printf("P: %x\n", p);
+	printf("P: %08x\n", p);
+    printf("data: %p\n", data);
 	
 	system("pause");
 }

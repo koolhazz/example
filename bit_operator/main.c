@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <limits.h>
 
 /* 对2的幂进行取余 */
 #define mod_power_2(x, y) (x) & ((y) - 1)
@@ -165,6 +166,8 @@
     do{ x=(-(x==c)&(a-c))+(-(x==a)&(b-c))+c; }while(0)  
 #endif  
 
+#define s2u32(x)    x ^ 0x80000000
+#define s2u32_2(x)  x & 0x7FFFFFFF
 
 static void
 __fast_upper(char* str, size_t len)
@@ -226,6 +229,21 @@ init_map()
 	}
 }
 
+static inline void
+prt_var_bin(const int x)
+{
+    for (int i = 31; i >= 0; i--) {
+        if (x & (1 << i)) {
+            printf("1");
+        } else {
+            printf("0");
+        }
+    }
+    
+    printf("\n");
+}
+
+
 int main(int argc, char **argv)
 {
 	
@@ -240,6 +258,13 @@ int main(int argc, char **argv)
 	int i = -1;
 	
 	printf("abs: %d\n", _abs(i));
+    
+    int x = -1;
+    prt_var_bin(x);
+    printf("INT_MAX: %d\n", INT_MAX);
+    prt_var_bin(s2u32(x));
+    printf("x: %u\n", s2u32(x));
+    printf("x: %u\n", s2u32_2(x));
 	
 	system("pause");
 	return 0;

@@ -11,12 +11,12 @@ struct packed_1 {
 
 
 struct A_1 {
-  char a;				//1Byte
-  int b;				//4B
-  unsigned short c;		//2B
-  long d;				//4B
-  unsigned long long e; //8B
-  char f;               //1B
+  char                  a;		//1B
+  int                   b;		//4B
+  unsigned short        c;		//2B
+  long                  d;		//4B
+  unsigned long long    e;      //8B
+  char                  f;      //1B
 };
 
 #pragma pack(pop)
@@ -94,13 +94,13 @@ struct F {
 } __attribute__((packed));
 
 struct G {
-  char                  a;
-  int                   b;
-  unsigned short        c;
-  long                  d;
-  unsigned long long    e;
-  char                  f;
-} __attribute((aligned(1), packed)); /* 同 #pragma pack(push, 1) */
+  char                  a; // 1
+  int                   b; // 4
+  unsigned short        c; // 2
+  long                  d; // 4
+  unsigned long long    e; // 8
+  char                  f; // 1
+} __attribute__((aligned(1), packed)); /* 同 #pragma pack(push, 1) */
 
 typedef struct aligned aligned_t; /* struct aligned 定义了aligned属性，这里不需要定义 */
 

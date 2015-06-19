@@ -87,9 +87,13 @@ static char  FILE_NAME[] = GET_FILE_NAME(__FILE__);
 	extern "C" {
 #endif
 
-//#ifndef __X86_64__
-//# error __X86_64__
-//#endif
+#ifndef __i386__
+    #error __i386__
+#endif
+
+#ifndef __X86_64__
+    #error __X86_64__
+#endif
 
 void show(int i)
 {

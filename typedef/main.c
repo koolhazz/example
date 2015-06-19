@@ -2,15 +2,22 @@
 #include <stdlib.h>
 
 typedef int* int_a_t[10];
+typedef int* (*int_a_p_t)[10];
 
 static int
 array_create(int_a_t** a)
 {
-	int_a_t* p;
-	
-	p = *a;
-	
-	p = malloc(sizeof(int_a_t));
+	int_a_t *p;
+    
+    p = *a;
+    printf("A: %p\n", p);
+    printf("A: %p\n", *a);
+    
+    *a = malloc(sizeof(int_a_t)); /* 这里不能用临时变量赋值，必须使用 *a 的方式，否者不能正确赋值 */
+
+    printf("A: %p\n", p);
+    printf("A: %p\n", *a);
+
 	
 	return *a == NULL ? 1 : 0;
 }
@@ -32,9 +39,12 @@ main(int argc, char **argv)
 	if (array_create(&pp)) {
 		printf("create failed.\n");
 	} else {
-		printf("create success.\n");
+        pp ? printf("NOT NULL.\n") : printf("NULL.\n");
+        printf("create success.\n");
 	}
 	
+    
+    
 	
 	int** ii = *pp;
 	

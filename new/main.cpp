@@ -50,7 +50,19 @@ int main(int argc, char **argv)
 	
 	delete[] a;
 	
-	int i;
+	
+    
+    char* buff = (char*)operator new(100);
+    A *paa = new (buff)A;
+    
+    paa->Show();
+    paa->~A();
+    ::operator delete(paa, buff);
+    delete[] buff;
+    
+    
+    
+    int i;
 	
 	cin >> i;
 }

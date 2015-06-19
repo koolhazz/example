@@ -7,7 +7,7 @@
 #if __BYTE_ORDER == __LITTLE_ENDIAN
 	#pragma message("__LITTLE_ENDIAN")
 #elif  __BYTE_ORDER == __BIG_ENDIAN 
-	#pragma message("__BIG_ENDIAN")
+	#pragma message("__BIG_ENDIANtemp")
 #endif
 typedef union {
 	char a;

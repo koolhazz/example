@@ -13,10 +13,10 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=07/15/14
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=D:\MinGW-4.8.1\bin\g++.exe 
-SharedObjectLinkerName :=D:\MinGW-4.8.1\bin\g++.exe -shared -fPIC
+Date                   :=18/06/2015
+CodeLitePath           :="d:\Program Files\CodeLite"
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -36,7 +36,7 @@ ObjectsFileList        :="typeof.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=D:\MinGW-4.8.1\bin\windres.exe 
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,20 +49,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:\MinGW-4.8.1\bin\ar.exe rcu
-CXX      := D:\MinGW-4.8.1\bin\g++.exe 
-CC       := D:\MinGW-4.8.1\bin\gcc.exe 
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe
+CC       := D:/MinGW-4.8.1/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall -std=gnu99 $(Preprocessors)
 ASFLAGS  := 
-AS       := D:\MinGW-4.8.1\bin\as.exe 
+AS       := D:/MinGW-4.8.1/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
+CodeLiteDir:=d:\Program Files\CodeLite
 Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
 
@@ -104,11 +103,6 @@ $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/typeof"
+	$(RM) -r ./Debug/
 
 

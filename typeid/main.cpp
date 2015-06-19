@@ -6,7 +6,7 @@
 using namespace std;
 
 #define t(v) typeid(v).name()
-#define pt(v) printf("type of "#v": %s\n", t(v))
+#define pt(v) printf("type of "#v": %s addr: 0x%p\n", t(v), v);
 
 int main(int argc, char **argv)
 {
@@ -14,6 +14,8 @@ int main(int argc, char **argv)
 	int* p;
 	
 	int a[2][3];
+    int b[1][2][3];
+    int* c[10];
 	
 	int*** ppp;
 	
@@ -28,6 +30,26 @@ int main(int argc, char **argv)
 	pt(a);
 	pt(ppp);
 	pt('a');
+    pt(a[0]);
+    pt(&a[0]);
+    pt(&b);
+    pt(&b[0]);
+    pt(b);
+    pt(b + 0);
+    pt(b + 1);
+    pt(*(b + 0));
+    pt(*(b + 0) + 0);
+    pt(*(*(b + 0) + 0));
+    pt(*(*(b + 0) + 0) + 0);
+    pt(*(*(*(b + 0) + 0) + 0));
+    pt(**b);
+    pt(***b);
+    pt(&b[0]);
+    pt(&b[0][0]);
+    pt(&c);
+    pt(&c[0]);
+    pt(c + 0);
+    pt(c);
 
 	system("pause");
 	
