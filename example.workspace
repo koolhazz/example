@@ -206,7 +206,7 @@
   <Project Name="timer_list_cpp" Path="timer_list_cpp/timer_list_cpp.project" Active="No"/>
   <Project Name="Tree" Path="Tree/Tree.project" Active="No"/>
   <Project Name="typedef" Path="typedef/typedef.project" Active="No"/>
-  <Project Name="typeid" Path="typeid/typeid.project" Active="Yes"/>
+  <Project Name="typeid" Path="typeid/typeid.project" Active="No"/>
   <Project Name="typeof" Path="typeof/typeof.project" Active="No"/>
   <Project Name="union" Path="union/union.project" Active="No"/>
   <Project Name="url_code" Path="url_code/url_code.project" Active="No"/>
@@ -259,6 +259,7 @@
   <Project Name="struct_union" Path="struct_union/struct_union.project"/>
   <Project Name="printf_template" Path="printf_template/printf_template.project" Active="No"/>
   <Project Name="bit_op" Path="bit_op/bit_op.project" Active="No"/>
+  <Project Name="struct_malloc" Path="struct_malloc/struct_malloc.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -522,6 +523,7 @@
       <Project Name="struct_union" ConfigName="Debug"/>
       <Project Name="printf_template" ConfigName="Debug"/>
       <Project Name="bit_op" ConfigName="Debug"/>
+      <Project Name="struct_malloc" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -785,6 +787,7 @@
       <Project Name="struct_union" ConfigName="Release"/>
       <Project Name="printf_template" ConfigName="Release"/>
       <Project Name="bit_op" ConfigName="Release"/>
+      <Project Name="struct_malloc" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

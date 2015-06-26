@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ typeid - Debug ]----------"
-	@cd "typeid" && $(MAKE) -f  "typeid.mk"
+	@echo "----------Building project:[ struct_malloc - Debug ]----------"
+	@cd "struct_malloc" && $(MAKE) -f  "struct_malloc.mk"
 clean:
-	@echo "----------Cleaning project:[ typeid - Debug ]----------"
-	@cd "typeid" && $(MAKE) -f  "typeid.mk" clean
+	@echo "----------Cleaning project:[ struct_malloc - Debug ]----------"
+	@cd "struct_malloc" && $(MAKE) -f  "struct_malloc.mk" clean
