@@ -13,13 +13,13 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=2013/1/21
+Date                   :=01/07/2015
 CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=gcc
-SharedObjectLinkerName :=gcc -shared -fPIC
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
+PreprocessSuffix       :=.i
 DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
@@ -31,10 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
-ObjectsFileList        :="E:\data\example\binary_heap\binary_heap.txt"
+PreprocessOnlySwitch   :=-E
+ObjectsFileList        :="binary_heap.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
+RcCmpOptions           := 
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -45,21 +47,26 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := gcc
-CC       := gcc
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe
+CC       := D:/MinGW-4.8.1/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := D:/MinGW-4.8.1/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
 CodeLiteDir:=d:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects=$(IntermediateDirectory)/main$(ObjectSuffix) $(IntermediateDirectory)/binheap$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/binheap.c$(ObjectSuffix) 
+
+
+
+Objects=$(Objects0) 
 
 ##
 ## Main Build Targets 
@@ -70,7 +77,7 @@ all: $(OutputFile)
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
 	@$(MakeDirCommand) $(@D)
 	@echo "" > $(IntermediateDirectory)/.d
-	@echo $(Objects) > $(ObjectsFileList)
+	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 $(IntermediateDirectory)/.d:
@@ -82,21 +89,21 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.c $(IntermediateDirectory)/main$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/binary_heap/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "E:/data/example/binary_heap/main.c"
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/binary_heap/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "E:/data/example/binary_heap/main.c"
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
 
-$(IntermediateDirectory)/binheap$(ObjectSuffix): binheap.c $(IntermediateDirectory)/binheap$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/binary_heap/binheap.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/binheap$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/binheap$(DependSuffix): binheap.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/binheap$(ObjectSuffix) -MF$(IntermediateDirectory)/binheap$(DependSuffix) -MM "E:/data/example/binary_heap/binheap.c"
+$(IntermediateDirectory)/binheap.c$(ObjectSuffix): binheap.c $(IntermediateDirectory)/binheap.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/binary_heap/binheap.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/binheap.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/binheap.c$(DependSuffix): binheap.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/binheap.c$(ObjectSuffix) -MF$(IntermediateDirectory)/binheap.c$(DependSuffix) -MM "binheap.c"
 
-$(IntermediateDirectory)/binheap$(PreprocessSuffix): binheap.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/binheap$(PreprocessSuffix) "E:/data/example/binary_heap/binheap.c"
+$(IntermediateDirectory)/binheap.c$(PreprocessSuffix): binheap.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/binheap.c$(PreprocessSuffix) "binheap.c"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -104,14 +111,6 @@ $(IntermediateDirectory)/binheap$(PreprocessSuffix): binheap.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/binheap$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/binheap$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/binheap$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "E:\data\example\.build-debug\binary_heap"
+	$(RM) -r ./Debug/
 
 

@@ -13,14 +13,14 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=2013/10/15
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=g++
-SharedObjectLinkerName :=g++ -shared -fPIC
+Date                   :=01/07/2015
+CodeLitePath           :="d:\Program Files\CodeLite"
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
-DebugSwitch            :=-gstab
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -31,12 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="RBTree_3.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=windres
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -47,21 +47,22 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := g++
-CC       := gcc
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe
+CC       := D:/MinGW-4.8.1/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := D:/MinGW-4.8.1/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/rbtest2$(ObjectSuffix) $(IntermediateDirectory)/rbtree$(ObjectSuffix) $(IntermediateDirectory)/rbtree_rc$(ObjectSuffix) 
+CodeLiteDir:=d:\Program Files\CodeLite
+Objects0=$(IntermediateDirectory)/rbtest2.c$(ObjectSuffix) $(IntermediateDirectory)/rbtree.c$(ObjectSuffix) $(IntermediateDirectory)/rbtree_rc.c$(ObjectSuffix) 
 
 
 
@@ -88,29 +89,29 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/rbtest2$(ObjectSuffix): rbtest2.c $(IntermediateDirectory)/rbtest2$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/RBTree_3/rbtest2.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtest2$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/rbtest2$(DependSuffix): rbtest2.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtest2$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtest2$(DependSuffix) -MM "rbtest2.c"
+$(IntermediateDirectory)/rbtest2.c$(ObjectSuffix): rbtest2.c $(IntermediateDirectory)/rbtest2.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/RBTree_3/rbtest2.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtest2.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/rbtest2.c$(DependSuffix): rbtest2.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtest2.c$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtest2.c$(DependSuffix) -MM "rbtest2.c"
 
-$(IntermediateDirectory)/rbtest2$(PreprocessSuffix): rbtest2.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtest2$(PreprocessSuffix) "rbtest2.c"
+$(IntermediateDirectory)/rbtest2.c$(PreprocessSuffix): rbtest2.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtest2.c$(PreprocessSuffix) "rbtest2.c"
 
-$(IntermediateDirectory)/rbtree$(ObjectSuffix): rbtree.c $(IntermediateDirectory)/rbtree$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/RBTree_3/rbtree.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtree$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/rbtree$(DependSuffix): rbtree.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtree$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtree$(DependSuffix) -MM "rbtree.c"
+$(IntermediateDirectory)/rbtree.c$(ObjectSuffix): rbtree.c $(IntermediateDirectory)/rbtree.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/RBTree_3/rbtree.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtree.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/rbtree.c$(DependSuffix): rbtree.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtree.c$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtree.c$(DependSuffix) -MM "rbtree.c"
 
-$(IntermediateDirectory)/rbtree$(PreprocessSuffix): rbtree.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtree$(PreprocessSuffix) "rbtree.c"
+$(IntermediateDirectory)/rbtree.c$(PreprocessSuffix): rbtree.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtree.c$(PreprocessSuffix) "rbtree.c"
 
-$(IntermediateDirectory)/rbtree_rc$(ObjectSuffix): rbtree_rc.c $(IntermediateDirectory)/rbtree_rc$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/RBTree_3/rbtree_rc.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtree_rc$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/rbtree_rc$(DependSuffix): rbtree_rc.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtree_rc$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtree_rc$(DependSuffix) -MM "rbtree_rc.c"
+$(IntermediateDirectory)/rbtree_rc.c$(ObjectSuffix): rbtree_rc.c $(IntermediateDirectory)/rbtree_rc.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "E:/data/example/RBTree_3/rbtree_rc.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtree_rc.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/rbtree_rc.c$(DependSuffix): rbtree_rc.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtree_rc.c$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtree_rc.c$(DependSuffix) -MM "rbtree_rc.c"
 
-$(IntermediateDirectory)/rbtree_rc$(PreprocessSuffix): rbtree_rc.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtree_rc$(PreprocessSuffix) "rbtree_rc.c"
+$(IntermediateDirectory)/rbtree_rc.c$(PreprocessSuffix): rbtree_rc.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtree_rc.c$(PreprocessSuffix) "rbtree_rc.c"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -118,17 +119,6 @@ $(IntermediateDirectory)/rbtree_rc$(PreprocessSuffix): rbtree_rc.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/rbtest2$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/rbtest2$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/rbtest2$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree_rc$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree_rc$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree_rc$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/RBTree_3"
+	$(RM) -r ./Debug/
 
 

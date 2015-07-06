@@ -13,14 +13,14 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=AustinChen
-Date                   :=2013/1/21
+Date                   :=01/07/2015
 CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=g++
-SharedObjectLinkerName :=g++ -shared -fPIC
+LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
+SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
-DebugSwitch            :=-gstab
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
@@ -31,10 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
-ObjectsFileList        :="E:\data\example\RBTree_4\RBTree_4.txt"
+PreprocessOnlySwitch   :=-E
+ObjectsFileList        :="RBTree_4.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
+RcCmpOptions           := 
+RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -45,21 +47,26 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := g++
-CC       := gcc
+AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
+CXX      := D:/MinGW-4.8.1/bin/g++.exe
+CC       := D:/MinGW-4.8.1/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := D:/MinGW-4.8.1/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
 CodeLiteDir:=d:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects=$(IntermediateDirectory)/RBTree$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/RBTree.cpp$(ObjectSuffix) 
+
+
+
+Objects=$(Objects0) 
 
 ##
 ## Main Build Targets 
@@ -70,7 +77,7 @@ all: $(OutputFile)
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
 	@$(MakeDirCommand) $(@D)
 	@echo "" > $(IntermediateDirectory)/.d
-	@echo $(Objects) > $(ObjectsFileList)
+	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 $(IntermediateDirectory)/.d:
@@ -82,13 +89,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/RBTree$(ObjectSuffix): RBTree.cpp $(IntermediateDirectory)/RBTree$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/RBTree_4/RBTree.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/RBTree$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/RBTree$(DependSuffix): RBTree.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/RBTree$(ObjectSuffix) -MF$(IntermediateDirectory)/RBTree$(DependSuffix) -MM "E:/data/example/RBTree_4/RBTree.cpp"
+$(IntermediateDirectory)/RBTree.cpp$(ObjectSuffix): RBTree.cpp $(IntermediateDirectory)/RBTree.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/RBTree_4/RBTree.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/RBTree.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/RBTree.cpp$(DependSuffix): RBTree.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/RBTree.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/RBTree.cpp$(DependSuffix) -MM "RBTree.cpp"
 
-$(IntermediateDirectory)/RBTree$(PreprocessSuffix): RBTree.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/RBTree$(PreprocessSuffix) "E:/data/example/RBTree_4/RBTree.cpp"
+$(IntermediateDirectory)/RBTree.cpp$(PreprocessSuffix): RBTree.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/RBTree.cpp$(PreprocessSuffix) "RBTree.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -96,11 +103,6 @@ $(IntermediateDirectory)/RBTree$(PreprocessSuffix): RBTree.cpp
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/RBTree$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/RBTree$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/RBTree$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "E:\data\example\.build-debug\RBTree_4"
+	$(RM) -r ./Debug/
 
 

@@ -13,6 +13,9 @@ main(int argc, char **argv)
 	printf("buff: %s\n", buff);
 	
 	printf("NUMBER: %010d\n", 123456);
+    printf("NUMBER: %*.*d\n", 10, 2, 123456);
+    printf("NUMBER: %0*.*f\n", 10, 2, 123456.123456);
+    printf("NUMBER: %.*f\n", 2, 123456.123456);
 	printf("NUMBER: %10d\n", 123456); // 最小输出宽度 10 小于的话就补0
 	printf("NUMBER: %10.4f\n", 123456.123456);
 	printf("NUBMER: %a\n", 123456);

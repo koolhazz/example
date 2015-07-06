@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ struct_malloc - Debug ]----------"
-	@cd "struct_malloc" && $(MAKE) -f  "struct_malloc.mk"
+	@echo "----------Building project:[ switch_down - Debug ]----------"
+	@cd "switch_down" && $(MAKE) -f  "switch_down.mk"
 clean:
-	@echo "----------Cleaning project:[ struct_malloc - Debug ]----------"
-	@cd "struct_malloc" && $(MAKE) -f  "struct_malloc.mk" clean
+	@echo "----------Cleaning project:[ switch_down - Debug ]----------"
+	@cd "switch_down" && $(MAKE) -f  "switch_down.mk" clean

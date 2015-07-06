@@ -259,7 +259,13 @@
   <Project Name="struct_union" Path="struct_union/struct_union.project"/>
   <Project Name="printf_template" Path="printf_template/printf_template.project" Active="No"/>
   <Project Name="bit_op" Path="bit_op/bit_op.project" Active="No"/>
-  <Project Name="struct_malloc" Path="struct_malloc/struct_malloc.project" Active="Yes"/>
+  <Project Name="struct_malloc" Path="struct_malloc/struct_malloc.project" Active="No"/>
+  <Project Name="getchar" Path="getchar/getchar.project" Active="No"/>
+  <Project Name="new_class_construct" Path="new_class_construct/new_class_construct.project" Active="No"/>
+  <Project Name="strcpy" Path="strcpy/strcpy.project" Active="No"/>
+  <Project Name="offset" Path="offset/offset.project" Active="No"/>
+  <Project Name="switch_goto" Path="switch_goto/switch_goto.project" Active="No"/>
+  <Project Name="switch_down" Path="switch_down/switch_down.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -524,6 +530,12 @@
       <Project Name="printf_template" ConfigName="Debug"/>
       <Project Name="bit_op" ConfigName="Debug"/>
       <Project Name="struct_malloc" ConfigName="Debug"/>
+      <Project Name="getchar" ConfigName="Debug"/>
+      <Project Name="new_class_construct" ConfigName="Debug"/>
+      <Project Name="strcpy" ConfigName="Debug"/>
+      <Project Name="offset" ConfigName="Debug"/>
+      <Project Name="switch_goto" ConfigName="Debug"/>
+      <Project Name="switch_down" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -788,6 +800,12 @@
       <Project Name="printf_template" ConfigName="Release"/>
       <Project Name="bit_op" ConfigName="Release"/>
       <Project Name="struct_malloc" ConfigName="Release"/>
+      <Project Name="getchar" ConfigName="Release"/>
+      <Project Name="new_class_construct" ConfigName="Release"/>
+      <Project Name="strcpy" ConfigName="Release"/>
+      <Project Name="offset" ConfigName="Release"/>
+      <Project Name="switch_goto" ConfigName="Release"/>
+      <Project Name="switch_down" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

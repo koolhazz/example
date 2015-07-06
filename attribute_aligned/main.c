@@ -82,7 +82,7 @@ struct E {
   long d;
   unsigned long long e;
   char f;
-}__attribute__((aligned(8)));
+} __attribute__((aligned(8)));
 
 struct F {
   char a;
