@@ -265,7 +265,8 @@
   <Project Name="strcpy" Path="strcpy/strcpy.project" Active="No"/>
   <Project Name="offset" Path="offset/offset.project" Active="No"/>
   <Project Name="switch_goto" Path="switch_goto/switch_goto.project" Active="No"/>
-  <Project Name="switch_down" Path="switch_down/switch_down.project" Active="Yes"/>
+  <Project Name="switch_down" Path="switch_down/switch_down.project" Active="No"/>
+  <Project Name="atoi" Path="atoi/atoi.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -536,6 +537,7 @@
       <Project Name="offset" ConfigName="Debug"/>
       <Project Name="switch_goto" ConfigName="Debug"/>
       <Project Name="switch_down" ConfigName="Debug"/>
+      <Project Name="atoi" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -806,6 +808,7 @@
       <Project Name="offset" ConfigName="Release"/>
       <Project Name="switch_goto" ConfigName="Release"/>
       <Project Name="switch_down" ConfigName="Release"/>
+      <Project Name="atoi" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

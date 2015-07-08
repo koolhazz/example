@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ switch_down - Debug ]----------"
-	@cd "switch_down" && $(MAKE) -f  "switch_down.mk"
+	@echo "----------Building project:[ atoi - Debug ]----------"
+	@cd "atoi" && $(MAKE) -f  "atoi.mk"
 clean:
-	@echo "----------Cleaning project:[ switch_down - Debug ]----------"
-	@cd "switch_down" && $(MAKE) -f  "switch_down.mk" clean
+	@echo "----------Cleaning project:[ atoi - Debug ]----------"
+	@cd "atoi" && $(MAKE) -f  "atoi.mk" clean
