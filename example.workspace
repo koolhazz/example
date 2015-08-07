@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="example" Database="">
+<CodeLite_Workspace Name="example" Database="" SWTLW="No">
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
@@ -266,7 +266,8 @@
   <Project Name="offset" Path="offset/offset.project" Active="No"/>
   <Project Name="switch_goto" Path="switch_goto/switch_goto.project" Active="No"/>
   <Project Name="switch_down" Path="switch_down/switch_down.project" Active="No"/>
-  <Project Name="atoi" Path="atoi/atoi.project" Active="Yes"/>
+  <Project Name="atoi" Path="atoi/atoi.project" Active="No"/>
+  <Project Name="list_rever" Path="list_rever/list_rever.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -538,6 +539,7 @@
       <Project Name="switch_goto" ConfigName="Debug"/>
       <Project Name="switch_down" ConfigName="Debug"/>
       <Project Name="atoi" ConfigName="Debug"/>
+      <Project Name="list_rever" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -809,6 +811,7 @@
       <Project Name="switch_goto" ConfigName="Release"/>
       <Project Name="switch_down" ConfigName="Release"/>
       <Project Name="atoi" ConfigName="Release"/>
+      <Project Name="list_rever" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

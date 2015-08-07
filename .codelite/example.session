@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="E:\data\example\example.workspace">
-  <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="E:\data\example\example.workspace" Name="m_workspaceName"/>
-  <TabInfoArray Name="TabInfoArray"/>
+<Session Name="/home/austin/code/example/example.workspace">
+  <int Value="3" Name="m_selectedTab"/>
+  <wxString Value="/home/austin/code/example/example.workspace" Name="m_workspaceName"/>
+  <TabInfoArray Name="TabInfoArray">
+    <TabInfo>
+      <wxString Value="/home/austin/code/example/aligned_malloc/main.c" Name="FileName"/>
+      <int Value="4" Name="FirstVisibleLine"/>
+      <int Value="5" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/austin/code/example/array_malloc/main.c" Name="FileName"/>
+      <int Value="58" Name="FirstVisibleLine"/>
+      <int Value="56" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/austin/code/example/array_new/main.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/home/austin/code/example/list_rever/main.c" Name="FileName"/>
+      <int Value="69" Name="FirstVisibleLine"/>
+      <int Value="73" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+  </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
     <long Value="1" Name="Count"/>
     <SerializedObject Name="Breakpoint0">
-      <wxString Value="E:\data\example\switch_goto\main.c" Name="file"/>
+      <wxString Value="/home/austin/code/example/E:\data\example\switch_goto\main.c" Name="file"/>
       <int Value="16" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
       <wxString Value="" Name="memory_address"/>

@@ -2,7 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-void * align_malloc(unsigned int size, unsigned int alignment)
+void* 
+align_malloc(unsigned int size, unsigned int alignment)
 {
     unsigned char * mem_ptr;
     unsigned char * tmp;
