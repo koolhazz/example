@@ -7,10 +7,12 @@ int main(int argc, char **argv)
 {
 	int i = 99;
 		
-	char a[100];	
+	char a[100];
+    long l;
 		
-	printf("sizeof: %d\n", SIZEOF(i));
-	printf("sizeof: %d\n", SIZEOF(a));
+	printf("sizeof: %lld\n", SIZEOF(i));
+	printf("sizeof: %lld\n", SIZEOF(a));
+    printf("sizeof: %lld\n", SIZEOF(l));
 	
 	system("pause");
 	

@@ -4,8 +4,12 @@
 int main(int argc, char **argv)
 {
 	char 	buf[512] = {0};
+    char    buf2[512] = {0};
+    char    buf3[512] = {0};
+    char    buf4[512] = {0};
 	int 	pos = 0;
 	int 	year = 0;
+    double  progress = 0;
 	
 	{
 		sscanf("123456 ", "%s", buf);
@@ -42,6 +46,16 @@ int main(int argc, char **argv)
 		printf("%s\n", buf);		
 	}
 	
+    {   
+        //sscanf("progress is : 22.97 %", "%s %s %s %f %s", buf, buf2, buf3, &progress, buf4); 这里progress 是float类型的变量
+        sscanf("progress is : 22.97 %", "%s %s %s %lf %s", buf, buf2, buf3, &progress, buf4);
+        printf("buf: %s\n", buf);
+        printf("buf2: %s\n", buf2);
+        printf("buf3: %s\n", buf3);
+         printf("buf4: %s\n", buf4);
+        printf("progress: %lf\n", progress);
+    }
+    
 	struct date_t {
 		char 	month;
 		char 	day;

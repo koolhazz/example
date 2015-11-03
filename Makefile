@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ list_rever - Debug ]----------"
-	@cd "list_rever" && $(MAKE) -f  "list_rever.mk"
+	@echo "----------Building project:[ sscanf - Debug ]----------"
+	@cd "sscanf" && "$(MAKE)" -f  "sscanf.mk"
 clean:
-	@echo "----------Cleaning project:[ list_rever - Debug ]----------"
-	@cd "list_rever" && $(MAKE) -f  "list_rever.mk" clean
+	@echo "----------Cleaning project:[ sscanf - Debug ]----------"
+	@cd "sscanf" && "$(MAKE)" -f  "sscanf.mk" clean

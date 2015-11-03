@@ -34,9 +34,10 @@ main(int argc, char **argv)
 	
 	
 	/* 2 * 10  其实就是三维数组 [2][10][1]*/
-	int* (*paa)[10] = (int* (*)[10])malloc(sizeof(int*) * 2 * 10);
+	//int* (*paa)[10] = (int* (*)[10])malloc(sizeof(int*) * 2 * 10);
 	//int* (*paa)[10] = (int* (*)[10])malloc(sizeof(int* (*)[10]) * 2 * 10);
 	//int* (*paa)[10] = (int* (*)[10])malloc(sizeof *paa * 2);
+    int* (*paa)[10] = (int* (*)[10])malloc(sizeof(int*[10]) * 2);
 	
 	for (unsigned int i = 0; i < 2; i++) {
 		for (unsigned int j = 0; j < 10;j++) {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="example" Database="" SWTLW="No">
+<CodeLite_Workspace Name="example" Database="">
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
@@ -176,7 +176,7 @@
   <Project Name="skiplist" Path="skiplist/skiplist.project" Active="No"/>
   <Project Name="smaz" Path="smaz/smaz.project" Active="No"/>
   <Project Name="sort" Path="sort/sort.project" Active="No"/>
-  <Project Name="sscanf" Path="sscanf/sscanf.project" Active="No"/>
+  <Project Name="sscanf" Path="sscanf/sscanf.project" Active="Yes"/>
   <Project Name="static_assert" Path="static_assert/static_assert.project" Active="No"/>
   <Project Name="std_unordered_map_sort" Path="std_unordered_map_sort/std_unordered_map_sort.project" Active="No"/>
   <Project Name="stl" Path="stl/stl.project" Active="No"/>
@@ -267,7 +267,12 @@
   <Project Name="switch_goto" Path="switch_goto/switch_goto.project" Active="No"/>
   <Project Name="switch_down" Path="switch_down/switch_down.project" Active="No"/>
   <Project Name="atoi" Path="atoi/atoi.project" Active="No"/>
-  <Project Name="list_rever" Path="list_rever/list_rever.project" Active="Yes"/>
+  <Project Name="Generic" Path="Generic/Generic.project" Active="No"/>
+  <Project Name="template_2" Path="template_2/template_2.project" Active="No"/>
+  <Project Name="class_size" Path="class_size/class_size.project" Active="No"/>
+  <Project Name="upper_bound" Path="upper_bound/upper_bound.project" Active="No"/>
+  <Project Name="progress" Path="progress/progress.project" Active="No"/>
+  <Project Name="strtod" Path="strtod/strtod.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -540,6 +545,12 @@
       <Project Name="switch_down" ConfigName="Debug"/>
       <Project Name="atoi" ConfigName="Debug"/>
       <Project Name="list_rever" ConfigName="Debug"/>
+      <Project Name="Generic" ConfigName="Debug"/>
+      <Project Name="template_2" ConfigName="Debug"/>
+      <Project Name="class_size" ConfigName="Debug"/>
+      <Project Name="upper_bound" ConfigName="Debug"/>
+      <Project Name="progress" ConfigName="Debug"/>
+      <Project Name="strtod" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -812,6 +823,12 @@
       <Project Name="switch_down" ConfigName="Release"/>
       <Project Name="atoi" ConfigName="Release"/>
       <Project Name="list_rever" ConfigName="Release"/>
+      <Project Name="Generic" ConfigName="Release"/>
+      <Project Name="template_2" ConfigName="Release"/>
+      <Project Name="class_size" ConfigName="Release"/>
+      <Project Name="upper_bound" ConfigName="Release"/>
+      <Project Name="progress" ConfigName="Release"/>
+      <Project Name="strtod" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

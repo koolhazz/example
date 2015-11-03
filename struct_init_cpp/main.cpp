@@ -29,7 +29,7 @@ int main()
 	//struct test_2 t6 = {.name="chenbo", .age=0};
 	
 	printf("t1.a = %d, t1.b = %d\n", t1.a, t1.b);
-    //printf("t2.a = %d, t2.b = %d\n", t2.a, t2.b);
+    printf("t2.a = %d, t2.b = %d\n", t2.a, t2.b);
     printf("t3.a = %d, t3.b = %d\n", t3.a, t3.b);
 	
 	

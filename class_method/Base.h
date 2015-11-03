@@ -5,7 +5,7 @@
 
 using namespace std;
 
-
+//基类的方法必须有virtual 修饰才是动态绑定
 class CBase
 {
 public:
@@ -20,7 +20,7 @@ public:
 
 	void age() { cout << "base age: " << i << endl; }
 private:
-	virtual void showme(); //这里是virtual 才能有多态的作用
+	virtual void showme();  //这里是virtual 才能有多态的作用
 	void name() { cout << "base name: " << "base" << endl; }
 
 public:
@@ -39,7 +39,7 @@ public:
 
 	virtual ~CDev();
 private:
-	virtual void showme();
+	virtual void showme(); //这里是virtual 才能有多态的作用
 	void name() { cout << "dev name: " << "dev" << endl; }
 
 };

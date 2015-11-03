@@ -5,21 +5,21 @@
 ## Debug
 ProjectName            :=mempool
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\mempool"
+WorkspacePath          := "D:\data\example"
+ProjectPath            := "D:\data\example\mempool"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=2013/9/12
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=gcc
-SharedObjectLinkerName :=gcc -shared -fPIC
+User                   :=Administrator
+Date                   :=01/09/2015
+CodeLitePath           :="d:\Program Files\CodeLite"
+LinkerName             :=D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/g++.exe
+SharedObjectLinkerName :=D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
+PreprocessSuffix       :=.i
 DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
@@ -31,12 +31,12 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="mempool.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=windres
+RcCompilerName         :=D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -47,21 +47,22 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := gcc
-CC       := gcc
+AR       := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/ar.exe rcu
+CXX      := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/g++.exe
+CC       := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/main$(ObjectSuffix) $(IntermediateDirectory)/mempool$(ObjectSuffix) 
+CodeLiteDir:=d:\Program Files\CodeLite
+Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/mempool.c$(ObjectSuffix) 
 
 
 
@@ -70,7 +71,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -78,6 +79,10 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
+
+MakeIntermediateDirs:
+	@$(MakeDirCommand) "./Debug"
+
 
 $(IntermediateDirectory)/.d:
 	@$(MakeDirCommand) "./Debug"
@@ -88,21 +93,21 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.c $(IntermediateDirectory)/main$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/mempool/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.c"
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "D:/data/example/mempool/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "main.c"
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
 
-$(IntermediateDirectory)/mempool$(ObjectSuffix): mempool.c $(IntermediateDirectory)/mempool$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/mempool/mempool.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/mempool$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/mempool$(DependSuffix): mempool.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/mempool$(ObjectSuffix) -MF$(IntermediateDirectory)/mempool$(DependSuffix) -MM "mempool.c"
+$(IntermediateDirectory)/mempool.c$(ObjectSuffix): mempool.c $(IntermediateDirectory)/mempool.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "D:/data/example/mempool/mempool.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/mempool.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/mempool.c$(DependSuffix): mempool.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/mempool.c$(ObjectSuffix) -MF$(IntermediateDirectory)/mempool.c$(DependSuffix) -MM "mempool.c"
 
-$(IntermediateDirectory)/mempool$(PreprocessSuffix): mempool.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/mempool$(PreprocessSuffix) "mempool.c"
+$(IntermediateDirectory)/mempool.c$(PreprocessSuffix): mempool.c
+	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/mempool.c$(PreprocessSuffix) "mempool.c"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -110,14 +115,6 @@ $(IntermediateDirectory)/mempool$(PreprocessSuffix): mempool.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/mempool$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/mempool$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/mempool$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/mempool"
+	$(RM) -r ./Debug/
 
 

@@ -11,7 +11,9 @@ main(int argc, char **argv)
 	
 	sprintf(buff, "%.2s", temp); // ".2"表示最大宽度
 	printf("buff: %s\n", buff);
-	
+    printf("buff: %02x\n", *buff);
+	printf("buff: %.2x\n", *buff);
+    
 	printf("NUMBER: %010d\n", 123456);
     printf("NUMBER: %*.*d\n", 10, 2, 123456);
     printf("NUMBER: %0*.*f\n", 10, 2, 123456.123456);
