@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ sscanf - Debug ]----------"
-	@cd "sscanf" && "$(MAKE)" -f  "sscanf.mk"
+	@echo "----------Building project:[ pair - Debug ]----------"
+	@cd "pair" && "$(MAKE)" -f  "pair.mk"
 clean:
-	@echo "----------Cleaning project:[ sscanf - Debug ]----------"
-	@cd "sscanf" && "$(MAKE)" -f  "sscanf.mk" clean
+	@echo "----------Cleaning project:[ pair - Debug ]----------"
+	@cd "pair" && "$(MAKE)" -f  "pair.mk" clean
