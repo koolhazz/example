@@ -274,7 +274,8 @@
   <Project Name="progress" Path="progress/progress.project" Active="No"/>
   <Project Name="strtod" Path="strtod/strtod.project" Active="No"/>
   <Project Name="namespace" Path="namespace/namespace.project" Active="No"/>
-  <Project Name="pair" Path="pair/pair.project" Active="Yes"/>
+  <Project Name="pair" Path="pair/pair.project" Active="No"/>
+  <Project Name="vector_string" Path="vector_string/vector_string.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
@@ -555,6 +556,7 @@
       <Project Name="strtod" ConfigName="Debug"/>
       <Project Name="namespace" ConfigName="Debug"/>
       <Project Name="pair" ConfigName="Debug"/>
+      <Project Name="vector_string" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="Algorithm" ConfigName="Release"/>
@@ -835,6 +837,7 @@
       <Project Name="strtod" ConfigName="Release"/>
       <Project Name="namespace" ConfigName="Release"/>
       <Project Name="pair" ConfigName="Release"/>
+      <Project Name="vector_string" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

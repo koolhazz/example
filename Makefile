@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ pair - Debug ]----------"
-	@cd "pair" && "$(MAKE)" -f  "pair.mk"
+	@echo "----------Building project:[ macro_string - Debug ]----------"
+	@cd "macro_string" && "$(MAKE)" -f  "macro_string.mk"
 clean:
-	@echo "----------Cleaning project:[ pair - Debug ]----------"
-	@cd "pair" && "$(MAKE)" -f  "pair.mk" clean
+	@echo "----------Cleaning project:[ macro_string - Debug ]----------"
+	@cd "macro_string" && "$(MAKE)" -f  "macro_string.mk" clean
