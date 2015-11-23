@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 
 	delete pBase;
 
-	printf("\n");
+	printf("**************************\n");
 
 	CDev* pDev = new CDev(2, 9);
 	pDev->age();
@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 
 	delete pDev;
 
-	printf("\n");
+	printf("**************************\n");
 
 	pBase = new CBase(1);
 
