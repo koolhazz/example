@@ -46,7 +46,7 @@
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
-  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
+  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="Yes"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
@@ -279,7 +279,7 @@
   <Project Name="vector_pair" Path="vector_pair/vector_pair.project" Active="No"/>
   <Project Name="vector_data" Path="vector_data/vector_data.project" Active="No"/>
   <Project Name="macro_namespace" Path="macro_namespace/macro_namespace.project" Active="No"/>
-  <Project Name="class_static_member" Path="class_static_member/class_static_member.project" Active="Yes"/>
+  <Project Name="class_static_member" Path="class_static_member/class_static_member.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Project Name="Algorithm" ConfigName="Debug"/>
