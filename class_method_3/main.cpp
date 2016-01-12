@@ -6,6 +6,8 @@ public:
 	Father(int _id):id(_id) {}
 	Father():id(1) {}
 	virtual ~Father() {}
+	
+	virtual void name() { printf("Father\n"); }
 protected:
 	int id;
 	
@@ -25,7 +27,7 @@ public:
 	int get_father_id() { return Father::id; }
 protected:
 	int id;
-	
+	virtual void name() { printf("Son\n"); }
 
 };
 
@@ -62,7 +64,14 @@ int main(int argc, char **argv)
 	printf("father: %d\n", s1.get_father_id());
 	
 	//int id = f->id;  //这里不允许，类的对象也没有访问protected 成员的权限，只有类的成员函数和友元函数才有权限
-
+	
+	Father *pf;
+	
+	pf = new Son(1000);
+	pf->name();
+	
+#ifdef _WIN32	
 	system("pause");
+#endif
 	return 0;
 }

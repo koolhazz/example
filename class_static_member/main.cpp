@@ -16,7 +16,12 @@ class B {
 public:
     void show() { cout << "Name: " << "B" << endl;}
 public:
-    static void version() { cout << "version: " << 2.00 << endl; }
+    static void version() { cout << "version: " << 2.00 << endl; } //基类 和 子类共用静态方法和成员
+};
+
+class BB : public B {
+public:
+	void show() { cout << "Name: " << "BB" << endl; }
 };
 
 struct C {
@@ -33,6 +38,8 @@ int main(int argc, char **argv)
     
     b.show();
     b.version();
+	
+	BB::version();
 
     system("pause");
 	return 0;

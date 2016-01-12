@@ -73,6 +73,8 @@ demo_3(const char* fmt, ...) /* int char float uint64_t */
 	
 	uint64_t ll = va_arg_a(ap, uint64_t);
 	printf("ll: %llu\n", ll);
+	
+	va_end_a(ap);
 }
 
 

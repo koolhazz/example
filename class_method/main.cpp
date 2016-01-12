@@ -4,6 +4,8 @@
 
 using namespace std;
 
+//动态绑定与多态只能使用类的指针和类的引用才能实现，普通的类对象不能使用动态绑定
+
 int main(int argc, char **argv)
 {
 	CBase* pBase = new CDev(2, 9); // base : 2 dev: 9
