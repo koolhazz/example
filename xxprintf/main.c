@@ -25,13 +25,13 @@ main(int argc, char **argv)
 	printf("STRING: %010.4s\n", "123456");
 	printf("STRING: %.10s\n", "123456");
 	printf("STRING: %*.*s\n", 10, 4, "123456");
-	printf("STRING: %*.*s\n", 10, 10);
-	printf("STRING: %*.*s %n\n", 10, 4, "123456", &r);
+	printf("STRING: %*.*s\n", 10, 10, "123456");
+	printf("STRING: %*.*s\n", 10, 4, "123456");
 	
 	printf("NUMBER: %#lx\n", 123456);
 	printf("NUMBER: %ld\n", 123456);
 	printf("NUMBER: 0%lo\n", 123456);
-	
+	printf("NUMBER: %6.4d\n", 1);
 	system("pause");
 	return 0;
 }

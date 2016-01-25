@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 				break;
 			case 'b':
 				printf("HAVE option: -b ");
-				bflag = 1;
+				bflag = atoi(optarg);
 				printf("The argument of -b is %s\n", optarg);
 				break;
 			case 'c':
