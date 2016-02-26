@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="/Users/mac/Desktop/example/example.workspace">
-  <int Value="8" Name="m_selectedTab"/>
+  <int Value="11" Name="m_selectedTab"/>
   <wxString Value="/Users/mac/Desktop/example/example.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -63,6 +63,27 @@
       <wxString Value="/Users/mac/Desktop/example/typeid/main.cpp" Name="FileName"/>
       <int Value="21" Name="FirstVisibleLine"/>
       <int Value="45" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/mac/Desktop/example/array_address/main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/mac/Desktop/example/array_poiner/main.cpp" Name="FileName"/>
+      <int Value="74" Name="FirstVisibleLine"/>
+      <int Value="92" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/mac/Desktop/example/list_invert/main.c" Name="FileName"/>
+      <int Value="88" Name="FirstVisibleLine"/>
+      <int Value="116" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

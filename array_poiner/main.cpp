@@ -58,7 +58,8 @@ main(int argc, char* argv[])
 		{{'a', 'b'}, {'c', 'd'}, {'e', 'f'}},
 		{{'g', 'h'}, {'i', 'j'}, {'k', 'l'}},
 		{{'m', 'n'}, {'o', 'p'}, {'q', 'r'}},
-		{{'s', 't'}, {'u', 'v'}, {'w', 'x'}}};
+		{{'s', 't'}, {'u', 'v'}, {'w', 'x'}}
+	};
 
 	char b[2][2] = {{'1', '2'}, {'3', '4'}};
     
@@ -119,9 +120,9 @@ main(int argc, char* argv[])
 
 	printf("B:%c\n", *( *( *ppppa) + 2));
 
-	printf("A:%c\n", *( *(*(*pppppa + 2) + 2) + 1) ); //pppppa 就是a  *pppppa 指向 {{'a', 'b'}, {'c', 'd'}, {'e', 'f'}}
+	printf("A--pppppa:%c\n", *( *(*(*pppppa + 2) + 2) + 1) ); //pppppa 就是a  *pppppa 指向 {{'a', 'b'}, {'c', 'd'}, {'e', 'f'}}
 
-	printf("A:%c\n", *( *(*(*pppppa)) + 17 ));
+	printf("A--pppppa:%c\n", *( *(*(*pppppa)) + 17 ));
 
 	printf("B:%c\n", *ba + 1);
 	printf("B:%s\n", ba + 1);

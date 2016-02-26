@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ typeid - Debug ]----------"
-	@cd "typeid" && "$(MAKE)" -f  "typeid.mk"
+	@echo "----------Building project:[ list_invert - Debug ]----------"
+	@cd "list_invert" && "$(MAKE)" -f  "list_invert.mk"
 clean:
-	@echo "----------Cleaning project:[ typeid - Debug ]----------"
-	@cd "typeid" && "$(MAKE)" -f  "typeid.mk" clean
+	@echo "----------Cleaning project:[ list_invert - Debug ]----------"
+	@cd "list_invert" && "$(MAKE)" -f  "list_invert.mk" clean
