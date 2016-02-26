@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ long_string - Debug ]----------"
-	@cd "long_string" && "$(MAKE)" -f  "long_string.mk"
+	@echo "----------Building project:[ typeid - Debug ]----------"
+	@cd "typeid" && "$(MAKE)" -f  "typeid.mk"
 clean:
-	@echo "----------Cleaning project:[ long_string - Debug ]----------"
-	@cd "long_string" && "$(MAKE)" -f  "long_string.mk" clean
+	@echo "----------Cleaning project:[ typeid - Debug ]----------"
+	@cd "typeid" && "$(MAKE)" -f  "typeid.mk" clean

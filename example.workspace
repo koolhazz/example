@@ -206,7 +206,7 @@
   <Project Name="timer_list_cpp" Path="timer_list_cpp/timer_list_cpp.project" Active="No"/>
   <Project Name="Tree" Path="Tree/Tree.project" Active="No"/>
   <Project Name="typedef" Path="typedef/typedef.project" Active="No"/>
-  <Project Name="typeid" Path="typeid/typeid.project" Active="No"/>
+  <Project Name="typeid" Path="typeid/typeid.project" Active="Yes"/>
   <Project Name="typeof" Path="typeof/typeof.project" Active="No"/>
   <Project Name="union" Path="union/union.project" Active="No"/>
   <Project Name="url_code" Path="url_code/url_code.project" Active="No"/>
@@ -280,7 +280,9 @@
   <Project Name="vector_data" Path="vector_data/vector_data.project" Active="No"/>
   <Project Name="macro_namespace" Path="macro_namespace/macro_namespace.project" Active="No"/>
   <Project Name="class_static_member" Path="class_static_member/class_static_member.project" Active="No"/>
-  <Project Name="long_string" Path="long_string/long_string.project" Active="Yes"/>
+  <Project Name="long_string" Path="long_string/long_string.project" Active="No"/>
+  <Project Name="varic_page_array" Path="varic_page_array/varic_page_array.project" Active="No"/>
+  <Project Name="vec_resize" Path="vec_resize/vec_resize.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -568,6 +570,8 @@
       <Project Name="macro_namespace" ConfigName="Debug"/>
       <Project Name="class_static_member" ConfigName="Debug"/>
       <Project Name="long_string" ConfigName="Debug"/>
+      <Project Name="varic_page_array" ConfigName="Debug"/>
+      <Project Name="vec_resize" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -855,6 +859,8 @@
       <Project Name="macro_namespace" ConfigName="Release"/>
       <Project Name="class_static_member" ConfigName="Release"/>
       <Project Name="long_string" ConfigName="Release"/>
+      <Project Name="varic_page_array" ConfigName="Release"/>
+      <Project Name="vec_resize" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
