@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="/Users/mac/Desktop/example/example.workspace">
-  <int Value="11" Name="m_selectedTab"/>
+  <int Value="12" Name="m_selectedTab"/>
   <wxString Value="/Users/mac/Desktop/example/example.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -84,6 +84,13 @@
       <wxString Value="/Users/mac/Desktop/example/list_invert/main.c" Name="FileName"/>
       <int Value="88" Name="FirstVisibleLine"/>
       <int Value="116" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/mac/Desktop/example/type_max_value/main.c" Name="FileName"/>
+      <int Value="1" Name="FirstVisibleLine"/>
+      <int Value="19" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

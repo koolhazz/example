@@ -240,7 +240,7 @@
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
-  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
+  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="Yes"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
   <Project Name="statement" Path="statement/statement.project" Active="No"/>
   <Project Name="policy_class" Path="policy_class/policy_class.project" Active="No"/>
@@ -283,7 +283,7 @@
   <Project Name="long_string" Path="long_string/long_string.project" Active="No"/>
   <Project Name="varic_page_array" Path="varic_page_array/varic_page_array.project" Active="No"/>
   <Project Name="vec_resize" Path="vec_resize/vec_resize.project" Active="No"/>
-  <Project Name="list_invert" Path="list_invert/list_invert.project" Active="Yes"/>
+  <Project Name="list_invert" Path="list_invert/list_invert.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

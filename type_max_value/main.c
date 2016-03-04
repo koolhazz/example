@@ -13,7 +13,9 @@ int main(int argc, char **argv)
 	printf("uint_max: %u\n", uint_max);
 	printf("uint_max: %lu\n", ulong_max);
 	printf("ulonglong_max: %llu\n", ulonglong_max);
-	
+	printf("V: %u\n", 2177452108 - 0);
+	printf("V: %d\n", 2177452108 - 0);
+	printf("V: %d\n", ~2177452108);
 	system("pause");
 	
 	return 0;
