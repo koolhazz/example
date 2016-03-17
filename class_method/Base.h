@@ -39,7 +39,7 @@ public:
 
 	virtual ~CDev();
 private:
-	virtual void showme(); //这里是virtual 才能有多态的作用
+	virtual void showme(); //这里是virtual 才能有多态的作用 子类可以不用virtual关键字
 	void name() { cout << "dev name: " << "dev" << endl; }
 
 };
