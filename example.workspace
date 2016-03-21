@@ -239,8 +239,8 @@
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
-  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
-  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="Yes"/>
+  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="Yes"/>
+  <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
   <Project Name="statement" Path="statement/statement.project" Active="No"/>
   <Project Name="policy_class" Path="policy_class/policy_class.project" Active="No"/>
@@ -284,6 +284,7 @@
   <Project Name="varic_page_array" Path="varic_page_array/varic_page_array.project" Active="No"/>
   <Project Name="vec_resize" Path="vec_resize/vec_resize.project" Active="No"/>
   <Project Name="list_invert" Path="list_invert/list_invert.project" Active="No"/>
+  <Project Name="class_define" Path="class_define/class_define.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -574,6 +575,7 @@
       <Project Name="varic_page_array" ConfigName="Debug"/>
       <Project Name="vec_resize" ConfigName="Debug"/>
       <Project Name="list_invert" ConfigName="Debug"/>
+      <Project Name="class_define" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -864,6 +866,7 @@
       <Project Name="varic_page_array" ConfigName="Release"/>
       <Project Name="vec_resize" ConfigName="Release"/>
       <Project Name="list_invert" ConfigName="Release"/>
+      <Project Name="class_define" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

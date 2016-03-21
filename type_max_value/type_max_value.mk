@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=type_max_value
 ConfigurationName      :=Debug
-WorkspacePath          := "/Users/mac/Desktop/example"
-ProjectPath            := "/Users/mac/Desktop/example/type_max_value"
+WorkspacePath          :=/Users/mac/Desktop/example
+ProjectPath            :=/Users/mac/Desktop/example/type_max_value
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=mac
-Date                   :=04/03/2016
+Date                   :=18/03/2016
 CodeLitePath           :="/Users/mac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC

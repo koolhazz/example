@@ -56,10 +56,12 @@ int main(int argc, char **argv)
 	Father 	f(100);
 	Son		s(1000);
 	Son		s1(1001);
+	Son_2   s2(1002);
 	
-	//f.show(); /* 对象实例也不能访问protected类型的成员 */
+	//f.show(); /* 对象实例也不能访问protected类型的成员 这里主要看调用者的权限，这种调用者的权限是main函数，所以没有权限*/
 	
 	s.compare(s1);
+	s2.compare(f);
 	
 	printf("father: %d\n", s1.get_father_id());
 	

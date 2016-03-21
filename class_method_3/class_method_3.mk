@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=class_method_3
 ConfigurationName      :=Debug
-WorkspacePath          := "/Users/mac/Desktop/example"
-ProjectPath            := "/Users/mac/Desktop/example/class_method_3"
+WorkspacePath          :=/Users/mac/Desktop/example
+ProjectPath            :=/Users/mac/Desktop/example/class_method_3
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=mac
-Date                   :=11/01/2016
+Date                   :=18/03/2016
 CodeLitePath           :="/Users/mac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
