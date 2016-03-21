@@ -8,6 +8,18 @@ typedef struct {
 	char b[]; //char b[0] 也可以
 } StructHack_t;
 
+typedef struct hack_s hack_t;
+struct hack_s {
+	int sz;
+	char *b[];
+};
+
+#define __NEW_HACK__(p, size) do {							\
+	p = (hack_t*)malloc(sizeof *p + sizeof(char*) * size);	\
+	if (p) { (p)->sz = size;} 								\
+} while (0)
+#define __DEL_HACK__(p) free(p);p == NULL
+
 int main(int argc, char **argv)
 {
 	StructHack_t* p = (StructHack_t*)malloc(sizeof(StructHack_t) + sizeof(char) * 10);
@@ -24,10 +36,19 @@ int main(int argc, char **argv)
 	printf("char[]: %zu\n", sizeof *hack);
 	
 	
-	printf("pointer: 0x%p\n", p);
-	printf("pointer: 0x%p\n", header);
+	printf("pointer: %p\n", p);
+	printf("pointer: %p\n", header);
 	
+	hack_t *phack;
+	
+	__NEW_HACK__(phack, 10);
+	printf("pointer: %p\n", phack);
+	printf("pointer: %p\n", phack->b);
+	
+	
+#ifdef _WIN32	
 	system("pause");
+#endif
 	
 	return 0;
 }
