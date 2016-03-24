@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ struct_hack - Debug ]----------"
-	@cd "struct_hack" && "$(MAKE)" -f  "struct_hack.mk"
+	@echo "----------Building project:[ bit_op - Debug ]----------"
+	@cd "bit_op" && "$(MAKE)" -f  "bit_op.mk"
 clean:
-	@echo "----------Cleaning project:[ struct_hack - Debug ]----------"
-	@cd "struct_hack" && "$(MAKE)" -f  "struct_hack.mk" clean
+	@echo "----------Cleaning project:[ bit_op - Debug ]----------"
+	@cd "bit_op" && "$(MAKE)" -f  "bit_op.mk" clean

@@ -239,7 +239,7 @@
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
-  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="Yes"/>
+  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
   <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
   <Project Name="statement" Path="statement/statement.project" Active="No"/>
@@ -258,7 +258,7 @@
   <Project Name="c11_example" Path="c11_example/c11_example.project"/>
   <Project Name="struct_union" Path="struct_union/struct_union.project"/>
   <Project Name="printf_template" Path="printf_template/printf_template.project" Active="No"/>
-  <Project Name="bit_op" Path="bit_op/bit_op.project" Active="No"/>
+  <Project Name="bit_op" Path="bit_op/bit_op.project" Active="Yes"/>
   <Project Name="struct_malloc" Path="struct_malloc/struct_malloc.project" Active="No"/>
   <Project Name="getchar" Path="getchar/getchar.project" Active="No"/>
   <Project Name="new_class_construct" Path="new_class_construct/new_class_construct.project" Active="No"/>
