@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=macro
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\macro"
+WorkspacePath          :=/Users/mac/Desktop/example
+ProjectPath            :=/Users/mac/Desktop/example/macro
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=29/05/2015
-CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
-SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
+User                   :=mac
+Date                   :=06/04/2016
+CodeLitePath           :="/Users/mac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -34,9 +34,7 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="macro.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,19 +47,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
-CXX      := D:/MinGW-4.8.1/bin/g++.exe
-CC       := D:/MinGW-4.8.1/bin/gcc.exe
-CXXFLAGS :=  -g -std=c99 -D __LOG_LEVEL__=99  $(Preprocessors)
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
+CXXFLAGS :=  -g -std=c++0x -D __LOG_LEVEL__=99  $(Preprocessors)
 CFLAGS   :=  -g -std=c99 $(Preprocessors)
 ASFLAGS  := 
-AS       := D:/MinGW-4.8.1/bin/as.exe
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=d:\Program Files\CodeLite
+CodeLiteDir:=/Users/mac/Desktop/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -71,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -80,8 +78,12 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -90,12 +92,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/macro/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mac/Desktop/example/macro/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

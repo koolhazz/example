@@ -92,8 +92,9 @@ main(int argc, char* argv[])
 	
 	//printf("The Char : %c\n", *(*(aa + 2)));
 
-	printf("A:%c\n", ( *( *( pa + 5 ) ) +1)); //pa 指向 {'g', 'h'}   pa + 5 指向 {'q', 'r'}   *(pa + 5) 指向 'q'  *( pa + 5) + 1 执行 'r' 地址
-
+	//pa 指向 {'g', 'h'}   pa + 5 指向 {'q', 'r'}   *(pa + 5) 指向 'q' 地址也是代表{'q', 'r'}本身  *( pa + 5) + 1 指向 'r' 地址
+	printf("A:%c\n", (*(*(pa + 5) + 1)));
+	
 	printf("B:%c\n", *(b[0] + 0));
 
 	printf("The Char : %d\n", &a[2]);
@@ -101,7 +102,7 @@ main(int argc, char* argv[])
 	printf("The Cahr: %d*%c\n", &a[2][2][1], a[2][2][1]);
 
 	printf("The Char:%c\n", *(*(*ppa) +11) );  //*(*ppa) 指向'g'地址
-	printf("The Char:%c\n", *( *( *(ppa + 1 ) + 2 ) + 1) ); //ppa 指向 {{'g', 'h'}, {'i', 'j'}, {'k', 'l'}}  ppa + 1 指向 {{'m', 'n'}, {'o', 'p'}, {'q', 'r'}}, *(ppa + 1) 指向 {'m', 'n'}  *(ppa + 1)  +2 指向 {'q', 'r'} *( *(ppa + 1) +2)指向 'q' 即 a[2][2][0],  *( *(ppa + 1 ) + 2 ) + 1 指向 'r'
+	printf("The Char:%c\n", *(*(*(ppa + 1 ) + 2) + 1)); //ppa 指向 {{'g', 'h'}, {'i', 'j'}, {'k', 'l'}}  ppa + 1 指向 {{'m', 'n'}, {'o', 'p'}, {'q', 'r'}}, *(ppa + 1) 指向 {'m', 'n'}  *(ppa + 1)  +2 指向 {'q', 'r'} *( *(ppa + 1) +2)指向 'q' 即 a[2][2][0],  *( *(ppa + 1 ) + 2 ) + 1 指向 'r'
 
 	printf("A:%c\n", *( *( *ppa + 5 )  + 1)); 
 

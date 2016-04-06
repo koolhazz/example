@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=array_poiner
 ConfigurationName      :=Debug
-WorkspacePath          := "/Users/mac/Desktop/example"
-ProjectPath            := "/Users/mac/Desktop/example/array_poiner"
+WorkspacePath          :=/Users/mac/Desktop/example
+ProjectPath            :=/Users/mac/Desktop/example/array_poiner
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=mac
-Date                   :=26/02/2016
+Date                   :=06/04/2016
 CodeLitePath           :="/Users/mac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC

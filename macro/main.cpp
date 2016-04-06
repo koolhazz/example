@@ -18,7 +18,8 @@
 
 #define _vprintf(format, ...) printf(format, __VA_ARGS__) // c99 __VA_ARGS__
 
-#define _mprintf(format, args...) printf(format, ##args)  
+#define _mprintf(format, args...) printf(format, ##args)
+#define _mmprintf(format, ...) printf(format, args)  
 
 #define _vprintf2(format, args...) printf(format, args)	// c99 gcc
 #define _mprintf_3(format, ...) printf(format, ##__VA_ARGS__) //添加##允许变参为空的调用
