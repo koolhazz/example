@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ array_poiner - Debug ]----------"
-	@cd "array_poiner" && "$(MAKE)" -f  "array_poiner.mk"
+	@echo "----------Building project:[ struct_copy_cpp - Debug ]----------"
+	@cd "struct_copy_cpp" && "$(MAKE)" -f  "struct_copy_cpp.mk"
 clean:
-	@echo "----------Cleaning project:[ array_poiner - Debug ]----------"
-	@cd "array_poiner" && "$(MAKE)" -f  "array_poiner.mk" clean
+	@echo "----------Cleaning project:[ struct_copy_cpp - Debug ]----------"
+	@cd "struct_copy_cpp" && "$(MAKE)" -f  "struct_copy_cpp.mk" clean

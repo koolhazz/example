@@ -286,6 +286,8 @@
   <Project Name="list_invert" Path="list_invert/list_invert.project" Active="No"/>
   <Project Name="class_define" Path="class_define/class_define.project"/>
   <Project Name="count_bits" Path="count_bits/count_bits.project"/>
+  <Project Name="struct_copy_c" Path="struct_copy_c/struct_copy_c.project"/>
+  <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -578,6 +580,8 @@
       <Project Name="list_invert" ConfigName="Debug"/>
       <Project Name="class_define" ConfigName="Debug"/>
       <Project Name="count_bits" ConfigName="Debug"/>
+      <Project Name="struct_copy_c" ConfigName="Debug"/>
+      <Project Name="struct_copy_cpp" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -870,6 +874,8 @@
       <Project Name="list_invert" ConfigName="Release"/>
       <Project Name="class_define" ConfigName="Release"/>
       <Project Name="count_bits" ConfigName="Release"/>
+      <Project Name="struct_copy_c" ConfigName="Release"/>
+      <Project Name="struct_copy_cpp" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

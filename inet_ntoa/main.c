@@ -55,7 +55,7 @@ inet_aton(const char* ip) /* 转换成net byte order */
 int 
 main(int argc, char **argv)
 {
-	char* ip = inet_ntoa(0x9a64a8c0); /* 192.168.100.154 */
+	char* ip = inet_ntoa(0x9a64a8c0); /* 192.168.100.154 net byte order*/
 	
 	printf("ip: %s\n", ip);
 	
