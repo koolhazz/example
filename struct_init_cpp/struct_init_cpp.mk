@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=struct_init_cpp
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\data\example"
-ProjectPath            := "D:\data\example\struct_init_cpp"
+WorkspacePath          :=/Users/mac/Desktop/example
+ProjectPath            :=/Users/mac/Desktop/example/struct_init_cpp
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Administrator
-Date                   :=06/09/2015
-CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/g++.exe
-SharedObjectLinkerName :=D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/g++.exe -shared -fPIC
+User                   :=mac
+Date                   :=03/05/2016
+CodeLitePath           :="/Users/mac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -34,9 +34,7 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="struct_init_cpp.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/windres.exe
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,19 +47,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/ar.exe rcu
-CXX      := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/g++.exe
-CC       := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/gcc.exe
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS :=  -g -O0 -Wall -std=c++0x $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall  $(Preprocessors)
 ASFLAGS  := 
-AS       := D:/mingw-w64/x86_64-5.1.0-posix-seh-rt_v4-rev0/mingw64/bin/as.exe
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=d:\Program Files\CodeLite
+CodeLiteDir:=/Users/mac/Desktop/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -81,11 +79,11 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -94,12 +92,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/data/example/struct_init_cpp/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mac/Desktop/example/struct_init_cpp/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
