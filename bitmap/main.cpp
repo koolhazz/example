@@ -10,22 +10,22 @@ void SetBit(char* p, int number)
 {
 	unsigned int posit = number / BYTESIZE;
 	
-	//printf("%d.", *(p + posit));
+	printf("%u %d.\n", posit, *(p + posit));
 
 	
 	*(p + posit) = *(p + posit) | 0x1 << (number % BYTESIZE);
 	
-	//printf("%d.", *(p + posit));
+	//printf("%d.\n", *(p + posit));
 }
 
 void SortBitMap()
 {
 	unsigned int SortNumberArrayLen = (sizeof SortNumber) / 4;
 	
-	unsigned int SortBufferLen = 5;//SortNumberArrayLen % BYTESIZE == 0 ? 
-		//SortNumberArrayLen / BYTESIZE : SortNumberArrayLen / BYTESIZE + 1 ;
+	unsigned int SortBufferLen = SortNumberArrayLen % BYTESIZE == 0 ? 
+		SortNumberArrayLen / BYTESIZE : SortNumberArrayLen / BYTESIZE + 1;
 		
-	//printf("%d\n", SortBufferLen);
+	printf("%d\n", SortBufferLen);
 			
 	char* pSortBuffer = new char[SortBufferLen];
 	

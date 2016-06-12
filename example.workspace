@@ -7,7 +7,7 @@
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
   <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
-  <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="Yes"/>
+  <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="No"/>
   <Project Name="array_sizeof" Path="array_sizeof/array_sizeof.project" Active="No"/>
   <Project Name="array_strlen_sizeof" Path="array_strlen_sizeof/array_strlen_sizeof.project" Active="No"/>
   <Project Name="assert" Path="assert/assert.project" Active="No"/>
@@ -25,7 +25,7 @@
   <Project Name="bit_field" Path="bit_field/bit_field.project" Active="No"/>
   <Project Name="bit_operator" Path="bit_operator/bit_operator.project" Active="No"/>
   <Project Name="bit_Reversing" Path="bit_Reversing/bit_Reversing.project" Active="No"/>
-  <Project Name="bitmap" Path="bitmap/bitmap.project" Active="No"/>
+  <Project Name="bitmap" Path="bitmap/bitmap.project" Active="Yes"/>
   <Project Name="BloomFiliter_2" Path="BloomFiliter_2/BloomFiliter_2.project" Active="No"/>
   <Project Name="BloomFilter" Path="BloomFilter/BloomFilter.project" Active="No"/>
   <Project Name="BPlus_Tree" Path="BPlus_Tree/BPlus_Tree.project" Active="No"/>
