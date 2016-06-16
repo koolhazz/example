@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ bitmap - Debug ]----------"
-	@cd "bitmap" && "$(MAKE)" -f  "bitmap.mk"
+	@echo "----------Building project:[ map_erase3 - Debug ]----------"
+	@cd "map_erase3" && "$(MAKE)" -f  "map_erase3.mk"
 clean:
-	@echo "----------Cleaning project:[ bitmap - Debug ]----------"
-	@cd "bitmap" && "$(MAKE)" -f  "bitmap.mk" clean
+	@echo "----------Cleaning project:[ map_erase3 - Debug ]----------"
+	@cd "map_erase3" && "$(MAKE)" -f  "map_erase3.mk" clean

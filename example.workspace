@@ -25,7 +25,7 @@
   <Project Name="bit_field" Path="bit_field/bit_field.project" Active="No"/>
   <Project Name="bit_operator" Path="bit_operator/bit_operator.project" Active="No"/>
   <Project Name="bit_Reversing" Path="bit_Reversing/bit_Reversing.project" Active="No"/>
-  <Project Name="bitmap" Path="bitmap/bitmap.project" Active="Yes"/>
+  <Project Name="bitmap" Path="bitmap/bitmap.project" Active="No"/>
   <Project Name="BloomFiliter_2" Path="BloomFiliter_2/BloomFiliter_2.project" Active="No"/>
   <Project Name="BloomFilter" Path="BloomFilter/BloomFilter.project" Active="No"/>
   <Project Name="BPlus_Tree" Path="BPlus_Tree/BPlus_Tree.project" Active="No"/>
@@ -288,6 +288,7 @@
   <Project Name="count_bits" Path="count_bits/count_bits.project"/>
   <Project Name="struct_copy_c" Path="struct_copy_c/struct_copy_c.project"/>
   <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project"/>
+  <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -582,6 +583,7 @@
       <Project Name="count_bits" ConfigName="Debug"/>
       <Project Name="struct_copy_c" ConfigName="Debug"/>
       <Project Name="struct_copy_cpp" ConfigName="Debug"/>
+      <Project Name="map_erase3" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -876,6 +878,7 @@
       <Project Name="count_bits" ConfigName="Release"/>
       <Project Name="struct_copy_c" ConfigName="Release"/>
       <Project Name="struct_copy_cpp" ConfigName="Release"/>
+      <Project Name="map_erase3" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
