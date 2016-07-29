@@ -220,7 +220,7 @@
   <Project Name="void_zero" Path="void_zero/void_zero.project" Active="No"/>
   <Project Name="wildPointer" Path="wildPointer/wildPointer.project" Active="No"/>
   <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="No"/>
-  <Project Name="include_find" Path="include_find/include_find.project"/>
+  <Project Name="include_find" Path="include_find/include_find.project" Active="Yes"/>
   <Project Name="const_scope" Path="const_scope/const_scope.project" Active="No"/>
   <Project Name="const_scope_cpp" Path="const_scope_cpp/const_scope_cpp.project" Active="No"/>
   <Project Name="include_cpp" Path="include_cpp/include_cpp.project" Active="No"/>
@@ -288,7 +288,7 @@
   <Project Name="count_bits" Path="count_bits/count_bits.project"/>
   <Project Name="struct_copy_c" Path="struct_copy_c/struct_copy_c.project"/>
   <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project"/>
-  <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="Yes"/>
+  <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
