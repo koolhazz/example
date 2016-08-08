@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=mac
-Date                   :=26/07/2016
+Date                   :=08/08/2016
 CodeLitePath           :="/Users/mac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -94,18 +94,18 @@ PreBuild:
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "/Users/mac/Desktop/example/include_find/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 
 $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix)main.c
 
 $(IntermediateDirectory)/def.c$(ObjectSuffix): def.c $(IntermediateDirectory)/def.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "/Users/mac/Desktop/example/include_find/def.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/def.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/def.c$(DependSuffix): def.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/def.c$(ObjectSuffix) -MF$(IntermediateDirectory)/def.c$(DependSuffix) -MM "def.c"
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/def.c$(ObjectSuffix) -MF$(IntermediateDirectory)/def.c$(DependSuffix) -MM def.c
 
 $(IntermediateDirectory)/def.c$(PreprocessSuffix): def.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/def.c$(PreprocessSuffix) "def.c"
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/def.c$(PreprocessSuffix)def.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

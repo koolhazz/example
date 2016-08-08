@@ -220,7 +220,7 @@
   <Project Name="void_zero" Path="void_zero/void_zero.project" Active="No"/>
   <Project Name="wildPointer" Path="wildPointer/wildPointer.project" Active="No"/>
   <Project Name="strstr_tuning" Path="strstr_tuning/strstr_tuning.project" Active="No"/>
-  <Project Name="include_find" Path="include_find/include_find.project" Active="Yes"/>
+  <Project Name="include_find" Path="include_find/include_find.project" Active="No"/>
   <Project Name="const_scope" Path="const_scope/const_scope.project" Active="No"/>
   <Project Name="const_scope_cpp" Path="const_scope_cpp/const_scope_cpp.project" Active="No"/>
   <Project Name="include_cpp" Path="include_cpp/include_cpp.project" Active="No"/>
@@ -289,6 +289,7 @@
   <Project Name="struct_copy_c" Path="struct_copy_c/struct_copy_c.project"/>
   <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project"/>
   <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="No"/>
+  <Project Name="class_copy_cons_2" Path="class_copy_cons_2/class_copy_cons_2.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -584,6 +585,7 @@
       <Project Name="struct_copy_c" ConfigName="Debug"/>
       <Project Name="struct_copy_cpp" ConfigName="Debug"/>
       <Project Name="map_erase3" ConfigName="Debug"/>
+      <Project Name="class_copy_cons_2" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -879,6 +881,7 @@
       <Project Name="struct_copy_c" ConfigName="Release"/>
       <Project Name="struct_copy_cpp" ConfigName="Release"/>
       <Project Name="map_erase3" ConfigName="Release"/>
+      <Project Name="class_copy_cons_2" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
