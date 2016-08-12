@@ -289,7 +289,8 @@
   <Project Name="struct_copy_c" Path="struct_copy_c/struct_copy_c.project"/>
   <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project"/>
   <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="No"/>
-  <Project Name="class_copy_cons_2" Path="class_copy_cons_2/class_copy_cons_2.project" Active="Yes"/>
+  <Project Name="class_copy_cons_2" Path="class_copy_cons_2/class_copy_cons_2.project" Active="No"/>
+  <Project Name="CuckooFilter" Path="CuckooFilter/CuckooFilter.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -586,6 +587,7 @@
       <Project Name="struct_copy_cpp" ConfigName="Debug"/>
       <Project Name="map_erase3" ConfigName="Debug"/>
       <Project Name="class_copy_cons_2" ConfigName="Debug"/>
+      <Project Name="CuckooFilter" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -882,6 +884,7 @@
       <Project Name="struct_copy_cpp" ConfigName="Release"/>
       <Project Name="map_erase3" ConfigName="Release"/>
       <Project Name="class_copy_cons_2" ConfigName="Release"/>
+      <Project Name="CuckooFilter" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
