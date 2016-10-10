@@ -59,6 +59,8 @@ int main(int argc, char **argv)
 	printf("INT64_MAX: %lld\n", INT64_MAX);
 	printf("INT64_MIN: %lld\n", INT64_MIN);
 	
+	printf("UINT64_MAX: %llu\n", ~-1);
+	
 	system("pause");
 	return 0;
 }

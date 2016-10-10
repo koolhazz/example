@@ -149,7 +149,7 @@
   <Project Name="new_overload_2" Path="new_overload_2/new_overload_2.project" Active="No"/>
   <Project Name="nginx_mempool" Path="nginx_mempool/nginx_mempool.project" Active="No"/>
   <Project Name="ngx_mempool_2" Path="ngx_mempool_2/ngx_mempool_2.project" Active="No"/>
-  <Project Name="number_max" Path="number_max/number_max.project" Active="No"/>
+  <Project Name="number_max" Path="number_max/number_max.project" Active="Yes"/>
   <Project Name="operator" Path="operator/operator.project" Active="No"/>
   <Project Name="operator_short" Path="operator_short/operator_short.project" Active="No"/>
   <Project Name="operator2" Path="operator2/operator2.project" Active="No"/>
@@ -290,7 +290,7 @@
   <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project"/>
   <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="No"/>
   <Project Name="class_copy_cons_2" Path="class_copy_cons_2/class_copy_cons_2.project" Active="No"/>
-  <Project Name="CuckooFilter" Path="CuckooFilter/CuckooFilter.project" Active="Yes"/>
+  <Project Name="CuckooFilter" Path="CuckooFilter/CuckooFilter.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
