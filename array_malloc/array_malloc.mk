@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=array_malloc
 ConfigurationName      :=Debug
-WorkspacePath          := "D:\data\example"
-ProjectPath            := "D:\data\example\array_malloc"
+WorkspacePath          :=D:/example
+ProjectPath            :=D:/example/array_malloc
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=Administrator
-Date                   :=02/11/2015
-CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=D:/MinGW/bin/g++.exe
-SharedObjectLinkerName :=D:/MinGW/bin/g++.exe -shared -fPIC
+User                   :=jpush
+Date                   :=11/11/2016
+CodeLitePath           :="C:/Program Files/CodeLite"
+LinkerName             :=C:/MinGW/bin/g++.exe
+SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -36,7 +36,7 @@ ObjectsFileList        :="array_malloc.txt"
 PCHCompileFlags        :=
 MakeDirCommand         :=makedir
 RcCmpOptions           := 
-RcCompilerName         :=D:/MinGW/bin/windres.exe
+RcCompilerName         :=C:/MinGW/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,19 +49,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:/MinGW/bin/ar.exe rcu
-CXX      := D:/MinGW/bin/g++.exe
-CC       := D:/MinGW/bin/gcc.exe
+AR       := C:/MinGW/bin/ar.exe rcu
+CXX      := C:/MinGW/bin/g++.exe
+CC       := C:/MinGW/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall -std=c99 $(Preprocessors)
 ASFLAGS  := 
-AS       := D:/MinGW/bin/as.exe
+AS       := C:/MinGW/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=d:\Program Files\CodeLite
+CodeLiteDir:=C:\Program Files\CodeLite
 Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
 
@@ -94,12 +94,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "D:/data/example/array_malloc/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "D:/example/array_malloc/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 
 $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix)main.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

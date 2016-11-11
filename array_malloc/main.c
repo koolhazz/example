@@ -171,7 +171,13 @@ main(int argc, char **argv)
 	
 	free(pppp);
 	
+	// int [2][3][4] 
 	
+	typedef int array_3_t[2][3][4];
+	
+	array_3_t *ppppp = (array_3_t*)malloc(sizeof(array_3_t));
+	
+	int (*pppppp)[3][4] = (int(*)[3][4])malloc(sizeof(int(*)[3][4]) * 2);
 	
 	system("pause");
 	

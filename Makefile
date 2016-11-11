@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ number_max - Debug ]----------"
-	@cd "number_max" && "$(MAKE)" -f  "number_max.mk"
+	@echo "----------Building project:[ array_malloc - Debug ]----------"
+	@cd "array_malloc" && "$(MAKE)" -f  "array_malloc.mk"
 clean:
-	@echo "----------Cleaning project:[ number_max - Debug ]----------"
-	@cd "number_max" && "$(MAKE)" -f  "number_max.mk" clean
+	@echo "----------Cleaning project:[ array_malloc - Debug ]----------"
+	@cd "array_malloc" && "$(MAKE)" -f  "array_malloc.mk" clean
