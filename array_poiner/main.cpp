@@ -77,7 +77,7 @@ main(int argc, char* argv[])
 	strncpy(*(bba), "12", strlen("12") + 1);
 	strncpy(*(bba + 1), "34", strlen("34") + 1);
 
-	char (*pa)[2] = &a[1][0];//(char (*)[2])a // 指向 {'g', 'h''} 
+	char (*pa)[2] = &a[1][0];//(char (*)[2])a // 指向 {'g', 'h''}  a[1][0] --> char*
 
 	char (*ppa)[3][2] = &a[1];//也可以使用 a  或&a[0]// 指向 	{{'g', 'h'}, {'i', 'j'}, {'k', 'l'}}
     char (*pppppa)[4][3][2] =&a;

@@ -29,6 +29,7 @@ public:
 	void SetName(const string& str) { name.assign(str);}
 	
 	static const int id  = 100;
+	//static const int id; 
 	const int com_id;
 	static int school_id;
 	
@@ -42,7 +43,7 @@ private:
 
 //const 
 //int
-//Base::id = 100;	
+//Base::id = 100;	可以采用定义外的初始化方式
 
 int
 Base::school_id = 888;

@@ -7,7 +7,7 @@
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
   <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
-  <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="No"/>
+  <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="Yes"/>
   <Project Name="array_sizeof" Path="array_sizeof/array_sizeof.project" Active="No"/>
   <Project Name="array_strlen_sizeof" Path="array_strlen_sizeof/array_strlen_sizeof.project" Active="No"/>
   <Project Name="assert" Path="assert/assert.project" Active="No"/>
@@ -149,7 +149,7 @@
   <Project Name="new_overload_2" Path="new_overload_2/new_overload_2.project" Active="No"/>
   <Project Name="nginx_mempool" Path="nginx_mempool/nginx_mempool.project" Active="No"/>
   <Project Name="ngx_mempool_2" Path="ngx_mempool_2/ngx_mempool_2.project" Active="No"/>
-  <Project Name="number_max" Path="number_max/number_max.project" Active="Yes"/>
+  <Project Name="number_max" Path="number_max/number_max.project" Active="No"/>
   <Project Name="operator" Path="operator/operator.project" Active="No"/>
   <Project Name="operator_short" Path="operator_short/operator_short.project" Active="No"/>
   <Project Name="operator2" Path="operator2/operator2.project" Active="No"/>
@@ -232,7 +232,7 @@
   <Project Name="variadic_template_3" Path="variadic_template_3/variadic_template_3.project" Active="No"/>
   <Project Name="variadic_template_4" Path="variadic_template_4/variadic_template_4.project" Active="No"/>
   <Project Name="printf_format" Path="printf_format/printf_format.project" Active="No"/>
-  <Project Name="gcc_inline" Path="gcc_inline/gcc_inline.project"/>
+  <Project Name="gcc_inline" Path="gcc_inline/gcc_inline.project" Active="No"/>
   <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
   <Project Name="printf_buffer" Path="printf_buffer/printf_buffer.project" Active="No"/>
   <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
@@ -246,7 +246,7 @@
   <Project Name="policy_class" Path="policy_class/policy_class.project" Active="No"/>
   <Project Name="ods" Path="ods/ods.project" Active="No"/>
   <Project Name="is_number" Path="is_number/is_number.project" Active="No"/>
-  <Project Name="const_array" Path="const_array/const_array.project"/>
+  <Project Name="const_array" Path="const_array/const_array.project" Active="No"/>
   <Project Name="map_compare" Path="map_compare/map_compare.project" Active="No"/>
   <Environment>
     <![CDATA[]]>
@@ -255,8 +255,8 @@
   <Project Name="operator_string" Path="operator_string/operator_string.project" Active="No"/>
   <Project Name="exception_2" Path="exception_2/exception_2.project" Active="No"/>
   <Project Name="exception_3" Path="exception_3/exception_3.project" Active="No"/>
-  <Project Name="c11_example" Path="c11_example/c11_example.project"/>
-  <Project Name="struct_union" Path="struct_union/struct_union.project"/>
+  <Project Name="c11_example" Path="c11_example/c11_example.project" Active="No"/>
+  <Project Name="struct_union" Path="struct_union/struct_union.project" Active="No"/>
   <Project Name="printf_template" Path="printf_template/printf_template.project" Active="No"/>
   <Project Name="bit_op" Path="bit_op/bit_op.project" Active="No"/>
   <Project Name="struct_malloc" Path="struct_malloc/struct_malloc.project" Active="No"/>
@@ -284,10 +284,10 @@
   <Project Name="varic_page_array" Path="varic_page_array/varic_page_array.project" Active="No"/>
   <Project Name="vec_resize" Path="vec_resize/vec_resize.project" Active="No"/>
   <Project Name="list_invert" Path="list_invert/list_invert.project" Active="No"/>
-  <Project Name="class_define" Path="class_define/class_define.project"/>
-  <Project Name="count_bits" Path="count_bits/count_bits.project"/>
-  <Project Name="struct_copy_c" Path="struct_copy_c/struct_copy_c.project"/>
-  <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project"/>
+  <Project Name="class_define" Path="class_define/class_define.project" Active="No"/>
+  <Project Name="count_bits" Path="count_bits/count_bits.project" Active="No"/>
+  <Project Name="struct_copy_c" Path="struct_copy_c/struct_copy_c.project" Active="No"/>
+  <Project Name="struct_copy_cpp" Path="struct_copy_cpp/struct_copy_cpp.project" Active="No"/>
   <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="No"/>
   <Project Name="class_copy_cons_2" Path="class_copy_cons_2/class_copy_cons_2.project" Active="No"/>
   <Project Name="CuckooFilter" Path="CuckooFilter/CuckooFilter.project" Active="No"/>
