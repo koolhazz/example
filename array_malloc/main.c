@@ -176,8 +176,10 @@ main(int argc, char **argv)
 	typedef int array_3_t[2][3][4];
 	
 	array_3_t *ppppp = (array_3_t*)malloc(sizeof(array_3_t));
+	free(ppppp);
 	
 	int (*pppppp)[3][4] = (int(*)[3][4])malloc(sizeof(int(*)[3][4]) * 2);
+	free(pppppp);
 	
 	system("pause");
 	

@@ -97,6 +97,43 @@ main(int argc, char **argv)
 	
 	delete[] pp;
 	
+	
+	// int [10][1] == int* [10]
+	
+	int **ppp = new int*[10];
+	
+	for (unsigned int i = 0; i < 10; i++) {
+		*(ppp + i) = new int;
+		*(*(ppp + i)) = i;
+		printf("ppp[10][0]: %d\n", *(*(ppp + i)));
+		
+	}
+	
+	for (unsigned int i = 0; i < 10; i++) {
+		delete *(ppp + i);
+	}
+	
+	delete[] ppp;
+	
+	// int (*)[1]
+	int (*ppppp)[1] = new int[10][1];
+	
+	for (unsigned int i = 0; i < 10; i++) {
+		*(*(ppppp + i)) = i;
+		printf("ppppp[%d]: %d\n", i, *(*(ppppp + i)));
+	}
+	
+	delete[] ppppp;
+	
+	typedef int pppppp_t[1];
+	
+	pppppp_t *pppppp = new pppppp_t[10];
+	
+	for (unsigned int i = 0; i < 10; i++) {
+		*(*(pppppp + i)) = i;
+		printf("pppppp[%d]: %d\n", i, *(*(pppppp + i)));
+	}
+	
 	system("pause");
 	
 	return 0;
