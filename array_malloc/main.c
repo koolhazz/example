@@ -108,14 +108,14 @@ main(int argc, char **argv)
 	
 	for (unsigned int i = 0; i < 2; i++) {
 		for(unsigned int j = 0; j < 10;j++) {
-			free(*(*(paa + i) + j));
+			free(*(*(paaaaa + i) + j));
 		}
 	}		
-	free(paaaa);
+	free(paaaaa);
 	
 	
 	/* 2 * 10 */
-	char (*paaaaaa)[10] = malloc(sizeof(char[10]) * 2);//malloc(sizeof(char) * 10 * 2);//malloc(sizeof *paaaaaa * 2); // 
+	int (*paaaaaa)[10] = malloc(sizeof(int[10]) * 2);//malloc(sizeof(int) * 10 * 2);//malloc(sizeof *paaaaaa * 2); // 
 	
 	for (int i = 0; i < 2; i++) {
 		for (int j = 0; j < 10; j++)  {
@@ -170,6 +170,15 @@ main(int argc, char **argv)
 	}
 	
 	free(pppp);
+	
+	
+	typedef int array_4_t[1];
+	
+	array_4_t *ppppppp = (array_4_t*)malloc(sizeof *ppppppp);
+	for (int i = 0; i < 10; i++) {
+		**(ppppppp + i) = i;
+		printf("ppppppp[%d][0]: %d\n", i, *(*(ppppppp + i)));
+	}
 	
 	// int [2][3][4] 
 	

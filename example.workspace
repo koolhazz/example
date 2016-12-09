@@ -3,9 +3,9 @@
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
-  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="No"/>
+  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="Yes"/>
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
-  <Project Name="array_new" Path="array_new/array_new.project" Active="Yes"/>
+  <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
   <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="No"/>
   <Project Name="array_sizeof" Path="array_sizeof/array_sizeof.project" Active="No"/>
