@@ -2,38 +2,40 @@
 #include <stdlib.h>
 #include <string.h>
 
+#define __ME__ printf("%s\n", __PRETTY_FUNCTION__);
+#define __BEGIN__ 	printf("%s begin\n", __PRETTY_FUNCTION__);
+#define __END__ 	printf("%s end\n", __PRETTY_FUNCTION__);
+
 void ShowParam(char* p, size_t len)
 {
-	printf("ShowParam(char* p, size_t len) begin\n");
-	printf("ShowParam(char* p, size_t len) end\n");
+	__ME__
 }
 
 void ShowParam(char** p, size_t row, size_t col)
 {
-	printf("ShowParam(char** p, size_t row, size_t col)");
+	__ME__
 	for( int r = 0; r < row; r++)
 		printf("name: %s\n", *(p + r));
 }
 
 void ShowParam(char (*p)[4], size_t row)
 {
-	printf("ShowParam(char (*p)[4], size_t row) begin\n");
+	__BEGIN__
 	for(size_t r = 0; r < row; r++)
 		printf("name: %s\n", *(p + r));
-	printf("ShowParam(char (*p)[4], size_t row) end\n");
+	__END__
 }
 
 #if 1
 void ShowParam(char p[][3][4], size_t row)
 {
-	printf("ShowParam(char p[][3][4], size_t row) begin\n");
-	
+	__BEGIN__
 	for (int r = 0; r < row; r++)
 		for(int i = 0; i < 3; i++)
 			printf("name: %s\n", *(*(p + r) + i));
 			
 	printf("name: %c\n", *(*(*(p + 1) + 1) + 1));
-	printf("ShowParam(char p[][3][4], size_t row) end\n");
+	__END__
 }
 #endif
 
@@ -51,12 +53,12 @@ void ShowParam(char (*p)[3][4], size_t row)
 
 void ShowParam(char* p, size_t x, size_t y, size_t z)
 {
-	printf("ShowParam(char* p, size_t x, size_t y, size_t z) begin\n");
+	__BEGIN__
 	
 	for (int i = 0; i < x * y * z; i++)
 		printf("name: %c\n", *(p + i));
 		
-	printf("ShowParam(char* p, size_t x, size_t y, size_t z) end\n");	
+	__END__
 }
 
 #if 0
@@ -67,7 +69,7 @@ void ShowParam(char (*p)[3][4], size_t row)
 
 void ShowParam(char(*p)[4], size_t x, size_t y)
 {
-	printf("ShowParam(char(*p)[4], size_t x, size_t y)\n");
+	__ME__
 }
 
 typedef int int_array_t[10]; /* 定义一个类型 */

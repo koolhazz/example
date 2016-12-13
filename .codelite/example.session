@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\example\example.workspace">
-  <int Value="19" Name="m_selectedTab"/>
+  <int Value="22" Name="m_selectedTab"/>
   <wxString Value="D:\example\example.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -131,8 +131,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\example\array_new\main.cpp" Name="FileName"/>
-      <int Value="3" Name="FirstVisibleLine"/>
-      <int Value="10" Name="CurrentLine"/>
+      <int Value="111" Name="FirstVisibleLine"/>
+      <int Value="129" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks">
         <wxString Value="9:3"/>
       </wxArrayString>
@@ -140,8 +140,29 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\example\array_malloc\main.c" Name="FileName"/>
+      <int Value="102" Name="FirstVisibleLine"/>
+      <int Value="128" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\jiguang\AppData\Roaming\codelite\sftp\tmp\root\code\gcc_func\func2.c" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="7" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\jiguang\AppData\Roaming\codelite\sftp\tmp\root\code\gcc_func\main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="11" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="D:\example\array_parameter\main.cpp" Name="FileName"/>
+      <int Value="114" Name="FirstVisibleLine"/>
+      <int Value="71" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
