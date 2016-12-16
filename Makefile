@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ array_parameter - Debug ]----------"
-	@cd "array_parameter" && "$(MAKE)" -f  "array_parameter.mk"
+	@echo "----------Building project:[ call_static_func - Debug ]----------"
+	@cd "call_static_func" && "$(MAKE)" -f  "call_static_func.mk"
 clean:
-	@echo "----------Cleaning project:[ array_parameter - Debug ]----------"
-	@cd "array_parameter" && "$(MAKE)" -f  "array_parameter.mk" clean
+	@echo "----------Cleaning project:[ call_static_func - Debug ]----------"
+	@cd "call_static_func" && "$(MAKE)" -f  "call_static_func.mk" clean
