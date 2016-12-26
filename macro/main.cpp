@@ -176,6 +176,7 @@ union luai_Cast { double l_d; long l_l; };
 /* ! Test for polling API */
 
 
+#define ACCESS_ONCE(x) (* (volatile typeof(x) *) &(x))
 
 int main(int argc, char **argv)
 {
