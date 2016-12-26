@@ -291,7 +291,8 @@
   <Project Name="map_erase3" Path="map_erase3/map_erase3.project" Active="No"/>
   <Project Name="class_copy_cons_2" Path="class_copy_cons_2/class_copy_cons_2.project" Active="No"/>
   <Project Name="CuckooFilter" Path="CuckooFilter/CuckooFilter.project" Active="No"/>
-  <Project Name="call_static_func" Path="call_static_func/call_static_func.project" Active="Yes"/>
+  <Project Name="call_static_func" Path="call_static_func/call_static_func.project" Active="No"/>
+  <Project Name="strtok" Path="strtok/strtok.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -590,6 +591,7 @@
       <Project Name="class_copy_cons_2" ConfigName="Debug"/>
       <Project Name="CuckooFilter" ConfigName="Debug"/>
       <Project Name="call_static_func" ConfigName="Debug"/>
+      <Project Name="strtok" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -888,6 +890,7 @@
       <Project Name="class_copy_cons_2" ConfigName="Release"/>
       <Project Name="CuckooFilter" ConfigName="Release"/>
       <Project Name="call_static_func" ConfigName="Release"/>
+      <Project Name="strtok" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
