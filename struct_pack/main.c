@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 
 /* struct 字段排列循序的不同，造成sizeof 大小不同 */
 
@@ -27,14 +28,66 @@ struct D {
 	short 	b;
 } __attribute__((aligned(1), packed));
 
+#define MAX_CONTENT_LEN 512
+#pragma pack(1)
+typedef struct E{
+    uint32_t    create_time;
+    uint32_t    modify_time;
+    uint32_t    public_time;
+    uint64_t    source_id;
+    uint64_t    item_id;
+    uint64_t    group_id;
+    uint16_t    type;
+    uint16_t    duration;
+    char        video[512];
+    char        original_video[512];
+    char        original_thumbnails[512];
+    char        category[32];
+    char        data_type[32];
+    char        url_source[32];
+    char        source[32];
+    char        title[256];
+    char        content[MAX_CONTENT_LEN];
+    char        url[512];
+    char        thumbnails[512];
+    char        url_target[512];
+    char        extra[1024];
+} E;
+#pragma pack()
+
+typedef struct F{
+    uint64_t    source_id;
+    uint64_t    item_id;
+    uint64_t    group_id;
+    uint32_t    create_time;
+    uint32_t    modify_time;
+    uint32_t    public_time;
+    uint16_t    type;
+    uint16_t    duration;
+    char        video[512];
+    char        original_video[512];
+    char        original_thumbnails[512];
+    char        category[32];
+    char        data_type[32];
+    char        url_source[32];
+    char        source[32];
+    char        title[256];
+    char        content[MAX_CONTENT_LEN];
+    char        url[512];
+    char        thumbnails[512];
+    char        url_target[512];
+    char        extra[1024];
+} F;
+
 int
 main(int argc, char** argv)
 {
-	printf("A: %zu\n", sizeof(struct A));
-	printf("B: %zu\n", sizeof(struct B));
-	printf("C: %zu\n", sizeof(struct C));
-	printf("D: %zu\n", sizeof(struct D));
-	
+	printf("A: %llu\n", sizeof(struct A));
+	printf("B: %llu\n", sizeof(struct B));
+	printf("C: %llu\n", sizeof(struct C));
+	printf("D: %llu\n", sizeof(struct D));
+	printf("E: %llu\n", sizeof(struct E));
+	printf("F: %llu\n", sizeof(struct F));
 	int i = 0;
 	
 	scanf("%d", &i);

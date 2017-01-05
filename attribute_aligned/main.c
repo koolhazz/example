@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
 
 #pragma pack(push, 1)
 
@@ -127,11 +128,13 @@ int x __attribute__((aligned(8)));
 __attribute__((aligned(8))) int y;
 int __attribute__((aligned(8))) z;
 
+
+
 int 
 main(int argc, char **argv) {
-	printf("sizeof(struct A) = %zu, sizeof(struct B) = %zu, sizeof(struct C) = %zu, sizeof(struct D) = %zu, sizeof(struct E) = %zu, sizeof(struct F) = %zu \
-	sizeof(struct aligned) = %zu sizeof(struct aligned_2) = %zu sizeof(struct packed_1) = %zu sizeof(struct A_1) = %zu sizeof(struct aligned_3) = %zu sizeof(aligned_t) = %zu \
-	sizeof(aligned_2_t) = %zu sizeof(aligned_3_t) = %zu sizeof(aligned_4_t) = %zu sizeof(struct G) = %zu sizeof x: %zu sizeof y: %zu sizeof z: %zu\n", 
+	printf("sizeof(struct A) = %llu, sizeof(struct B) = %llu, sizeof(struct C) = %llu, sizeof(struct D) = %llu, sizeof(struct E) = %llu, sizeof(struct F) = %llu \
+	sizeof(struct aligned) = %llu sizeof(struct aligned_2) = %llu sizeof(struct packed_1) = %llu sizeof(struct A_1) = %llu sizeof(struct aligned_3) = %llu sizeof(aligned_t) = %llu \
+	sizeof(aligned_2_t) = %llu sizeof(aligned_3_t) = %llu sizeof(aligned_4_t) = %llu sizeof(struct G) = %llu sizeof x: %llu sizeof y: %llu sizeof z: %llu\n", 
 	sizeof(struct A), sizeof(struct B), sizeof(struct C), sizeof(struct D), sizeof(struct E), sizeof(struct F), 
 	sizeof(struct aligned), sizeof(struct aligned_2), sizeof(struct packed_1), sizeof(struct A_1), sizeof(struct aligned_3), sizeof(aligned_t), 
 	sizeof(aligned_2_t), sizeof(aligned_3_t), sizeof(aligned_4_t), sizeof(struct G), sizeof x, sizeof y, sizeof z);

@@ -37,6 +37,20 @@ private:
 	int i;
 };
 
+class AA {
+public:
+	explicit AA(string name) { __name = name; }
+	~AA() {}
+private:
+	string __name;
+};
+
+class AAA {
+public:
+	AAA():__aa("aa") {}
+private:
+	AA __aa;
+};
 
 int
 main(int argc, char* argv[])
@@ -52,6 +66,7 @@ main(int argc, char* argv[])
 	delete pMyClass;
 	
 	
+	AAA aaa;
 	
 	system("pause");
 }

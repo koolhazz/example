@@ -45,7 +45,7 @@
   <Project Name="chinese" Path="chinese/chinese.project" Active="No"/>
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
-  <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
+  <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="Yes"/>
   <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
@@ -292,7 +292,7 @@
   <Project Name="class_copy_cons_2" Path="class_copy_cons_2/class_copy_cons_2.project" Active="No"/>
   <Project Name="CuckooFilter" Path="CuckooFilter/CuckooFilter.project" Active="No"/>
   <Project Name="call_static_func" Path="call_static_func/call_static_func.project" Active="No"/>
-  <Project Name="strtok" Path="strtok/strtok.project" Active="Yes"/>
+  <Project Name="strtok" Path="strtok/strtok.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

@@ -35,6 +35,7 @@ int main(int argc, char **argv)
     
     a.show();
     //a.version(); 
+	//A::version();
     
     b.show();
     b.version();

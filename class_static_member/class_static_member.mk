@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=class_static_member
 ConfigurationName      :=Debug
-WorkspacePath          := "/Users/mac/Desktop/example"
-ProjectPath            := "/Users/mac/Desktop/example/class_static_member"
+WorkspacePath          :=D:/example
+ProjectPath            :=D:/example/class_static_member
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=mac
-Date                   :=12/01/2016
-CodeLitePath           :="/Users/mac/Library/Application Support/codelite"
-LinkerName             :=/usr/bin/g++
-SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
+User                   :=jiguang
+Date                   :=04/01/2017
+CodeLitePath           :="d:/Program Files/CodeLite"
+LinkerName             :=d:/TDM-GCC-64/bin/g++.exe
+SharedObjectLinkerName :=d:/TDM-GCC-64/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -34,7 +34,9 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="class_static_member.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=mkdir -p
+MakeDirCommand         :=makedir
+RcCmpOptions           := 
+RcCompilerName         :=d:/TDM-GCC-64/bin/windres.exe
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -47,19 +49,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := /usr/bin/ar rcu
-CXX      := /usr/bin/g++
-CC       := /usr/bin/gcc
+AR       := d:/TDM-GCC-64/bin/ar.exe rcu
+CXX      := d:/TDM-GCC-64/bin/g++.exe
+CC       := d:/TDM-GCC-64/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := /usr/bin/as
+AS       := d:/TDM-GCC-64/bin/as.exe
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/Users/mac/Desktop/codelite.app/Contents/SharedSupport/
+CodeLiteDir:=d:\Program Files\CodeLite
 Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
@@ -79,11 +81,11 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@$(MakeDirCommand) "./Debug"
 
 
 $(IntermediateDirectory)/.d:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@$(MakeDirCommand) "./Debug"
 
 PreBuild:
 
@@ -92,12 +94,12 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/mac/Desktop/example/class_static_member/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/example/class_static_member/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
 
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix)main.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
