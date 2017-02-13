@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ class_cons_dest - Debug ]----------"
-	@cd "class_cons_dest" && "$(MAKE)" -f  "class_cons_dest.mk"
+	@echo "----------Building project:[ new_type - Debug ]----------"
+	@cd "new_type" && "$(MAKE)" -f  "new_type.mk"
 clean:
-	@echo "----------Cleaning project:[ class_cons_dest - Debug ]----------"
-	@cd "class_cons_dest" && "$(MAKE)" -f  "class_cons_dest.mk" clean
+	@echo "----------Cleaning project:[ new_type - Debug ]----------"
+	@cd "new_type" && "$(MAKE)" -f  "new_type.mk" clean

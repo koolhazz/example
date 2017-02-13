@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="example" Database="">
+<CodeLite_Workspace Name="example" Database="" Version="10.0.0">
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
@@ -45,7 +45,7 @@
   <Project Name="chinese" Path="chinese/chinese.project" Active="No"/>
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
-  <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="Yes"/>
+  <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
   <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
@@ -293,6 +293,8 @@
   <Project Name="CuckooFilter" Path="CuckooFilter/CuckooFilter.project" Active="No"/>
   <Project Name="call_static_func" Path="call_static_func/call_static_func.project" Active="No"/>
   <Project Name="strtok" Path="strtok/strtok.project" Active="No"/>
+  <Project Name="delete_null" Path="delete_null/delete_null.project" Active="No"/>
+  <Project Name="new_type" Path="new_type/new_type.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -592,6 +594,8 @@
       <Project Name="CuckooFilter" ConfigName="Debug"/>
       <Project Name="call_static_func" ConfigName="Debug"/>
       <Project Name="strtok" ConfigName="Debug"/>
+      <Project Name="delete_null" ConfigName="Debug"/>
+      <Project Name="new_type" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -891,6 +895,8 @@
       <Project Name="CuckooFilter" ConfigName="Release"/>
       <Project Name="call_static_func" ConfigName="Release"/>
       <Project Name="strtok" ConfigName="Release"/>
+      <Project Name="delete_null" ConfigName="Release"/>
+      <Project Name="new_type" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
