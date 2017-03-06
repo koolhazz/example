@@ -190,7 +190,7 @@
   <Project Name="struct_bit" Path="struct_bit/struct_bit.project" Active="No"/>
   <Project Name="struct_def_c" Path="struct_def_c/struct_def_c.project" Active="No"/>
   <Project Name="struct_def_cpp" Path="struct_def_cpp/struct_def_cpp.project" Active="No"/>
-  <Project Name="struct_hack" Path="struct_hack/struct_hack.project" Active="No"/>
+  <Project Name="struct_hack" Path="struct_hack/struct_hack.project" Active="Yes"/>
   <Project Name="struct_hack_cpp" Path="struct_hack_cpp/struct_hack_cpp.project" Active="No"/>
   <Project Name="struct_init_c" Path="struct_init_c/struct_init_c.project" Active="No"/>
   <Project Name="struct_init_cpp" Path="struct_init_cpp/struct_init_cpp.project" Active="No"/>
@@ -294,7 +294,9 @@
   <Project Name="call_static_func" Path="call_static_func/call_static_func.project" Active="No"/>
   <Project Name="strtok" Path="strtok/strtok.project" Active="No"/>
   <Project Name="delete_null" Path="delete_null/delete_null.project" Active="No"/>
-  <Project Name="new_type" Path="new_type/new_type.project" Active="Yes"/>
+  <Project Name="new_type" Path="new_type/new_type.project" Active="No"/>
+  <Project Name="func_ref" Path="func_ref/func_ref.project" Active="No"/>
+  <Project Name="macro_func" Path="macro_func/macro_func.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -596,6 +598,8 @@
       <Project Name="strtok" ConfigName="Debug"/>
       <Project Name="delete_null" ConfigName="Debug"/>
       <Project Name="new_type" ConfigName="Debug"/>
+      <Project Name="func_ref" ConfigName="Debug"/>
+      <Project Name="macro_func" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -897,6 +901,8 @@
       <Project Name="strtok" ConfigName="Release"/>
       <Project Name="delete_null" ConfigName="Release"/>
       <Project Name="new_type" ConfigName="Release"/>
+      <Project Name="func_ref" ConfigName="Release"/>
+      <Project Name="macro_func" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

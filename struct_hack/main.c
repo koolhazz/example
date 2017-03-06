@@ -5,13 +5,19 @@
 
 typedef struct {
 	int a;
-	char b[]; //char b[0] 也可以
+	char b[]; //char b[0] 也可以, 这里的char b 不算size
 } StructHack_t;
 
 typedef struct hack_s hack_t;
 struct hack_s {
 	int sz;
-	char *b[];
+	char *b[]; //这里的b 算size
+};
+
+typedef struct hack_2_s hack_2_t;
+struct hack_2_s {
+	int sz;
+	int *b[];
 };
 
 #define __NEW_HACK__(p, size) do {							\
@@ -42,8 +48,12 @@ int main(int argc, char **argv)
 	hack_t *phack;
 	
 	__NEW_HACK__(phack, 10);
+	printf("hack_t: %d\n", sizeof(hack_t));
 	printf("pointer: %p\n", phack);
 	printf("pointer: %p\n", phack->b);
+	
+	
+	printf("hack_2_t: %d\n", sizeof(hack_2_t));
 	
 	
 #ifdef _WIN32	
