@@ -3,6 +3,21 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+#ifndef offsetof
+#define offsetof(type, member) \
+	(size_t)&(((type *)0)->member)
+#endif
+
+#ifndef container_of
+#define container_of(ptr, type, member)  \
+	({\
+		const typeof(((type *)0)->member) * __mptr = (ptr);\
+		(type *)((char *)__mptr - offsetof(type, member)); \
+	})
+#endif
+
+#pragma pack(1)
+
 typedef struct {
 	int a;
 	char b[]; //char b[0] 也可以, 这里的char b 不算size
@@ -11,14 +26,16 @@ typedef struct {
 typedef struct hack_s hack_t;
 struct hack_s {
 	int sz;
-	char *b[]; //这里的b 算size
+	char *b[]; //这里的b 不算size
 };
 
 typedef struct hack_2_s hack_2_t;
 struct hack_2_s {
 	int sz;
+	int a;
 	int *b[];
 };
+#pragma pack()
 
 #define __NEW_HACK__(p, size) do {							\
 	p = (hack_t*)malloc(sizeof *p + sizeof(char*) * size);	\
@@ -44,17 +61,19 @@ int main(int argc, char **argv)
 	
 	printf("pointer: %p\n", p);
 	printf("pointer: %p\n", header);
+	printf("pointer: %p\n", p->b);
 	
 	hack_t *phack;
 	
 	__NEW_HACK__(phack, 10);
 	printf("hack_t: %d\n", sizeof(hack_t));
+	printf("hack_t* sz %d\n", sizeof phack);
 	printf("pointer: %p\n", phack);
 	printf("pointer: %p\n", phack->b);
+	printf("offset: %d\n", offsetof(hack_t, b)); //　ｂ的类型为指针类型，size计算入sturct ，但是这个时候offset == sizeof(struct)
 	
 	
 	printf("hack_2_t: %d\n", sizeof(hack_2_t));
-	
 	
 #ifdef _WIN32	
 	system("pause");

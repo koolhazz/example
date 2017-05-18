@@ -87,11 +87,11 @@ static char  FILE_NAME[] = GET_FILE_NAME(__FILE__);
 	extern "C" {
 #endif
 
-#ifndef __i386__
+#ifdef __i386__
     #error __i386__
 #endif
 
-#ifndef __X86_64__
+#ifdef __X86_64__
     #error __X86_64__
 #endif
 
@@ -107,10 +107,10 @@ void show(int i)
 #define _offsetof(type, member) ((size_t)&(((type*)0)->member))
 
 
-#define container_of(ptr, type, member) ({                      \
-        const typeof( ((type *)0)->member ) *__mptr = (ptr);    \
-        (type *)( (char *)__mptr - _offsetof(type,member) );})
-		
+#define container_of(ptr, type, member) ( {                      \
+        const typeof( ((type *)0)->member ) *__mptr = (ptr);     \
+        (type *)( (char *)__mptr - _offsetof(type,member) );} )
+
 #define plus_var(var, nums) var##nums
 
 struct A
@@ -128,7 +128,7 @@ enum IDD
 };
  
 typedef struct MSG{ 
-	IDD id; 
+	enum IDD id; 
 	const char * msg; 
 }MSG;
 
@@ -182,11 +182,11 @@ int main(int argc, char **argv)
 {
 	show(1);	
 	
-	A sa;
+	struct A sa;
 	
-	printf("offset: %d\n", _offsetof(A, b));
+	printf("offset: %d\n", _offsetof(struct A, b));
 	
-	A* pa = container_of(&(sa.b), A, b);
+	struct A* pa = container_of(&(sa.b), struct A, b);
 	
 	pa->a = 10;
 		
@@ -224,7 +224,8 @@ int main(int argc, char **argv)
 	
 	printf("K: %d\n", k);
 	
-	printf("int_max: %u\n", __T_MAX(unsigned int));
+	printf("unsigned int_max: %u\n", __T_MAX(unsigned int));
+	printf("unsigned int_max: %u\n", UINT_MAX);
 	printf("int_max: %d\n", __T_MAX(int));
 	
 	
