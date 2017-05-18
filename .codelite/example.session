@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="D:\example\example.workspace">
-  <int Value="55" Name="m_selectedTab"/>
+  <int Value="18" Name="m_selectedTab"/>
   <wxString Value="D:\example\example.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -133,8 +133,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\example\array_malloc\main.c" Name="FileName"/>
-      <int Value="102" Name="FirstVisibleLine"/>
-      <int Value="128" Name="CurrentLine"/>
+      <int Value="168" Name="FirstVisibleLine"/>
+      <int Value="193" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -266,7 +266,7 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\example\xxprintf\main.c" Name="FileName"/>
-      <int Value="12" Name="FirstVisibleLine"/>
+      <int Value="0" Name="FirstVisibleLine"/>
       <int Value="32" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -427,8 +427,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="D:\example\macro\main.c" Name="FileName"/>
-      <int Value="90" Name="FirstVisibleLine"/>
-      <int Value="113" Name="CurrentLine"/>
+      <int Value="6" Name="FirstVisibleLine"/>
+      <int Value="21" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

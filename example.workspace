@@ -61,7 +61,7 @@
   <Project Name="DataType" Path="DataType/DataType.project" Active="No"/>
   <Project Name="DataType_def" Path="DataType_def/DataType_def.project" Active="No"/>
   <Project Name="dump_binary" Path="dump_binary/dump_binary.project" Active="No"/>
-  <Project Name="endian" Path="endian/endian.project" Active="Yes"/>
+  <Project Name="endian" Path="endian/endian.project" Active="No"/>
   <Project Name="enum_size" Path="enum_size/enum_size.project" Active="No"/>
   <Project Name="enum_test_1" Path="enum_test_1/enum_test_1.project" Active="No"/>
   <Project Name="exception" Path="exception/exception.project" Active="No"/>
@@ -236,7 +236,7 @@
   <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
   <Project Name="printf_buffer" Path="printf_buffer/printf_buffer.project" Active="No"/>
   <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
-  <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
+  <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="Yes"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
