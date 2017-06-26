@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="typeid" InternalType="Console">
+<CodeLite_Project Name="typeid" InternalType="Console" Version="10.0.0">
   <Description/>
   <Dependencies/>
   <Settings Type="Executable">
@@ -92,6 +92,7 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="main.cpp"/>
+    <File Name="../typeof/main"/>
   </VirtualDirectory>
   <Dependencies Name="Debug"/>
   <Dependencies Name="Release"/>

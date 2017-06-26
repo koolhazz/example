@@ -61,7 +61,7 @@
   <Project Name="DataType" Path="DataType/DataType.project" Active="No"/>
   <Project Name="DataType_def" Path="DataType_def/DataType_def.project" Active="No"/>
   <Project Name="dump_binary" Path="dump_binary/dump_binary.project" Active="No"/>
-  <Project Name="endian" Path="endian/endian.project" Active="Yes"/>
+  <Project Name="endian" Path="endian/endian.project" Active="No"/>
   <Project Name="enum_size" Path="enum_size/enum_size.project" Active="No"/>
   <Project Name="enum_test_1" Path="enum_test_1/enum_test_1.project" Active="No"/>
   <Project Name="exception" Path="exception/exception.project" Active="No"/>
@@ -206,7 +206,7 @@
   <Project Name="timer_list_cpp" Path="timer_list_cpp/timer_list_cpp.project" Active="No"/>
   <Project Name="Tree" Path="Tree/Tree.project" Active="No"/>
   <Project Name="typedef" Path="typedef/typedef.project" Active="No"/>
-  <Project Name="typeid" Path="typeid/typeid.project" Active="No"/>
+  <Project Name="typeid" Path="typeid/typeid.project" Active="Yes"/>
   <Project Name="typeof" Path="typeof/typeof.project" Active="No"/>
   <Project Name="union" Path="union/union.project" Active="No"/>
   <Project Name="url_code" Path="url_code/url_code.project" Active="No"/>
@@ -297,8 +297,6 @@
   <Project Name="new_type" Path="new_type/new_type.project" Active="No"/>
   <Project Name="func_ref" Path="func_ref/func_ref.project" Active="No"/>
   <Project Name="macro_func" Path="macro_func/macro_func.project" Active="No"/>
-  <Project Name="c99_goto" Path="c99_goto/c99_goto.project" Active="No"/>
-  <Project Name="container_of_cpp" Path="container_of_cpp/container_of_cpp.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

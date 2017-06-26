@@ -598,4 +598,4 @@ nextWord:
 			}
 		}
 		}
-#include "main.c"
+#include "main"
