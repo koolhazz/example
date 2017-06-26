@@ -236,7 +236,7 @@
   <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
   <Project Name="printf_buffer" Path="printf_buffer/printf_buffer.project" Active="No"/>
   <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
-  <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
+  <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="Yes"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
