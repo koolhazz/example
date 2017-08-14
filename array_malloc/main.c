@@ -174,7 +174,7 @@ main(int argc, char **argv)
 	
 	typedef int array_4_t[1];
 	
-	array_4_t *ppppppp = (array_4_t*)malloc(sizeof *ppppppp);
+	array_4_t *ppppppp = (array_4_t*)malloc(sizeof *ppppppp * 10);
 	for (int i = 0; i < 10; i++) {
 		**(ppppppp + i) = i;
 		printf("ppppppp[%d][0]: %d\n", i, *(*(ppppppp + i)));
@@ -187,11 +187,9 @@ main(int argc, char **argv)
 	array_3_t *ppppp = (array_3_t*)malloc(sizeof(array_3_t));
 	free(ppppp);
 	
-	int (*pppppp)[3][4] = (int(*)[3][4])malloc(sizeof(int(*)[3][4]) * 2);
+	int (*pppppp)[3][4] = (int(*)[3][4])malloc(sizeof(int [3][4]) * 2);
 	free(pppppp);
-	
-	system("pause");
-	
+		
 	return 0;
 }
 

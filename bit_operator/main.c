@@ -169,6 +169,7 @@
 #define s2u32(x)    x ^ 0x80000000
 #define s2u32_2(x)  x & 0x7FFFFFFF
 
+
 static void
 __fast_upper(char* str, size_t len)
 {
@@ -265,6 +266,8 @@ int main(int argc, char **argv)
     prt_var_bin(s2u32(x));
     printf("x: %u\n", s2u32(x));
     printf("x: %u\n", s2u32_2(x));
+	
+	printf("x: %d\n", -1 & 0xffffffff);
 	
 	system("pause");
 	return 0;

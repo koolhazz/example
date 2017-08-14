@@ -206,7 +206,7 @@
   <Project Name="timer_list_cpp" Path="timer_list_cpp/timer_list_cpp.project" Active="No"/>
   <Project Name="Tree" Path="Tree/Tree.project" Active="No"/>
   <Project Name="typedef" Path="typedef/typedef.project" Active="No"/>
-  <Project Name="typeid" Path="typeid/typeid.project" Active="Yes"/>
+  <Project Name="typeid" Path="typeid/typeid.project" Active="No"/>
   <Project Name="typeof" Path="typeof/typeof.project" Active="No"/>
   <Project Name="union" Path="union/union.project" Active="No"/>
   <Project Name="url_code" Path="url_code/url_code.project" Active="No"/>
@@ -236,7 +236,7 @@
   <Project Name="noncopyable" Path="noncopyable/noncopyable.project" Active="No"/>
   <Project Name="printf_buffer" Path="printf_buffer/printf_buffer.project" Active="No"/>
   <Project Name="func_param_order" Path="func_param_order/func_param_order.project" Active="No"/>
-  <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="Yes"/>
+  <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
   <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
@@ -297,6 +297,11 @@
   <Project Name="new_type" Path="new_type/new_type.project" Active="No"/>
   <Project Name="func_ref" Path="func_ref/func_ref.project" Active="No"/>
   <Project Name="macro_func" Path="macro_func/macro_func.project" Active="No"/>
+  <Project Name="operator5" Path="operator5/operator5.project" Active="No"/>
+  <Project Name="static_var" Path="static_var/static_var.project" Active="No"/>
+  <Project Name="enum_class" Path="enum_class/enum_class.project" Active="No"/>
+  <Project Name="vector_shrink" Path="vector_shrink/vector_shrink.project" Active="No"/>
+  <Project Name="class_method_4" Path="class_method_4/class_method_4.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -602,6 +607,11 @@
       <Project Name="macro_func" ConfigName="Debug"/>
       <Project Name="c99_goto" ConfigName="Debug"/>
       <Project Name="container_of_cpp" ConfigName="Debug"/>
+      <Project Name="operator5" ConfigName="Debug"/>
+      <Project Name="static_var" ConfigName="Debug"/>
+      <Project Name="enum_class" ConfigName="Debug"/>
+      <Project Name="vector_shrink" ConfigName="Debug"/>
+      <Project Name="class_method_4" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -907,6 +917,11 @@
       <Project Name="macro_func" ConfigName="Release"/>
       <Project Name="c99_goto" ConfigName="Release"/>
       <Project Name="container_of_cpp" ConfigName="Release"/>
+      <Project Name="operator5" ConfigName="Release"/>
+      <Project Name="static_var" ConfigName="Release"/>
+      <Project Name="enum_class" ConfigName="Release"/>
+      <Project Name="vector_shrink" ConfigName="Release"/>
+      <Project Name="class_method_4" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

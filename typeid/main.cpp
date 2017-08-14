@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	printf("type of i: %s\n", typeid(i).name());
 	printf("type of p: %s\n", typeid(p).name());
 	printf("type of int: %s\n", typeid(int).name());
-	
+	printf("type of new char[2][3]: %s\n", typeid(new char[2][3]).name());
 	printf("type of a: %s\n", t(a));
 	printf("type of *a: %s\n", t(*a));
 	printf("type of &a: %s\n", t(&a));
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
     pt(&c[0]);
     pt(c + 0);
     pt(c);
-
+	
 	system("pause");
 	
 	return 0;
