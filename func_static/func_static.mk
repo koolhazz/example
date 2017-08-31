@@ -5,21 +5,21 @@
 ## Debug
 ProjectName            :=func_static
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\func_static"
+WorkspacePath          :=/Users/ac/Desktop/example
+ProjectPath            :=/Users/ac/Desktop/example/func_static
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=10/23/13
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=gcc
-SharedObjectLinkerName :=gcc -shared -fPIC
+User                   :=austin chen
+Date                   :=30/08/2017
+CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
+PreprocessSuffix       :=.i
 DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
@@ -31,12 +31,10 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="func_static.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=windres
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,21 +47,20 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := gcc
-CC       := gcc
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := as
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/main$(ObjectSuffix) $(IntermediateDirectory)/func$(ObjectSuffix) 
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/func.c$(ObjectSuffix) 
 
 
 
@@ -72,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -81,8 +78,12 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -90,21 +91,21 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.c $(IntermediateDirectory)/main$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/func_static/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.c"
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/func_static/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "main.c"
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
 
-$(IntermediateDirectory)/func$(ObjectSuffix): func.c $(IntermediateDirectory)/func$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/func_static/func.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/func$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/func$(DependSuffix): func.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/func$(ObjectSuffix) -MF$(IntermediateDirectory)/func$(DependSuffix) -MM "func.c"
+$(IntermediateDirectory)/func.c$(ObjectSuffix): func.c $(IntermediateDirectory)/func.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/func_static/func.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/func.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/func.c$(DependSuffix): func.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/func.c$(ObjectSuffix) -MF$(IntermediateDirectory)/func.c$(DependSuffix) -MM func.c
 
-$(IntermediateDirectory)/func$(PreprocessSuffix): func.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/func$(PreprocessSuffix) "func.c"
+$(IntermediateDirectory)/func.c$(PreprocessSuffix): func.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/func.c$(PreprocessSuffix) func.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -112,14 +113,6 @@ $(IntermediateDirectory)/func$(PreprocessSuffix): func.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/func$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/func$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/func$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/func_static"
+	$(RM) -r ./Debug/
 
 

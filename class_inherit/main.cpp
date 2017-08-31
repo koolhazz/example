@@ -8,6 +8,8 @@ public:
 	virtual ~Base() { printf("Base Freeed.\n"); }
 	
 	int val(int v = 1024) { printf("Base return val: %d\n", v); return v; }
+protected:
+	virtual int version() = 0;
 };
 
 class Dev : public Base {
@@ -18,6 +20,8 @@ public:
 	
 	/* 这里的virtual 可以不用添加，因为c++ 规定子类中和基本类声明一样的函数自动定义为virtual */
 	int val(int v = 2048) { printf("Dev return val: %d\n", v); return v; } /* 这里不加virtual Dev类型的指针使用Son实例赋值后，只能调用Dev的val */
+private:
+	int version() { return 0; }
 };
 
 
@@ -68,7 +72,7 @@ main(int argc, char **argv)
 	RN();
 	//验证虚函数的默认参数
 	{
-		Base* pb  = new Dev;`1
+		Base* pb  = new Dev;
 		
 		pb->val(); /* 这里的参数默认值是1024，函数的调用时动态的，但是参数的赋值是静态的，这里默认参数采用Base::val的1024进行赋值 */
 		

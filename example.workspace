@@ -301,7 +301,11 @@
   <Project Name="static_var" Path="static_var/static_var.project" Active="No"/>
   <Project Name="enum_class" Path="enum_class/enum_class.project" Active="No"/>
   <Project Name="vector_shrink" Path="vector_shrink/vector_shrink.project" Active="No"/>
-  <Project Name="class_method_4" Path="class_method_4/class_method_4.project" Active="Yes"/>
+  <Project Name="class_method_4" Path="class_method_4/class_method_4.project" Active="No"/>
+  <Project Name="if_condition" Path="if_condition/if_condition.project" Active="No"/>
+  <Project Name="static_func" Path="static_func/static_func.project" Active="No"/>
+  <Project Name="function-try-lock" Path="function-try-lock/function-try-lock.project" Active="No"/>
+  <Project Name="function-try-lock-2" Path="function-try-lock-2/function-try-lock-2.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -612,6 +616,10 @@
       <Project Name="enum_class" ConfigName="Debug"/>
       <Project Name="vector_shrink" ConfigName="Debug"/>
       <Project Name="class_method_4" ConfigName="Debug"/>
+      <Project Name="if_condition" ConfigName="Debug"/>
+      <Project Name="static_func" ConfigName="Debug"/>
+      <Project Name="function-try-lock" ConfigName="Debug"/>
+      <Project Name="function-try-lock-2" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -922,6 +930,10 @@
       <Project Name="enum_class" ConfigName="Release"/>
       <Project Name="vector_shrink" ConfigName="Release"/>
       <Project Name="class_method_4" ConfigName="Release"/>
+      <Project Name="if_condition" ConfigName="Release"/>
+      <Project Name="static_func" ConfigName="Release"/>
+      <Project Name="function-try-lock" ConfigName="Release"/>
+      <Project Name="function-try-lock-2" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
