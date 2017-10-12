@@ -54,6 +54,15 @@ struct E {
 	unsigned char :0;
 };
 
+struct F {
+	unsigned int :0; // c++ 这里是一个字节
+};
+
+struct G {
+	unsigned int a:1,
+				 b:7;
+};
+
 int main(int argc, char **argv)
 {
 	struct A a = {0};
@@ -79,8 +88,7 @@ int main(int argc, char **argv)
 	
 	printf("sizeof D: %d\n", sizeof(full_of_fields));
 	printf("sizeof E: %d\n", sizeof(struct E));
-	
-	system("pause");
+	printf("sizeof F: %d\n", sizeof(struct F));
 	
 	return 0;
 }

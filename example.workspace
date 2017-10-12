@@ -22,7 +22,7 @@
   <Project Name="beformain" Path="beformain/beformain.project" Active="No"/>
   <Project Name="binary_heap" Path="binary_heap/binary_heap.project" Active="No"/>
   <Project Name="bit" Path="bit/bit.project" Active="No"/>
-  <Project Name="bit_field" Path="bit_field/bit_field.project" Active="No"/>
+  <Project Name="bit_field" Path="bit_field/bit_field.project" Active="Yes"/>
   <Project Name="bit_operator" Path="bit_operator/bit_operator.project" Active="No"/>
   <Project Name="bit_Reversing" Path="bit_Reversing/bit_Reversing.project" Active="No"/>
   <Project Name="bitmap" Path="bitmap/bitmap.project" Active="No"/>
@@ -305,7 +305,9 @@
   <Project Name="if_condition" Path="if_condition/if_condition.project" Active="No"/>
   <Project Name="static_func" Path="static_func/static_func.project" Active="No"/>
   <Project Name="function-try-lock" Path="function-try-lock/function-try-lock.project" Active="No"/>
-  <Project Name="function-try-lock-2" Path="function-try-lock-2/function-try-lock-2.project" Active="Yes"/>
+  <Project Name="function-try-lock-2" Path="function-try-lock-2/function-try-lock-2.project" Active="No"/>
+  <Project Name="cxx11" Path="cxx11/cxx11.project" Active="No"/>
+  <Project Name="check_cpp_ver" Path="check_cpp_ver/check_cpp_ver.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -620,6 +622,8 @@
       <Project Name="static_func" ConfigName="Debug"/>
       <Project Name="function-try-lock" ConfigName="Debug"/>
       <Project Name="function-try-lock-2" ConfigName="Debug"/>
+      <Project Name="cxx11" ConfigName="Debug"/>
+      <Project Name="check_cpp_ver" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -934,6 +938,8 @@
       <Project Name="static_func" ConfigName="Release"/>
       <Project Name="function-try-lock" ConfigName="Release"/>
       <Project Name="function-try-lock-2" ConfigName="Release"/>
+      <Project Name="cxx11" ConfigName="Release"/>
+      <Project Name="check_cpp_ver" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
