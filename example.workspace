@@ -22,7 +22,7 @@
   <Project Name="beformain" Path="beformain/beformain.project" Active="No"/>
   <Project Name="binary_heap" Path="binary_heap/binary_heap.project" Active="No"/>
   <Project Name="bit" Path="bit/bit.project" Active="No"/>
-  <Project Name="bit_field" Path="bit_field/bit_field.project" Active="Yes"/>
+  <Project Name="bit_field" Path="bit_field/bit_field.project" Active="No"/>
   <Project Name="bit_operator" Path="bit_operator/bit_operator.project" Active="No"/>
   <Project Name="bit_Reversing" Path="bit_Reversing/bit_Reversing.project" Active="No"/>
   <Project Name="bitmap" Path="bitmap/bitmap.project" Active="No"/>
@@ -73,7 +73,7 @@
   <Project Name="for_test" Path="for_test/for_test.project" Active="No"/>
   <Project Name="func_overload" Path="func_overload/func_overload.project" Active="No"/>
   <Project Name="func_static" Path="func_static/func_static.project" Active="No"/>
-  <Project Name="func_va" Path="func_va/func_va.project" Active="No"/>
+  <Project Name="func_va" Path="func_va/func_va.project" Active="Yes"/>
   <Project Name="function_class" Path="function_class/function_class.project" Active="No"/>
   <Project Name="function_default" Path="function_default/function_default.project" Active="No"/>
   <Project Name="function_default_cpp" Path="function_default_cpp/function_default_cpp.project" Active="No"/>

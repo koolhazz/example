@@ -22,7 +22,7 @@ int demo(char *msg, ... )
     while (1)   
     {    
         para = va_arg(argp, char *);                 /*    取出当前的参数，类型为char *. */    
-        if ( strcmp( para, "/0") == 0 )    
+        if ( strcmp( para, "\0") == 0 )    
                                                       /* 采用空串指示参数输入结束 */    
             break;    
         printf("Parameter #%d is: %s\n", argno, para);    
@@ -82,7 +82,7 @@ demo_3(const char* fmt, ...) /* int char float uint64_t */
 int 
 main(int arg, char** argv)    
 {    
-	demo("DEMO", "This", "is", "a", "demo!" ,"333333", "/0");
+	demo("DEMO", "This", "is", "a", "demo!" ,"333333", "\0");
 	
 	int i = 100;
 	char c = 'a';
@@ -92,8 +92,6 @@ main(int arg, char** argv)
 	demo_2("icf", i, c, f);
 	
 	demo_3("icf", i, c, f, ll);
-	
-	system("pause");
 	
 	return 0;
 }    
