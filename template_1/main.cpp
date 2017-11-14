@@ -26,7 +26,7 @@ main(int argc, char **argv)
 {
 	A a;
 	
-	a.show(a);
+	a.show<A>(a);
 	
 	return 0;
 }

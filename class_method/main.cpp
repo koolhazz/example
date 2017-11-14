@@ -16,16 +16,16 @@ int main(int argc, char **argv)
 
 	delete pBase;
 
-	printf("**************************\n");
+	printf("**************************1\n");
 
 	CDev* pDev = new CDev(2, 9);
-	pDev->age();
+	pDev->age(); // 子类的Age 方法，静态绑定
 	pDev->Show();
 	pDev->show_i();
 
 	delete pDev;
 
-	printf("**************************\n");
+	printf("**************************2\n");
 
 	pBase = new CBase(1);
 

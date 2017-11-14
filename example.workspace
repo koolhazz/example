@@ -73,7 +73,7 @@
   <Project Name="for_test" Path="for_test/for_test.project" Active="No"/>
   <Project Name="func_overload" Path="func_overload/func_overload.project" Active="No"/>
   <Project Name="func_static" Path="func_static/func_static.project" Active="No"/>
-  <Project Name="func_va" Path="func_va/func_va.project" Active="Yes"/>
+  <Project Name="func_va" Path="func_va/func_va.project" Active="No"/>
   <Project Name="function_class" Path="function_class/function_class.project" Active="No"/>
   <Project Name="function_default" Path="function_default/function_default.project" Active="No"/>
   <Project Name="function_default_cpp" Path="function_default_cpp/function_default_cpp.project" Active="No"/>
@@ -206,7 +206,7 @@
   <Project Name="timer_list_cpp" Path="timer_list_cpp/timer_list_cpp.project" Active="No"/>
   <Project Name="Tree" Path="Tree/Tree.project" Active="No"/>
   <Project Name="typedef" Path="typedef/typedef.project" Active="No"/>
-  <Project Name="typeid" Path="typeid/typeid.project" Active="No"/>
+  <Project Name="typeid" Path="typeid/typeid.project" Active="Yes"/>
   <Project Name="typeof" Path="typeof/typeof.project" Active="No"/>
   <Project Name="union" Path="union/union.project" Active="No"/>
   <Project Name="url_code" Path="url_code/url_code.project" Active="No"/>

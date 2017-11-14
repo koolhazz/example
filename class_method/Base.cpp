@@ -18,7 +18,7 @@ void
 CBase::Show()
 {
 	showme();
-	name();
+	name(); // base.name();
 }
 
 void

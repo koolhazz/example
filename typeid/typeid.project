@@ -92,7 +92,6 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="main.cpp"/>
-    <File Name="../typeof/main"/>
   </VirtualDirectory>
   <Dependencies Name="Debug"/>
   <Dependencies Name="Release"/>

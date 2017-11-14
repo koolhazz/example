@@ -34,6 +34,7 @@ int main(int argc, char **argv)
     pt(a[0]); // char [3]
     pt(&a[0]);
     pt(&b); // char(*)[1][2][3]
+	pt(b[0])
     pt(&b[0]);
     pt(b);
     pt(b + 0);

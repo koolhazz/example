@@ -11,12 +11,20 @@ public:
 };
 
 
+template <typename T, typename X> 
+T Add(X x, X y)
+{
+	return x + y;
+}
+
 int main(int argc, char **argv)
 {
 	A a;
     
     a.add<int>(1, 2);
     
-    printf("hello world\n");
+    long result = Add<long, int>(1, 2);
+	
+	printf("Result: %u\n", result);
 	return 0;
 }

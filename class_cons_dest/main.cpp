@@ -40,14 +40,19 @@ private:
 class AA {
 public:
 	explicit AA(string name) { __name = name; }
-	~AA() {}
+	virtual ~AA() {}
+	
+	void self() { printf("I am AA\n"); }
+	virtual void other() { printf("I am AA\n"); }
 private:
 	string __name;
 };
 
-class AAA {
+class AAA : public AA {
 public:
-	AAA():__aa("aa") {}
+	AAA():AA("aa"), __aa("aaa") {}
+	void self() { printf("I am AAA\n");}
+	virtual void other() { printf("I am AAA\n"); }
 private:
 	AA __aa;
 };
@@ -67,6 +72,20 @@ main(int argc, char* argv[])
 	
 	
 	AAA aaa;
+	AA aa("aa");
 	
-	system("pause");
+	aaa.self();
+	aa.self();
+	
+	AA *paaa = new AAA();
+	AA *paa = new AA("aa");
+
+	// self 不是动态绑定，采用静态绑定方式, 按照调用者的类型编译器决定调用那个方法
+	paaa->self();
+	paa->self();
+	dynamic_cast<AAA*>(paaa)->self();
+	
+	// dynamic binding
+	paaa->other();
+	paa->other();
 }
