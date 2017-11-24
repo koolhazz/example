@@ -65,9 +65,11 @@ main(int argc, char **argv)
 	
 	cout << "op7(): " << op7() << endl;
 	
-	int i;
-	
-	cin >> i;
+	if (op7) {
+		cout << "true" << endl;
+	} else {
+		cout << "false" << endl;
+	}
 	
 	return 0;
 }

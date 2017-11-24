@@ -49,6 +49,8 @@ public:
 	
 	string& operator()() { return this->s; }
 	
+	operator bool() const { return i ? true : false; }
+	
 	/* 必须定义为static 方法 new / delete 但是这里类的方法好像也可以，需要验证*/
 	void* operator new(size_t size, const char* func) /* 重载类的new 操作符 只影响该类*/
 	{

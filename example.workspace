@@ -150,7 +150,7 @@
   <Project Name="nginx_mempool" Path="nginx_mempool/nginx_mempool.project" Active="No"/>
   <Project Name="ngx_mempool_2" Path="ngx_mempool_2/ngx_mempool_2.project" Active="No"/>
   <Project Name="number_max" Path="number_max/number_max.project" Active="No"/>
-  <Project Name="operator" Path="operator/operator.project" Active="No"/>
+  <Project Name="operator" Path="operator/operator.project" Active="Yes"/>
   <Project Name="operator_short" Path="operator_short/operator_short.project" Active="No"/>
   <Project Name="operator2" Path="operator2/operator2.project" Active="No"/>
   <Project Name="operator3" Path="operator3/operator3.project" Active="No"/>
@@ -206,7 +206,7 @@
   <Project Name="timer_list_cpp" Path="timer_list_cpp/timer_list_cpp.project" Active="No"/>
   <Project Name="Tree" Path="Tree/Tree.project" Active="No"/>
   <Project Name="typedef" Path="typedef/typedef.project" Active="No"/>
-  <Project Name="typeid" Path="typeid/typeid.project" Active="Yes"/>
+  <Project Name="typeid" Path="typeid/typeid.project" Active="No"/>
   <Project Name="typeof" Path="typeof/typeof.project" Active="No"/>
   <Project Name="union" Path="union/union.project" Active="No"/>
   <Project Name="url_code" Path="url_code/url_code.project" Active="No"/>
