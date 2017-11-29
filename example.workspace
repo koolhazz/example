@@ -150,7 +150,7 @@
   <Project Name="nginx_mempool" Path="nginx_mempool/nginx_mempool.project" Active="No"/>
   <Project Name="ngx_mempool_2" Path="ngx_mempool_2/ngx_mempool_2.project" Active="No"/>
   <Project Name="number_max" Path="number_max/number_max.project" Active="No"/>
-  <Project Name="operator" Path="operator/operator.project" Active="Yes"/>
+  <Project Name="operator" Path="operator/operator.project" Active="No"/>
   <Project Name="operator_short" Path="operator_short/operator_short.project" Active="No"/>
   <Project Name="operator2" Path="operator2/operator2.project" Active="No"/>
   <Project Name="operator3" Path="operator3/operator3.project" Active="No"/>
@@ -308,6 +308,8 @@
   <Project Name="function-try-lock-2" Path="function-try-lock-2/function-try-lock-2.project" Active="No"/>
   <Project Name="cxx11" Path="cxx11/cxx11.project" Active="No"/>
   <Project Name="check_cpp_ver" Path="check_cpp_ver/check_cpp_ver.project" Active="No"/>
+  <Project Name="func_static_var" Path="func_static_var/func_static_var.project" Active="No"/>
+  <Project Name="class_method_static_var" Path="class_method_static_var/class_method_static_var.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -624,6 +626,8 @@
       <Project Name="function-try-lock-2" ConfigName="Debug"/>
       <Project Name="cxx11" ConfigName="Debug"/>
       <Project Name="check_cpp_ver" ConfigName="Debug"/>
+      <Project Name="func_static_var" ConfigName="Debug"/>
+      <Project Name="class_method_static_var" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -940,6 +944,8 @@
       <Project Name="function-try-lock-2" ConfigName="Release"/>
       <Project Name="cxx11" ConfigName="Release"/>
       <Project Name="check_cpp_ver" ConfigName="Release"/>
+      <Project Name="func_static_var" ConfigName="Release"/>
+      <Project Name="class_method_static_var" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
