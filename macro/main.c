@@ -178,6 +178,11 @@ union luai_Cast { double l_d; long l_l; };
 
 #define ACCESS_ONCE(x) (* (volatile typeof(x) *) &(x))
 
+#define XX(n) ({ \
+	int i = 10;		\
+	n + i;			\
+})
+
 int main(int argc, char **argv)
 {
 	show(1);	
@@ -229,7 +234,6 @@ int main(int argc, char **argv)
 	printf("int_max: %d\n", __T_MAX(int));
 	
 	
-	system("pause");
-	
+	printf("XX: %d\n", XX(10));
 	return 0;
 }

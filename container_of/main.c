@@ -39,8 +39,5 @@ int main(int argc, char **argv)
 	
 	printf("Age: %d\n", pp->age);
 	
-	system("pause");
-	
-	
 	return 0;
 }

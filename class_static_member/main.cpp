@@ -22,6 +22,8 @@ public:
 class BB : public B {
 public:
 	void show() { cout << "Name: " << "BB" << endl; }
+public:
+    static void version() { cout << "version: " << 2.10 << endl; } //只是多态，但是不是动态绑定
 };
 
 struct C {
@@ -32,16 +34,19 @@ int main(int argc, char **argv)
 {
     A a;
     B b;
+	B *pb = new BB;
+	BB bb;
     
     a.show();
-    //a.version(); 
-	//A::version();
+
+	//A::version(); // private 不能 调用
     
     b.show();
-    b.version();
-	
+  
+	b.version(); //通过对象也可以调用静态方法
+	bb.version();
+	pb->version();//只是多态，但是上是动态绑定 ，静态绑定，调用的是Class B 的version
 	BB::version();
-
-    system("pause");
+	BB::B::version();
 	return 0;
 }
