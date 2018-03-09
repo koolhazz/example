@@ -2,7 +2,7 @@
 
 class A {
 public:
-	void printf_var() { static unsigned long _id; printf("id: %lu ", _id++); } // 针对class的method 是唯一的
+	void printf_var() { static unsigned long _id; printf("id: %lu ", _id++); } // 针对class的method 是唯一的, 所有的类方法的同名静态变量都是同一个实例
 	void printf_var2() { static unsigned long _id; printf("id: %lu ", _id++); }
 };
 

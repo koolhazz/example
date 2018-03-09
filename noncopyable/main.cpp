@@ -47,9 +47,10 @@ int main(int argc, char **argv)
 	{
 		A a(100);
 	}
-
+	
+	A a(100);
 //	A b(a); /* 这里error */
-//	A b = a; /* 这里error */
+	A b = a; /* 这里error */
 
 	A *p = new A(99);
 	p->show();

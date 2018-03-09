@@ -14,6 +14,7 @@ int
 main(int argc, char **argv)
 {
 	for (unsigned int idx = 0; idx < 10; idx++) {
+		foo_var_2();
 		foo_var();
 	}
 	return 0;

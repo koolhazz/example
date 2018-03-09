@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=30/08/2017
+Date                   :=09/03/2018
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
-Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/func.c$(ObjectSuffix) $(IntermediateDirectory)/def.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/def.c$(ObjectSuffix) $(IntermediateDirectory)/func.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
 
 
@@ -91,13 +91,13 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/static_func/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
+$(IntermediateDirectory)/def.c$(ObjectSuffix): def.c $(IntermediateDirectory)/def.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/static_func/def.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/def.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/def.c$(DependSuffix): def.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/def.c$(ObjectSuffix) -MF$(IntermediateDirectory)/def.c$(DependSuffix) -MM def.c
 
-$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
+$(IntermediateDirectory)/def.c$(PreprocessSuffix): def.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/def.c$(PreprocessSuffix) def.c
 
 $(IntermediateDirectory)/func.c$(ObjectSuffix): func.c $(IntermediateDirectory)/func.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/static_func/func.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/func.c$(ObjectSuffix) $(IncludePath)
@@ -107,13 +107,13 @@ $(IntermediateDirectory)/func.c$(DependSuffix): func.c
 $(IntermediateDirectory)/func.c$(PreprocessSuffix): func.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/func.c$(PreprocessSuffix) func.c
 
-$(IntermediateDirectory)/def.c$(ObjectSuffix): def.c $(IntermediateDirectory)/def.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/static_func/def.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/def.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/def.c$(DependSuffix): def.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/def.c$(ObjectSuffix) -MF$(IntermediateDirectory)/def.c$(DependSuffix) -MM def.c
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/static_func/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 
-$(IntermediateDirectory)/def.c$(PreprocessSuffix): def.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/def.c$(PreprocessSuffix) def.c
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

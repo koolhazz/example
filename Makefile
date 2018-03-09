@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ class_static_member - Debug ]----------"
-	@cd "class_static_member" && "$(MAKE)" -f  "class_static_member.mk"
+	@echo "----------Building project:[ int_compare - Debug ]----------"
+	@cd "int_compare" && "$(MAKE)" -f  "int_compare.mk"
 clean:
-	@echo "----------Cleaning project:[ class_static_member - Debug ]----------"
-	@cd "class_static_member" && "$(MAKE)" -f  "class_static_member.mk" clean
+	@echo "----------Cleaning project:[ int_compare - Debug ]----------"
+	@cd "int_compare" && "$(MAKE)" -f  "int_compare.mk" clean

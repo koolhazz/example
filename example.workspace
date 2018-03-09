@@ -279,7 +279,7 @@
   <Project Name="vector_pair" Path="vector_pair/vector_pair.project" Active="No"/>
   <Project Name="vector_data" Path="vector_data/vector_data.project" Active="No"/>
   <Project Name="macro_namespace" Path="macro_namespace/macro_namespace.project" Active="No"/>
-  <Project Name="class_static_member" Path="class_static_member/class_static_member.project" Active="Yes"/>
+  <Project Name="class_static_member" Path="class_static_member/class_static_member.project" Active="No"/>
   <Project Name="long_string" Path="long_string/long_string.project" Active="No"/>
   <Project Name="varic_page_array" Path="varic_page_array/varic_page_array.project" Active="No"/>
   <Project Name="vec_resize" Path="vec_resize/vec_resize.project" Active="No"/>
@@ -313,6 +313,7 @@
   <Project Name="template_class_2" Path="template_class_2/template_class_2.project" Active="No"/>
   <Project Name="template_complie" Path="template_complie/template_complie.project" Active="No"/>
   <Project Name="class_member_offset" Path="class_member_offset/class_member_offset.project" Active="No"/>
+  <Project Name="int_compare" Path="int_compare/int_compare.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -634,6 +635,7 @@
       <Project Name="template_class_2" ConfigName="Debug"/>
       <Project Name="template_complie" ConfigName="Debug"/>
       <Project Name="class_member_offset" ConfigName="Debug"/>
+      <Project Name="int_compare" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -955,6 +957,7 @@
       <Project Name="template_class_2" ConfigName="Release"/>
       <Project Name="template_complie" ConfigName="Release"/>
       <Project Name="class_member_offset" ConfigName="Release"/>
+      <Project Name="int_compare" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

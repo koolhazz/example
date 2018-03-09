@@ -93,6 +93,7 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
+    <File Name="func.c"/>
     <File Name="main.c"/>
     <File Name="foo.h"/>
     <File Name="foo.c"/>
