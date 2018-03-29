@@ -13,13 +13,34 @@ struct A {
 struct B {
 	char	a; // 4
 	int		c; // 4
-	short 	b; // 4 这里需要采用4个字节的对齐
+	short 	b; // 4 这里需要采用4个字节的对齐，因为对的字段空间为4
+};
+
+struct BB { // 占用空间的大小和字段的排列顺序有关系，按照字段大小升序排列
+	char	a; // 
+	short 	b; // 4  a + b + c 实际占用7个字节，所有成员中空间最大是int 为 4 所以按照 4Byte 对齐, 所以sizeof(struct BB) = 8  
+	int		c; // 4
+};
+
+struct BBB { // 占用空间的大小和字段的排列顺序有关系，按照字段大小升序排列
+	int		c;
+	short 	b;
+	char	a; // 4  a + b + c 实际占用7个字节，所有成员中空间最大是int 为 4 所以按照 4Byte 对齐, a + b 合起来按照4对齐 所以sizeof(struct BBB) = 8  
+};
+
+struct BBBB { // 占用空间的大小和字段的排列顺序有关系，按照字段大小升序排列
+	int		c;
+	short 	b;
+	char	a; // 4  a + b + c + d 实际占用11个字节，所有成员中空间最大是int 为 4 所以按照 4Byte 对齐, 所以sizeof(struct BBBB) = 12
+	int 	d; 
+	//struct BB e;
 };
 
 struct C {
 	char	a; // 4  这里由于后面字段是int型，在32位环境下必须要占用4个字节，所有a只能占用4个字节对齐
 	int		c; // 4
 	short 	b; // 2
+	//struct BBB d;
 } __attribute__((packed));
 
 struct D {
@@ -84,6 +105,9 @@ main(int argc, char** argv)
 {
 	printf("A: %llu\n", sizeof(struct A));
 	printf("B: %llu\n", sizeof(struct B));
+	printf("BB: %llu\n", sizeof(struct BB));
+	printf("BBB: %llu\n", sizeof(struct BBB));
+	printf("BBBB: %llu\n", sizeof(struct BBBB));
 	printf("C: %llu\n", sizeof(struct C));
 	printf("D: %llu\n", sizeof(struct D));
 	printf("E: %llu\n", sizeof(struct E));

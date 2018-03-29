@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ int_compare - Debug ]----------"
-	@cd "int_compare" && "$(MAKE)" -f  "int_compare.mk"
+	@echo "----------Building project:[ struct_pack - Debug ]----------"
+	@cd "struct_pack" && "$(MAKE)" -f  "struct_pack.mk"
 clean:
-	@echo "----------Cleaning project:[ int_compare - Debug ]----------"
-	@cd "int_compare" && "$(MAKE)" -f  "int_compare.mk" clean
+	@echo "----------Cleaning project:[ struct_pack - Debug ]----------"
+	@cd "struct_pack" && "$(MAKE)" -f  "struct_pack.mk" clean

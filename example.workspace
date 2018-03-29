@@ -194,7 +194,7 @@
   <Project Name="struct_hack_cpp" Path="struct_hack_cpp/struct_hack_cpp.project" Active="No"/>
   <Project Name="struct_init_c" Path="struct_init_c/struct_init_c.project" Active="No"/>
   <Project Name="struct_init_cpp" Path="struct_init_cpp/struct_init_cpp.project" Active="No"/>
-  <Project Name="struct_pack" Path="struct_pack/struct_pack.project" Active="No"/>
+  <Project Name="struct_pack" Path="struct_pack/struct_pack.project" Active="Yes"/>
   <Project Name="struct_params" Path="struct_params/struct_params.project" Active="No"/>
   <Project Name="struct_va" Path="struct_va/struct_va.project" Active="No"/>
   <Project Name="sum_dn" Path="sum_dn/sum_dn.project" Active="No"/>
@@ -313,7 +313,9 @@
   <Project Name="template_class_2" Path="template_class_2/template_class_2.project" Active="No"/>
   <Project Name="template_complie" Path="template_complie/template_complie.project" Active="No"/>
   <Project Name="class_member_offset" Path="class_member_offset/class_member_offset.project" Active="No"/>
-  <Project Name="int_compare" Path="int_compare/int_compare.project" Active="Yes"/>
+  <Project Name="int_compare" Path="int_compare/int_compare.project" Active="No"/>
+  <Project Name="scanf" Path="scanf/scanf.project" Active="No"/>
+  <Project Name="get_wordsize" Path="get_wordsize/get_wordsize.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -636,6 +638,8 @@
       <Project Name="template_complie" ConfigName="Debug"/>
       <Project Name="class_member_offset" ConfigName="Debug"/>
       <Project Name="int_compare" ConfigName="Debug"/>
+      <Project Name="scanf" ConfigName="Debug"/>
+      <Project Name="get_wordsize" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -958,6 +962,8 @@
       <Project Name="template_complie" ConfigName="Release"/>
       <Project Name="class_member_offset" ConfigName="Release"/>
       <Project Name="int_compare" ConfigName="Release"/>
+      <Project Name="scanf" ConfigName="Release"/>
+      <Project Name="get_wordsize" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

@@ -32,7 +32,8 @@ main(int argc, char **argv)
 	printf("NUMBER: %ld\n", 123456);
 	printf("NUMBER: 0%lo\n", 123456);
 	printf("NUMBER: %6.4d\n", 1);
-	printf("NUMBER: %Lf\n", 1323123123.232323);
-	system("pause");
+	printf("NUMBER: %lf\n", 1323123123.232323);
+	printf("NUMBER: %x\n", 111111111111111111);
+	printf("NUMBER: %#02lx\n", 10);
 	return 0;
 }

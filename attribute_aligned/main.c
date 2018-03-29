@@ -131,16 +131,15 @@ int __attribute__((aligned(8))) z;
 
 
 int 
-main(int argc, char **argv) {
-	printf("sizeof(struct A) = %llu, sizeof(struct B) = %llu, sizeof(struct C) = %llu, sizeof(struct D) = %llu, sizeof(struct E) = %llu, sizeof(struct F) = %llu \
-	sizeof(struct aligned) = %llu sizeof(struct aligned_2) = %llu sizeof(struct packed_1) = %llu sizeof(struct A_1) = %llu sizeof(struct aligned_3) = %llu sizeof(aligned_t) = %llu \
-	sizeof(aligned_2_t) = %llu sizeof(aligned_3_t) = %llu sizeof(aligned_4_t) = %llu sizeof(struct G) = %llu sizeof x: %llu sizeof y: %llu sizeof z: %llu\n", 
+main(int argc, char **argv) 
+{
+	printf("sizeof(struct A) = %llu\n, sizeof(struct B) = %llu\n, sizeof(struct C) = %llu\n, sizeof(struct D) = %llu\n, sizeof(struct E) = %llu\n, sizeof(struct F) = %llu\n \
+	sizeof(struct aligned) = %llu\n sizeof(struct aligned_2) = %llu\n sizeof(struct packed_1) = %llu\n sizeof(struct A_1) = %llu\n sizeof(struct aligned_3) = %llu\n sizeof(aligned_t) = %llu\n \
+	sizeof(aligned_2_t) = %llu\n sizeof(aligned_3_t) = %llu\n sizeof(aligned_4_t) = %llu\n sizeof(struct G) = %llu\n sizeof x: %llu\n sizeof y: %llu\n sizeof z: %llu\n", 
 	sizeof(struct A), sizeof(struct B), sizeof(struct C), sizeof(struct D), sizeof(struct E), sizeof(struct F), 
 	sizeof(struct aligned), sizeof(struct aligned_2), sizeof(struct packed_1), sizeof(struct A_1), sizeof(struct aligned_3), sizeof(aligned_t), 
 	sizeof(aligned_2_t), sizeof(aligned_3_t), sizeof(aligned_4_t), sizeof(struct G), sizeof x, sizeof y, sizeof z);
 
-	system("pause");
-	
 	return 0;
 }
 
