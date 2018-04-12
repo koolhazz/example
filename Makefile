@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ struct_pack - Debug ]----------"
-	@cd "struct_pack" && "$(MAKE)" -f  "struct_pack.mk"
+	@echo "----------Building project:[ static_var - Debug ]----------"
+	@cd "static_var" && "$(MAKE)" -f  "static_var.mk"
 clean:
-	@echo "----------Cleaning project:[ struct_pack - Debug ]----------"
-	@cd "struct_pack" && "$(MAKE)" -f  "struct_pack.mk" clean
+	@echo "----------Cleaning project:[ static_var - Debug ]----------"
+	@cd "static_var" && "$(MAKE)" -f  "static_var.mk" clean

@@ -76,7 +76,7 @@ typedef struct E{
 } E;
 #pragma pack()
 
-typedef struct F{
+typedef struct F {
     uint64_t    source_id;
     uint64_t    item_id;
     uint64_t    group_id;
@@ -100,6 +100,29 @@ typedef struct F{
     char        extra[1024];
 } F;
 
+
+typedef struct {
+	double 	a;
+	short 	b;
+	int 	c;
+	char 	d;
+} G;
+
+typedef struct {
+	double 	a;
+	short 	b;
+	int 	c;
+	char 	d;
+} __attribute__((aligend(1), packed)) GG;
+
+typedef struct {
+	double 	a;
+	short 	b;
+	int 	c;
+	char 	d;
+} __attribute__((packed)) GGG;
+
+
 int
 main(int argc, char** argv)
 {
@@ -112,6 +135,10 @@ main(int argc, char** argv)
 	printf("D: %llu\n", sizeof(struct D));
 	printf("E: %llu\n", sizeof(struct E));
 	printf("F: %llu\n", sizeof(struct F));
+	printf("F: %llu\n", sizeof(G));
+	printf("F: %llu\n", sizeof(GG));
+	printf("F: %llu\n", sizeof(GGG));
+	
 	int i = 0;
 	
 	scanf("%d", &i);

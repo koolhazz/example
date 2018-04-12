@@ -1,1 +1,1 @@
-./Debug/func.c.o ./Debug/foo.c.o ./Debug/main.c.o
+./Debug/main.c.o ./Debug/foo.c.o ./Debug/func.c.o

@@ -12,7 +12,7 @@
 typedef union {
 	char a;
 	int b;
-}A;
+} A;
 
 #define btol16(i)	 ( (((uint16_t)(i) & 0xff00) >> 8) | (((uint64_t)(i) & 0x00ff) << 8))
 				

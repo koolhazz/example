@@ -194,7 +194,7 @@
   <Project Name="struct_hack_cpp" Path="struct_hack_cpp/struct_hack_cpp.project" Active="No"/>
   <Project Name="struct_init_c" Path="struct_init_c/struct_init_c.project" Active="No"/>
   <Project Name="struct_init_cpp" Path="struct_init_cpp/struct_init_cpp.project" Active="No"/>
-  <Project Name="struct_pack" Path="struct_pack/struct_pack.project" Active="Yes"/>
+  <Project Name="struct_pack" Path="struct_pack/struct_pack.project" Active="No"/>
   <Project Name="struct_params" Path="struct_params/struct_params.project" Active="No"/>
   <Project Name="struct_va" Path="struct_va/struct_va.project" Active="No"/>
   <Project Name="sum_dn" Path="sum_dn/sum_dn.project" Active="No"/>
@@ -298,7 +298,7 @@
   <Project Name="func_ref" Path="func_ref/func_ref.project" Active="No"/>
   <Project Name="macro_func" Path="macro_func/macro_func.project" Active="No"/>
   <Project Name="operator5" Path="operator5/operator5.project" Active="No"/>
-  <Project Name="static_var" Path="static_var/static_var.project" Active="No"/>
+  <Project Name="static_var" Path="static_var/static_var.project" Active="Yes"/>
   <Project Name="enum_class" Path="enum_class/enum_class.project" Active="No"/>
   <Project Name="vector_shrink" Path="vector_shrink/vector_shrink.project" Active="No"/>
   <Project Name="class_method_4" Path="class_method_4/class_method_4.project" Active="No"/>

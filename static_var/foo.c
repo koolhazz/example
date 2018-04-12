@@ -7,5 +7,5 @@ void
 foo_var()
 {
 	invoke_cnt++;
-	printf("%d %d\n", invoke_cnt, id++);
+	printf("%s %d %d\n", __FUNCTION__, invoke_cnt, id++);
 }
