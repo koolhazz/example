@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ static_var - Debug ]----------"
-	@cd "static_var" && "$(MAKE)" -f  "static_var.mk"
+	@echo "----------Building project:[ xxprintf - Debug ]----------"
+	@cd "xxprintf" && "$(MAKE)" -f  "xxprintf.mk"
 clean:
-	@echo "----------Cleaning project:[ static_var - Debug ]----------"
-	@cd "static_var" && "$(MAKE)" -f  "static_var.mk" clean
+	@echo "----------Cleaning project:[ xxprintf - Debug ]----------"
+	@cd "xxprintf" && "$(MAKE)" -f  "xxprintf.mk" clean
