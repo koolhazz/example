@@ -9,10 +9,5 @@ int main(int argc, char **argv)
 	printf("sizeof-pv: %lu\n", sizeof pv);
 	printf("sizeof-main: %lu\n", sizeof main);
 	
-	
-	
-	system("pause");
-	
-	
 	return 0;
 }

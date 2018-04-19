@@ -3,7 +3,7 @@
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
-  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="No"/>
+  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="Yes"/>
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
   <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
@@ -166,7 +166,7 @@
   <Project Name="pthread_key_t" Path="pthread_key_t/pthread_key_t.project" Active="No"/>
   <Project Name="r_value" Path="r_value/r_value.project" Active="No"/>
   <Project Name="random" Path="random/random.project" Active="No"/>
-  <Project Name="RBTree" Path="RBTree/RBTree.project" Active="Yes"/>
+  <Project Name="RBTree" Path="RBTree/RBTree.project" Active="No"/>
   <Project Name="RBTree_2" Path="RBTree_2/RBTree_2.project" Active="No"/>
   <Project Name="RBTree_3" Path="RBTree_3/RBTree_3.project" Active="No"/>
   <Project Name="RBTree_4" Path="RBTree_4/RBTree_4.project" Active="No"/>
