@@ -31,7 +31,7 @@ public:
 	static const int id  = 100;
 	//static const int id; 
 	const int com_id;
-	static int school_id;
+	static int school_id; //静态非常量成员需要在类外赋值
 	
 private:
 	string name;

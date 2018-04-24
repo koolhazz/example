@@ -119,7 +119,5 @@ int main(int argc, char **argv)
 //	printf("d_1: %f\n", htond(d_1));
 //	printf("d_1: %f\n", ntohd(d_1));
 	
-
-	system("pause");
 	return 0;
 }

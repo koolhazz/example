@@ -3,7 +3,7 @@
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
-  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="Yes"/>
+  <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="No"/>
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
   <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
   <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
@@ -48,7 +48,7 @@
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
   <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
-  <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
+  <Project Name="class_member" Path="class_member/class_member.project" Active="Yes"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
   <Project Name="class_vt" Path="class_vt/class_vt.project" Active="No"/>
   <Project Name="class_vt_2" Path="class_vt_2/class_vt_2.project" Active="No"/>
@@ -316,6 +316,8 @@
   <Project Name="int_compare" Path="int_compare/int_compare.project" Active="No"/>
   <Project Name="scanf" Path="scanf/scanf.project" Active="No"/>
   <Project Name="get_wordsize" Path="get_wordsize/get_wordsize.project" Active="No"/>
+  <Project Name="std_copy" Path="std_copy/std_copy.project" Active="No"/>
+  <Project Name="printf_suffix" Path="printf_suffix/printf_suffix.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -640,6 +642,8 @@
       <Project Name="int_compare" ConfigName="Debug"/>
       <Project Name="scanf" ConfigName="Debug"/>
       <Project Name="get_wordsize" ConfigName="Debug"/>
+      <Project Name="std_copy" ConfigName="Debug"/>
+      <Project Name="printf_suffix" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -964,6 +968,8 @@
       <Project Name="int_compare" ConfigName="Release"/>
       <Project Name="scanf" ConfigName="Release"/>
       <Project Name="get_wordsize" ConfigName="Release"/>
+      <Project Name="std_copy" ConfigName="Release"/>
+      <Project Name="printf_suffix" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
