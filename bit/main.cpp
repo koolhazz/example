@@ -144,7 +144,7 @@ void opBits()
 #define IS_2_N_2(a) (((a) & (~a + 1)) == (a))
 
 //获取类型的最大值
-#define MAX_INT ((int)(~(int)0) - 2)
+#define MAX_INT ((int)(~(int)0) - 2) // 只能是unsigned的
 #define MAX_SIZET	((size_t)(~(size_t)0)-2)
 
  
@@ -199,8 +199,10 @@ int main(int argc, char **argv)
 	printf("ccc: %" PRIU32 "\n", ccc);
 	printf("PRIU32: %s\n", PRIU32);
 	
-	printf("MAX_INT: %d\n", MAX_INT);
+	printf("MAX_INT: %u\n", MAX_INT);
 	printf("MAX_INT: %zu\n", MAX_SIZET);
+	
+	printf("xxx: %d\n", 10 << 10); // 相当于 10 * 2的10幂
 	
 	system("pause");
 	

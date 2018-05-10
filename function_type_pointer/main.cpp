@@ -17,6 +17,8 @@ int main(int argc, char **argv)
 	
 	typedef void FUNC();     //定义函数类型
 	
+	pFUNC temp[2];
+	
 	FUNC func;
 	
 	ptr = show;

@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	
 	vec.resize(0, 0); 
 	
-	printf("SZ: %d", vec.size());
+	printf("SZ: %d\n", vec.size());
 	
 	return 0;
 }

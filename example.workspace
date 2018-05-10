@@ -21,7 +21,7 @@
   <Project Name="B_Tree" Path="B_Tree/B_Tree.project" Active="No"/>
   <Project Name="beformain" Path="beformain/beformain.project" Active="No"/>
   <Project Name="binary_heap" Path="binary_heap/binary_heap.project" Active="No"/>
-  <Project Name="bit" Path="bit/bit.project" Active="No"/>
+  <Project Name="bit" Path="bit/bit.project" Active="Yes"/>
   <Project Name="bit_field" Path="bit_field/bit_field.project" Active="No"/>
   <Project Name="bit_operator" Path="bit_operator/bit_operator.project" Active="No"/>
   <Project Name="bit_Reversing" Path="bit_Reversing/bit_Reversing.project" Active="No"/>
@@ -48,7 +48,7 @@
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
   <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
-  <Project Name="class_member" Path="class_member/class_member.project" Active="Yes"/>
+  <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
   <Project Name="class_vt" Path="class_vt/class_vt.project" Active="No"/>
   <Project Name="class_vt_2" Path="class_vt_2/class_vt_2.project" Active="No"/>
@@ -318,6 +318,8 @@
   <Project Name="get_wordsize" Path="get_wordsize/get_wordsize.project" Active="No"/>
   <Project Name="std_copy" Path="std_copy/std_copy.project" Active="No"/>
   <Project Name="printf_suffix" Path="printf_suffix/printf_suffix.project" Active="No"/>
+  <Project Name="vector_copy_resize" Path="vector_copy_resize/vector_copy_resize.project" Active="No"/>
+  <Project Name="complex_pointer" Path="complex_pointer/complex_pointer.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -644,6 +646,8 @@
       <Project Name="get_wordsize" ConfigName="Debug"/>
       <Project Name="std_copy" ConfigName="Debug"/>
       <Project Name="printf_suffix" ConfigName="Debug"/>
+      <Project Name="vector_copy_resize" ConfigName="Debug"/>
+      <Project Name="complex_pointer" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -970,6 +974,8 @@
       <Project Name="get_wordsize" ConfigName="Release"/>
       <Project Name="std_copy" ConfigName="Release"/>
       <Project Name="printf_suffix" ConfigName="Release"/>
+      <Project Name="vector_copy_resize" ConfigName="Release"/>
+      <Project Name="complex_pointer" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
