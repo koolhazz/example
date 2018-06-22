@@ -38,5 +38,8 @@ main(int argc, char **argv)
 	printf("NUMBER: %#02lx\n", 10);
 	
 	printf("NUMBER: %f\n", (float)6944350 / (float)8388608);
+	unsigned int a = 1632222222;
+	printf("Number: %0.4x\n", a);
+	printf("Number: %x\n", a);
 	return 0;
 }

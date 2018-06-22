@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ struct_hack_data - Debug ]----------"
-	@cd "struct_hack_data" && "$(MAKE)" -f  "struct_hack_data.mk"
+	@echo "----------Building project:[ class_virtual_dtor - Debug ]----------"
+	@cd "class_virtual_dtor" && "$(MAKE)" -f  "class_virtual_dtor.mk"
 clean:
-	@echo "----------Cleaning project:[ struct_hack_data - Debug ]----------"
-	@cd "struct_hack_data" && "$(MAKE)" -f  "struct_hack_data.mk" clean
+	@echo "----------Cleaning project:[ class_virtual_dtor - Debug ]----------"
+	@cd "class_virtual_dtor" && "$(MAKE)" -f  "class_virtual_dtor.mk" clean

@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 创建子类实例时，构造函数调用次序由基类开始到子类，析构函数反之
+
 class Base {
 public:
 	Base() {}
