@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=function_default_cpp
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\function_default_cpp"
+WorkspacePath          :=/Users/ac/Desktop/example
+ProjectPath            :=/Users/ac/Desktop/example/function_default_cpp
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=06/05/14
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=D:\MinGW-4.8.1\bin\g++.exe 
-SharedObjectLinkerName :=D:\MinGW-4.8.1\bin\g++.exe -shared -fPIC
+User                   :=austin chen
+Date                   :=10/07/2018
+CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -34,9 +34,7 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="function_default_cpp.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=D:\MinGW-4.8.1\bin\windres.exe 
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,21 +47,20 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:\MinGW-4.8.1\bin\ar.exe rcu
-CXX      := D:\MinGW-4.8.1\bin\g++.exe 
-CC       := D:\MinGW-4.8.1\bin\gcc.exe 
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := D:\MinGW-4.8.1\bin\as.exe 
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/func.cc$(ObjectSuffix) 
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+Objects0=$(IntermediateDirectory)/func.cc$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
 
@@ -72,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -81,8 +78,12 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -90,21 +91,21 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/function_default_cpp/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
-
-$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
-
 $(IntermediateDirectory)/func.cc$(ObjectSuffix): func.cc $(IntermediateDirectory)/func.cc$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/function_default_cpp/func.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/func.cc$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/function_default_cpp/func.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/func.cc$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/func.cc$(DependSuffix): func.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/func.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/func.cc$(DependSuffix) -MM "func.cc"
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/func.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/func.cc$(DependSuffix) -MM func.cc
 
 $(IntermediateDirectory)/func.cc$(PreprocessSuffix): func.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/func.cc$(PreprocessSuffix) "func.cc"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/func.cc$(PreprocessSuffix) func.cc
+
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/function_default_cpp/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -112,14 +113,6 @@ $(IntermediateDirectory)/func.cc$(PreprocessSuffix): func.cc
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/func$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/func$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/func$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/function_default_cpp"
+	$(RM) -r ./Debug/
 
 

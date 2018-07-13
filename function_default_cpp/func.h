@@ -4,7 +4,7 @@
 #include <stdbool.h>
 
 int
-version(unsigned long sec, unsigned long msec=1000);
+version(unsigned long sec, unsigned long msec = 1000, unsigned long usec = 2000);
 
 int
 func(unsigned long sec, bool isloolp=false);

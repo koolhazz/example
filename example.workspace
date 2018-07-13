@@ -321,7 +321,10 @@
   <Project Name="vector_copy_resize" Path="vector_copy_resize/vector_copy_resize.project" Active="No"/>
   <Project Name="complex_pointer" Path="complex_pointer/complex_pointer.project" Active="No"/>
   <Project Name="struct_hack_data" Path="struct_hack_data/struct_hack_data.project" Active="No"/>
-  <Project Name="class_virtual_dtor" Path="class_virtual_dtor/class_virtual_dtor.project" Active="Yes"/>
+  <Project Name="class_virtual_dtor" Path="class_virtual_dtor/class_virtual_dtor.project" Active="No"/>
+  <Project Name="extern_gcc" Path="extern_gcc/extern_gcc.project" Active="No"/>
+  <Project Name="extern_cpp" Path="extern_cpp/extern_cpp.project" Active="No"/>
+  <Project Name="class_inline_2" Path="class_inline_2/class_inline_2.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -652,6 +655,9 @@
       <Project Name="complex_pointer" ConfigName="Debug"/>
       <Project Name="struct_hack_data" ConfigName="Debug"/>
       <Project Name="class_virtual_dtor" ConfigName="Debug"/>
+      <Project Name="extern_gcc" ConfigName="Debug"/>
+      <Project Name="extern_cpp" ConfigName="Debug"/>
+      <Project Name="class_inline_2" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -982,6 +988,9 @@
       <Project Name="complex_pointer" ConfigName="Release"/>
       <Project Name="struct_hack_data" ConfigName="Release"/>
       <Project Name="class_virtual_dtor" ConfigName="Release"/>
+      <Project Name="extern_gcc" ConfigName="Release"/>
+      <Project Name="extern_cpp" ConfigName="Release"/>
+      <Project Name="class_inline_2" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

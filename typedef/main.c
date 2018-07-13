@@ -4,6 +4,17 @@
 typedef int* int_a_t[10];
 typedef int* (*int_a_p_t)[10];
 
+typedef struct {
+	int id;
+} tag_t;
+
+typedef struct tagg_s {
+	int id;
+} tagg_t;
+
+typedef int function_t(int);
+typedef int (*pFunction_t)(int);
+
 static int
 array_create(int_a_t** a)
 {
