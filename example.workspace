@@ -239,7 +239,7 @@
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
-  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
+  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="Yes"/>
   <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
   <Project Name="statement" Path="statement/statement.project" Active="No"/>
@@ -324,7 +324,10 @@
   <Project Name="class_virtual_dtor" Path="class_virtual_dtor/class_virtual_dtor.project" Active="No"/>
   <Project Name="extern_gcc" Path="extern_gcc/extern_gcc.project" Active="No"/>
   <Project Name="extern_cpp" Path="extern_cpp/extern_cpp.project" Active="No"/>
-  <Project Name="class_inline_2" Path="class_inline_2/class_inline_2.project" Active="Yes"/>
+  <Project Name="class_inline_2" Path="class_inline_2/class_inline_2.project" Active="No"/>
+  <Project Name="class_explicit" Path="class_explicit/class_explicit.project" Active="No"/>
+  <Project Name="sscanf_2" Path="sscanf_2/sscanf_2.project" Active="No"/>
+  <Project Name="class_copy_cons_3" Path="class_copy_cons_3/class_copy_cons_3.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -658,6 +661,9 @@
       <Project Name="extern_gcc" ConfigName="Debug"/>
       <Project Name="extern_cpp" ConfigName="Debug"/>
       <Project Name="class_inline_2" ConfigName="Debug"/>
+      <Project Name="class_explicit" ConfigName="Debug"/>
+      <Project Name="sscanf_2" ConfigName="Debug"/>
+      <Project Name="class_copy_cons_3" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -991,6 +997,9 @@
       <Project Name="extern_gcc" ConfigName="Release"/>
       <Project Name="extern_cpp" ConfigName="Release"/>
       <Project Name="class_inline_2" ConfigName="Release"/>
+      <Project Name="class_explicit" ConfigName="Release"/>
+      <Project Name="sscanf_2" ConfigName="Release"/>
+      <Project Name="class_copy_cons_3" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

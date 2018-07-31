@@ -6,6 +6,11 @@ public:
 	person_t(unsigned int _id):id(_id) {}
 	person_t(const person_t& rh);
 	
+	person_t& operator=(const person_t& rsh) {
+		printf("%s\n", __PRETTY_FUNCTION__);
+		id = rsh.id;
+	}
+	
 public:
 	unsigned int get_id() { return id; };
 private:
@@ -46,6 +51,14 @@ main(int argc, char **argv)
 {
 	person_t temp = __new_global();
 	printf("temp.id: %u\n", temp.get_id());
+	
+	person_t pa(200);
+	
+	person_t pb(300);
+	
+	//printf("PA: %p\n", &pa);
+	//pa = pb;
+	//printf("PA: %p\n", &pa);
 	
 	//person_t aaa = temp;
 	
