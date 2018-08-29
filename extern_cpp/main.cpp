@@ -16,6 +16,8 @@ int main(int argc, char **argv)
 	show_var(aaa); 
 	show_var_2(aaa);
 	
+	bbb = 9999999;
+	
 	show_me();
 	
 	show_ccc();

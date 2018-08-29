@@ -6,7 +6,8 @@
 using namespace std;
 
 #define t(v) typeid(v).name()
-#define pt(v) printf("type of "#v": %s addr: 0x%p\n", t(v), v);
+#define pt(v) printf("type of "#v": %s addr: 0x%p\n", t(v), v)
+#define __SEP__ printf("**************************************\n")
 
 int main(int argc, char **argv)
 {
@@ -33,8 +34,10 @@ int main(int argc, char **argv)
 	pt(&a);
     pt(a[0]); // char [3]
     pt(&a[0]);
-    pt(&b); // char(*)[1][2][3]
-	pt(b[0])
+	
+	__SEP__;
+	pt(&b); // char(*)[1][2][3]
+	pt(b[0]);
     pt(&b[0]);
     pt(b);
     pt(b + 0);
@@ -48,12 +51,12 @@ int main(int argc, char **argv)
     pt(***b);
     pt(&b[0]);
     pt(&b[0][0]);
+	
+	__SEP__;
     pt(&c);
     pt(&c[0]);
     pt(c + 0);
     pt(c);
-	
-	system("pause");
 	
 	return 0;
 }

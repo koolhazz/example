@@ -6,10 +6,10 @@ int main(int argc, char **argv)
 				 "world";
 				 
 	char str2[] = "hello \
-	chenbo";
+				  chenbo";
 	
 	char str3[] = "helloe " \
-							"chenbo";
+				  "chenbo";
 	
 	printf("str: %s\n", str);
 	printf("str2: %s\n", str2);

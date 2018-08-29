@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=13/07/2018
+Date                   :=29/08/2018
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
-Objects0=$(IntermediateDirectory)/fc.c$(ObjectSuffix) $(IntermediateDirectory)/f1.c$(ObjectSuffix) $(IntermediateDirectory)/foo.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/fc.c$(ObjectSuffix) $(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/foo.c$(ObjectSuffix) $(IntermediateDirectory)/f1.c$(ObjectSuffix) 
 
 
 
@@ -99,13 +99,13 @@ $(IntermediateDirectory)/fc.c$(DependSuffix): fc.c
 $(IntermediateDirectory)/fc.c$(PreprocessSuffix): fc.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/fc.c$(PreprocessSuffix) fc.c
 
-$(IntermediateDirectory)/f1.c$(ObjectSuffix): f1.c $(IntermediateDirectory)/f1.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/extern_gcc/f1.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/f1.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/f1.c$(DependSuffix): f1.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/f1.c$(ObjectSuffix) -MF$(IntermediateDirectory)/f1.c$(DependSuffix) -MM f1.c
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/extern_gcc/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(DependSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
 
-$(IntermediateDirectory)/f1.c$(PreprocessSuffix): f1.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/f1.c$(PreprocessSuffix) f1.c
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
 
 $(IntermediateDirectory)/foo.c$(ObjectSuffix): foo.c $(IntermediateDirectory)/foo.c$(DependSuffix)
 	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/extern_gcc/foo.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/foo.c$(ObjectSuffix) $(IncludePath)
@@ -115,13 +115,13 @@ $(IntermediateDirectory)/foo.c$(DependSuffix): foo.c
 $(IntermediateDirectory)/foo.c$(PreprocessSuffix): foo.c
 	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/foo.c$(PreprocessSuffix) foo.c
 
-$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/extern_gcc/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
+$(IntermediateDirectory)/f1.c$(ObjectSuffix): f1.c $(IntermediateDirectory)/f1.c$(DependSuffix)
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/extern_gcc/f1.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/f1.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/f1.c$(DependSuffix): f1.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/f1.c$(ObjectSuffix) -MF$(IntermediateDirectory)/f1.c$(DependSuffix) -MM f1.c
 
-$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
-	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
+$(IntermediateDirectory)/f1.c$(PreprocessSuffix): f1.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/f1.c$(PreprocessSuffix) f1.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

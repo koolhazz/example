@@ -328,6 +328,8 @@
   <Project Name="class_explicit" Path="class_explicit/class_explicit.project" Active="No"/>
   <Project Name="sscanf_2" Path="sscanf_2/sscanf_2.project" Active="No"/>
   <Project Name="class_copy_cons_3" Path="class_copy_cons_3/class_copy_cons_3.project" Active="No"/>
+  <Project Name="class_typename_cast" Path="class_typename_cast/class_typename_cast.project" Active="No"/>
+  <Project Name="class_contrl" Path="class_contrl/class_contrl.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -664,6 +666,8 @@
       <Project Name="class_explicit" ConfigName="Debug"/>
       <Project Name="sscanf_2" ConfigName="Debug"/>
       <Project Name="class_copy_cons_3" ConfigName="Debug"/>
+      <Project Name="class_typename_cast" ConfigName="Debug"/>
+      <Project Name="class_contrl" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1000,6 +1004,8 @@
       <Project Name="class_explicit" ConfigName="Release"/>
       <Project Name="sscanf_2" ConfigName="Release"/>
       <Project Name="class_copy_cons_3" ConfigName="Release"/>
+      <Project Name="class_typename_cast" ConfigName="Release"/>
+      <Project Name="class_contrl" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
