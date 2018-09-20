@@ -239,7 +239,7 @@
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="strrep" Path="strrep/strrep.project" Active="No"/>
   <Project Name="pointer_derefence" Path="pointer_derefence/pointer_derefence.project" Active="No"/>
-  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="Yes"/>
+  <Project Name="class_method_3" Path="class_method_3/class_method_3.project" Active="No"/>
   <Project Name="type_max_value" Path="type_max_value/type_max_value.project" Active="No"/>
   <Project Name="string_replace" Path="string_replace/string_replace.project" Active="No"/>
   <Project Name="statement" Path="statement/statement.project" Active="No"/>
@@ -330,6 +330,9 @@
   <Project Name="class_copy_cons_3" Path="class_copy_cons_3/class_copy_cons_3.project" Active="No"/>
   <Project Name="class_typename_cast" Path="class_typename_cast/class_typename_cast.project" Active="No"/>
   <Project Name="class_contrl" Path="class_contrl/class_contrl.project" Active="No"/>
+  <Project Name="enum_def_cpp" Path="enum_def_cpp/enum_def_cpp.project" Active="No"/>
+  <Project Name="slice" Path="slice/slice.project" Active="No"/>
+  <Project Name="pragma_gcc" Path="pragma_gcc/pragma_gcc.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -668,6 +671,9 @@
       <Project Name="class_copy_cons_3" ConfigName="Debug"/>
       <Project Name="class_typename_cast" ConfigName="Debug"/>
       <Project Name="class_contrl" ConfigName="Debug"/>
+      <Project Name="enum_def_cpp" ConfigName="Debug"/>
+      <Project Name="slice" ConfigName="Debug"/>
+      <Project Name="pragma_gcc" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1006,6 +1012,9 @@
       <Project Name="class_copy_cons_3" ConfigName="Release"/>
       <Project Name="class_typename_cast" ConfigName="Release"/>
       <Project Name="class_contrl" ConfigName="Release"/>
+      <Project Name="enum_def_cpp" ConfigName="Release"/>
+      <Project Name="slice" ConfigName="Release"/>
+      <Project Name="pragma_gcc" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

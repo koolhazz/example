@@ -12,6 +12,12 @@ struct test_2 {
 	int age;
 };
 
+static void 
+__show_struct(struct test ss)
+{
+	printf("a: %d b: %d\n", ss.a, ss.b);
+}
+
 int main()
 {
     struct test t1 = {0, 0}; 
@@ -32,8 +38,6 @@ int main()
     printf("t2.a = %d, t2.b = %d\n", t2.a, t2.b);
     printf("t3.a = %d, t3.b = %d\n", t3.a, t3.b);
 	
-	
-	
-	system("pause");
+	__show_struct({0,0});
     return 0;
 }

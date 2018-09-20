@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ class_method_3 - Debug ]----------"
-	@cd "class_method_3" && "$(MAKE)" -f  "class_method_3.mk"
+	@echo "----------Building project:[ pragma_gcc - Debug ]----------"
+	@cd "pragma_gcc" && "$(MAKE)" -f  "pragma_gcc.mk"
 clean:
-	@echo "----------Cleaning project:[ class_method_3 - Debug ]----------"
-	@cd "class_method_3" && "$(MAKE)" -f  "class_method_3.mk" clean
+	@echo "----------Cleaning project:[ pragma_gcc - Debug ]----------"
+	@cd "pragma_gcc" && "$(MAKE)" -f  "pragma_gcc.mk" clean
