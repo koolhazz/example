@@ -21,7 +21,5 @@ int main(int argc, char **argv)
 		printf("false\n");
 	}
 	
-	system("pause");
-	
 	return 0;
 }

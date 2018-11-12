@@ -33,7 +33,5 @@ int main(int argc, char **argv)
 	
 	(pc->*pf)();
 	
-	system("pause");
-	
 	return 0;
 }

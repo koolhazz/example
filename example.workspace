@@ -332,7 +332,12 @@
   <Project Name="class_contrl" Path="class_contrl/class_contrl.project" Active="No"/>
   <Project Name="enum_def_cpp" Path="enum_def_cpp/enum_def_cpp.project" Active="No"/>
   <Project Name="slice" Path="slice/slice.project" Active="No"/>
-  <Project Name="pragma_gcc" Path="pragma_gcc/pragma_gcc.project" Active="Yes"/>
+  <Project Name="pragma_gcc" Path="pragma_gcc/pragma_gcc.project" Active="No"/>
+  <Project Name="struct_method" Path="struct_method/struct_method.project" Active="No"/>
+  <Project Name="comma_express" Path="comma_express/comma_express.project" Active="No"/>
+  <Project Name="macro_narg" Path="macro_narg/macro_narg.project" Active="No"/>
+  <Project Name="string_data" Path="string_data/string_data.project" Active="No"/>
+  <Project Name="type_pointer" Path="type_pointer/type_pointer.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -674,6 +679,11 @@
       <Project Name="enum_def_cpp" ConfigName="Debug"/>
       <Project Name="slice" ConfigName="Debug"/>
       <Project Name="pragma_gcc" ConfigName="Debug"/>
+      <Project Name="struct_method" ConfigName="Debug"/>
+      <Project Name="comma_express" ConfigName="Debug"/>
+      <Project Name="macro_narg" ConfigName="Debug"/>
+      <Project Name="string_data" ConfigName="Debug"/>
+      <Project Name="type_pointer" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1015,6 +1025,11 @@
       <Project Name="enum_def_cpp" ConfigName="Release"/>
       <Project Name="slice" ConfigName="Release"/>
       <Project Name="pragma_gcc" ConfigName="Release"/>
+      <Project Name="struct_method" ConfigName="Release"/>
+      <Project Name="comma_express" ConfigName="Release"/>
+      <Project Name="macro_narg" ConfigName="Release"/>
+      <Project Name="string_data" ConfigName="Release"/>
+      <Project Name="type_pointer" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
