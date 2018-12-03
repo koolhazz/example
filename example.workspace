@@ -337,7 +337,9 @@
   <Project Name="comma_express" Path="comma_express/comma_express.project" Active="No"/>
   <Project Name="macro_narg" Path="macro_narg/macro_narg.project" Active="No"/>
   <Project Name="string_data" Path="string_data/string_data.project" Active="No"/>
-  <Project Name="type_pointer" Path="type_pointer/type_pointer.project" Active="Yes"/>
+  <Project Name="type_pointer" Path="type_pointer/type_pointer.project" Active="No"/>
+  <Project Name="smart_pointer" Path="smart_pointer/smart_pointer.project" Active="No"/>
+  <Project Name="COW" Path="COW/COW.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -684,6 +686,8 @@
       <Project Name="macro_narg" ConfigName="Debug"/>
       <Project Name="string_data" ConfigName="Debug"/>
       <Project Name="type_pointer" ConfigName="Debug"/>
+      <Project Name="smart_pointer" ConfigName="Debug"/>
+      <Project Name="COW" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1030,6 +1034,8 @@
       <Project Name="macro_narg" ConfigName="Release"/>
       <Project Name="string_data" ConfigName="Release"/>
       <Project Name="type_pointer" ConfigName="Release"/>
+      <Project Name="smart_pointer" ConfigName="Release"/>
+      <Project Name="COW" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

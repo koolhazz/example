@@ -4,6 +4,6 @@
 void 
 foo_var_2()
 {
-	//foo_var();
+	foo_var();
 	printf("%s %d\n", __func__, id++);
 }
