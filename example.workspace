@@ -21,7 +21,7 @@
   <Project Name="B_Tree" Path="B_Tree/B_Tree.project" Active="No"/>
   <Project Name="beformain" Path="beformain/beformain.project" Active="No"/>
   <Project Name="binary_heap" Path="binary_heap/binary_heap.project" Active="No"/>
-  <Project Name="bit" Path="bit/bit.project" Active="No"/>
+  <Project Name="bit" Path="bit/bit.project" Active="Yes"/>
   <Project Name="bit_field" Path="bit_field/bit_field.project" Active="No"/>
   <Project Name="bit_operator" Path="bit_operator/bit_operator.project" Active="No"/>
   <Project Name="bit_Reversing" Path="bit_Reversing/bit_Reversing.project" Active="No"/>
@@ -339,7 +339,7 @@
   <Project Name="string_data" Path="string_data/string_data.project" Active="No"/>
   <Project Name="type_pointer" Path="type_pointer/type_pointer.project" Active="No"/>
   <Project Name="smart_pointer" Path="smart_pointer/smart_pointer.project" Active="No"/>
-  <Project Name="COW" Path="COW/COW.project" Active="Yes"/>
+  <Project Name="COW" Path="COW/COW.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

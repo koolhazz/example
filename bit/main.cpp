@@ -147,6 +147,7 @@ void opBits()
 #define MAX_INT ((int)(~(int)0) - 2) // 只能是unsigned的
 #define MAX_SIZET	((size_t)(~(size_t)0)-2)
 
+#define __MAX_SLOT__ 16833
  
 int main(int argc, char **argv)
 {
@@ -204,7 +205,8 @@ int main(int argc, char **argv)
 	
 	printf("xxx: %d\n", 10 << 10); // 相当于 10 * 2的10幂
 	
-	system("pause");
+	long uid = 1499999999;  
+	printf("slotId: %d\n", uid & __MAX_SLOT__);
 	
 	return 0;
 }

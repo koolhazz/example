@@ -24,6 +24,8 @@ int main(int argc, char **argv)
 	
 	__pass_str(str1);
 	
+	printf("StringSz: %zu\n", sizeof(string));
+	
 	return 0;
 }
 
