@@ -21,7 +21,7 @@
   <Project Name="B_Tree" Path="B_Tree/B_Tree.project" Active="No"/>
   <Project Name="beformain" Path="beformain/beformain.project" Active="No"/>
   <Project Name="binary_heap" Path="binary_heap/binary_heap.project" Active="No"/>
-  <Project Name="bit" Path="bit/bit.project" Active="Yes"/>
+  <Project Name="bit" Path="bit/bit.project" Active="No"/>
   <Project Name="bit_field" Path="bit_field/bit_field.project" Active="No"/>
   <Project Name="bit_operator" Path="bit_operator/bit_operator.project" Active="No"/>
   <Project Name="bit_Reversing" Path="bit_Reversing/bit_Reversing.project" Active="No"/>
@@ -190,7 +190,7 @@
   <Project Name="struct_bit" Path="struct_bit/struct_bit.project" Active="No"/>
   <Project Name="struct_def_c" Path="struct_def_c/struct_def_c.project" Active="No"/>
   <Project Name="struct_def_cpp" Path="struct_def_cpp/struct_def_cpp.project" Active="No"/>
-  <Project Name="struct_hack" Path="struct_hack/struct_hack.project" Active="No"/>
+  <Project Name="struct_hack" Path="struct_hack/struct_hack.project" Active="Yes"/>
   <Project Name="struct_hack_cpp" Path="struct_hack_cpp/struct_hack_cpp.project" Active="No"/>
   <Project Name="struct_init_c" Path="struct_init_c/struct_init_c.project" Active="No"/>
   <Project Name="struct_init_cpp" Path="struct_init_cpp/struct_init_cpp.project" Active="No"/>
@@ -340,6 +340,7 @@
   <Project Name="type_pointer" Path="type_pointer/type_pointer.project" Active="No"/>
   <Project Name="smart_pointer" Path="smart_pointer/smart_pointer.project" Active="No"/>
   <Project Name="COW" Path="COW/COW.project" Active="No"/>
+  <Project Name="mutable" Path="mutable/mutable.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -688,6 +689,7 @@
       <Project Name="type_pointer" ConfigName="Debug"/>
       <Project Name="smart_pointer" ConfigName="Debug"/>
       <Project Name="COW" ConfigName="Debug"/>
+      <Project Name="mutable" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1036,6 +1038,7 @@
       <Project Name="type_pointer" ConfigName="Release"/>
       <Project Name="smart_pointer" ConfigName="Release"/>
       <Project Name="COW" ConfigName="Release"/>
+      <Project Name="mutable" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

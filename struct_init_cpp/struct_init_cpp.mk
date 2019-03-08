@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=31/08/2018
+Date                   :=19/12/2018
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -50,7 +50,7 @@ LibPath                := $(LibraryPathSwitch).
 AR       := /usr/bin/ar rcu
 CXX      := /usr/bin/g++
 CC       := /usr/bin/gcc
-CXXFLAGS :=  -g -O0 -Wall -std=c++0x $(Preprocessors)
+CXXFLAGS :=  -g -O0 -std=gnu++11 $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall  $(Preprocessors)
 ASFLAGS  := 
 AS       := /usr/bin/as
