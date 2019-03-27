@@ -11,7 +11,5 @@ int main(int argc, char **argv)
 {
 	show_me();
 	
-	system("pause");
-	
 	return 0;
 }
