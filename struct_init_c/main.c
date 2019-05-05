@@ -12,6 +12,11 @@ struct test_2 {
 	int age;
 };
 
+struct test_3 {
+	struct test prop;
+	struct test_2 info;
+};
+
 //static void 
 //__show_struct(struct test ss, const struct test& sss)
 //{
@@ -36,6 +41,9 @@ int main()
 	struct test_2 t6 = {.name="chenbo", .age=0};
 	struct test_2 t7 = {name:"chenbo", age:0};
 	struct test_2 t8 = {age:0};
+	
+	struct test_3 t9 = {{10, 20}, {"chenbo", 30}};
+	struct test_3 t10 = {prop: {a: 10, b: 20}, info: {"chenbo", 30}};
 	
     printf("t1.a = %d, t1.b = %d\n", t1.a, t1.b);
     printf("t2.a = %d, t2.b = %d\n", t2.a, t2.b);

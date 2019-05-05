@@ -114,7 +114,7 @@
   <Project Name="LockFreeQueue_2" Path="LockFreeQueue_2/LockFreeQueue_2.project" Active="No"/>
   <Project Name="LockFreeQueue_3" Path="LockFreeQueue_3/LockFreeQueue_3.project" Active="No"/>
   <Project Name="LockFreeQueue_4" Path="LockFreeQueue_4/LockFreeQueue_4.project" Active="No"/>
-  <Project Name="macro" Path="macro/macro.project" Active="Yes"/>
+  <Project Name="macro" Path="macro/macro.project" Active="No"/>
   <Project Name="macro_list" Path="macro_list/macro_list.project" Active="No"/>
   <Project Name="macro_list_2" Path="macro_list_2/macro_list_2.project" Active="No"/>
   <Project Name="macro_scope" Path="macro_scope/macro_scope.project" Active="No"/>
@@ -150,7 +150,7 @@
   <Project Name="nginx_mempool" Path="nginx_mempool/nginx_mempool.project" Active="No"/>
   <Project Name="ngx_mempool_2" Path="ngx_mempool_2/ngx_mempool_2.project" Active="No"/>
   <Project Name="number_max" Path="number_max/number_max.project" Active="No"/>
-  <Project Name="operator" Path="operator/operator.project" Active="No"/>
+  <Project Name="operator" Path="operator/operator.project" Active="Yes"/>
   <Project Name="operator_short" Path="operator_short/operator_short.project" Active="No"/>
   <Project Name="operator2" Path="operator2/operator2.project" Active="No"/>
   <Project Name="operator3" Path="operator3/operator3.project" Active="No"/>
