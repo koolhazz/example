@@ -21,6 +21,10 @@ copy(const char* from, char* to, int count)
 	}
 }
 
+//首先 20 个字节的copy 按照算法 应该是取余后为4 执行流程 case 4，，，，case 3 ，，，，case 2 ，，，，，case 1
+//接下来就按照8个整倍数执行 case 0 ，，，，，，1, 执行三次
+
+
 int 
 main(int argc, char **argv)
 {
