@@ -129,7 +129,6 @@ main(int argc, char* argv[])
 	printf("B:%s\n", ba + 1);
 	
 	printf("bba:%s\n", *(bba + 1));
-	system("Pause");
 	
 	return 0;
 }

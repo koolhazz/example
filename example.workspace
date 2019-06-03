@@ -150,7 +150,7 @@
   <Project Name="nginx_mempool" Path="nginx_mempool/nginx_mempool.project" Active="No"/>
   <Project Name="ngx_mempool_2" Path="ngx_mempool_2/ngx_mempool_2.project" Active="No"/>
   <Project Name="number_max" Path="number_max/number_max.project" Active="No"/>
-  <Project Name="operator" Path="operator/operator.project" Active="Yes"/>
+  <Project Name="operator" Path="operator/operator.project" Active="No"/>
   <Project Name="operator_short" Path="operator_short/operator_short.project" Active="No"/>
   <Project Name="operator2" Path="operator2/operator2.project" Active="No"/>
   <Project Name="operator3" Path="operator3/operator3.project" Active="No"/>
@@ -342,6 +342,7 @@
   <Project Name="COW" Path="COW/COW.project" Active="No"/>
   <Project Name="mutable" Path="mutable/mutable.project" Active="No"/>
   <Project Name="macro_generic" Path="macro_generic/macro_generic.project" Active="No"/>
+  <Project Name="duff_device" Path="duff_device/duff_device.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -692,6 +693,7 @@
       <Project Name="COW" ConfigName="Debug"/>
       <Project Name="mutable" ConfigName="Debug"/>
       <Project Name="macro_generic" ConfigName="Debug"/>
+      <Project Name="duff_device" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1042,6 +1044,7 @@
       <Project Name="COW" ConfigName="Release"/>
       <Project Name="mutable" ConfigName="Release"/>
       <Project Name="macro_generic" ConfigName="Release"/>
+      <Project Name="duff_device" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
