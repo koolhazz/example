@@ -23,6 +23,7 @@ struct test_3 {
 //	
 //}
 
+
 int main()
 {
     struct test t1 = {0, 0}; 

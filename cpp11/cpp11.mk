@@ -5,36 +5,36 @@
 ## Debug
 ProjectName            :=cpp11
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\cpp11"
-IntermediateDirectory  :=./Debug
-OutDir                 := $(IntermediateDirectory)
+WorkspaceConfiguration := $(ConfigurationName)
+WorkspacePath          :=/Users/ac/Desktop/example
+ProjectPath            :=/Users/ac/Desktop/example/cpp11
+IntermediateDirectory  :=../build-$(ConfigurationName)/cpp11
+OutDir                 :=../build-$(ConfigurationName)/cpp11
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=2013/1/21
-CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=g++
-SharedObjectLinkerName :=g++ -shared -fPIC
+User                   :=austin chen
+Date                   :=10/10/2019
+CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
-DebugSwitch            :=-gstab
+PreprocessSuffix       :=.i
+DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
 OutputSwitch           :=-o 
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
-OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
+OutputFile             :=../build-$(ConfigurationName)/bin/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
-ObjectsFileList        :="E:\data\example\cpp11\cpp11.txt"
+PreprocessOnlySwitch   :=-E
+ObjectsFileList        :=$(IntermediateDirectory)/ObjectsList.txt
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -45,36 +45,45 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := g++
-CC       := gcc
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS :=  -g -O0 -Wall -std=c++11 $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
+ASFLAGS  := 
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=d:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects=$(IntermediateDirectory)/main$(ObjectSuffix) 
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+Objects0=../build-$(ConfigurationName)/cpp11/main.cpp$(ObjectSuffix) 
+
+
+
+Objects=$(Objects0) 
 
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
-all: $(OutputFile)
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
+all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
-	@$(MakeDirCommand) $(@D)
+$(OutputFile): ../build-$(ConfigurationName)/cpp11/.d $(Objects) 
+	@mkdir -p "../build-$(ConfigurationName)/cpp11"
 	@echo "" > $(IntermediateDirectory)/.d
-	@echo $(Objects) > $(ObjectsFileList)
+	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
-$(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+MakeIntermediateDirs:
+	@mkdir -p "../build-$(ConfigurationName)/cpp11"
+	@mkdir -p ""../build-$(ConfigurationName)/bin""
+
+../build-$(ConfigurationName)/cpp11/.d:
+	@mkdir -p "../build-$(ConfigurationName)/cpp11"
 
 PreBuild:
 
@@ -82,25 +91,20 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/cpp11/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "E:/data/example/cpp11/main.cpp"
+../build-$(ConfigurationName)/cpp11/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/cpp11/main.cpp$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/cpp11/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+../build-$(ConfigurationName)/cpp11/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/cpp11/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/cpp11/main.cpp$(DependSuffix) -MM main.cpp
 
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "E:/data/example/cpp11/main.cpp"
+../build-$(ConfigurationName)/cpp11/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/cpp11/main.cpp$(PreprocessSuffix) main.cpp
 
 
--include $(IntermediateDirectory)/*$(DependSuffix)
+-include ../build-$(ConfigurationName)/cpp11//*$(DependSuffix)
 ##
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "E:\data\example\.build-debug\cpp11"
+	$(RM) -r $(IntermediateDirectory)
 
 

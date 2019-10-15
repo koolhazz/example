@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="function-try-lock-2" Version="10.0.0" InternalType="Console">
+<CodeLite_Project Name="function-try-lock-2" Version="11000" InternalType="Console">
   <Description/>
   <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="main.cpp"/>
+    <File Name="base.h"/>
+    <File Name="base.cc"/>
+  </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
@@ -92,11 +97,6 @@
       </Completion>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="src">
-    <File Name="main.cpp"/>
-    <File Name="base.h"/>
-    <File Name="base.cc"/>
-  </VirtualDirectory>
   <Dependencies Name="Debug"/>
   <Dependencies Name="Release"/>
 </CodeLite_Project>

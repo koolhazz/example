@@ -19,6 +19,14 @@
   "directory": "/Users/ac/Desktop/example/class_typename_cast",
   "command": "clang  -c /Users/ac/Desktop/example/class_typename_cast/main.cpp -o /Users/ac/Desktop/example/class_typename_cast/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/class_typename_cast/data.h",
+  "directory": "/Users/ac/Desktop/example/class_typename_cast",
+  "command": "clang  -c /Users/ac/Desktop/example/class_typename_cast/data.h -o /Users/ac/Desktop/example/class_typename_cast/data.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/class_typename_cast/func.h",
+  "directory": "/Users/ac/Desktop/example/class_typename_cast",
+  "command": "clang  -c /Users/ac/Desktop/example/class_typename_cast/func.h -o /Users/ac/Desktop/example/class_typename_cast/func.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/class_typename_cast/func.cc",
   "directory": "/Users/ac/Desktop/example/class_typename_cast",
   "command": "clang  -c /Users/ac/Desktop/example/class_typename_cast/func.cc -o /Users/ac/Desktop/example/class_typename_cast/func.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -26,6 +34,10 @@
   "file": "/Users/ac/Desktop/example/class_inline_2/main.cpp",
   "directory": "/Users/ac/Desktop/example/class_inline_2",
   "command": "clang  -c /Users/ac/Desktop/example/class_inline_2/main.cpp -o /Users/ac/Desktop/example/class_inline_2/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/class_inline_2/fn.h",
+  "directory": "/Users/ac/Desktop/example/class_inline_2",
+  "command": "clang  -c /Users/ac/Desktop/example/class_inline_2/fn.h -o /Users/ac/Desktop/example/class_inline_2/fn.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/class_inline_2/fn.cc",
   "directory": "/Users/ac/Desktop/example/class_inline_2",
@@ -51,6 +63,10 @@
   "directory": "/Users/ac/Desktop/example/template_complie",
   "command": "clang  -c /Users/ac/Desktop/example/template_complie/main.cpp -o /Users/ac/Desktop/example/template_complie/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/template_complie/t.h",
+  "directory": "/Users/ac/Desktop/example/template_complie",
+  "command": "clang  -c /Users/ac/Desktop/example/template_complie/t.h -o /Users/ac/Desktop/example/template_complie/t.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/template_complie/t.cc",
   "directory": "/Users/ac/Desktop/example/template_complie",
   "command": "clang  -c /Users/ac/Desktop/example/template_complie/t.cc -o /Users/ac/Desktop/example/template_complie/t.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -67,9 +83,21 @@
   "directory": "/Users/ac/Desktop/example/check_cpp_ver",
   "command": "clang  -c /Users/ac/Desktop/example/check_cpp_ver/main.cpp -o /Users/ac/Desktop/example/check_cpp_ver/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -std=c++11"
  }, {
+  "file": "/Users/ac/Desktop/example/cxx11/shared_ptr.h",
+  "directory": "/Users/ac/Desktop/example/cxx11",
+  "command": "clang  -c /Users/ac/Desktop/example/cxx11/shared_ptr.h -o /Users/ac/Desktop/example/cxx11/shared_ptr.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall-std=c++11"
+ }, {
+  "file": "/Users/ac/Desktop/example/cxx11/unique_ptr.h",
+  "directory": "/Users/ac/Desktop/example/cxx11",
+  "command": "clang  -c /Users/ac/Desktop/example/cxx11/unique_ptr.h -o /Users/ac/Desktop/example/cxx11/unique_ptr.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall-std=c++11"
+ }, {
   "file": "/Users/ac/Desktop/example/cxx11/main.cpp",
   "directory": "/Users/ac/Desktop/example/cxx11",
   "command": "clang  -c /Users/ac/Desktop/example/cxx11/main.cpp -o /Users/ac/Desktop/example/cxx11/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall-std=c++11"
+ }, {
+  "file": "/Users/ac/Desktop/example/function-try-lock-2/base.h",
+  "directory": "/Users/ac/Desktop/example/function-try-lock-2",
+  "command": "clang  -c /Users/ac/Desktop/example/function-try-lock-2/base.h -o /Users/ac/Desktop/example/function-try-lock-2/base.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/function-try-lock-2/base.cc",
   "directory": "/Users/ac/Desktop/example/function-try-lock-2",
@@ -86,6 +114,10 @@
   "file": "/Users/ac/Desktop/example/operator5/main.cpp",
   "directory": "/Users/ac/Desktop/example/operator5",
   "command": "clang  -c /Users/ac/Desktop/example/operator5/main.cpp -o /Users/ac/Desktop/example/operator5/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/macro_func/func.h",
+  "directory": "/Users/ac/Desktop/example/macro_func",
+  "command": "clang  -c /Users/ac/Desktop/example/macro_func/func.h -o /Users/ac/Desktop/example/macro_func/func.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/macro_func/func.c",
   "directory": "/Users/ac/Desktop/example/macro_func",
@@ -115,9 +147,17 @@
   "directory": "/Users/ac/Desktop/example/comma_express",
   "command": "clang  -c /Users/ac/Desktop/example/comma_express/main.c -o /Users/ac/Desktop/example/comma_express/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/CuckooFilter/cuckoo_filter.h",
+  "directory": "/Users/ac/Desktop/example/CuckooFilter",
+  "command": "clang  -c /Users/ac/Desktop/example/CuckooFilter/cuckoo_filter.h -o /Users/ac/Desktop/example/CuckooFilter/cuckoo_filter.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/CuckooFilter/sha1.c",
   "directory": "/Users/ac/Desktop/example/CuckooFilter",
   "command": "clang  -c /Users/ac/Desktop/example/CuckooFilter/sha1.c -o /Users/ac/Desktop/example/CuckooFilter/sha1.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/CuckooFilter/sha1.h",
+  "directory": "/Users/ac/Desktop/example/CuckooFilter",
+  "command": "clang  -c /Users/ac/Desktop/example/CuckooFilter/sha1.h -o /Users/ac/Desktop/example/CuckooFilter/sha1.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/CuckooFilter/cuckoo_filter.c",
   "directory": "/Users/ac/Desktop/example/CuckooFilter",
@@ -219,6 +259,10 @@
   "directory": "/Users/ac/Desktop/example/exception_2",
   "command": "clang  -c /Users/ac/Desktop/example/exception_2/exception.cc -o /Users/ac/Desktop/example/exception_2/exception.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/exception_2/exception.h",
+  "directory": "/Users/ac/Desktop/example/exception_2",
+  "command": "clang  -c /Users/ac/Desktop/example/exception_2/exception.h -o /Users/ac/Desktop/example/exception_2/exception.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/exception_2/main.cpp",
   "directory": "/Users/ac/Desktop/example/exception_2",
   "command": "clang  -c /Users/ac/Desktop/example/exception_2/main.cpp -o /Users/ac/Desktop/example/exception_2/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -239,6 +283,14 @@
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/YFastTrie.cpp -o /Users/ac/Desktop/example/ods/YFastTrie.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/XFastTrie.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/XFastTrie.h -o /Users/ac/Desktop/example/ods/XFastTrie.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/utils.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/utils.h -o /Users/ac/Desktop/example/ods/utils.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/utils.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/utils.cpp -o /Users/ac/Desktop/example/ods/utils.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -247,13 +299,37 @@
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/Treap.cpp -o /Users/ac/Desktop/example/ods/Treap.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/SLList.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/SLList.h -o /Users/ac/Desktop/example/ods/SLList.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/SLList.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/SLList.cpp -o /Users/ac/Desktop/example/ods/SLList.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/SkiplistSSet.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/SkiplistSSet.h -o /Users/ac/Desktop/example/ods/SkiplistSSet.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/SkiplistSSet.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/SkiplistSSet.cpp -o /Users/ac/Desktop/example/ods/SkiplistSSet.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/YFastTrie.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/YFastTrie.h -o /Users/ac/Desktop/example/ods/YFastTrie.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/SkiplistList.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/SkiplistList.h -o /Users/ac/Desktop/example/ods/SkiplistList.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/Simple.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/Simple.h -o /Users/ac/Desktop/example/ods/Simple.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/SEList.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/SEList.h -o /Users/ac/Desktop/example/ods/SEList.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/MeldableHeap.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
@@ -267,9 +343,17 @@
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/ScapegoatTree.cpp -o /Users/ac/Desktop/example/ods/ScapegoatTree.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/ScapegoatTree.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/ScapegoatTree.h -o /Users/ac/Desktop/example/ods/ScapegoatTree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/ChainedHashTable.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/ChainedHashTable.cpp -o /Users/ac/Desktop/example/ods/ChainedHashTable.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/RootishArrayStack.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/RootishArrayStack.h -o /Users/ac/Desktop/example/ods/RootishArrayStack.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/FastArrayStack.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
@@ -279,9 +363,21 @@
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/RootishArrayStack.cpp -o /Users/ac/Desktop/example/ods/RootishArrayStack.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/RedBlackTree.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/RedBlackTree.h -o /Users/ac/Desktop/example/ods/RedBlackTree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/RedBlackTree.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/RedBlackTree.cpp -o /Users/ac/Desktop/example/ods/RedBlackTree.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/Point3D.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/Point3D.h -o /Users/ac/Desktop/example/ods/Point3D.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/LinearHashTable.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/LinearHashTable.h -o /Users/ac/Desktop/example/ods/LinearHashTable.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/main.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
@@ -295,21 +391,61 @@
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/LinearHashTable.cpp -o /Users/ac/Desktop/example/ods/LinearHashTable.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/GeomVector.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/GeomVector.h -o /Users/ac/Desktop/example/ods/GeomVector.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/FastSqrt.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/FastSqrt.h -o /Users/ac/Desktop/example/ods/FastSqrt.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/BinaryTrie.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/BinaryTrie.cpp -o /Users/ac/Desktop/example/ods/BinaryTrie.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/FastArrayStack.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/FastArrayStack.h -o /Users/ac/Desktop/example/ods/FastArrayStack.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/MeldableHeap.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/MeldableHeap.h -o /Users/ac/Desktop/example/ods/MeldableHeap.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/DualArrayDeque.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/DualArrayDeque.h -o /Users/ac/Desktop/example/ods/DualArrayDeque.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/ChainedHashTable.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/ChainedHashTable.h -o /Users/ac/Desktop/example/ods/ChainedHashTable.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/ArrayQueue.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/ArrayQueue.cpp -o /Users/ac/Desktop/example/ods/ArrayQueue.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/BinaryTrie.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/BinaryTrie.h -o /Users/ac/Desktop/example/ods/BinaryTrie.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/BinaryTree.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/BinaryTree.cpp -o /Users/ac/Desktop/example/ods/BinaryTree.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/array.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/array.h -o /Users/ac/Desktop/example/ods/array.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/BinarySearchTree.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/BinarySearchTree.h -o /Users/ac/Desktop/example/ods/BinarySearchTree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/FastSqrt.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/FastSqrt.cpp -o /Users/ac/Desktop/example/ods/FastSqrt.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/BinaryHeap.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/BinaryHeap.h -o /Users/ac/Desktop/example/ods/BinaryHeap.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/BinarySearchTree.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
@@ -318,6 +454,18 @@
   "file": "/Users/ac/Desktop/example/ods/BinaryHeap.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/BinaryHeap.cpp -o /Users/ac/Desktop/example/ods/BinaryHeap.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/ArrayDeque.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/ArrayDeque.h -o /Users/ac/Desktop/example/ods/ArrayDeque.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/ArrayQueue.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/ArrayQueue.h -o /Users/ac/Desktop/example/ods/ArrayQueue.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/BinaryTree.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/BinaryTree.h -o /Users/ac/Desktop/example/ods/BinaryTree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/XFastTrie.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
@@ -331,9 +479,29 @@
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/ArrayStack.cpp -o /Users/ac/Desktop/example/ods/ArrayStack.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ods/ArrayStack.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/ArrayStack.h -o /Users/ac/Desktop/example/ods/ArrayStack.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/AdjacencyMatrix.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/AdjacencyMatrix.h -o /Users/ac/Desktop/example/ods/AdjacencyMatrix.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/Treap.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/Treap.h -o /Users/ac/Desktop/example/ods/Treap.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ods/array.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/array.cpp -o /Users/ac/Desktop/example/ods/array.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/Algorithms.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/Algorithms.h -o /Users/ac/Desktop/example/ods/Algorithms.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/AdjacencyLists.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/AdjacencyLists.h -o /Users/ac/Desktop/example/ods/AdjacencyLists.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/DLList.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
@@ -342,6 +510,10 @@
   "file": "/Users/ac/Desktop/example/ods/AdjacencyMatrix.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
   "command": "clang  -c /Users/ac/Desktop/example/ods/AdjacencyMatrix.cpp -o /Users/ac/Desktop/example/ods/AdjacencyMatrix.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ods/DLList.h",
+  "directory": "/Users/ac/Desktop/example/ods",
+  "command": "clang  -c /Users/ac/Desktop/example/ods/DLList.h -o /Users/ac/Desktop/example/ods/DLList.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ods/AdjacencyLists.cpp",
   "directory": "/Users/ac/Desktop/example/ods",
@@ -379,6 +551,10 @@
   "directory": "/Users/ac/Desktop/example/static_func",
   "command": "clang  -c /Users/ac/Desktop/example/static_func/def.c -o /Users/ac/Desktop/example/static_func/def.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/static_func/def.h",
+  "directory": "/Users/ac/Desktop/example/static_func",
+  "command": "clang  -c /Users/ac/Desktop/example/static_func/def.h -o /Users/ac/Desktop/example/static_func/def.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/static_func/func.c",
   "directory": "/Users/ac/Desktop/example/static_func",
   "command": "clang  -c /Users/ac/Desktop/example/static_func/func.c -o /Users/ac/Desktop/example/static_func/func.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -398,6 +574,14 @@
   "file": "/Users/ac/Desktop/example/map_vector/main.cpp",
   "directory": "/Users/ac/Desktop/example/map_vector",
   "command": "clang  -c /Users/ac/Desktop/example/map_vector/main.cpp -o /Users/ac/Desktop/example/map_vector/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/include_cpp/func.h",
+  "directory": "/Users/ac/Desktop/example/include_cpp",
+  "command": "clang  -c /Users/ac/Desktop/example/include_cpp/func.h -o /Users/ac/Desktop/example/include_cpp/func.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/include_cpp/func.inl",
+  "directory": "/Users/ac/Desktop/example/include_cpp",
+  "command": "clang  -c /Users/ac/Desktop/example/include_cpp/func.inl -o /Users/ac/Desktop/example/include_cpp/func.inl.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/include_cpp/main.cpp",
   "directory": "/Users/ac/Desktop/example/include_cpp",
@@ -423,6 +607,10 @@
   "directory": "/Users/ac/Desktop/example/include_find",
   "command": "clang  -c /Users/ac/Desktop/example/include_find/def.c -o /Users/ac/Desktop/example/include_find/def.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/include_find/def.h",
+  "directory": "/Users/ac/Desktop/example/include_find",
+  "command": "clang  -c /Users/ac/Desktop/example/include_find/def.h -o /Users/ac/Desktop/example/include_find/def.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/include_find/main.c",
   "directory": "/Users/ac/Desktop/example/include_find",
   "command": "clang  -c /Users/ac/Desktop/example/include_find/main.c -o /Users/ac/Desktop/example/include_find/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -439,9 +627,21 @@
   "directory": "/Users/ac/Desktop/example/strstr_tuning",
   "command": "clang  -c /Users/ac/Desktop/example/strstr_tuning/strstr.c -o /Users/ac/Desktop/example/strstr_tuning/strstr.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/strstr_tuning/rdtsc.h",
+  "directory": "/Users/ac/Desktop/example/strstr_tuning",
+  "command": "clang  -c /Users/ac/Desktop/example/strstr_tuning/rdtsc.h -o /Users/ac/Desktop/example/strstr_tuning/rdtsc.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/strstr_tuning/inlinefunc.h",
+  "directory": "/Users/ac/Desktop/example/strstr_tuning",
+  "command": "clang  -c /Users/ac/Desktop/example/strstr_tuning/inlinefunc.h -o /Users/ac/Desktop/example/strstr_tuning/inlinefunc.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/strstr_tuning/lstrstrsse.c",
   "directory": "/Users/ac/Desktop/example/strstr_tuning",
   "command": "clang  -c /Users/ac/Desktop/example/strstr_tuning/lstrstrsse.c -o /Users/ac/Desktop/example/strstr_tuning/lstrstrsse.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/strstr_tuning/defaultText.h",
+  "directory": "/Users/ac/Desktop/example/strstr_tuning",
+  "command": "clang  -c /Users/ac/Desktop/example/strstr_tuning/defaultText.h -o /Users/ac/Desktop/example/strstr_tuning/defaultText.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/strstr_tuning/lstrstr.c",
   "directory": "/Users/ac/Desktop/example/strstr_tuning",
@@ -462,6 +662,14 @@
   "file": "/Users/ac/Desktop/example/extern_gcc/fc.c",
   "directory": "/Users/ac/Desktop/example/extern_gcc",
   "command": "clang  -c /Users/ac/Desktop/example/extern_gcc/fc.c -o /Users/ac/Desktop/example/extern_gcc/fc.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/extern_gcc/f1.h",
+  "directory": "/Users/ac/Desktop/example/extern_gcc",
+  "command": "clang  -c /Users/ac/Desktop/example/extern_gcc/f1.h -o /Users/ac/Desktop/example/extern_gcc/f1.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/extern_gcc/foo.h",
+  "directory": "/Users/ac/Desktop/example/extern_gcc",
+  "command": "clang  -c /Users/ac/Desktop/example/extern_gcc/foo.h -o /Users/ac/Desktop/example/extern_gcc/foo.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/extern_gcc/main.c",
   "directory": "/Users/ac/Desktop/example/extern_gcc",
@@ -539,6 +747,10 @@
   "directory": "/Users/ac/Desktop/example/Tree",
   "command": "clang  -c /Users/ac/Desktop/example/Tree/main.c -o /Users/ac/Desktop/example/Tree/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g -std=c99"
  }, {
+  "file": "/Users/ac/Desktop/example/Tree/binary.h",
+  "directory": "/Users/ac/Desktop/example/Tree",
+  "command": "clang  -c /Users/ac/Desktop/example/Tree/binary.h -o /Users/ac/Desktop/example/Tree/binary.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
   "file": "/Users/ac/Desktop/example/statement/main.c",
   "directory": "/Users/ac/Desktop/example/statement",
   "command": "clang  -c /Users/ac/Desktop/example/statement/main.c -o /Users/ac/Desktop/example/statement/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -547,6 +759,10 @@
   "directory": "/Users/ac/Desktop/example/timer_list_cpp",
   "command": "clang  -c /Users/ac/Desktop/example/timer_list_cpp/timer.cc -o /Users/ac/Desktop/example/timer_list_cpp/timer.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/timer_list_cpp/timer.h",
+  "directory": "/Users/ac/Desktop/example/timer_list_cpp",
+  "command": "clang  -c /Users/ac/Desktop/example/timer_list_cpp/timer.h -o /Users/ac/Desktop/example/timer_list_cpp/timer.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/timer_list_cpp/main.cpp",
   "directory": "/Users/ac/Desktop/example/timer_list_cpp",
   "command": "clang  -c /Users/ac/Desktop/example/timer_list_cpp/main.cpp -o /Users/ac/Desktop/example/timer_list_cpp/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -554,6 +770,14 @@
   "file": "/Users/ac/Desktop/example/timer_list/timer.c",
   "directory": "/Users/ac/Desktop/example/timer_list",
   "command": "clang  -c /Users/ac/Desktop/example/timer_list/timer.c -o /Users/ac/Desktop/example/timer_list/timer.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c99"
+ }, {
+  "file": "/Users/ac/Desktop/example/timer_list/timer.h",
+  "directory": "/Users/ac/Desktop/example/timer_list",
+  "command": "clang  -c /Users/ac/Desktop/example/timer_list/timer.h -o /Users/ac/Desktop/example/timer_list/timer.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/timer_list/list.h",
+  "directory": "/Users/ac/Desktop/example/timer_list",
+  "command": "clang  -c /Users/ac/Desktop/example/timer_list/list.h -o /Users/ac/Desktop/example/timer_list/list.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/timer_list/main.c",
   "directory": "/Users/ac/Desktop/example/timer_list",
@@ -567,9 +791,21 @@
   "directory": "/Users/ac/Desktop/example/switch_array",
   "command": "clang  -c /Users/ac/Desktop/example/switch_array/main.c -o /Users/ac/Desktop/example/switch_array/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c99"
  }, {
+  "file": "/Users/ac/Desktop/example/sum_dn/Logic.h",
+  "directory": "/Users/ac/Desktop/example/sum_dn",
+  "command": "clang  -c /Users/ac/Desktop/example/sum_dn/Logic.h -o /Users/ac/Desktop/example/sum_dn/Logic.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/sum_dn/Logic.cc",
   "directory": "/Users/ac/Desktop/example/sum_dn",
   "command": "clang  -c /Users/ac/Desktop/example/sum_dn/Logic.cc -o /Users/ac/Desktop/example/sum_dn/Logic.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/sum_dn/DataType.h",
+  "directory": "/Users/ac/Desktop/example/sum_dn",
+  "command": "clang  -c /Users/ac/Desktop/example/sum_dn/DataType.h -o /Users/ac/Desktop/example/sum_dn/DataType.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/sum_dn/Card.h",
+  "directory": "/Users/ac/Desktop/example/sum_dn",
+  "command": "clang  -c /Users/ac/Desktop/example/sum_dn/Card.h -o /Users/ac/Desktop/example/sum_dn/Card.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/sum_dn/main.cpp",
   "directory": "/Users/ac/Desktop/example/sum_dn",
@@ -579,17 +815,45 @@
   "directory": "/Users/ac/Desktop/example/get_wordsize",
   "command": "clang  -c /Users/ac/Desktop/example/get_wordsize/main.c -o /Users/ac/Desktop/example/get_wordsize/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue/g_blocking_queue.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/g_blocking_queue.h -o /Users/ac/Desktop/example/LockFreeQueue/g_blocking_queue.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue/atomic_ops.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/atomic_ops.h -o /Users/ac/Desktop/example/LockFreeQueue/atomic_ops.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_impl.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_impl.h -o /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_impl.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/LockFreeQueue/test_blocking_q.cpp",
   "directory": "/Users/ac/Desktop/example/LockFreeQueue",
   "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/test_blocking_q.cpp -o /Users/ac/Desktop/example/LockFreeQueue/test_blocking_q.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue.h -o /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/LockFreeQueue/test_lock_free_single_producer_q.cpp",
   "directory": "/Users/ac/Desktop/example/LockFreeQueue",
   "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/test_lock_free_single_producer_q.cpp -o /Users/ac/Desktop/example/LockFreeQueue/test_lock_free_single_producer_q.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_single_producer_impl.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_single_producer_impl.h -o /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_single_producer_impl.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_single_producer.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_single_producer.h -o /Users/ac/Desktop/example/LockFreeQueue/array_lock_free_queue_single_producer.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/LockFreeQueue/test_lock_free_q.cpp",
   "directory": "/Users/ac/Desktop/example/LockFreeQueue",
   "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/test_lock_free_q.cpp -o /Users/ac/Desktop/example/LockFreeQueue/test_lock_free_q.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue/g_blocking_queue_impl.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue/g_blocking_queue_impl.h -o /Users/ac/Desktop/example/LockFreeQueue/g_blocking_queue_impl.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/LockFreeQueue/main.cpp",
   "directory": "/Users/ac/Desktop/example/LockFreeQueue",
@@ -635,6 +899,10 @@
   "directory": "/Users/ac/Desktop/example/std_unordered_map_sort",
   "command": "clang  -c /Users/ac/Desktop/example/std_unordered_map_sort/main.cpp -o /Users/ac/Desktop/example/std_unordered_map_sort/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/StringBuild/StringBuilder.h",
+  "directory": "/Users/ac/Desktop/example/StringBuild",
+  "command": "clang  -c /Users/ac/Desktop/example/StringBuild/StringBuilder.h -o /Users/ac/Desktop/example/StringBuild/StringBuilder.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++11"
+ }, {
   "file": "/Users/ac/Desktop/example/StringBuild/main.cpp",
   "directory": "/Users/ac/Desktop/example/StringBuild",
   "command": "clang  -c /Users/ac/Desktop/example/StringBuild/main.cpp -o /Users/ac/Desktop/example/StringBuild/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++11"
@@ -642,6 +910,10 @@
   "file": "/Users/ac/Desktop/example/strcpy_tuning/main.c",
   "directory": "/Users/ac/Desktop/example/strcpy_tuning",
   "command": "clang  -c /Users/ac/Desktop/example/strcpy_tuning/main.c -o /Users/ac/Desktop/example/strcpy_tuning/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=gnu99"
+ }, {
+  "file": "/Users/ac/Desktop/example/stl_alloc/myalloc.hpp",
+  "directory": "/Users/ac/Desktop/example/stl_alloc",
+  "command": "clang  -c /Users/ac/Desktop/example/stl_alloc/myalloc.hpp -o /Users/ac/Desktop/example/stl_alloc/myalloc.hpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/stl_alloc/main.cpp",
   "directory": "/Users/ac/Desktop/example/stl_alloc",
@@ -654,6 +926,10 @@
   "file": "/Users/ac/Desktop/example/sscanf/main.cpp",
   "directory": "/Users/ac/Desktop/example/sscanf",
   "command": "clang  -c /Users/ac/Desktop/example/sscanf/main.cpp -o /Users/ac/Desktop/example/sscanf/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/sort/QuickSort.h",
+  "directory": "/Users/ac/Desktop/example/sort",
+  "command": "clang  -c /Users/ac/Desktop/example/sort/QuickSort.h -o /Users/ac/Desktop/example/sort/QuickSort.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/sort/QuickSort.cc",
   "directory": "/Users/ac/Desktop/example/sort",
@@ -679,6 +955,10 @@
   "directory": "/Users/ac/Desktop/example/smaz",
   "command": "clang  -c /Users/ac/Desktop/example/smaz/smaz.c -o /Users/ac/Desktop/example/smaz/smaz.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/smaz/smaz.h",
+  "directory": "/Users/ac/Desktop/example/smaz",
+  "command": "clang  -c /Users/ac/Desktop/example/smaz/smaz.h -o /Users/ac/Desktop/example/smaz/smaz.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/smaz/main.c",
   "directory": "/Users/ac/Desktop/example/smaz",
   "command": "clang  -c /Users/ac/Desktop/example/smaz/main.c -o /Users/ac/Desktop/example/smaz/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -703,9 +983,21 @@
   "directory": "/Users/ac/Desktop/example/attribute_con_des",
   "command": "clang  -c /Users/ac/Desktop/example/attribute_con_des/main.c -o /Users/ac/Desktop/example/attribute_con_des/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/RBTree_4/RBTree.h",
+  "directory": "/Users/ac/Desktop/example/RBTree_4",
+  "command": "clang  -c /Users/ac/Desktop/example/RBTree_4/RBTree.h -o /Users/ac/Desktop/example/RBTree_4/RBTree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/RBTree_4/RBTree.cpp",
   "directory": "/Users/ac/Desktop/example/RBTree_4",
   "command": "clang  -c /Users/ac/Desktop/example/RBTree_4/RBTree.cpp -o /Users/ac/Desktop/example/RBTree_4/RBTree.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/RBTree_3/rbtree_rc.h",
+  "directory": "/Users/ac/Desktop/example/RBTree_3",
+  "command": "clang  -c /Users/ac/Desktop/example/RBTree_3/rbtree_rc.h -o /Users/ac/Desktop/example/RBTree_3/rbtree_rc.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/RBTree_3/rbtree.h",
+  "directory": "/Users/ac/Desktop/example/RBTree_3",
+  "command": "clang  -c /Users/ac/Desktop/example/RBTree_3/rbtree.h -o /Users/ac/Desktop/example/RBTree_3/rbtree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/RBTree_3/rbtree_rc.c",
   "directory": "/Users/ac/Desktop/example/RBTree_3",
@@ -719,9 +1011,17 @@
   "directory": "/Users/ac/Desktop/example/RBTree_3",
   "command": "clang  -c /Users/ac/Desktop/example/RBTree_3/rbtest2.c -o /Users/ac/Desktop/example/RBTree_3/rbtest2.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/RBTree_2/rbtree_rc.h",
+  "directory": "/Users/ac/Desktop/example/RBTree_2",
+  "command": "clang  -c /Users/ac/Desktop/example/RBTree_2/rbtree_rc.h -o /Users/ac/Desktop/example/RBTree_2/rbtree_rc.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/RBTree_2/rbtree_rc.c",
   "directory": "/Users/ac/Desktop/example/RBTree_2",
   "command": "clang  -c /Users/ac/Desktop/example/RBTree_2/rbtree_rc.c -o /Users/ac/Desktop/example/RBTree_2/rbtree_rc.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/RBTree_2/rbtree.h",
+  "directory": "/Users/ac/Desktop/example/RBTree_2",
+  "command": "clang  -c /Users/ac/Desktop/example/RBTree_2/rbtree.h -o /Users/ac/Desktop/example/RBTree_2/rbtree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/RBTree_2/rbtree.c",
   "directory": "/Users/ac/Desktop/example/RBTree_2",
@@ -775,6 +1075,10 @@
   "directory": "/Users/ac/Desktop/example/p_c_n",
   "command": "clang  -c /Users/ac/Desktop/example/p_c_n/main.cpp -o /Users/ac/Desktop/example/p_c_n/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/circqueue/circqueue.h",
+  "directory": "/Users/ac/Desktop/example/circqueue",
+  "command": "clang  -c /Users/ac/Desktop/example/circqueue/circqueue.h -o /Users/ac/Desktop/example/circqueue/circqueue.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/circqueue/circqueue_test.c",
   "directory": "/Users/ac/Desktop/example/circqueue",
   "command": "clang  -c /Users/ac/Desktop/example/circqueue/circqueue_test.c -o /Users/ac/Desktop/example/circqueue/circqueue_test.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c99"
@@ -814,6 +1118,10 @@
   "file": "/Users/ac/Desktop/example/operator/Operator.cc",
   "directory": "/Users/ac/Desktop/example/operator",
   "command": "clang  -c /Users/ac/Desktop/example/operator/Operator.cc -o /Users/ac/Desktop/example/operator/Operator.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
+  "file": "/Users/ac/Desktop/example/operator/Operator.h",
+  "directory": "/Users/ac/Desktop/example/operator",
+  "command": "clang  -c /Users/ac/Desktop/example/operator/Operator.h -o /Users/ac/Desktop/example/operator/Operator.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
  }, {
   "file": "/Users/ac/Desktop/example/operator/main.cpp",
   "directory": "/Users/ac/Desktop/example/operator",
@@ -855,9 +1163,25 @@
   "directory": "/Users/ac/Desktop/example/gcc_compile",
   "command": "clang  -c /Users/ac/Desktop/example/gcc_compile/main.c -o /Users/ac/Desktop/example/gcc_compile/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ncx_mempool/ncx_slab.h",
+  "directory": "/Users/ac/Desktop/example/ncx_mempool",
+  "command": "clang  -c /Users/ac/Desktop/example/ncx_mempool/ncx_slab.h -o /Users/ac/Desktop/example/ncx_mempool/ncx_slab.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ncx_mempool/ncx_slab.c",
   "directory": "/Users/ac/Desktop/example/ncx_mempool",
   "command": "clang  -c /Users/ac/Desktop/example/ncx_mempool/ncx_slab.c -o /Users/ac/Desktop/example/ncx_mempool/ncx_slab.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ncx_mempool/ncx_log.h",
+  "directory": "/Users/ac/Desktop/example/ncx_mempool",
+  "command": "clang  -c /Users/ac/Desktop/example/ncx_mempool/ncx_log.h -o /Users/ac/Desktop/example/ncx_mempool/ncx_log.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ncx_mempool/ncx_lock.h",
+  "directory": "/Users/ac/Desktop/example/ncx_mempool",
+  "command": "clang  -c /Users/ac/Desktop/example/ncx_mempool/ncx_lock.h -o /Users/ac/Desktop/example/ncx_mempool/ncx_lock.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ncx_mempool/ncx_core.h",
+  "directory": "/Users/ac/Desktop/example/ncx_mempool",
+  "command": "clang  -c /Users/ac/Desktop/example/ncx_mempool/ncx_core.h -o /Users/ac/Desktop/example/ncx_mempool/ncx_core.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ncx_mempool/main.c",
   "directory": "/Users/ac/Desktop/example/ncx_mempool",
@@ -866,6 +1190,10 @@
   "file": "/Users/ac/Desktop/example/variadic_template_4/main.cpp",
   "directory": "/Users/ac/Desktop/example/variadic_template_4",
   "command": "clang  -c /Users/ac/Desktop/example/variadic_template_4/main.cpp -o /Users/ac/Desktop/example/variadic_template_4/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -std=c++11  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/my_allocator_2/cb_allocator.h",
+  "directory": "/Users/ac/Desktop/example/my_allocator_2",
+  "command": "clang  -c /Users/ac/Desktop/example/my_allocator_2/cb_allocator.h -o /Users/ac/Desktop/example/my_allocator_2/cb_allocator.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/my_allocator_2/main.cpp",
   "directory": "/Users/ac/Desktop/example/my_allocator_2",
@@ -899,6 +1227,10 @@
   "directory": "/Users/ac/Desktop/example/find",
   "command": "clang  -c /Users/ac/Desktop/example/container_of/main.c -o /Users/ac/Desktop/example/container_of/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/find/BinarySearch.h",
+  "directory": "/Users/ac/Desktop/example/find",
+  "command": "clang  -c /Users/ac/Desktop/example/find/BinarySearch.h -o /Users/ac/Desktop/example/find/BinarySearch.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/find/main.cpp",
   "directory": "/Users/ac/Desktop/example/find",
   "command": "clang  -c /Users/ac/Desktop/example/find/main.cpp -o /Users/ac/Desktop/example/find/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -906,6 +1238,10 @@
   "file": "/Users/ac/Desktop/example/minheap_c_2/heap.c",
   "directory": "/Users/ac/Desktop/example/minheap_c_2",
   "command": "clang  -c /Users/ac/Desktop/example/minheap_c_2/heap.c -o /Users/ac/Desktop/example/minheap_c_2/heap.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/minheap_c_2/heap.h",
+  "directory": "/Users/ac/Desktop/example/minheap_c_2",
+  "command": "clang  -c /Users/ac/Desktop/example/minheap_c_2/heap.h -o /Users/ac/Desktop/example/minheap_c_2/heap.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/minheap_c_2/main.c",
   "directory": "/Users/ac/Desktop/example/minheap_c_2",
@@ -931,9 +1267,25 @@
   "directory": "/Users/ac/Desktop/example/getopt_long",
   "command": "clang  -c /Users/ac/Desktop/example/getopt_long/main.cpp -o /Users/ac/Desktop/example/getopt_long/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/mempool_4/ncx_core.h",
+  "directory": "/Users/ac/Desktop/example/mempool_4",
+  "command": "clang  -c /Users/ac/Desktop/example/mempool_4/ncx_core.h -o /Users/ac/Desktop/example/mempool_4/ncx_core.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/mempool_4/ncx_log.h",
+  "directory": "/Users/ac/Desktop/example/mempool_4",
+  "command": "clang  -c /Users/ac/Desktop/example/mempool_4/ncx_log.h -o /Users/ac/Desktop/example/mempool_4/ncx_log.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/mempool_4/ncx_lock.h",
+  "directory": "/Users/ac/Desktop/example/mempool_4",
+  "command": "clang  -c /Users/ac/Desktop/example/mempool_4/ncx_lock.h -o /Users/ac/Desktop/example/mempool_4/ncx_lock.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/mempool_4/ncx_slab.c",
   "directory": "/Users/ac/Desktop/example/mempool_4",
   "command": "clang  -c /Users/ac/Desktop/example/mempool_4/ncx_slab.c -o /Users/ac/Desktop/example/mempool_4/ncx_slab.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -D LOG_LEVEL=4"
+ }, {
+  "file": "/Users/ac/Desktop/example/mempool_4/ncx_slab.h",
+  "directory": "/Users/ac/Desktop/example/mempool_4",
+  "command": "clang  -c /Users/ac/Desktop/example/mempool_4/ncx_slab.h -o /Users/ac/Desktop/example/mempool_4/ncx_slab.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/mempool_4/main.c",
   "directory": "/Users/ac/Desktop/example/mempool_4",
@@ -951,6 +1303,10 @@
   "directory": "/Users/ac/Desktop/example/mempool_2",
   "command": "clang  -c /Users/ac/Desktop/example/mempool_2/mempool.c -o /Users/ac/Desktop/example/mempool_2/mempool.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/mempool_2/mempool.h",
+  "directory": "/Users/ac/Desktop/example/mempool_2",
+  "command": "clang  -c /Users/ac/Desktop/example/mempool_2/mempool.h -o /Users/ac/Desktop/example/mempool_2/mempool.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/mempool_2/main.c",
   "directory": "/Users/ac/Desktop/example/mempool_2",
   "command": "clang  -c /Users/ac/Desktop/example/mempool_2/main.c -o /Users/ac/Desktop/example/mempool_2/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -966,6 +1322,10 @@
   "file": "/Users/ac/Desktop/example/mempool/mempool.c",
   "directory": "/Users/ac/Desktop/example/mempool",
   "command": "clang  -c /Users/ac/Desktop/example/mempool/mempool.c -o /Users/ac/Desktop/example/mempool/mempool.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/mempool/mempool.h",
+  "directory": "/Users/ac/Desktop/example/mempool",
+  "command": "clang  -c /Users/ac/Desktop/example/mempool/mempool.h -o /Users/ac/Desktop/example/mempool/mempool.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/mempool/main.c",
   "directory": "/Users/ac/Desktop/example/mempool",
@@ -1031,6 +1391,10 @@
   "directory": "/Users/ac/Desktop/example/mempool_3",
   "command": "clang  -c /Users/ac/Desktop/example/mempool_3/mempool.c -o /Users/ac/Desktop/example/mempool_3/mempool.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/mempool_3/mempool.h",
+  "directory": "/Users/ac/Desktop/example/mempool_3",
+  "command": "clang  -c /Users/ac/Desktop/example/mempool_3/mempool.h -o /Users/ac/Desktop/example/mempool_3/mempool.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/mempool_3/main.c",
   "directory": "/Users/ac/Desktop/example/mempool_3",
   "command": "clang  -c /Users/ac/Desktop/example/mempool_3/main.c -o /Users/ac/Desktop/example/mempool_3/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1063,6 +1427,10 @@
   "directory": "/Users/ac/Desktop/example/class_method",
   "command": "clang  -c /Users/ac/Desktop/example/class_method/Base.cpp -o /Users/ac/Desktop/example/class_method/Base.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
  }, {
+  "file": "/Users/ac/Desktop/example/class_method/Base.h",
+  "directory": "/Users/ac/Desktop/example/class_method",
+  "command": "clang  -c /Users/ac/Desktop/example/class_method/Base.h -o /Users/ac/Desktop/example/class_method/Base.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
   "file": "/Users/ac/Desktop/example/class_method/main.cpp",
   "directory": "/Users/ac/Desktop/example/class_method",
   "command": "clang  -c /Users/ac/Desktop/example/class_method/main.cpp -o /Users/ac/Desktop/example/class_method/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
@@ -1083,6 +1451,10 @@
   "directory": "/Users/ac/Desktop/example/LockFreeQueue_2",
   "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue_2/QueueUnitTest.cpp -o /Users/ac/Desktop/example/LockFreeQueue_2/QueueUnitTest.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue_2/LockFreeQ.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue_2",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue_2/LockFreeQ.h -o /Users/ac/Desktop/example/LockFreeQueue_2/LockFreeQ.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/LockFreeQueue_2/main.cpp",
   "directory": "/Users/ac/Desktop/example/LockFreeQueue_2",
   "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue_2/main.cpp -o /Users/ac/Desktop/example/LockFreeQueue_2/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1090,6 +1462,10 @@
   "file": "/Users/ac/Desktop/example/map_erase_2/main.cpp",
   "directory": "/Users/ac/Desktop/example/map_erase_2",
   "command": "clang  -c /Users/ac/Desktop/example/map_erase_2/main.cpp -o /Users/ac/Desktop/example/map_erase_2/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQ/LockFreeQ.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQ",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQ/LockFreeQ.h -o /Users/ac/Desktop/example/LockFreeQ/LockFreeQ.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/LockFreeQ/main.cpp",
   "directory": "/Users/ac/Desktop/example/LockFreeQ",
@@ -1103,6 +1479,18 @@
   "directory": "/Users/ac/Desktop/example/array_address",
   "command": "clang  -c /Users/ac/Desktop/example/array_address/main.c -o /Users/ac/Desktop/example/array_address/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/libconhash/util_rbtree.h",
+  "directory": "/Users/ac/Desktop/example/libconhash",
+  "command": "clang  -c /Users/ac/Desktop/example/libconhash/util_rbtree.h -o /Users/ac/Desktop/example/libconhash/util_rbtree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
+  "file": "/Users/ac/Desktop/example/libconhash/conhash_inter.h",
+  "directory": "/Users/ac/Desktop/example/libconhash",
+  "command": "clang  -c /Users/ac/Desktop/example/libconhash/conhash_inter.h -o /Users/ac/Desktop/example/libconhash/conhash_inter.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
+  "file": "/Users/ac/Desktop/example/libconhash/configure.h",
+  "directory": "/Users/ac/Desktop/example/libconhash",
+  "command": "clang  -c /Users/ac/Desktop/example/libconhash/configure.h -o /Users/ac/Desktop/example/libconhash/configure.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
   "file": "/Users/ac/Desktop/example/libconhash/util_rbtree.c",
   "directory": "/Users/ac/Desktop/example/libconhash",
   "command": "clang  -c /Users/ac/Desktop/example/libconhash/util_rbtree.c -o /Users/ac/Desktop/example/libconhash/util_rbtree.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
@@ -1111,9 +1499,17 @@
   "directory": "/Users/ac/Desktop/example/libconhash",
   "command": "clang  -c /Users/ac/Desktop/example/libconhash/sample.c -o /Users/ac/Desktop/example/libconhash/sample.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
  }, {
+  "file": "/Users/ac/Desktop/example/libconhash/md5.h",
+  "directory": "/Users/ac/Desktop/example/libconhash",
+  "command": "clang  -c /Users/ac/Desktop/example/libconhash/md5.h -o /Users/ac/Desktop/example/libconhash/md5.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
   "file": "/Users/ac/Desktop/example/libconhash/md5.c",
   "directory": "/Users/ac/Desktop/example/libconhash",
   "command": "clang  -c /Users/ac/Desktop/example/libconhash/md5.c -o /Users/ac/Desktop/example/libconhash/md5.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
+ }, {
+  "file": "/Users/ac/Desktop/example/libconhash/conhash.h",
+  "directory": "/Users/ac/Desktop/example/libconhash",
+  "command": "clang  -c /Users/ac/Desktop/example/libconhash/conhash.h -o /Users/ac/Desktop/example/libconhash/conhash.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
  }, {
   "file": "/Users/ac/Desktop/example/libconhash/conhash_inter.c",
   "directory": "/Users/ac/Desktop/example/libconhash",
@@ -1127,6 +1523,10 @@
   "directory": "/Users/ac/Desktop/example/libconhash",
   "command": "clang  -c /Users/ac/Desktop/example/libconhash/conhash.c -o /Users/ac/Desktop/example/libconhash/conhash.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
  }, {
+  "file": "/Users/ac/Desktop/example/kernel_list_2/list.h",
+  "directory": "/Users/ac/Desktop/example/kernel_list_2",
+  "command": "clang  -c /Users/ac/Desktop/example/kernel_list_2/list.h -o /Users/ac/Desktop/example/kernel_list_2/list.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/kernel_list_2/main.c",
   "directory": "/Users/ac/Desktop/example/kernel_list_2",
   "command": "clang  -c /Users/ac/Desktop/example/kernel_list_2/main.c -o /Users/ac/Desktop/example/kernel_list_2/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1139,9 +1539,17 @@
   "directory": "/Users/ac/Desktop/example/struct_hack_data",
   "command": "clang  -c /Users/ac/Desktop/example/struct_hack_data/main.c -o /Users/ac/Desktop/example/struct_hack_data/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/struct_hack_data/def.h",
+  "directory": "/Users/ac/Desktop/example/struct_hack_data",
+  "command": "clang  -c /Users/ac/Desktop/example/struct_hack_data/def.h -o /Users/ac/Desktop/example/struct_hack_data/def.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/vec_resize/main.cpp",
   "directory": "/Users/ac/Desktop/example/vec_resize",
   "command": "clang  -c /Users/ac/Desktop/example/vec_resize/main.cpp -o /Users/ac/Desktop/example/vec_resize/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/kernel_hlist/list.h",
+  "directory": "/Users/ac/Desktop/example/kernel_hlist",
+  "command": "clang  -c /Users/ac/Desktop/example/kernel_hlist/list.h -o /Users/ac/Desktop/example/kernel_hlist/list.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/kernel_hlist/main.c",
   "directory": "/Users/ac/Desktop/example/kernel_hlist",
@@ -1183,6 +1591,10 @@
   "directory": "/Users/ac/Desktop/example/hash_table_c",
   "command": "clang  -c /Users/ac/Desktop/example/hash_table_c/main.c -o /Users/ac/Desktop/example/hash_table_c/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/BloomFilter/bloomlib.h",
+  "directory": "/Users/ac/Desktop/example/BloomFilter",
+  "command": "clang  -c /Users/ac/Desktop/example/BloomFilter/bloomlib.h -o /Users/ac/Desktop/example/BloomFilter/bloomlib.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/BloomFilter/bloomlib.c",
   "directory": "/Users/ac/Desktop/example/BloomFilter",
   "command": "clang  -c /Users/ac/Desktop/example/BloomFilter/bloomlib.c -o /Users/ac/Desktop/example/BloomFilter/bloomlib.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1194,6 +1606,10 @@
   "file": "/Users/ac/Desktop/example/cpp11/main.cpp",
   "directory": "/Users/ac/Desktop/example/cpp11",
   "command": "clang  -c /Users/ac/Desktop/example/cpp11/main.cpp -o /Users/ac/Desktop/example/cpp11/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++11"
+ }, {
+  "file": "/Users/ac/Desktop/example/hash_map/hashmap.h",
+  "directory": "/Users/ac/Desktop/example/hash_map",
+  "command": "clang  -c /Users/ac/Desktop/example/hash_map/hashmap.h -o /Users/ac/Desktop/example/hash_map/hashmap.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/hash_map/hashmap.c",
   "directory": "/Users/ac/Desktop/example/hash_map",
@@ -1222,6 +1638,10 @@
   "file": "/Users/ac/Desktop/example/getopt2/main.cpp",
   "directory": "/Users/ac/Desktop/example/getopt2",
   "command": "clang  -c /Users/ac/Desktop/example/getopt2/main.cpp -o /Users/ac/Desktop/example/getopt2/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/static_var/foo.h",
+  "directory": "/Users/ac/Desktop/example/static_var",
+  "command": "clang  -c /Users/ac/Desktop/example/static_var/foo.h -o /Users/ac/Desktop/example/static_var/foo.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/static_var/main.c",
   "directory": "/Users/ac/Desktop/example/static_var",
@@ -1259,6 +1679,10 @@
   "directory": "/Users/ac/Desktop/example/getopt",
   "command": "clang  -c /Users/ac/Desktop/example/getopt/main.c -o /Users/ac/Desktop/example/getopt/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/function_default/func.h",
+  "directory": "/Users/ac/Desktop/example/function_default",
+  "command": "clang  -c /Users/ac/Desktop/example/function_default/func.h -o /Users/ac/Desktop/example/function_default/func.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/function_default/func.c",
   "directory": "/Users/ac/Desktop/example/function_default",
   "command": "clang  -c /Users/ac/Desktop/example/function_default/func.c -o /Users/ac/Desktop/example/function_default/func.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c99"
@@ -1271,6 +1695,10 @@
   "directory": "/Users/ac/Desktop/example/DataType",
   "command": "clang  -c /Users/ac/Desktop/example/DataType/main.c -o /Users/ac/Desktop/example/DataType/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/LockFreeQueue_4/lfq.h",
+  "directory": "/Users/ac/Desktop/example/LockFreeQueue_4",
+  "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue_4/lfq.h -o /Users/ac/Desktop/example/LockFreeQueue_4/lfq.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/LockFreeQueue_4/main.cpp",
   "directory": "/Users/ac/Desktop/example/LockFreeQueue_4",
   "command": "clang  -c /Users/ac/Desktop/example/LockFreeQueue_4/main.cpp -o /Users/ac/Desktop/example/LockFreeQueue_4/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1278,6 +1706,10 @@
   "file": "/Users/ac/Desktop/example/class_copy_cons_3/main.cpp",
   "directory": "/Users/ac/Desktop/example/class_copy_cons_3",
   "command": "clang  -c /Users/ac/Desktop/example/class_copy_cons_3/main.cpp -o /Users/ac/Desktop/example/class_copy_cons_3/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/func_static/def.h",
+  "directory": "/Users/ac/Desktop/example/func_static",
+  "command": "clang  -c /Users/ac/Desktop/example/func_static/def.h -o /Users/ac/Desktop/example/func_static/def.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/func_static/func.c",
   "directory": "/Users/ac/Desktop/example/func_static",
@@ -1319,9 +1751,17 @@
   "directory": "/Users/ac/Desktop/example/case_ex",
   "command": "clang  -c /Users/ac/Desktop/example/case_ex/main.c -o /Users/ac/Desktop/example/case_ex/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/hash_table_3/hashtable.h",
+  "directory": "/Users/ac/Desktop/example/hash_table_3",
+  "command": "clang  -c /Users/ac/Desktop/example/hash_table_3/hashtable.h -o /Users/ac/Desktop/example/hash_table_3/hashtable.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/hash_table_3/hashtable.c",
   "directory": "/Users/ac/Desktop/example/hash_table_3",
   "command": "clang  -c /Users/ac/Desktop/example/hash_table_3/hashtable.c -o /Users/ac/Desktop/example/hash_table_3/hashtable.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/hash_table_3/debug.h",
+  "directory": "/Users/ac/Desktop/example/hash_table_3",
+  "command": "clang  -c /Users/ac/Desktop/example/hash_table_3/debug.h -o /Users/ac/Desktop/example/hash_table_3/debug.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/hash_table_3/main.c",
   "directory": "/Users/ac/Desktop/example/hash_table_3",
@@ -1347,6 +1787,14 @@
   "directory": "/Users/ac/Desktop/example/extern",
   "command": "clang  -c /Users/ac/Desktop/example/extern/func_1.cc -o /Users/ac/Desktop/example/extern/func_1.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/extern/func_2.h",
+  "directory": "/Users/ac/Desktop/example/extern",
+  "command": "clang  -c /Users/ac/Desktop/example/extern/func_2.h -o /Users/ac/Desktop/example/extern/func_2.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/extern/func_1.h",
+  "directory": "/Users/ac/Desktop/example/extern",
+  "command": "clang  -c /Users/ac/Desktop/example/extern/func_1.h -o /Users/ac/Desktop/example/extern/func_1.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/extern/func_2.cc",
   "directory": "/Users/ac/Desktop/example/extern",
   "command": "clang  -c /Users/ac/Desktop/example/extern/func_2.cc -o /Users/ac/Desktop/example/extern/func_2.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1354,6 +1802,10 @@
   "file": "/Users/ac/Desktop/example/extern/main.cpp",
   "directory": "/Users/ac/Desktop/example/extern",
   "command": "clang  -c /Users/ac/Desktop/example/extern/main.cpp -o /Users/ac/Desktop/example/extern/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/template_method/template.h",
+  "directory": "/Users/ac/Desktop/example/template_method",
+  "command": "clang  -c /Users/ac/Desktop/example/template_method/template.h -o /Users/ac/Desktop/example/template_method/template.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
  }, {
   "file": "/Users/ac/Desktop/example/template_method/main.cpp",
   "directory": "/Users/ac/Desktop/example/template_method",
@@ -1366,6 +1818,10 @@
   "file": "/Users/ac/Desktop/example/printf_suffix/main.c",
   "directory": "/Users/ac/Desktop/example/printf_suffix",
   "command": "clang  -c /Users/ac/Desktop/example/printf_suffix/main.c -o /Users/ac/Desktop/example/printf_suffix/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/kernel_list/list.h",
+  "directory": "/Users/ac/Desktop/example/kernel_list",
+  "command": "clang  -c /Users/ac/Desktop/example/kernel_list/list.h -o /Users/ac/Desktop/example/kernel_list/list.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/kernel_list/main.c",
   "directory": "/Users/ac/Desktop/example/kernel_list",
@@ -1391,6 +1847,10 @@
   "directory": "/Users/ac/Desktop/example/class_inherit",
   "command": "clang  -c /Users/ac/Desktop/example/class_inherit/main.cpp -o /Users/ac/Desktop/example/class_inherit/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/my_allocator/cb_allocator.h",
+  "directory": "/Users/ac/Desktop/example/my_allocator",
+  "command": "clang  -c /Users/ac/Desktop/example/my_allocator/cb_allocator.h -o /Users/ac/Desktop/example/my_allocator/cb_allocator.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/my_allocator/main.cpp",
   "directory": "/Users/ac/Desktop/example/my_allocator",
   "command": "clang  -c /Users/ac/Desktop/example/my_allocator/main.cpp -o /Users/ac/Desktop/example/my_allocator/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1415,6 +1875,18 @@
   "directory": "/Users/ac/Desktop/example/template_class",
   "command": "clang  -c /Users/ac/Desktop/example/template_class/B.cc -o /Users/ac/Desktop/example/template_class/B.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g -fexternal-templates"
  }, {
+  "file": "/Users/ac/Desktop/example/template_class/psTemplate.h",
+  "directory": "/Users/ac/Desktop/example/template_class",
+  "command": "clang  -c /Users/ac/Desktop/example/template_class/psTemplate.h -o /Users/ac/Desktop/example/template_class/psTemplate.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g -fexternal-templates"
+ }, {
+  "file": "/Users/ac/Desktop/example/template_class/template.h",
+  "directory": "/Users/ac/Desktop/example/template_class",
+  "command": "clang  -c /Users/ac/Desktop/example/template_class/template.h -o /Users/ac/Desktop/example/template_class/template.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g -fexternal-templates"
+ }, {
+  "file": "/Users/ac/Desktop/example/template_class/B.h",
+  "directory": "/Users/ac/Desktop/example/template_class",
+  "command": "clang  -c /Users/ac/Desktop/example/template_class/B.h -o /Users/ac/Desktop/example/template_class/B.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g -fexternal-templates"
+ }, {
   "file": "/Users/ac/Desktop/example/template_class/main.cpp",
   "directory": "/Users/ac/Desktop/example/template_class",
   "command": "clang  -c /Users/ac/Desktop/example/template_class/main.cpp -o /Users/ac/Desktop/example/template_class/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g -fexternal-templates"
@@ -1435,6 +1907,10 @@
   "directory": "/Users/ac/Desktop/example/Algorithm",
   "command": "clang  -c /Users/ac/Desktop/example/Algorithm/algorithm.cc -o /Users/ac/Desktop/example/Algorithm/algorithm.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/Algorithm/algorithm.h",
+  "directory": "/Users/ac/Desktop/example/Algorithm",
+  "command": "clang  -c /Users/ac/Desktop/example/Algorithm/algorithm.h -o /Users/ac/Desktop/example/Algorithm/algorithm.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/Algorithm/main.cpp",
   "directory": "/Users/ac/Desktop/example/Algorithm",
   "command": "clang  -c /Users/ac/Desktop/example/Algorithm/main.cpp -o /Users/ac/Desktop/example/Algorithm/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1447,9 +1923,17 @@
   "directory": "/Users/ac/Desktop/example/aligned_malloc",
   "command": "clang  -c /Users/ac/Desktop/example/aligned_malloc/main.c -o /Users/ac/Desktop/example/aligned_malloc/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/BullFight/Card.h",
+  "directory": "/Users/ac/Desktop/example/BullFight",
+  "command": "clang  -c /Users/ac/Desktop/example/BullFight/Card.h -o /Users/ac/Desktop/example/BullFight/Card.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++0x"
+ }, {
   "file": "/Users/ac/Desktop/example/BullFight/Logic.cc",
   "directory": "/Users/ac/Desktop/example/BullFight",
   "command": "clang  -c /Users/ac/Desktop/example/BullFight/Logic.cc -o /Users/ac/Desktop/example/BullFight/Logic.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++0x"
+ }, {
+  "file": "/Users/ac/Desktop/example/BullFight/Logic.h",
+  "directory": "/Users/ac/Desktop/example/BullFight",
+  "command": "clang  -c /Users/ac/Desktop/example/BullFight/Logic.h -o /Users/ac/Desktop/example/BullFight/Logic.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++0x"
  }, {
   "file": "/Users/ac/Desktop/example/BullFight/main.cpp",
   "directory": "/Users/ac/Desktop/example/BullFight",
@@ -1471,6 +1955,10 @@
   "directory": "/Users/ac/Desktop/example/ini",
   "command": "clang  -c /Users/ac/Desktop/example/ini/inifile.c -o /Users/ac/Desktop/example/ini/inifile.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/ini/inifile.h",
+  "directory": "/Users/ac/Desktop/example/ini",
+  "command": "clang  -c /Users/ac/Desktop/example/ini/inifile.h -o /Users/ac/Desktop/example/ini/inifile.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/ini/main.c",
   "directory": "/Users/ac/Desktop/example/ini",
   "command": "clang  -c /Users/ac/Desktop/example/ini/main.c -o /Users/ac/Desktop/example/ini/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1487,6 +1975,10 @@
   "directory": "/Users/ac/Desktop/example/minheap_c_3",
   "command": "clang  -c /Users/ac/Desktop/example/minheap_c_3/heap.c -o /Users/ac/Desktop/example/minheap_c_3/heap.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c99"
  }, {
+  "file": "/Users/ac/Desktop/example/minheap_c_3/heap.h",
+  "directory": "/Users/ac/Desktop/example/minheap_c_3",
+  "command": "clang  -c /Users/ac/Desktop/example/minheap_c_3/heap.h -o /Users/ac/Desktop/example/minheap_c_3/heap.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/minheap_c_3/main.c",
   "directory": "/Users/ac/Desktop/example/minheap_c_3",
   "command": "clang  -c /Users/ac/Desktop/example/minheap_c_3/main.c -o /Users/ac/Desktop/example/minheap_c_3/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c99"
@@ -1499,9 +1991,17 @@
   "directory": "/Users/ac/Desktop/example/struct_union",
   "command": "clang  -c /Users/ac/Desktop/example/struct_union/main.c -o /Users/ac/Desktop/example/struct_union/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/BloomFiliter_2/hashes.h",
+  "directory": "/Users/ac/Desktop/example/BloomFiliter_2",
+  "command": "clang  -c /Users/ac/Desktop/example/BloomFiliter_2/hashes.h -o /Users/ac/Desktop/example/BloomFiliter_2/hashes.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/BloomFiliter_2/bloom.c",
   "directory": "/Users/ac/Desktop/example/BloomFiliter_2",
   "command": "clang  -c /Users/ac/Desktop/example/BloomFiliter_2/bloom.c -o /Users/ac/Desktop/example/BloomFiliter_2/bloom.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/BloomFiliter_2/bloom.h",
+  "directory": "/Users/ac/Desktop/example/BloomFiliter_2",
+  "command": "clang  -c /Users/ac/Desktop/example/BloomFiliter_2/bloom.h -o /Users/ac/Desktop/example/BloomFiliter_2/bloom.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/BloomFiliter_2/main.c",
   "directory": "/Users/ac/Desktop/example/BloomFiliter_2",
@@ -1514,6 +2014,10 @@
   "file": "/Users/ac/Desktop/example/namespace/main.cpp",
   "directory": "/Users/ac/Desktop/example/namespace",
   "command": "clang  -c /Users/ac/Desktop/example/namespace/main.cpp -o /Users/ac/Desktop/example/namespace/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/binary_heap/binheap.h",
+  "directory": "/Users/ac/Desktop/example/binary_heap",
+  "command": "clang  -c /Users/ac/Desktop/example/binary_heap/binheap.h -o /Users/ac/Desktop/example/binary_heap/binheap.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/binary_heap/binheap.c",
   "directory": "/Users/ac/Desktop/example/binary_heap",
@@ -1547,9 +2051,25 @@
   "directory": "/Users/ac/Desktop/example/extern_cpp",
   "command": "clang  -c /Users/ac/Desktop/example/extern_cpp/fc.cc -o /Users/ac/Desktop/example/extern_cpp/fc.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/extern_cpp/foo.h",
+  "directory": "/Users/ac/Desktop/example/extern_cpp",
+  "command": "clang  -c /Users/ac/Desktop/example/extern_cpp/foo.h -o /Users/ac/Desktop/example/extern_cpp/foo.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/extern_cpp/fn.h",
+  "directory": "/Users/ac/Desktop/example/extern_cpp",
+  "command": "clang  -c /Users/ac/Desktop/example/extern_cpp/fn.h -o /Users/ac/Desktop/example/extern_cpp/fn.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/extern_cpp/fn.c",
   "directory": "/Users/ac/Desktop/example/extern_cpp",
   "command": "clang  -c /Users/ac/Desktop/example/extern_cpp/fn.c -o /Users/ac/Desktop/example/extern_cpp/fn.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/extern_cpp/f1.h",
+  "directory": "/Users/ac/Desktop/example/extern_cpp",
+  "command": "clang  -c /Users/ac/Desktop/example/extern_cpp/f1.h -o /Users/ac/Desktop/example/extern_cpp/f1.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/hash_table_4/uthash.h",
+  "directory": "/Users/ac/Desktop/example/hash_table_4",
+  "command": "clang  -c /Users/ac/Desktop/example/hash_table_4/uthash.h -o /Users/ac/Desktop/example/hash_table_4/uthash.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/hash_table_4/main.c",
   "directory": "/Users/ac/Desktop/example/hash_table_4",
@@ -1559,6 +2079,10 @@
   "directory": "/Users/ac/Desktop/example/is_number",
   "command": "clang  -c /Users/ac/Desktop/example/is_number/main.c -o /Users/ac/Desktop/example/is_number/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c99"
  }, {
+  "file": "/Users/ac/Desktop/example/hash_table_2/list.h",
+  "directory": "/Users/ac/Desktop/example/hash_table_2",
+  "command": "clang  -c /Users/ac/Desktop/example/hash_table_2/list.h -o /Users/ac/Desktop/example/hash_table_2/list.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/hash_table_2/main.c",
   "directory": "/Users/ac/Desktop/example/hash_table_2",
   "command": "clang  -c /Users/ac/Desktop/example/hash_table_2/main.c -o /Users/ac/Desktop/example/hash_table_2/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1566,6 +2090,10 @@
   "file": "/Users/ac/Desktop/example/c11/message.cc",
   "directory": "/Users/ac/Desktop/example/c11",
   "command": "clang  -c /Users/ac/Desktop/example/c11/message.cc -o /Users/ac/Desktop/example/c11/message.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++11"
+ }, {
+  "file": "/Users/ac/Desktop/example/c11/message.h",
+  "directory": "/Users/ac/Desktop/example/c11",
+  "command": "clang  -c /Users/ac/Desktop/example/c11/message.h -o /Users/ac/Desktop/example/c11/message.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall  -std=c++11"
  }, {
   "file": "/Users/ac/Desktop/example/c11/main.cpp",
   "directory": "/Users/ac/Desktop/example/c11",
@@ -1590,6 +2118,10 @@
   "file": "/Users/ac/Desktop/example/bump_pointer_allocator/testbpa.c",
   "directory": "/Users/ac/Desktop/example/bump_pointer_allocator",
   "command": "clang  -c /Users/ac/Desktop/example/bump_pointer_allocator/testbpa.c -o /Users/ac/Desktop/example/bump_pointer_allocator/testbpa.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/bump_pointer_allocator/bpa.h",
+  "directory": "/Users/ac/Desktop/example/bump_pointer_allocator",
+  "command": "clang  -c /Users/ac/Desktop/example/bump_pointer_allocator/bpa.h -o /Users/ac/Desktop/example/bump_pointer_allocator/bpa.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/bump_pointer_allocator/bpa.c",
   "directory": "/Users/ac/Desktop/example/bump_pointer_allocator",
@@ -1623,6 +2155,14 @@
   "directory": "/Users/ac/Desktop/example/BPlus_Tree_3",
   "command": "clang  -c /Users/ac/Desktop/example/BPlus_Tree_3/main.c -o /Users/ac/Desktop/example/BPlus_Tree_3/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/BPlus_Tree_3/btree.h",
+  "directory": "/Users/ac/Desktop/example/BPlus_Tree_3",
+  "command": "clang  -c /Users/ac/Desktop/example/BPlus_Tree_3/btree.h -o /Users/ac/Desktop/example/BPlus_Tree_3/btree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/kernel_rb/rbtree.h",
+  "directory": "/Users/ac/Desktop/example/kernel_rb",
+  "command": "clang  -c /Users/ac/Desktop/example/kernel_rb/rbtree.h -o /Users/ac/Desktop/example/kernel_rb/rbtree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O2  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/kernel_rb/main.c",
   "directory": "/Users/ac/Desktop/example/kernel_rb",
   "command": "clang  -c /Users/ac/Desktop/example/kernel_rb/main.c -o /Users/ac/Desktop/example/kernel_rb/main.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O2  -Wall  -std=c99"
@@ -1635,6 +2175,14 @@
   "directory": "/Users/ac/Desktop/example/buffer_tree",
   "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/sds.c -o /Users/ac/Desktop/example/buffer_tree/sds.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/buffer_tree/sds.h",
+  "directory": "/Users/ac/Desktop/example/buffer_tree",
+  "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/sds.h -o /Users/ac/Desktop/example/buffer_tree/sds.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/buffer_tree/redis-dict.h",
+  "directory": "/Users/ac/Desktop/example/buffer_tree",
+  "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/redis-dict.h -o /Users/ac/Desktop/example/buffer_tree/redis-dict.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/buffer_tree/redis-dict.c",
   "directory": "/Users/ac/Desktop/example/buffer_tree",
   "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/redis-dict.c -o /Users/ac/Desktop/example/buffer_tree/redis-dict.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1642,6 +2190,18 @@
   "file": "/Users/ac/Desktop/example/buffer_tree/buffered_tree.c",
   "directory": "/Users/ac/Desktop/example/buffer_tree",
   "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/buffered_tree.c -o /Users/ac/Desktop/example/buffer_tree/buffered_tree.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/buffer_tree/buffered_tree.h",
+  "directory": "/Users/ac/Desktop/example/buffer_tree",
+  "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/buffered_tree.h -o /Users/ac/Desktop/example/buffer_tree/buffered_tree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/buffer_tree/bftree_set.h",
+  "directory": "/Users/ac/Desktop/example/buffer_tree",
+  "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/bftree_set.h -o /Users/ac/Desktop/example/buffer_tree/bftree_set.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/buffer_tree/bftree_map.h",
+  "directory": "/Users/ac/Desktop/example/buffer_tree",
+  "command": "clang  -c /Users/ac/Desktop/example/buffer_tree/bftree_map.h -o /Users/ac/Desktop/example/buffer_tree/bftree_map.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/buffer_tree/main.c",
   "directory": "/Users/ac/Desktop/example/buffer_tree",
@@ -1715,6 +2275,10 @@
   "directory": "/Users/ac/Desktop/example/AVLTree",
   "command": "clang  -c /Users/ac/Desktop/example/AVLTree/AVLTree.cpp -o /Users/ac/Desktop/example/AVLTree/AVLTree.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/AVLTree/AVLTree.h",
+  "directory": "/Users/ac/Desktop/example/AVLTree",
+  "command": "clang  -c /Users/ac/Desktop/example/AVLTree/AVLTree.h -o /Users/ac/Desktop/example/AVLTree/AVLTree.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/AVLTree/main.cpp",
   "directory": "/Users/ac/Desktop/example/AVLTree",
   "command": "clang  -c /Users/ac/Desktop/example/AVLTree/main.cpp -o /Users/ac/Desktop/example/AVLTree/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1739,6 +2303,10 @@
   "directory": "/Users/ac/Desktop/example/function_default_cpp",
   "command": "clang  -c /Users/ac/Desktop/example/function_default_cpp/func.cc -o /Users/ac/Desktop/example/function_default_cpp/func.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
+  "file": "/Users/ac/Desktop/example/function_default_cpp/func.h",
+  "directory": "/Users/ac/Desktop/example/function_default_cpp",
+  "command": "clang  -c /Users/ac/Desktop/example/function_default_cpp/func.h -o /Users/ac/Desktop/example/function_default_cpp/func.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/function_default_cpp/main.cpp",
   "directory": "/Users/ac/Desktop/example/function_default_cpp",
   "command": "clang  -c /Users/ac/Desktop/example/function_default_cpp/main.cpp -o /Users/ac/Desktop/example/function_default_cpp/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1754,6 +2322,10 @@
   "file": "/Users/ac/Desktop/example/ngx_mempool_2/mem_pool.c",
   "directory": "/Users/ac/Desktop/example/ngx_mempool_2",
   "command": "clang  -c /Users/ac/Desktop/example/ngx_mempool_2/mem_pool.c -o /Users/ac/Desktop/example/ngx_mempool_2/mem_pool.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/ngx_mempool_2/mem_pool.h",
+  "directory": "/Users/ac/Desktop/example/ngx_mempool_2",
+  "command": "clang  -c /Users/ac/Desktop/example/ngx_mempool_2/mem_pool.h -o /Users/ac/Desktop/example/ngx_mempool_2/mem_pool.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/ngx_mempool_2/main.cpp",
   "directory": "/Users/ac/Desktop/example/ngx_mempool_2",
@@ -1775,6 +2347,10 @@
   "directory": "/Users/ac/Desktop/example/new",
   "command": "clang  -c /Users/ac/Desktop/example/new/main.cpp -o /Users/ac/Desktop/example/new/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g"
  }, {
+  "file": "/Users/ac/Desktop/example/group_varint/gvarint.h",
+  "directory": "/Users/ac/Desktop/example/group_varint",
+  "command": "clang  -c /Users/ac/Desktop/example/group_varint/gvarint.h -o /Users/ac/Desktop/example/group_varint/gvarint.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
   "file": "/Users/ac/Desktop/example/group_varint/main.cpp",
   "directory": "/Users/ac/Desktop/example/group_varint",
   "command": "clang  -c /Users/ac/Desktop/example/group_varint/main.cpp -o /Users/ac/Desktop/example/group_varint/main.cpp.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
@@ -1782,6 +2358,14 @@
   "file": "/Users/ac/Desktop/example/macro_scope/func.c",
   "directory": "/Users/ac/Desktop/example/macro_scope",
   "command": "clang  -c /Users/ac/Desktop/example/macro_scope/func.c -o /Users/ac/Desktop/example/macro_scope/func.c.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/macro_scope/m2.h",
+  "directory": "/Users/ac/Desktop/example/macro_scope",
+  "command": "clang  -c /Users/ac/Desktop/example/macro_scope/m2.h -o /Users/ac/Desktop/example/macro_scope/m2.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/macro_scope/m1.h",
+  "directory": "/Users/ac/Desktop/example/macro_scope",
+  "command": "clang  -c /Users/ac/Desktop/example/macro_scope/m1.h -o /Users/ac/Desktop/example/macro_scope/m1.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/macro_scope/main.c",
   "directory": "/Users/ac/Desktop/example/macro_scope",
@@ -1794,6 +2378,10 @@
   "file": "/Users/ac/Desktop/example/impl/impl.cc",
   "directory": "/Users/ac/Desktop/example/impl",
   "command": "clang  -c /Users/ac/Desktop/example/impl/impl.cc -o /Users/ac/Desktop/example/impl/impl.cc.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
+ }, {
+  "file": "/Users/ac/Desktop/example/impl/impl.h",
+  "directory": "/Users/ac/Desktop/example/impl",
+  "command": "clang  -c /Users/ac/Desktop/example/impl/impl.h -o /Users/ac/Desktop/example/impl/impl.h.o  -I/usr/local/include -I/Library/Developer/CommandLineTools/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include -I/Library/Developer/CommandLineTools/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/usr/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk/System/Library/Frameworks -I. -I.  -g  -O0  -Wall"
  }, {
   "file": "/Users/ac/Desktop/example/impl/main.cpp",
   "directory": "/Users/ac/Desktop/example/impl",

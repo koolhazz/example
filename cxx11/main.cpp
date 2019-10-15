@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "shared_ptr.h"
 #include "unique_ptr.h"
+#include "constexpr.h"
 
-int main(int argc, char **argv)
+int 
+main(int argc, char **argv)
 {
 	__shared_ptr();
 	
@@ -13,5 +15,10 @@ int main(int argc, char **argv)
 	__unique_ptr();
 	
 	__CONSOLE__("exit main.\n");
+	
+	
+	int temp[MaxNums(10)];
+	
+	
 	return 0;
 }

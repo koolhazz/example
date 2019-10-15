@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="vector_copy_resize" Version="10.0.0" InternalType="Console">
+<CodeLite_Project Name="vector_copy_resize" Version="11000" InternalType="Console">
   <Description/>
   <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="main.cpp"/>
+  </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
@@ -92,7 +95,6 @@
       </Completion>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="src">
-    <File Name="main.cpp"/>
-  </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

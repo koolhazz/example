@@ -115,7 +115,7 @@
   <Project Name="LockFreeQueue_3" Path="LockFreeQueue_3/LockFreeQueue_3.project" Active="No"/>
   <Project Name="LockFreeQueue_4" Path="LockFreeQueue_4/LockFreeQueue_4.project" Active="No"/>
   <Project Name="macro" Path="macro/macro.project" Active="No"/>
-  <Project Name="macro_list" Path="macro_list/macro_list.project" Active="No"/>
+  <Project Name="macro_list" Path="macro_list/macro_list.project" Active="Yes"/>
   <Project Name="macro_list_2" Path="macro_list_2/macro_list_2.project" Active="No"/>
   <Project Name="macro_scope" Path="macro_scope/macro_scope.project" Active="No"/>
   <Project Name="malloc" Path="malloc/malloc.project" Active="No"/>
@@ -342,7 +342,7 @@
   <Project Name="COW" Path="COW/COW.project" Active="No"/>
   <Project Name="mutable" Path="mutable/mutable.project" Active="No"/>
   <Project Name="macro_generic" Path="macro_generic/macro_generic.project" Active="No"/>
-  <Project Name="duff_device" Path="duff_device/duff_device.project" Active="Yes"/>
+  <Project Name="duff_device" Path="duff_device/duff_device.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>

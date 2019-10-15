@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="slice" Version="10.0.0" InternalType="Console">
+<CodeLite_Project Name="slice" Version="11000" InternalType="Console">
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
@@ -95,4 +95,6 @@
       </Completion>
     </Configuration>
   </Settings>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

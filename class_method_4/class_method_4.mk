@@ -5,15 +5,16 @@
 ## Debug
 ProjectName            :=class_method_4
 ConfigurationName      :=Debug
+WorkspaceConfiguration := $(ConfigurationName)
 WorkspacePath          :=/Users/ac/Desktop/example
 ProjectPath            :=/Users/ac/Desktop/example/class_method_4
-IntermediateDirectory  :=./Debug
-OutDir                 := $(IntermediateDirectory)
+IntermediateDirectory  :=../build-$(ConfigurationName)/class_method_4
+OutDir                 :=../build-$(ConfigurationName)/class_method_4
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=28/12/2017
+Date                   :=10/10/2019
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -27,14 +28,13 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
-OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
+OutputFile             :=../build-$(ConfigurationName)/bin/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
 PreprocessOnlySwitch   :=-E
-ObjectsFileList        :="class_method_4.txt"
+ObjectsFileList        :=$(IntermediateDirectory)/ObjectsList.txt
 PCHCompileFlags        :=
-MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=../build-$(ConfigurationName)/class_method_4/main.cpp$(ObjectSuffix) 
 
 
 
@@ -70,20 +70,20 @@ Objects=$(Objects0)
 ## Main Build Targets 
 ##
 .PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
-all: $(OutputFile)
+all: MakeIntermediateDirs $(OutputFile)
 
-$(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
-	@$(MakeDirCommand) $(@D)
+$(OutputFile): ../build-$(ConfigurationName)/class_method_4/.d $(Objects) 
+	@mkdir -p "../build-$(ConfigurationName)/class_method_4"
 	@echo "" > $(IntermediateDirectory)/.d
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
 MakeIntermediateDirs:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+	@mkdir -p "../build-$(ConfigurationName)/class_method_4"
+	@mkdir -p ""../build-$(ConfigurationName)/bin""
 
-
-$(IntermediateDirectory)/.d:
-	@test -d ./Debug || $(MakeDirCommand) ./Debug
+../build-$(ConfigurationName)/class_method_4/.d:
+	@mkdir -p "../build-$(ConfigurationName)/class_method_4"
 
 PreBuild:
 
@@ -91,20 +91,20 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
+../build-$(ConfigurationName)/class_method_4/main.cpp$(ObjectSuffix): main.cpp ../build-$(ConfigurationName)/class_method_4/main.cpp$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/class_method_4/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+../build-$(ConfigurationName)/class_method_4/main.cpp$(DependSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT../build-$(ConfigurationName)/class_method_4/main.cpp$(ObjectSuffix) -MF../build-$(ConfigurationName)/class_method_4/main.cpp$(DependSuffix) -MM main.cpp
 
-$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+../build-$(ConfigurationName)/class_method_4/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) ../build-$(ConfigurationName)/class_method_4/main.cpp$(PreprocessSuffix) main.cpp
 
 
--include $(IntermediateDirectory)/*$(DependSuffix)
+-include ../build-$(ConfigurationName)/class_method_4//*$(DependSuffix)
 ##
 ## Clean
 ##
 clean:
-	$(RM) -r ./Debug/
+	$(RM) -r $(IntermediateDirectory)
 
 

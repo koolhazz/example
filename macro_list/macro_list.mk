@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=macro_list
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\macro_list"
+WorkspacePath          :=/Users/ac/Desktop/example
+ProjectPath            :=/Users/ac/Desktop/example/macro_list
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=03/12/15
-CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe 
-SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
+User                   :=austin chen
+Date                   :=15/10/2019
+CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -34,9 +34,7 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="macro_list.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe 
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,19 +47,19 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
-CXX      := D:/MinGW-4.8.1/bin/g++.exe 
-CC       := D:/MinGW-4.8.1/bin/gcc.exe 
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall -std=c99 $(Preprocessors)
 ASFLAGS  := 
-AS       := D:/MinGW-4.8.1/bin/as.exe 
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=d:\Program Files\CodeLite
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
 
@@ -71,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -80,8 +78,12 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -89,13 +91,11 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/macro_list/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.c$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
-
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/macro_list/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

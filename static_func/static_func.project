@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Project Name="static_func" Version="10.0.0" InternalType="Console">
+<CodeLite_Project Name="static_func" Version="11000" InternalType="Console">
   <Description/>
   <Dependencies/>
+  <VirtualDirectory Name="src">
+    <File Name="main.c"/>
+    <File Name="def.h"/>
+    <File Name="func.c"/>
+    <File Name="def.c"/>
+  </VirtualDirectory>
   <Settings Type="Executable">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
@@ -92,12 +98,6 @@
       </Completion>
     </Configuration>
   </Settings>
-  <VirtualDirectory Name="src">
-    <File Name="main.c"/>
-    <File Name="def.h"/>
-    <File Name="func.c"/>
-    <File Name="def.c"/>
-  </VirtualDirectory>
   <Dependencies Name="Debug"/>
   <Dependencies Name="Release"/>
 </CodeLite_Project>

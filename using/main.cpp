@@ -4,11 +4,15 @@
 //using out = std::cout;
 //using end = std::endl;
 
+//using STD = std;
+//namespace STD = std;
+
 class Father {
 public:
 	Father():id(100) {}
 	~Father() {}
-private:
+//private: // 不能正常编译
+protected:
 	int id;
 };
 
@@ -23,7 +27,6 @@ public:
 int main(int argc, char **argv)
 {
 	//out << "hello" << end;
-	
 	
 	return 0;
 }
