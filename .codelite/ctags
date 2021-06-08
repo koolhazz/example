@@ -1,0 +1,96 @@
+std	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr {$/;"	namespace	line:1
+shared_ptr	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^namespace std { template<typename _Tp> class shared_ptr { $/;"	class	line:1	namespace:std
+operator ->	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    _Tp* operator->();$/;"	prototype	line:2	class:std::shared_ptr	access:private	signature:()	returns:_Tp 
+reset	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    void reset( Y* ptr );$/;"	prototype	line:3	class:std::shared_ptr	access:private	signature:( Y* ptr )	returns:void 
+reset	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d );$/;"	prototype	line:4	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d )	returns:void 
+reset	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d, Alloc alloc );$/;"	prototype	line:5	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d, Alloc alloc )	returns:void 
+get	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    _T* get() const;$/;"	prototype	line:6	class:std::shared_ptr	access:private	signature:() const	returns:_T 
+
+packed_1	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct packed_1 {$/;"	struct	line:8
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	int a;$/;"	member	line:9	struct:packed_1	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	long long b;$/;"	member	line:10	struct:packed_1	access:public
+A_1	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct A_1 {$/;"	struct	line:14
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char                  a;		\/\/1B$/;"	member	line:15	struct:A_1	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  int                   b;		\/\/4B$/;"	member	line:16	struct:A_1	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned short        c;		\/\/2B$/;"	member	line:17	struct:A_1	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  long                  d;		\/\/4B$/;"	member	line:18	struct:A_1	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned long long    e;      \/\/8B$/;"	member	line:19	struct:A_1	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char                  f;      \/\/1B$/;"	member	line:20	struct:A_1	access:public
+aligned	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct aligned {$/;"	struct	line:27
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	int a;$/;"	member	line:28	struct:aligned	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	long long b;$/;"	member	line:29	struct:aligned	access:public
+aligned_2	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct aligned_2 {$/;"	struct	line:32
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	int a;$/;"	member	line:33	struct:aligned_2	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	long long b;$/;"	member	line:34	struct:aligned_2	access:public
+aligned_3	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct __attribute__((packed)) aligned_3 {$/;"	struct	line:37
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	int a;$/;"	member	line:38	struct:aligned_3	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	long long b;$/;"	member	line:39	struct:aligned_3	access:public
+A	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct A{$/;"	struct	line:42
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char a;				\/\/1Byte$/;"	member	line:43	struct:A	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  int b;				\/\/4B$/;"	member	line:44	struct:A	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned short c;		\/\/2B$/;"	member	line:45	struct:A	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  long d;				\/\/8B$/;"	member	line:46	struct:A	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned long long e; \/\/8B$/;"	member	line:47	struct:A	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char f;               \/\/1B$/;"	member	line:48	struct:A	access:public
+B	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct B {$/;"	struct	line:51
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char 				a;$/;"	member	line:52	struct:B	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	int 				b;$/;"	member	line:53	struct:B	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	unsigned short 		c;$/;"	member	line:54	struct:B	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	long 				d;$/;"	member	line:55	struct:B	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	unsigned long long 	e;$/;"	member	line:56	struct:B	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char 				f;$/;"	member	line:57	struct:B	access:public
+C	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct C {$/;"	struct	line:60
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char 					a;$/;"	member	line:61	struct:C	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	int 					b;$/;"	member	line:62	struct:C	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	unsigned short 			c;$/;"	member	line:63	struct:C	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	long 					d;$/;"	member	line:64	struct:C	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	unsigned long long 		e;$/;"	member	line:65	struct:C	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char 					f;$/;"	member	line:66	struct:C	access:public
+D	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct D {$/;"	struct	line:70
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char a;$/;"	member	line:71	struct:D	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  int b;$/;"	member	line:72	struct:D	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned short c;$/;"	member	line:73	struct:D	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  long d;$/;"	member	line:74	struct:D	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned long long e;$/;"	member	line:75	struct:D	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char f;$/;"	member	line:76	struct:D	access:public
+E	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct E {$/;"	struct	line:79
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char a;$/;"	member	line:80	struct:E	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  int b;$/;"	member	line:81	struct:E	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned short c;$/;"	member	line:82	struct:E	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  long d;$/;"	member	line:83	struct:E	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned long long e;$/;"	member	line:84	struct:E	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char f;$/;"	member	line:85	struct:E	access:public
+F	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct F {$/;"	struct	line:88
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char a;$/;"	member	line:89	struct:F	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  int b;$/;"	member	line:90	struct:F	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned short c;$/;"	member	line:91	struct:F	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  long d;$/;"	member	line:92	struct:F	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned long long e;$/;"	member	line:93	struct:F	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char f;$/;"	member	line:94	struct:F	access:public
+G	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct G {$/;"	struct	line:97
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char                  a; \/\/ 1$/;"	member	line:98	struct:G	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  int                   b; \/\/ 4$/;"	member	line:99	struct:G	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned short        c; \/\/ 2$/;"	member	line:100	struct:G	access:public
+d	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  long                  d; \/\/ 4$/;"	member	line:101	struct:G	access:public
+e	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  unsigned long long    e; \/\/ 8$/;"	member	line:102	struct:G	access:public
+f	/Users/ac/Desktop/example/attribute_aligned/main.c	/^  char                  f; \/\/ 1$/;"	member	line:103	struct:G	access:public
+aligned_t	/Users/ac/Desktop/example/attribute_aligned/main.c	/^typedef struct aligned aligned_t; \/* struct aligned 定义了aligned属性，这里不需要定义 *\/ $/;"	typedef	line:106	typeref:struct:aligned
+T	/Users/ac/Desktop/example/attribute_aligned/main.c	/^typedef struct T {$/;"	struct	line:108
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char a;$/;"	member	line:109	struct:T	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char b;$/;"	member	line:110	struct:T	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char c;$/;"	member	line:111	struct:T	access:public
+aligned_2_t	/Users/ac/Desktop/example/attribute_aligned/main.c	/^typedef struct T { 	char a; 	char b; 	char c; } __attribute__((packed)) aligned_2_t; \/* 这里的__attribute__ 需要放置在struct 与 新类型的中间位置 *\/ $/;"	typedef	line:112	typeref:struct:T
+U	/Users/ac/Desktop/example/attribute_aligned/main.c	/^typedef struct __attribute__((packed)) U {$/;"	struct	line:114
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char a;$/;"	member	line:115	struct:U	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char b;$/;"	member	line:116	struct:U	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char c;$/;"	member	line:117	struct:U	access:public
+aligned_3_t	/Users/ac/Desktop/example/attribute_aligned/main.c	/^typedef struct __attribute__((packed)) U { 	char a; 	char b; 	char c; } aligned_3_t; \/* 这里的__attribute__ 需要放置在struct 与 新类型的中间位置 *\/ $/;"	typedef	line:118	typeref:struct:U
+aligned_4_t	/Users/ac/Desktop/example/attribute_aligned/main.c	/^typedef struct M aligned_4_t; $/;"	typedef	line:120	typeref:struct:M
+M	/Users/ac/Desktop/example/attribute_aligned/main.c	/^struct M {$/;"	struct	line:121
+a	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char a;$/;"	member	line:122	struct:M	access:public
+b	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char b;$/;"	member	line:123	struct:M	access:public
+c	/Users/ac/Desktop/example/attribute_aligned/main.c	/^	char c;$/;"	member	line:124	struct:M	access:public
+x	/Users/ac/Desktop/example/attribute_aligned/main.c	/^int x __attribute__((aligned(8)));$/;"	variable	line:127
+y	/Users/ac/Desktop/example/attribute_aligned/main.c	/^__attribute__((aligned(8))) int y;$/;"	variable	line:128
+z	/Users/ac/Desktop/example/attribute_aligned/main.c	/^int __attribute__((aligned(8))) z;$/;"	variable	line:129
+main	/Users/ac/Desktop/example/attribute_aligned/main.c	/^main(int argc, char **argv) $/;"	function	line:134	signature:(int argc, char **argv)	returns:int 
