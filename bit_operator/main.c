@@ -244,6 +244,29 @@ prt_var_bin(const int x)
     printf("\n");
 }
 
+static inline int is_pow_of_2(uint32_t x)
+{
+	return !(x & (x-1));
+}
+
+static inline uint32_t next_pow_of_2(uint32_t x)
+{
+	if (is_pow_of_2(x))
+		return x;
+	x |= x>>1;
+	printf("X: %u\n", x);
+	x |= x>>2;
+	printf("X: %u\n", x);
+	x |= x>>4;
+	printf("X: %u\n", x);
+	x |= x>>8;
+	printf("X: %u\n", x);
+	x |= x>>16;
+	printf("X: %u\n", x);
+	
+	return x + 1;
+}
+
 
 int main(int argc, char **argv)
 {
@@ -269,6 +292,8 @@ int main(int argc, char **argv)
 	
 	printf("x: %d\n", -1 & 0xffffffff);
 	
-	system("pause");
+	printf("R: %u\n", 3u >> 4);
+	printf("R: %u\n", next_pow_of_2(3u));
+	printf("R: %u\n", next_pow_of_2(5u));
 	return 0;
 }

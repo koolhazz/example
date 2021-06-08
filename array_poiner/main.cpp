@@ -86,6 +86,21 @@ main(int argc, char* argv[])
 	char* p = new char[7];
 
 	char (*ll)[3] = new char[2][3];
+	
+	
+	int aaaa[12] = {0,1,2,3,4,5,6,7,8,9,10,11};
+    int (*ppppppp)[3] = (int(*)[3])(aaaa);
+    printf("aaaa: %d %d %d %d %d %d %d %d %d\n", 
+        aaaa[7], 
+        7[aaaa], 
+        *(aaaa+7), 
+        ppppppp[0][7],
+        ppppppp[1][4],
+        ppppppp[2][1],
+        ppppppp[3][-2],
+        ppppppp[4][-5],
+        ppppppp[10000][-29993]
+    );
 
 
 	printf("The Char : %c\n", *((*pa) +11));//*(*pa) 指向'g'，也就是a[1][0][0], *pa 就是数组名{'g', 'h'}

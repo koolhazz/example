@@ -2,6 +2,7 @@
 #include "shared_ptr.h"
 #include "unique_ptr.h"
 #include "constexpr.h"
+#include "auto.h"
 
 int 
 main(int argc, char **argv)
@@ -18,6 +19,11 @@ main(int argc, char **argv)
 	
 	
 	int temp[MaxNums(10)];
+	
+	
+	{
+		
+	}
 	
 	
 	return 0;

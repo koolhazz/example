@@ -113,7 +113,7 @@ typedef struct {
 	short 	b;
 	int 	c;
 	char 	d;
-} __attribute__((aligend(1), packed)) GG;
+} __attribute__((aligned(1), packed)) GG;
 
 typedef struct {
 	double 	a;
@@ -122,22 +122,37 @@ typedef struct {
 	char 	d;
 } __attribute__((packed)) GGG;
 
+typedef struct hhh_s hhh_t;
+struct hhh_s {
+	unsigned long a;
+	struct {
+		unsigned int b;
+		unsigned int c;
+	};
+};
 
 int
 main(int argc, char** argv)
 {
-	printf("A: %llu\n", sizeof(struct A));
-	printf("B: %llu\n", sizeof(struct B));
-	printf("BB: %llu\n", sizeof(struct BB));
-	printf("BBB: %llu\n", sizeof(struct BBB));
-	printf("BBBB: %llu\n", sizeof(struct BBBB));
-	printf("C: %llu\n", sizeof(struct C));
-	printf("D: %llu\n", sizeof(struct D));
-	printf("E: %llu\n", sizeof(struct E));
-	printf("F: %llu\n", sizeof(struct F));
-	printf("F: %llu\n", sizeof(G));
-	printf("F: %llu\n", sizeof(GG));
-	printf("F: %llu\n", sizeof(GGG));
+	printf("A: %lu\n", sizeof(struct A));
+	printf("B: %lu\n", sizeof(struct B));
+	printf("BB: %lu\n", sizeof(struct BB));
+	printf("BBB: %lu\n", sizeof(struct BBB));
+	printf("BBBB: %lu\n", sizeof(struct BBBB));
+	printf("C: %lu\n", sizeof(struct C));
+	printf("D: %lu\n", sizeof(struct D));
+	printf("E: %lu\n", sizeof(struct E));
+	printf("F: %lu\n", sizeof(struct F));
+	printf("G: %lu\n", sizeof(G));
+	printf("GG: %lu\n", sizeof(GG));
+	printf("GGG: %lu\n", sizeof(GGG));
+	printf("H: %lu\n", sizeof(hhh_t));
+	
+	
+	hhh_t hhh;
+	
+	hhh.b = 1;
+	hhh.c = 2;
 	
 	int i = 0;
 	

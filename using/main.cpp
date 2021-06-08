@@ -1,11 +1,16 @@
 #include <stdio.h>
 #include <iostream>
 
-//using out = std::cout;
-//using end = std::endl;
+#include "nn2.h"
 
-//using STD = std;
-//namespace STD = std;
+namespace STD = std; // namespace alias
+
+static void
+__func()
+{
+}
+
+using FF = void (*)();
 
 class Father {
 public:
@@ -21,12 +26,21 @@ public:
 	Son() {}
 	~Son() {}
 	int getId() { return id; }
-	using Father::id;
+	using Father::id; // 引用父类的成员变成自己的成员
 };
 
 int main(int argc, char **argv)
 {
-	//out << "hello" << end;
+	STD::cout << "hello" << STD::endl;
+	
+	nn2::nn_var = 100;
+	
+	{
+		Son ss;
+		
+		nn2::nn_var = ss.getId();
+		nn2::nn2_var = ss.id;
+	}
 	
 	return 0;
 }

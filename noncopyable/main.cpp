@@ -42,6 +42,13 @@ private:
 	int i;
 };
 
+
+class C {
+private:
+	C() {}
+};
+
+
 int main(int argc, char **argv)
 {
 	{
@@ -50,7 +57,7 @@ int main(int argc, char **argv)
 	
 	A a(100);
 //	A b(a); /* 这里error */
-	A b = a; /* 这里error */
+	//A b = a; /* 这里error */
 
 	A *p = new A(99);
 	p->show();
@@ -63,8 +70,11 @@ int main(int argc, char **argv)
 		b = bb;
 	}
 	
-	
-	system("pause");
+	{
+		//C c; // complie error;
+		
+		C *pc = new C;
+	}
 	
 	return 0;
 }

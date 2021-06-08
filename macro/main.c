@@ -183,6 +183,10 @@ union luai_Cast { double l_d; long l_l; };
 	n + i;			\
 })
 
+#define PRE(n) AAA_##n
+
+typedef void* PRE(bbbbb);
+
 int main(int argc, char **argv)
 {
 	show(1);	

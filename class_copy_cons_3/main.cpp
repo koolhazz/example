@@ -41,7 +41,7 @@ int main(int argc, char **argv)
 	
 	a1.swap(a2);
 	a1.swap(&a2);
-	//a1._swap(&a2);// main 函数没有权限天虹a2对象的protected 级的对象
+	//a1._swap(&a2);// main 函数没有权限 调用 a2对象的protected 级的对象
 	
 	return 0;
 }

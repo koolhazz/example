@@ -22,6 +22,14 @@ struct test_3_s {
 	int 	age;
 };
 
+class Data {
+public:
+	Data(int i):data_(i) {}
+private:
+	int data_;
+};
+
+
 static void
 __show_struct(struct test ss)
 {
@@ -58,6 +66,11 @@ int main()
 	printf("t1.a = %d, t1.b = %d\n", t1.a, t1.b);
     printf("t2.a = %d, t2.b = %d\n", t2.a, t2.b);
     printf("t3.a = %d, t3.b = %d\n", t3.a, t3.b);
+	
+	
+	struct test t9 {1, 1}; // c++11
+	Data d1 { 100 }; 
+	int d2 { 200 };
 	
 	__show_struct({0,0});
     return 0;

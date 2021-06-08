@@ -18,6 +18,8 @@ int main(int argc, char **argv)
 	
 	CExample<float> floatAdd;
 	
+	CExample<> add;
+	
 	//B<int> b;
 	
 	//b.Say();

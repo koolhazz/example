@@ -12,7 +12,7 @@
     _(Lowered)                         \
     _(Guard)
 
-#define DEFINE_FLAG(flag) flag,
+#define DEFINE_FLAG(flag) flag,    // macro in this line
    enum Flag {
        None = 0,
        FLAG_LIST(DEFINE_FLAG)

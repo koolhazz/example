@@ -1,6 +1,17 @@
 #include <stdio.h>
 #include "template.h"
 
+static int 
+__double(int i)
+{
+	return i * i;
+}
+
+static int 
+__double2(int* i)
+{
+	return *i * *i;
+}
 
 int main(int argc, char **argv)
 {
@@ -10,13 +21,13 @@ int main(int argc, char **argv)
 	
 	int i, j;
 	
-	i=j=1;
+	i=j=100;
 	
 	Add(&i, &j);
 	
-	int ii;
 	
-	cin >> ii;
+	Callback(__double, 10);
+	Callback(&__double2, &i);
 
 	return 0;
 }

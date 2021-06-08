@@ -43,8 +43,10 @@ public:
 public:
 	bool compare(const Father& f) 
 	{
-		//return f.id > id; 
+		
 		__SELF__;
+		//return f.id > id; 
+		//return Father::id > id; // class-level 可以访问
 		return f.getId() > id;
 		/* 这里的代码只能访问本对象实例的基类的protected成员，不能访问其他对象实例的基类的保护成员
 		 * 访问Father::id,也就是该实例对象的继承的基类的protected成员, 也就是说对象实例也没有权限访问protected 成员;

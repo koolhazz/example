@@ -5,7 +5,7 @@ typedef union
 {
 	void * ptr;
 	short  i;
-}PP;
+} PP;
 
 
 
@@ -19,8 +19,6 @@ int main(int argc, char **argv)
 	
 	printf("P.I: %d\n", p.i);
 	printf("P.I: %d\n", p.ptr);
-	
-	system("pause");
 	
 	return 0;
 }

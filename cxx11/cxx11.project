@@ -8,6 +8,7 @@
   <Description/>
   <Dependencies/>
   <VirtualDirectory Name="src">
+    <File Name="auto.h"/>
     <File Name="constexpr.h"/>
     <File Name="main.cpp"/>
     <File Name="shared_ptr.h"/>

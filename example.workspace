@@ -115,7 +115,7 @@
   <Project Name="LockFreeQueue_3" Path="LockFreeQueue_3/LockFreeQueue_3.project" Active="No"/>
   <Project Name="LockFreeQueue_4" Path="LockFreeQueue_4/LockFreeQueue_4.project" Active="No"/>
   <Project Name="macro" Path="macro/macro.project" Active="No"/>
-  <Project Name="macro_list" Path="macro_list/macro_list.project" Active="Yes"/>
+  <Project Name="macro_list" Path="macro_list/macro_list.project" Active="No"/>
   <Project Name="macro_list_2" Path="macro_list_2/macro_list_2.project" Active="No"/>
   <Project Name="macro_scope" Path="macro_scope/macro_scope.project" Active="No"/>
   <Project Name="malloc" Path="malloc/malloc.project" Active="No"/>
@@ -343,6 +343,30 @@
   <Project Name="mutable" Path="mutable/mutable.project" Active="No"/>
   <Project Name="macro_generic" Path="macro_generic/macro_generic.project" Active="No"/>
   <Project Name="duff_device" Path="duff_device/duff_device.project" Active="No"/>
+  <Project Name="c_operator_tadpole" Path="c_operator_tadpole/c_operator_tadpole.project" Active="No"/>
+  <Project Name="macro_recu" Path="macro_recu/macro_recu.project" Active="No"/>
+  <Project Name="cxx11_range_for" Path="cxx11_range_for/cxx11_range_for.project" Active="No"/>
+  <Project Name="cleanable" Path="cleanable/cleanable.project" Active="No"/>
+  <Project Name="union_2" Path="union_2/union_2.project" Active="No"/>
+  <Project Name="enum_c11" Path="enum_c11/enum_c11.project" Active="No"/>
+  <Project Name="func_param_ref" Path="func_param_ref/func_param_ref.project" Active="No"/>
+  <Project Name="cxx11_rvalue" Path="cxx11_rvalue/cxx11_rvalue.project" Active="No"/>
+  <Project Name="class_copy_cons_c11" Path="class_copy_cons_c11/class_copy_cons_c11.project" Active="No"/>
+  <Project Name="lambda" Path="lambda/lambda.project" Active="No"/>
+  <Project Name="template_var_array" Path="template_var_array/template_var_array.project" Active="No"/>
+  <Project Name="function_cast" Path="function_cast/function_cast.project" Active="No"/>
+  <Project Name="class_multi_inherit" Path="class_multi_inherit/class_multi_inherit.project" Active="No"/>
+  <Project Name="class_des_private" Path="class_des_private/class_des_private.project" Active="No"/>
+  <Project Name="dynamic_pointer_cast" Path="dynamic_pointer_cast/dynamic_pointer_cast.project" Active="No"/>
+  <Project Name="class_private_cons" Path="class_private_cons/class_private_cons.project" Active="No"/>
+  <Project Name="pointer_uintptr" Path="pointer_uintptr/pointer_uintptr.project" Active="No"/>
+  <Project Name="struct_swizzle" Path="struct_swizzle/struct_swizzle.project" Active="No"/>
+  <Project Name="cxx11_raw_string" Path="cxx11_raw_string/cxx11_raw_string.project" Active="No"/>
+  <Project Name="class_new_heap" Path="class_new_heap/class_new_heap.project" Active="No"/>
+  <Project Name="switch_case" Path="switch_case/switch_case.project" Active="No"/>
+  <Project Name="constexpr" Path="constexpr/constexpr.project" Active="No"/>
+  <Project Name="union_anon" Path="union_anon/union_anon.project" Active="No"/>
+  <Project Name="union_anonymous" Path="union_anonymous/union_anonymous.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -694,6 +718,30 @@
       <Project Name="mutable" ConfigName="Debug"/>
       <Project Name="macro_generic" ConfigName="Debug"/>
       <Project Name="duff_device" ConfigName="Debug"/>
+      <Project Name="c_operator_tadpole" ConfigName="Debug"/>
+      <Project Name="macro_recu" ConfigName="Debug"/>
+      <Project Name="cxx11_range_for" ConfigName="Debug"/>
+      <Project Name="cleanable" ConfigName="Debug"/>
+      <Project Name="union_2" ConfigName="Debug"/>
+      <Project Name="enum_c11" ConfigName="Debug"/>
+      <Project Name="func_param_ref" ConfigName="Debug"/>
+      <Project Name="cxx11_rvalue" ConfigName="Debug"/>
+      <Project Name="class_copy_cons_c11" ConfigName="Debug"/>
+      <Project Name="lambda" ConfigName="Debug"/>
+      <Project Name="template_var_array" ConfigName="Debug"/>
+      <Project Name="function_cast" ConfigName="Debug"/>
+      <Project Name="class_multi_inherit" ConfigName="Debug"/>
+      <Project Name="class_des_private" ConfigName="Debug"/>
+      <Project Name="dynamic_pointer_cast" ConfigName="Debug"/>
+      <Project Name="class_private_cons" ConfigName="Debug"/>
+      <Project Name="pointer_uintptr" ConfigName="Debug"/>
+      <Project Name="struct_swizzle" ConfigName="Debug"/>
+      <Project Name="cxx11_raw_string" ConfigName="Debug"/>
+      <Project Name="class_new_heap" ConfigName="Debug"/>
+      <Project Name="switch_case" ConfigName="Debug"/>
+      <Project Name="constexpr" ConfigName="Debug"/>
+      <Project Name="union_anon" ConfigName="Debug"/>
+      <Project Name="union_anonymous" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1045,6 +1093,30 @@
       <Project Name="mutable" ConfigName="Release"/>
       <Project Name="macro_generic" ConfigName="Release"/>
       <Project Name="duff_device" ConfigName="Release"/>
+      <Project Name="c_operator_tadpole" ConfigName="Release"/>
+      <Project Name="macro_recu" ConfigName="Release"/>
+      <Project Name="cxx11_range_for" ConfigName="Release"/>
+      <Project Name="cleanable" ConfigName="Release"/>
+      <Project Name="union_2" ConfigName="Release"/>
+      <Project Name="enum_c11" ConfigName="Release"/>
+      <Project Name="func_param_ref" ConfigName="Release"/>
+      <Project Name="cxx11_rvalue" ConfigName="Release"/>
+      <Project Name="class_copy_cons_c11" ConfigName="Release"/>
+      <Project Name="lambda" ConfigName="Release"/>
+      <Project Name="template_var_array" ConfigName="Release"/>
+      <Project Name="function_cast" ConfigName="Release"/>
+      <Project Name="class_multi_inherit" ConfigName="Release"/>
+      <Project Name="class_des_private" ConfigName="Release"/>
+      <Project Name="dynamic_pointer_cast" ConfigName="Release"/>
+      <Project Name="class_private_cons" ConfigName="Release"/>
+      <Project Name="pointer_uintptr" ConfigName="Release"/>
+      <Project Name="struct_swizzle" ConfigName="Release"/>
+      <Project Name="cxx11_raw_string" ConfigName="Release"/>
+      <Project Name="class_new_heap" ConfigName="Release"/>
+      <Project Name="switch_case" ConfigName="Release"/>
+      <Project Name="constexpr" ConfigName="Release"/>
+      <Project Name="union_anon" ConfigName="Release"/>
+      <Project Name="union_anonymous" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

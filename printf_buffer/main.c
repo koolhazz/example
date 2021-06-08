@@ -23,7 +23,5 @@ main(void)
 {
      printf("%s %s\n", get_a_day(0), get_a_day(1)); /* 调用的循序是 get_a_day(1)  get_a_day(0) */
 	 
-	 system("pause");
-	 
      return 0;
 }

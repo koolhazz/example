@@ -20,6 +20,8 @@ int main(int argc, char **argv)
 	
 	int*** ppp;
 	
+	int (*(*pf())())();
+	
 	printf("type of i: %s\n", typeid(i).name());
 	printf("type of p: %s\n", typeid(p).name());
 	printf("type of int: %s\n", typeid(int).name());
@@ -57,6 +59,9 @@ int main(int argc, char **argv)
     pt(&c[0]);
     pt(c + 0);
     pt(c);
+	
+	__SEP__;
+	printf("type of pf: %s\n", t(pf));
 	
 	return 0;
 }
