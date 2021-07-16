@@ -5,3 +5,5 @@
 -I/Library/Developer/CommandLineTools/usr/include
 -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
 -I/Users/ac/Desktop/example/memcpy_tuning_4
+-target
+x86_64-apple-darwin19.6.0

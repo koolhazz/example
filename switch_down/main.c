@@ -72,6 +72,5 @@ int main(int argc, char **argv)
     copy_to_line(to, from, 1024 * 1024);
     __END;
    
-    system("pause");
 	return 0;
 }

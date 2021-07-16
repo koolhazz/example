@@ -7,3 +7,5 @@
 -I/Users/ac/Desktop/example/macro
 -D
 -std=c++0x
+-target
+x86_64-apple-darwin19.6.0

@@ -7,6 +7,13 @@ typedef union
 	short  i;
 } PP;
 
+struct vec4_SoU
+{
+    union { float x, r, s; };
+    union { float y, g, t; };
+    union { float z, b, p; };
+    union { float w, a, q; };
+};
 
 
 int main(int argc, char **argv)

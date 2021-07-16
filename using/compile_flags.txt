@@ -6,3 +6,5 @@
 -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
 -I/Users/ac/Desktop/example/using
 -std=gnu++11
+-target
+x86_64-apple-darwin19.6.0
