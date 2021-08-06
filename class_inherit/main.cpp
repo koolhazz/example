@@ -34,7 +34,7 @@ public:
 	Son() {}
 	~Son() { printf("Son Freeed\n"); }
 	
-	virtual int val(int v = 4096) { printf("Son return val: %d\n", v); return v; }
+	virtual int val(int v = 4096) { Dev::val(v); printf("Son return val: %d\n", v); return v; }
 };
 
 
@@ -116,7 +116,7 @@ main(int argc, char **argv)
 	{
 		Dev d;
 		
-		d.Base::NN(); //显示调用积累的方法，在子类不使用using引用定义的情况下，只能通过这中方式调用；
+		d.Base::NN(); //显示调用的方法，在子类不使用using引用定义的情况下，只能通过这中方式调用；
 	}
 	
 	return 0;

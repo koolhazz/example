@@ -46,7 +46,7 @@
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
-  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
+  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="Yes"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
@@ -333,7 +333,7 @@
   <Project Name="enum_def_cpp" Path="enum_def_cpp/enum_def_cpp.project" Active="No"/>
   <Project Name="slice" Path="slice/slice.project" Active="No"/>
   <Project Name="pragma_gcc" Path="pragma_gcc/pragma_gcc.project" Active="No"/>
-  <Project Name="struct_method" Path="struct_method/struct_method.project" Active="Yes"/>
+  <Project Name="struct_method" Path="struct_method/struct_method.project" Active="No"/>
   <Project Name="comma_express" Path="comma_express/comma_express.project" Active="No"/>
   <Project Name="macro_narg" Path="macro_narg/macro_narg.project" Active="No"/>
   <Project Name="string_data" Path="string_data/string_data.project" Active="No"/>
@@ -367,6 +367,7 @@
   <Project Name="constexpr" Path="constexpr/constexpr.project" Active="No"/>
   <Project Name="union_anon" Path="union_anon/union_anon.project" Active="No"/>
   <Project Name="union_anonymous" Path="union_anonymous/union_anonymous.project" Active="No"/>
+  <Project Name="array_return" Path="array_return/array_return.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -742,6 +743,7 @@
       <Project Name="constexpr" ConfigName="Debug"/>
       <Project Name="union_anon" ConfigName="Debug"/>
       <Project Name="union_anonymous" ConfigName="Debug"/>
+      <Project Name="array_return" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1117,6 +1119,7 @@
       <Project Name="constexpr" ConfigName="Release"/>
       <Project Name="union_anon" ConfigName="Release"/>
       <Project Name="union_anonymous" ConfigName="Release"/>
+      <Project Name="array_return" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

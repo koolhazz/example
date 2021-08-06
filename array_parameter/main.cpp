@@ -147,7 +147,5 @@ main(int argc, char **argv)
 		printf("a[%d]: %d\n", i, *(*pa + i));
 	}	
 	
-	system("pause");
-	
 	return 0;
 }
