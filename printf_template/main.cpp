@@ -7,8 +7,8 @@ void PRINTF(const char *format)
 {
 	cout << format;
 }
-template<typename T, typename...Args>
-void PRINTF(const char *format, T t, Args...args)
+template<typename T, typename... Args>
+void PRINTF(const char *format, T t, Args... args)
 {
 	if (!format || *format == '\0')
 		return;

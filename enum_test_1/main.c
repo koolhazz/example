@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// 匿名枚举
 enum {
 	OUT_CARD_TIMER = 0x201,
 	START_PLAY_CARD_TIMER = 0x203,
@@ -19,8 +20,7 @@ enum {
 int main(int argc, char **argv)
 {
 	printf("%x\n", TABLE_EXCHANG_CARD_TIMER);
-	
-	system("pause");
+	int aa = OUT_CARD_TIMER;
 	
 	return 0;
 }

@@ -5,21 +5,21 @@
 ## Debug
 ProjectName            :=kernel_rb
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\kernel_rb"
+WorkspacePath          :=/Users/ac/Desktop/example
+ProjectPath            :=/Users/ac/Desktop/example/kernel_rb
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=2013/7/12
-CodeLitePath           :="D:\Program Files\CodeLite"
-LinkerName             :=gcc
-SharedObjectLinkerName :=gcc -shared -fPIC
+User                   :=austin chen
+Date                   :=17/08/2021
+CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
-PreprocessSuffix       :=.o.i
+PreprocessSuffix       :=.i
 DebugSwitch            :=-g 
 IncludeSwitch          :=-I
 LibrarySwitch          :=-l
@@ -31,12 +31,10 @@ OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
 ArchiveOutputSwitch    := 
-PreprocessOnlySwitch   :=-E 
+PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="kernel_rb.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=windres
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -47,21 +45,22 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := ar rcus
-CXX      := gcc
-CC       := gcc
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS :=  -g -O2 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O2 -Wall -std=c99 $(Preprocessors)
+ASFLAGS  := 
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=D:\Program Files\CodeLite
-UNIT_TEST_PP_SRC_DIR:=d:\UnitTest++-1.3
-Objects0=$(IntermediateDirectory)/rbtree$(ObjectSuffix) $(IntermediateDirectory)/main$(ObjectSuffix) 
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IntermediateDirectory)/rbtree.c$(ObjectSuffix) 
 
 
 
@@ -70,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -79,8 +78,12 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -88,21 +91,17 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/rbtree$(ObjectSuffix): rbtree.c $(IntermediateDirectory)/rbtree$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/kernel_rb/rbtree.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtree$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/rbtree$(DependSuffix): rbtree.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtree$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtree$(DependSuffix) -MM "rbtree.c"
+$(IntermediateDirectory)/main.c$(ObjectSuffix): main.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM main.c
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/kernel_rb/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) main.c
 
-$(IntermediateDirectory)/rbtree$(PreprocessSuffix): rbtree.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtree$(PreprocessSuffix) "rbtree.c"
-
-$(IntermediateDirectory)/main$(ObjectSuffix): main.c $(IntermediateDirectory)/main$(DependSuffix)
-	$(CC) $(SourceSwitch) "E:/data/example/kernel_rb/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main$(DependSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main$(ObjectSuffix) -MF$(IntermediateDirectory)/main$(DependSuffix) -MM "main.c"
-
-$(IntermediateDirectory)/main$(PreprocessSuffix): main.c
-	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main$(PreprocessSuffix) "main.c"
+$(IntermediateDirectory)/rbtree.c$(ObjectSuffix): rbtree.c
+	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/rbtree.c$(ObjectSuffix) -MF$(IntermediateDirectory)/rbtree.c$(DependSuffix) -MM rbtree.c
+	$(CC) $(SourceSwitch) "/Users/ac/Desktop/example/kernel_rb/rbtree.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/rbtree.c$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/rbtree.c$(PreprocessSuffix): rbtree.c
+	$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/rbtree.c$(PreprocessSuffix) rbtree.c
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
@@ -110,14 +109,6 @@ $(IntermediateDirectory)/main$(PreprocessSuffix): main.c
 ## Clean
 ##
 clean:
-	$(RM) $(IntermediateDirectory)/rbtree$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/rbtree$(PreprocessSuffix)
-	$(RM) $(IntermediateDirectory)/main$(ObjectSuffix)
-	$(RM) $(IntermediateDirectory)/main$(DependSuffix)
-	$(RM) $(IntermediateDirectory)/main$(PreprocessSuffix)
-	$(RM) $(OutputFile)
-	$(RM) $(OutputFile).exe
-	$(RM) "../.build-debug/kernel_rb"
+	$(RM) -r ./Debug/
 
 

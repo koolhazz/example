@@ -19,6 +19,5 @@ int main(int argc, char **argv)
 	
 	list.push_back(string("hello", 5)); // temp var ok.
     
-    system("pause");
 	return 0;
 }

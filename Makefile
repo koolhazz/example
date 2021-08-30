@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ class_inherit - Debug ]----------"
-	@cd "class_inherit" && "$(MAKE)" -f  "class_inherit.mk"
+	@echo "----------Building project:[ pointer_plus_sub - Debug ]----------"
+	@cd "pointer_plus_sub" && "$(MAKE)" -f  "pointer_plus_sub.mk"
 clean:
-	@echo "----------Cleaning project:[ class_inherit - Debug ]----------"
-	@cd "class_inherit" && "$(MAKE)" -f  "class_inherit.mk" clean
+	@echo "----------Cleaning project:[ pointer_plus_sub - Debug ]----------"
+	@cd "pointer_plus_sub" && "$(MAKE)" -f  "pointer_plus_sub.mk" clean

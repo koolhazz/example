@@ -5,6 +5,19 @@ ArraySum(int a,int b ){
     return a+b;
 }
 
+static void 
+__char_array_init()
+{
+	const char* cc = "hello";
+	char cc2[10] = "hello";
+	char cc3[10] = {"hello"};
+	char cc4[] = "hello";
+	char cc5[] = {"hello"};
+	char cc6[][10] = {"hello", "world"}; 
+}
+
+
+
 
 int 
 main(int argc, char **argv)

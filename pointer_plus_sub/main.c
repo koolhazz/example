@@ -7,9 +7,10 @@
 int 
 main(int argc, char **argv)
 {
-	int* array = malloc(sizeof *array * 10);
+	int	*array = malloc(sizeof *array * 10);
 	
-	int* p = array + 5;
+	int	*p = array + 5;
+	void *pv = (void*)array;
 	
 	printf("array: 0x%p\n", array);
 	printf("p: 0x%p\n", p);
@@ -18,6 +19,8 @@ main(int argc, char **argv)
 	printf("p - array: %u\n", p - array); // 相隔元素个数
 	printf("p - array: %lu\n", index(array, p));
 	
+	printf("A + 1: %p\n", array + 1);
+	printf("PV + 4: %p\n", pv + sizeof(int)); //指针加减是按照指向类型占用空间大小移动 int=4 long=8 void* 按照 1
 	
 	void* v = malloc(10);
 	

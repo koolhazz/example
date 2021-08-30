@@ -31,8 +31,5 @@ int main(int argc, char **argv)
     
     list_vec(list);
     
-    
-    system("pause");
-    
 	return 0;
 }

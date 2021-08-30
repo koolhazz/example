@@ -9,10 +9,15 @@
 #elif  __BYTE_ORDER == __BIG_ENDIAN 
 	#pragma message("__BIG_ENDIANtemp")
 #endif
+
 typedef union {
 	char a;
 	int b;
 } A;
+
+
+#define __IS_LITTLE_ENDIAN__() ({union {char a; short b;} c; c.b = 1; c.a == 1 ? 1 : 0;})
+
 
 #define btol16(i)	 ( (((uint16_t)(i) & 0xff00) >> 8) | (((uint64_t)(i) & 0x00ff) << 8))
 				
@@ -118,6 +123,15 @@ int main(int argc, char **argv)
 //	
 //	printf("d_1: %f\n", htond(d_1));
 //	printf("d_1: %f\n", ntohd(d_1));
+	
+	switch (__IS_LITTLE_ENDIAN__()) {
+		case 1:
+			printf("LITTLE_ENDIAN\n");
+			break;
+		case 0:
+			printf("BIG_ENDIAN\n");
+			break;
+	}
 	
 	return 0;
 }

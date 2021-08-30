@@ -46,7 +46,7 @@
   <Project Name="circqueue" Path="circqueue/circqueue.project" Active="No"/>
   <Project Name="class_copy_cons" Path="class_copy_cons/class_copy_cons.project" Active="No"/>
   <Project Name="class_cons_dest" Path="class_cons_dest/class_cons_dest.project" Active="No"/>
-  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="Yes"/>
+  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
   <Project Name="class_method" Path="class_method/class_method.project" Active="No"/>
@@ -158,8 +158,7 @@
   <Project Name="packet" Path="packet/packet.project" Active="No"/>
   <Project Name="pointer_data_align" Path="pointer_data_align/pointer_data_align.project" Active="No"/>
   <Project Name="pointer_drift" Path="pointer_drift/pointer_drift.project" Active="No"/>
-  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="No"/>
-  <Project Name="pointer_sub_plus" Path="pointer_sub_plus/pointer_sub_plus.project" Active="No"/>
+  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="Yes"/>
   <Project Name="pointer_tag" Path="pointer_tag/pointer_tag.project" Active="No"/>
   <Project Name="poniter_int" Path="poniter_int/poniter_int.project" Active="No"/>
   <Project Name="printf_binary" Path="printf_binary/printf_binary.project" Active="No"/>
@@ -368,6 +367,9 @@
   <Project Name="union_anon" Path="union_anon/union_anon.project" Active="No"/>
   <Project Name="union_anonymous" Path="union_anonymous/union_anonymous.project" Active="No"/>
   <Project Name="array_return" Path="array_return/array_return.project" Active="No"/>
+  <Project Name="sum_parameter_pack" Path="sum_parameter_pack/sum_parameter_pack.project" Active="No"/>
+  <Project Name="parameter_pack" Path="parameter_pack/parameter_pack.project" Active="No"/>
+  <Project Name="number2string" Path="number2string/number2string.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -530,7 +532,6 @@
       <Project Name="pointer_data_align" ConfigName="Debug"/>
       <Project Name="pointer_drift" ConfigName="Debug"/>
       <Project Name="pointer_plus_sub" ConfigName="Debug"/>
-      <Project Name="pointer_sub_plus" ConfigName="Debug"/>
       <Project Name="pointer_tag" ConfigName="Debug"/>
       <Project Name="poniter_int" ConfigName="Debug"/>
       <Project Name="printf_binary" ConfigName="Debug"/>
@@ -744,6 +745,9 @@
       <Project Name="union_anon" ConfigName="Debug"/>
       <Project Name="union_anonymous" ConfigName="Debug"/>
       <Project Name="array_return" ConfigName="Debug"/>
+      <Project Name="sum_parameter_pack" ConfigName="Debug"/>
+      <Project Name="parameter_pack" ConfigName="Debug"/>
+      <Project Name="number2string" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -906,7 +910,6 @@
       <Project Name="pointer_data_align" ConfigName="Release"/>
       <Project Name="pointer_drift" ConfigName="Release"/>
       <Project Name="pointer_plus_sub" ConfigName="Release"/>
-      <Project Name="pointer_sub_plus" ConfigName="Release"/>
       <Project Name="pointer_tag" ConfigName="Release"/>
       <Project Name="poniter_int" ConfigName="Release"/>
       <Project Name="printf_binary" ConfigName="Release"/>
@@ -1120,6 +1123,9 @@
       <Project Name="union_anon" ConfigName="Release"/>
       <Project Name="union_anonymous" ConfigName="Release"/>
       <Project Name="array_return" ConfigName="Release"/>
+      <Project Name="sum_parameter_pack" ConfigName="Release"/>
+      <Project Name="parameter_pack" ConfigName="Release"/>
+      <Project Name="number2string" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

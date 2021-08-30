@@ -11,7 +11,5 @@ int main(int argc, char **argv)
 {
 	printf("sizeof: %d\n", sizeof(enum color));
 	
-	system("pause");
-	
 	return 0;
 }

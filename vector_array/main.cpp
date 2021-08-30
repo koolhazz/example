@@ -6,10 +6,16 @@ using namespace std;
 int 
 main(int argc, char **argv)
 {
-	vector<char> vc(10, 'h');
+	vector<unsigned int> vc;
+
+	for (unsigned int idx = 0; idx < 10; idx++) {
+		vc.push_back(idx);
+	}
 	
-	printf("vc: %s\n", &*vc.begin());
-	printf("vc: %c\n", *(&vc[1]));
+	printf("vc: %p\n", &*vc.begin());
+	printf("vc: %u\n", *(&vc[1]));
+	printf("vc: %u\n", *(vc.end() - 1));
+	printf("vc: %u\n", *(vc.end() - 2));
 	
 	int i;
 	

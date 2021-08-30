@@ -41,9 +41,9 @@ Printf(const char* s, T value, Args... args)
 int 
 main(int argc, char **argv)
 {
-	Printf("hello %s\n", "world");
 	
-	system("pause");
+	//Printf("hello %s\n", "world");
+	Printf("hello %s\n", "world", "chenbo");
 	
 	return 0;
 }
