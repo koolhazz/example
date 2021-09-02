@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ pointer_plus_sub - Debug ]----------"
-	@cd "pointer_plus_sub" && "$(MAKE)" -f  "pointer_plus_sub.mk"
+	@echo "----------Building project:[ getopt_long - Debug ]----------"
+	@cd "getopt_long" && "$(MAKE)" -f  "getopt_long.mk"
 clean:
-	@echo "----------Cleaning project:[ pointer_plus_sub - Debug ]----------"
-	@cd "pointer_plus_sub" && "$(MAKE)" -f  "pointer_plus_sub.mk" clean
+	@echo "----------Cleaning project:[ getopt_long - Debug ]----------"
+	@cd "getopt_long" && "$(MAKE)" -f  "getopt_long.mk" clean

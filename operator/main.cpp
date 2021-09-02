@@ -71,5 +71,9 @@ main(int argc, char **argv)
 		cout << "false" << endl;
 	}
 	
+	COperator op8(100);
+	
+	cout << op8++ << endl;
+	
 	return 0;
 }

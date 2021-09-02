@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=18/04/2019
+Date                   :=30/08/2021
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -91,19 +91,15 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/Operator.cc$(ObjectSuffix): Operator.cc $(IntermediateDirectory)/Operator.cc$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/operator/Operator.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Operator.cc$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Operator.cc$(DependSuffix): Operator.cc
+$(IntermediateDirectory)/Operator.cc$(ObjectSuffix): Operator.cc
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Operator.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/Operator.cc$(DependSuffix) -MM Operator.cc
-
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/operator/Operator.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Operator.cc$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Operator.cc$(PreprocessSuffix): Operator.cc
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Operator.cc$(PreprocessSuffix) Operator.cc
 
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/operator/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/operator/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 

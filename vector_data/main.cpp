@@ -8,6 +8,7 @@ using namespace std;
 int main(int argc, char **argv)
 {
 	vector<string> list(1, "hello");
+	vector<string> empty;
     
     printf("data: %p\n", list.data());
     
@@ -19,5 +20,14 @@ int main(int argc, char **argv)
 	
 	list.push_back(string("hello", 5)); // temp var ok.
     
+	
+	if (empty.empty()) {
+		if (empty.begin() == empty.end()) {
+			printf("empty begin() == end().\n");
+		} else {
+			printf("empty begin() != end().\n");
+		}
+	}
+	
 	return 0;
 }

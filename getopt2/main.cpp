@@ -107,7 +107,5 @@ int main( int argc, char *argv[] )
 
 	convert_document();
 	
-	system("pause");
-	
 	return EXIT_SUCCESS;
 }

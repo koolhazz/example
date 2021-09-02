@@ -9,9 +9,11 @@ class A
 {
 public:
 	A():i(0) {}
+	A(int _i):i(_i) {}
 	~A() {}
 	
 	void Show();
+	int get_i() { return i; }
 private:
 	int i;
 };
@@ -36,7 +38,7 @@ int main(int argc, char **argv)
 	pa->~A();
 	operator delete(pa, p); // placement delete 使用时与 placement new 配对 placement new 生成的对象必须用placement delete
 	
-	delete[] p;
+//	delete[] p;
 	
 //	A a;
 //	
@@ -60,9 +62,9 @@ int main(int argc, char **argv)
     ::operator delete(paa, buff);
     delete[] buff;
     
-    
-    
-    int i;
+    A *paaa = new A[10];
+	for (unsigned int idx = 0; idx < 10; idx++) {
+		printf("A[%u]: %d\n", idx, (paaa + idx)->get_i());
+	}
 	
-	cin >> i;
 }

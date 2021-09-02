@@ -83,7 +83,7 @@
   <Project Name="gcc_builtin" Path="gcc_builtin/gcc_builtin.project" Active="No"/>
   <Project Name="gcc_compile" Path="gcc_compile/gcc_compile.project" Active="No"/>
   <Project Name="getopt" Path="getopt/getopt.project" Active="No"/>
-  <Project Name="getopt_long" Path="getopt_long/getopt_long.project" Active="No"/>
+  <Project Name="getopt_long" Path="getopt_long/getopt_long.project" Active="Yes"/>
   <Project Name="getopt2" Path="getopt2/getopt2.project" Active="No"/>
   <Project Name="glibc" Path="glibc/glibc.project" Active="No"/>
   <Project Name="gplusplus_compile" Path="gplusplus_compile/gplusplus_compile.project" Active="No"/>
@@ -158,7 +158,7 @@
   <Project Name="packet" Path="packet/packet.project" Active="No"/>
   <Project Name="pointer_data_align" Path="pointer_data_align/pointer_data_align.project" Active="No"/>
   <Project Name="pointer_drift" Path="pointer_drift/pointer_drift.project" Active="No"/>
-  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="Yes"/>
+  <Project Name="pointer_plus_sub" Path="pointer_plus_sub/pointer_plus_sub.project" Active="No"/>
   <Project Name="pointer_tag" Path="pointer_tag/pointer_tag.project" Active="No"/>
   <Project Name="poniter_int" Path="poniter_int/poniter_int.project" Active="No"/>
   <Project Name="printf_binary" Path="printf_binary/printf_binary.project" Active="No"/>

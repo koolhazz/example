@@ -34,6 +34,7 @@
  * we support, and which long options have arguments.
  */
 
+class convert_document;
 struct globalArgs_t {
 	int noIndex;				/* -I option */
 	char *langCode;				/* -l option */
@@ -138,8 +139,6 @@ int main( int argc, char *argv[] )
 
 	convert_document();
 	
-	
-	system("pause");
 	
 	return EXIT_SUCCESS;
 }
