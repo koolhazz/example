@@ -40,7 +40,7 @@ typedef map<key_t, value_t, compare_t>::iterator 	my_map_itr_t;
 typedef map<int, int, compare_int_t>				 	my_int_map_t;
 typedef my_int_map_t::iterator						my_int_map_itr_t;
 #else  /* 第二种方式定义自定义类的 operator < 但必须是第三方友元函数的形式 */
-typedef map<key_t, value_t> 			my_map_t;
+typedef map<key_t, value_t> 				my_map_t;
 typedef map<key_t, value_t>::iterator 	my_map_itr_t;
 #endif
 
@@ -63,8 +63,6 @@ main(int argc, char **argv)
 	for (it = temp.begin(); it != temp.end(); it++) {
 		printf("temp[%d]: %s\n", it->first.id, it->second.card.c_str());
 	}
-	
-	system("pause");
 	
 	return 0;
 }

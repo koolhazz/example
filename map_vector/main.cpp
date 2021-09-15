@@ -16,6 +16,5 @@ main(int argc, char **argv)
 	
 	printf("v: %d\n", v.size());
 	
-	system("pause");
 	return 0;
 }

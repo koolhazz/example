@@ -1,21 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef void FUNC(int);
 
-static void show(int i)
+static 
+void show(int i)
 {
 	printf("i: %d\n", i);
 }
 
 int main(int argc, char **argv)
 {
-	FUNC* f;
-	FUNC  ft;
+	FUNC	*fp;
+	FUNC  	ft;
 	
-	f = &show;
+	fp = &show;
 	
-	f(20);
-	ft(30);
+	fp(20);
 
 	return 0;
 }

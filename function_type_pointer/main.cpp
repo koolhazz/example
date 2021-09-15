@@ -30,7 +30,5 @@ int main(int argc, char **argv)
 	
 	ptr();
 	
-	system("pause");
-	
 	return 0;
 }

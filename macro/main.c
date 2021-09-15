@@ -187,8 +187,8 @@ union luai_Cast { double l_d; long l_l; };
 
 typedef void* PRE(bbbbb);
 
-
-int main(int argc, char **argv)
+int 
+main(int argc, char **argv)
 {
 	show(1);	
 	
@@ -240,5 +240,6 @@ int main(int argc, char **argv)
 	
 	
 	printf("XX: %d\n", XX(10));
+	
 	return 0;
 }

@@ -83,7 +83,7 @@
   <Project Name="gcc_builtin" Path="gcc_builtin/gcc_builtin.project" Active="No"/>
   <Project Name="gcc_compile" Path="gcc_compile/gcc_compile.project" Active="No"/>
   <Project Name="getopt" Path="getopt/getopt.project" Active="No"/>
-  <Project Name="getopt_long" Path="getopt_long/getopt_long.project" Active="Yes"/>
+  <Project Name="getopt_long" Path="getopt_long/getopt_long.project" Active="No"/>
   <Project Name="getopt2" Path="getopt2/getopt2.project" Active="No"/>
   <Project Name="glibc" Path="glibc/glibc.project" Active="No"/>
   <Project Name="gplusplus_compile" Path="gplusplus_compile/gplusplus_compile.project" Active="No"/>
@@ -370,6 +370,8 @@
   <Project Name="sum_parameter_pack" Path="sum_parameter_pack/sum_parameter_pack.project" Active="No"/>
   <Project Name="parameter_pack" Path="parameter_pack/parameter_pack.project" Active="No"/>
   <Project Name="number2string" Path="number2string/number2string.project" Active="No"/>
+  <Project Name="transform" Path="transform/transform.project" Active="No"/>
+  <Project Name="condition_three" Path="condition_three/condition_three.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -748,6 +750,8 @@
       <Project Name="sum_parameter_pack" ConfigName="Debug"/>
       <Project Name="parameter_pack" ConfigName="Debug"/>
       <Project Name="number2string" ConfigName="Debug"/>
+      <Project Name="transform" ConfigName="Debug"/>
+      <Project Name="condition_three" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1126,6 +1130,8 @@
       <Project Name="sum_parameter_pack" ConfigName="Release"/>
       <Project Name="parameter_pack" ConfigName="Release"/>
       <Project Name="number2string" ConfigName="Release"/>
+      <Project Name="transform" ConfigName="Release"/>
+      <Project Name="condition_three" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

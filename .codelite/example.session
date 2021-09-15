@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="/Users/ac/Desktop/example/example.workspace">
-  <int Value="196" Name="m_selectedTab"/>
+  <int Value="156" Name="m_selectedTab"/>
   <wxString Value="/Users/ac/Desktop/example/example.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -159,7 +159,7 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/struct_hack/main.c" Name="FileName"/>
-      <int Value="41" Name="FirstVisibleLine"/>
+      <int Value="27" Name="FirstVisibleLine"/>
       <int Value="42" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -208,8 +208,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/macro/main.c" Name="FileName"/>
-      <int Value="187" Name="FirstVisibleLine"/>
-      <int Value="189" Name="CurrentLine"/>
+      <int Value="21" Name="FirstVisibleLine"/>
+      <int Value="23" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -236,8 +236,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/map_compare/main.cpp" Name="FileName"/>
-      <int Value="49" Name="FirstVisibleLine"/>
-      <int Value="50" Name="CurrentLine"/>
+      <int Value="44" Name="FirstVisibleLine"/>
+      <int Value="46" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -250,7 +250,7 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/new/main.cpp" Name="FileName"/>
-      <int Value="51" Name="FirstVisibleLine"/>
+      <int Value="68" Name="FirstVisibleLine"/>
       <int Value="70" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -369,7 +369,7 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/cpp11/main.cpp" Name="FileName"/>
-      <int Value="33" Name="FirstVisibleLine"/>
+      <int Value="32" Name="FirstVisibleLine"/>
       <int Value="34" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -383,8 +383,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/cxx11/unique_ptr.h" Name="FileName"/>
-      <int Value="36" Name="FirstVisibleLine"/>
-      <int Value="37" Name="CurrentLine"/>
+      <int Value="48" Name="FirstVisibleLine"/>
+      <int Value="50" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -397,8 +397,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/cxx11/shared_ptr.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="8" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -600,7 +600,7 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/vector_data/main.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="16" Name="FirstVisibleLine"/>
       <int Value="18" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -1100,7 +1100,7 @@
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/struct_hack_cpp/main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="18" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -1120,8 +1120,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/for_test/main.c" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
+      <int Value="16" Name="FirstVisibleLine"/>
+      <int Value="18" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -1365,22 +1365,64 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/getopt/main.c" Name="FileName"/>
-      <int Value="3" Name="FirstVisibleLine"/>
+      <int Value="35" Name="FirstVisibleLine"/>
       <int Value="37" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/getopt2/main.cpp" Name="FileName"/>
-      <int Value="96" Name="FirstVisibleLine"/>
+      <int Value="106" Name="FirstVisibleLine"/>
       <int Value="108" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="/Users/ac/Desktop/example/getopt_long/main.cpp" Name="FileName"/>
-      <int Value="56" Name="FirstVisibleLine"/>
+      <int Value="69" Name="FirstVisibleLine"/>
       <int Value="71" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/ac/Desktop/example/function_type/main.cpp" Name="FileName"/>
+      <int Value="20" Name="FirstVisibleLine"/>
+      <int Value="22" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/ac/Desktop/example/function_type_pointer/main.cpp" Name="FileName"/>
+      <int Value="21" Name="FirstVisibleLine"/>
+      <int Value="23" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/ac/Desktop/example/cxx11/map_initializer_list.h" Name="FileName"/>
+      <int Value="25" Name="FirstVisibleLine"/>
+      <int Value="27" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/ac/Desktop/example/transform/main.cpp" Name="FileName"/>
+      <int Value="13" Name="FirstVisibleLine"/>
+      <int Value="15" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/ac/Desktop/example/map_vector/main.cpp" Name="FileName"/>
+      <int Value="15" Name="FirstVisibleLine"/>
+      <int Value="17" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="/Users/ac/Desktop/example/condition_three/main.c" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="12" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
