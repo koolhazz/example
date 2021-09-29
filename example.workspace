@@ -323,7 +323,7 @@
   <Project Name="class_virtual_dtor" Path="class_virtual_dtor/class_virtual_dtor.project" Active="No"/>
   <Project Name="extern_gcc" Path="extern_gcc/extern_gcc.project" Active="No"/>
   <Project Name="extern_cpp" Path="extern_cpp/extern_cpp.project" Active="No"/>
-  <Project Name="class_inline_2" Path="class_inline_2/class_inline_2.project" Active="No"/>
+  <Project Name="class_inline_2" Path="class_inline_2/class_inline_2.project" Active="Yes"/>
   <Project Name="class_explicit" Path="class_explicit/class_explicit.project" Active="No"/>
   <Project Name="sscanf_2" Path="sscanf_2/sscanf_2.project" Active="No"/>
   <Project Name="class_copy_cons_3" Path="class_copy_cons_3/class_copy_cons_3.project" Active="No"/>
@@ -371,7 +371,8 @@
   <Project Name="parameter_pack" Path="parameter_pack/parameter_pack.project" Active="No"/>
   <Project Name="number2string" Path="number2string/number2string.project" Active="No"/>
   <Project Name="transform" Path="transform/transform.project" Active="No"/>
-  <Project Name="condition_three" Path="condition_three/condition_three.project" Active="Yes"/>
+  <Project Name="condition_three" Path="condition_three/condition_three.project" Active="No"/>
+  <Project Name="operator_ostream" Path="operator_ostream/operator_ostream.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -752,6 +753,7 @@
       <Project Name="number2string" ConfigName="Debug"/>
       <Project Name="transform" ConfigName="Debug"/>
       <Project Name="condition_three" ConfigName="Debug"/>
+      <Project Name="operator_ostream" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -1132,6 +1134,7 @@
       <Project Name="number2string" ConfigName="Release"/>
       <Project Name="transform" ConfigName="Release"/>
       <Project Name="condition_three" ConfigName="Release"/>
+      <Project Name="operator_ostream" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

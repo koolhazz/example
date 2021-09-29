@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=13/07/2018
+Date                   :=23/09/2021
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -50,7 +50,7 @@ LibPath                := $(LibraryPathSwitch).
 AR       := /usr/bin/ar rcu
 CXX      := /usr/bin/g++
 CC       := /usr/bin/gcc
-CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
+CXXFLAGS :=  -g -O0 -Wall -std=gnu++11 $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
 AS       := /usr/bin/as
@@ -60,7 +60,7 @@ AS       := /usr/bin/as
 ## User defined environment variables
 ##
 CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
-Objects0=$(IntermediateDirectory)/fn.cc$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/fn.cc$(ObjectSuffix) 
 
 
 
@@ -91,21 +91,17 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/fn.cc$(ObjectSuffix): fn.cc $(IntermediateDirectory)/fn.cc$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/class_inline_2/fn.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/fn.cc$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/fn.cc$(DependSuffix): fn.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/fn.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/fn.cc$(DependSuffix) -MM fn.cc
-
-$(IntermediateDirectory)/fn.cc$(PreprocessSuffix): fn.cc
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/fn.cc$(PreprocessSuffix) fn.cc
-
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/class_inline_2/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/class_inline_2/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+
+$(IntermediateDirectory)/fn.cc$(ObjectSuffix): fn.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/fn.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/fn.cc$(DependSuffix) -MM fn.cc
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/class_inline_2/fn.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/fn.cc$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/fn.cc$(PreprocessSuffix): fn.cc
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/fn.cc$(PreprocessSuffix) fn.cc
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

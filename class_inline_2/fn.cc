@@ -1,7 +1,7 @@
 #include "fn.h"
 
-inline void
-FunInline::version()
-{
-	
-}
+//void
+//FunInline::version()
+//{
+//	
+//}
