@@ -67,7 +67,7 @@ main(int argc, char* argv[])
 	MyClass* pMyClass = new (temp)MyClass();
 //	pMyClass->MyClass::MyClass();
 	
-	pMyClass->~MyClass();
+	pMyClass->~MyClass(); //主动调用析构函数
 	delete pMyClass;
 	
 	

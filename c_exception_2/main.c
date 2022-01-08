@@ -31,7 +31,5 @@ main(int argc, char** argv)
 
 	ETRY;
 	
-	system("pause");
-
 	return 0;
 }

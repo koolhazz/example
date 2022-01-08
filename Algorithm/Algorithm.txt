@@ -1,1 +1,1 @@
-./Debug/main.cpp.o ./Debug/algorithm.cc.o   
+./Debug/algorithm.cc.o ./Debug/main.cpp.o

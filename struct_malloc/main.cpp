@@ -20,7 +20,5 @@ int main(int argc, char **argv)
     
     o->url = "chenbo"; //  这里不能使用，malloc只创建了内存并没有调用string的构造函数
     
-    system("pause");
-    
 	return 0;
 }

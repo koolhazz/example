@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=Algorithm
 ConfigurationName      :=Debug
-WorkspacePath          := "E:\data\example"
-ProjectPath            := "E:\data\example\Algorithm"
+WorkspacePath          :=/Users/ac/Desktop/example
+ProjectPath            :=/Users/ac/Desktop/example/Algorithm
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=AustinChen
-Date                   :=01/07/2015
-CodeLitePath           :="d:\Program Files\CodeLite"
-LinkerName             :=D:/MinGW-4.8.1/bin/g++.exe
-SharedObjectLinkerName :=D:/MinGW-4.8.1/bin/g++.exe -shared -fPIC
+User                   :=austin chen
+Date                   :=18/11/2021
+CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
+LinkerName             :=/usr/bin/g++
+SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -34,9 +34,7 @@ ArchiveOutputSwitch    :=
 PreprocessOnlySwitch   :=-E
 ObjectsFileList        :="Algorithm.txt"
 PCHCompileFlags        :=
-MakeDirCommand         :=makedir
-RcCmpOptions           := 
-RcCompilerName         :=D:/MinGW-4.8.1/bin/windres.exe
+MakeDirCommand         :=mkdir -p
 LinkOptions            :=  
 IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
@@ -49,20 +47,20 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := D:/MinGW-4.8.1/bin/ar.exe rcu
-CXX      := D:/MinGW-4.8.1/bin/g++.exe
-CC       := D:/MinGW-4.8.1/bin/gcc.exe
+AR       := /usr/bin/ar rcu
+CXX      := /usr/bin/g++
+CC       := /usr/bin/gcc
 CXXFLAGS :=  -g -O0 -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := D:/MinGW-4.8.1/bin/as.exe
+AS       := /usr/bin/as
 
 
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=d:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/algorithm.cc$(ObjectSuffix) 
+CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+Objects0=$(IntermediateDirectory)/algorithm.cc$(ObjectSuffix) $(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
 
 
 
@@ -71,7 +69,7 @@ Objects=$(Objects0)
 ##
 ## Main Build Targets 
 ##
-.PHONY: all clean PreBuild PrePreBuild PostBuild
+.PHONY: all clean PreBuild PrePreBuild PostBuild MakeIntermediateDirs
 all: $(OutputFile)
 
 $(OutputFile): $(IntermediateDirectory)/.d $(Objects) 
@@ -80,8 +78,12 @@ $(OutputFile): $(IntermediateDirectory)/.d $(Objects)
 	@echo $(Objects0)  > $(ObjectsFileList)
 	$(LinkerName) $(OutputSwitch)$(OutputFile) @$(ObjectsFileList) $(LibPath) $(Libs) $(LinkOptions)
 
+MakeIntermediateDirs:
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
+
+
 $(IntermediateDirectory)/.d:
-	@$(MakeDirCommand) "./Debug"
+	@test -d ./Debug || $(MakeDirCommand) ./Debug
 
 PreBuild:
 
@@ -89,21 +91,17 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp $(IntermediateDirectory)/main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/Algorithm/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(DependSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM "main.cpp"
-
-$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) "main.cpp"
-
-$(IntermediateDirectory)/algorithm.cc$(ObjectSuffix): algorithm.cc $(IntermediateDirectory)/algorithm.cc$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "E:/data/example/Algorithm/algorithm.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/algorithm.cc$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/algorithm.cc$(DependSuffix): algorithm.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/algorithm.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/algorithm.cc$(DependSuffix) -MM "algorithm.cc"
-
+$(IntermediateDirectory)/algorithm.cc$(ObjectSuffix): algorithm.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/algorithm.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/algorithm.cc$(DependSuffix) -MM algorithm.cc
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/Algorithm/algorithm.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/algorithm.cc$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/algorithm.cc$(PreprocessSuffix): algorithm.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/algorithm.cc$(PreprocessSuffix) "algorithm.cc"
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/algorithm.cc$(PreprocessSuffix) algorithm.cc
+
+$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/ac/Desktop/example/Algorithm/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

@@ -107,6 +107,7 @@ main(int argc, char **argv)
 	}
 	
 	ShowParam(name, 2);
+	ShowParam((char [2][3][4]){0}, 2); //动态初始化一个数组
 	
 	ShowParam(&name[0], 2);// &name[0] ---> char (*)[3][4]
 	

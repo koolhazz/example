@@ -10,7 +10,7 @@ public:
 	virtual ~Base() { printf("Base Freeed.\n"); }
 	
 	int NN() { printf("Base default return 1000.\n"); return 10000; }
-	virtual int val(int v = 1024) { printf("Base return val: %d\n", v); return v; }
+	virtual int val(int v = 1024) { v += 1000; printf("Base return val: %d\n", v); return v; }
 protected:
 	virtual int version() = 0;
 };
@@ -22,7 +22,7 @@ public:
 	~Dev() { printf("Dev Freeed.\n");} // dev 作为中间基类可以有virtual，也可以不使用virtual 子类都可以正确释放
 	
 	/* 这里的virtual 可以不用添加，因为c++ 不添加virtual就是静态绑定，隐藏基类的同名方法 */
-	virtual int val(int v = 2048) { printf("Dev return val: %d\n", v); return v; } /* 这里不加virtual Dev类型的指针使用Son实例赋值后，只能调用Dev的val */
+	virtual int val(int v = 2048) { v += 4000; printf("Dev return val: %d\n", v); return v; } /* 这里不加virtual Dev类型的指针使用Son实例赋值后，只能调用Dev的val */
 	int NN(int n) { printf("Dev return NN: %d\n", n); return n;} // 这里会隐藏积累的方法
 private:
 	int version() { return 0; }

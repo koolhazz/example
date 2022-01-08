@@ -19,7 +19,5 @@ int main(int argc, char **argv)
     Son     son;
     Father  father;
     
-    
-    system("pause");
 	return 0;
 }

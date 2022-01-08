@@ -1,0 +1,3 @@
+function	/Users/ac/Desktop/example/switch_goto/main.c	/^int function(void) $/;"	function	line:3	signature:(void)	returns:int 
+function_1	/Users/ac/Desktop/example/switch_goto/main.c	/^int function_1(void) $/;"	function	line:16	signature:(void)	returns:int 
+main	/Users/ac/Desktop/example/switch_goto/main.c	/^main(int argc, char **argv)$/;"	function	line:31	signature:(int argc, char **argv)	returns:int 

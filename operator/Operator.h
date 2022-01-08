@@ -9,6 +9,7 @@ using namespace std;
 
 class COperator
 {
+friend std::ostream& operator <<(std::ostream& os, COperator& rhs);
 public:
 	COperator();
 	~COperator();
@@ -140,11 +141,15 @@ public: /* 类的静态方法也可以 完成 new 重载 */
 //	}
 	
 private:
+	void desc(std::ostream& os);
+private:
 	int i;
 	string s;
 };
 
 extern COperator operator +(const COperator& lh, const COperator& rh);
 extern COperator operator -(const COperator& lh, const COperator& rh);
+
+extern std::ostream& operator <<(std::ostream& os, COperator& rhs);
 
 #endif

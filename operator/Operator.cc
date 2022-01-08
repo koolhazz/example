@@ -41,6 +41,19 @@ COperator::operator =(const int& value)
 	return *this;
 }
 
+void
+COperator::desc(std::ostream& os)
+{
+	os << "I: " << i << " STR: " << s;
+}
+
+std::ostream&
+operator <<(std::ostream& os, COperator& rsh)
+{
+	rsh.desc(os);
+	return os;
+}
+
 //COperator&
 //COperator::operator *()
 //{

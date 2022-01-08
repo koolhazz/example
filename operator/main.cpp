@@ -75,5 +75,8 @@ main(int argc, char **argv)
 	
 	cout << op8++ << endl;
 	
+	
+	cout << op8 << endl;
+	
 	return 0;
 }

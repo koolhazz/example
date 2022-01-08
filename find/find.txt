@@ -1,1 +1,1 @@
-./Debug/main.o ./Debug/BinarySearch.o  
+Debug/BinarySearch.cc.o Debug/main.cpp.o

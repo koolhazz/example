@@ -5,7 +5,7 @@
 static void 
 print_num(int x) 
 {
-	
+	printf("X: %d\n", x);
 }
 
 int main(int argc, char **argv)

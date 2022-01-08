@@ -14,6 +14,7 @@ public:
 	
 	void Show();
 	int get_i() { return i; }
+	operator int() { return i; }
 private:
 	int i;
 };
@@ -67,4 +68,12 @@ int main(int argc, char **argv)
 		printf("A[%u]: %d\n", idx, (paaa + idx)->get_i());
 	}
 	
+	
+	void *ppp = malloc(sizeof(A));
+	A *paaaa = new (ppp) A(999);
+	
+	printf("A: %d\n", (int)(*(A*)ppp));
+	
+	paaaa->~A();
+	free(ppp);
 }

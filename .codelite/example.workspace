@@ -1,0 +1,18 @@
+{
+ "selected_config": "Debug",
+ "configs": [{
+   "name": "Debug",
+   "flags": 0,
+   "compile_flags": [],
+   "executable": "",
+   "arguments": "",
+   "environment": "",
+   "compiler": "clang( clang-703.0.31 )",
+   "remoteFolder": "",
+   "remoteAccount": "",
+   "workingDirectory": "",
+   "debuggerPath": "",
+   "debuggerCommands": "",
+   "last_executables": []
+  }]
+}

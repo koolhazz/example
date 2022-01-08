@@ -1,9 +1,9 @@
+-I/Users/ac/Desktop/example/string_data
 -I/usr/local/include
 -I/Library/Developer/CommandLineTools/usr/include/c++/v1
 -I/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include
 -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
 -I/Library/Developer/CommandLineTools/usr/include
 -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
--I/Users/ac/Desktop/example/string_data
 -target
-x86_64-apple-darwin19.6.0
+x86_64-apple-darwin20.6.0

@@ -1,6 +1,24 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 #define __NOTHING__() int __nothing; __nothing = 0;
+
+#define __OK__(r) ({ \
+	switch (r) {	\
+		case 1:		\
+			false;	\
+			break;	\
+		case 2:		\
+			true;	\
+			break;	\
+		case 3:		\
+			true;	\
+			break;	\
+		default:	\
+			false;	\
+			break;	\
+	}				\
+})
 
 int main(int argc, char **argv)
 {
@@ -23,6 +41,12 @@ __COMPLEX__:
 						 ({px = 20; printf("px: %ld\n", px); }); }) :
 			 ({ 3 == 3 ? ({ ex = 30; printf("ex2: %ld\n", ex); }) : 
 						 ({px = 40; printf("px2: %ld\n", px); }); });
+	
+	if (__OK__(ex)) {
+		printf("true.\n");
+	} else {
+		printf("false.\n");
+	} 
 	
 	return 0;
 }
