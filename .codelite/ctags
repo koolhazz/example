@@ -5,6 +5,6 @@ reset	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	
 reset	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d );$/;"	prototype	line:4	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d )	returns:void 
 reset	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    void reset( Y* ptr, Deleter d, Alloc alloc );$/;"	prototype	line:5	class:std::shared_ptr	access:private	signature:( Y* ptr, Deleter d, Alloc alloc )	returns:void 
 get	/Users/ac/Library/Application Support/CodeLite/tmp/codelite_templates.hpp	/^    _T* get() const;$/;"	prototype	line:6	class:std::shared_ptr	access:private	signature:() const
-function	/Users/ac/Desktop/example/switch_goto/main.c	/^int function(void) $/;"	function	line:3	signature:(void)	returns:int 
-function_1	/Users/ac/Desktop/example/switch_goto/main.c	/^int function_1(void) $/;"	function	line:16	signature:(void)	returns:int 
-main	/Users/ac/Desktop/example/switch_goto/main.c	/^main(int argc, char **argv)$/;"	function	line:31	signature:(int argc, char **argv)	returns:int 
+
+
+

@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ RingBuffer - Debug ]----------"
-	@cd "RingBuffer" && "$(MAKE)" -f  "RingBuffer.mk"
+	@echo "----------Building project:[ class_inherit - Debug ]----------"
+	@cd "class_inherit" && "$(MAKE)" -f  "class_inherit.mk"
 clean:
-	@echo "----------Cleaning project:[ RingBuffer - Debug ]----------"
-	@cd "RingBuffer" && "$(MAKE)" -f  "RingBuffer.mk" clean
+	@echo "----------Cleaning project:[ class_inherit - Debug ]----------"
+	@cd "class_inherit" && "$(MAKE)" -f  "class_inherit.mk" clean

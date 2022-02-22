@@ -100,6 +100,7 @@ main(int argc, char **argv)
 	{
 		Base* pb = new Son;
 		pb->val();
+		pb->Base::val();
 		
 		delete pb;
 	}
