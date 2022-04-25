@@ -120,6 +120,8 @@ main(int argc, char **argv)
 	ShowParam(name2, 3);
 	
 	ShowParam(p, 3, 4);
+	
+	ShowParam(name2, 3, 4);
 
 	/* 数组都是地址传递 */
 	int_array_t ia;

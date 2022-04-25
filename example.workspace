@@ -9,7 +9,7 @@
   <Project Name="array_member" Path="array_member/array_member.project" Active="No"/>
   <Project Name="array_name" Path="array_name/array_name.project" Active="No"/>
   <Project Name="array_new" Path="array_new/array_new.project" Active="No"/>
-  <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="No"/>
+  <Project Name="array_parameter" Path="array_parameter/array_parameter.project" Active="Yes"/>
   <Project Name="array_pp" Path="array_pp/array_pp.project" Active="No"/>
   <Project Name="array_return" Path="array_return/array_return.project" Active="No"/>
   <Project Name="array_sizeof" Path="array_sizeof/array_sizeof.project" Active="No"/>
@@ -65,7 +65,7 @@
   <Project Name="class_define" Path="class_define/class_define.project" Active="No"/>
   <Project Name="class_des_private" Path="class_des_private/class_des_private.project" Active="No"/>
   <Project Name="class_explicit" Path="class_explicit/class_explicit.project" Active="No"/>
-  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="Yes"/>
+  <Project Name="class_inherit" Path="class_inherit/class_inherit.project" Active="No"/>
   <Project Name="class_inline" Path="class_inline/class_inline.project" Active="No"/>
   <Project Name="class_inline_2" Path="class_inline_2/class_inline_2.project" Active="No"/>
   <Project Name="class_member" Path="class_member/class_member.project" Active="No"/>
@@ -394,6 +394,8 @@
   <Project Name="void_zero" Path="void_zero/void_zero.project" Active="No"/>
   <Project Name="wildPointer" Path="wildPointer/wildPointer.project" Active="No"/>
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
+  <Project Name="bit_align" Path="bit_align/bit_align.project" Active="No"/>
+  <Project Name="class_struct" Path="class_struct/class_struct.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -791,6 +793,8 @@
       <Project Name="void_zero" ConfigName="Debug"/>
       <Project Name="wildPointer" ConfigName="Debug"/>
       <Project Name="xxprintf" ConfigName="Debug"/>
+      <Project Name="bit_align" ConfigName="Debug"/>
+      <Project Name="class_struct" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -1188,6 +1192,8 @@
       <Project Name="void_zero" ConfigName="Release"/>
       <Project Name="wildPointer" ConfigName="Release"/>
       <Project Name="xxprintf" ConfigName="Release"/>
+      <Project Name="bit_align" ConfigName="Release"/>
+      <Project Name="class_struct" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

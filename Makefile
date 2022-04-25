@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ class_inherit - Debug ]----------"
-	@cd "class_inherit" && "$(MAKE)" -f  "class_inherit.mk"
+	@echo "----------Building project:[ array_parameter - Debug ]----------"
+	@cd "array_parameter" && "$(MAKE)" -f  "array_parameter.mk"
 clean:
-	@echo "----------Cleaning project:[ class_inherit - Debug ]----------"
-	@cd "class_inherit" && "$(MAKE)" -f  "class_inherit.mk" clean
+	@echo "----------Cleaning project:[ array_parameter - Debug ]----------"
+	@cd "array_parameter" && "$(MAKE)" -f  "array_parameter.mk" clean
