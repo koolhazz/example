@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ array_parameter - Debug ]----------"
-	@cd "array_parameter" && "$(MAKE)" -f  "array_parameter.mk"
+	@echo "----------Building project:[ union_vector - Debug ]----------"
+	@cd "union_vector" && "$(MAKE)" -f  "union_vector.mk"
 clean:
-	@echo "----------Cleaning project:[ array_parameter - Debug ]----------"
-	@cd "array_parameter" && "$(MAKE)" -f  "array_parameter.mk" clean
+	@echo "----------Cleaning project:[ union_vector - Debug ]----------"
+	@cd "union_vector" && "$(MAKE)" -f  "union_vector.mk" clean

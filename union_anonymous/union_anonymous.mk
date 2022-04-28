@@ -5,6 +5,7 @@
 ## Debug
 ProjectName            :=union_anonymous
 ConfigurationName      :=Debug
+WorkspaceConfiguration :=Debug
 WorkspacePath          :=/Users/ac/Desktop/example
 ProjectPath            :=/Users/ac/Desktop/example/union_anonymous
 IntermediateDirectory  :=$(ConfigurationName)
@@ -13,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=19/07/2021
+Date                   :=29/04/2022
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -27,6 +28,7 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
+OutputDirectory        :=$(IntermediateDirectory)
 OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 

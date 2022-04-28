@@ -5,6 +5,7 @@
 ## Debug
 ProjectName            :=class_copy_cons_c11
 ConfigurationName      :=Debug
+WorkspaceConfiguration :=Debug
 WorkspacePath          :=/Users/ac/Desktop/example
 ProjectPath            :=/Users/ac/Desktop/example/class_copy_cons_c11
 IntermediateDirectory  :=$(ConfigurationName)
@@ -13,7 +14,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=09/10/2020
+Date                   :=29/04/2022
 CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
@@ -27,6 +28,7 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
+OutputDirectory        :=$(IntermediateDirectory)
 OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
