@@ -41,12 +41,14 @@ public:
 class Base_1 {
 public:
 	Base_1() {}
+	int id;
 protected:
 	virtual ~Base_1() {}
 };
 
 class Dev_1 : Base_1 {
 public:
+	int id;
 	~Dev_1() {}
 };
 

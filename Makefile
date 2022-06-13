@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ union_vector - Debug ]----------"
-	@cd "union_vector" && "$(MAKE)" -f  "union_vector.mk"
+	@echo "----------Building project:[ func_try - Debug ]----------"
+	@cd "func_try" && "$(MAKE)" -f  "func_try.mk"
 clean:
-	@echo "----------Cleaning project:[ union_vector - Debug ]----------"
-	@cd "union_vector" && "$(MAKE)" -f  "union_vector.mk" clean
+	@echo "----------Cleaning project:[ func_try - Debug ]----------"
+	@cd "func_try" && "$(MAKE)" -f  "func_try.mk" clean

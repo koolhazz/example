@@ -13,6 +13,9 @@ int main(int argc, char **argv)
 	pBase->Show();
 	pBase->show_i(); /* 虚函数 调用子类的方法 */
 	pBase->age(); /* 非虚函数不是动态绑定，调用基类的方法 */
+	printf("III: %d\n", pBase->i); // 成员字段使用静态绑定，和调用实例的类型关联 
+	printf("III: %d\n", pBase->CBase::i);
+
 
 	delete pBase;
 
@@ -22,6 +25,8 @@ int main(int argc, char **argv)
 	pDev->age(); // 子类的Age 方法，静态绑定
 	pDev->Show();
 	pDev->show_i();
+	printf("III: %d\n", pDev->i);
+	printf("III: %d\n", pDev->CBase::i);
 
 	delete pDev;
 
@@ -32,6 +37,8 @@ int main(int argc, char **argv)
 	pBase->Show();
 	pBase->show_i(); /* 调用基类的方法 */
 	pBase->age(); /* 非虚函数不是动态绑定，调用基类的方法 */
+	printf("III: %d\n", pBase->i);
+	printf("III: %d\n", pBase->CBase::i);
 
 	delete pBase;
 

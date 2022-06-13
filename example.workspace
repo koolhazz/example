@@ -396,7 +396,12 @@
   <Project Name="xxprintf" Path="xxprintf/xxprintf.project" Active="No"/>
   <Project Name="bit_align" Path="bit_align/bit_align.project" Active="No"/>
   <Project Name="class_struct" Path="class_struct/class_struct.project" Active="No"/>
-  <Project Name="union_vector" Path="union_vector/union_vector.project" Active="Yes"/>
+  <Project Name="union_vector" Path="union_vector/union_vector.project" Active="No"/>
+  <Project Name="class_friend_func" Path="class_friend_func/class_friend_func.project" Active="No"/>
+  <Project Name="pointer_cast" Path="pointer_cast/pointer_cast.project" Active="No"/>
+  <Project Name="c_defer" Path="c_defer/c_defer.project" Active="No"/>
+  <Project Name="c++_defer" Path="c++_defer/c++_defer.project" Active="No"/>
+  <Project Name="func_try" Path="func_try/func_try.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -797,6 +802,11 @@
       <Project Name="bit_align" ConfigName="Debug"/>
       <Project Name="class_struct" ConfigName="Debug"/>
       <Project Name="union_vector" ConfigName="Debug"/>
+      <Project Name="class_friend_func" ConfigName="Debug"/>
+      <Project Name="pointer_cast" ConfigName="Debug"/>
+      <Project Name="c_defer" ConfigName="Debug"/>
+      <Project Name="c++_defer" ConfigName="Debug"/>
+      <Project Name="func_try" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -1197,6 +1207,11 @@
       <Project Name="bit_align" ConfigName="Release"/>
       <Project Name="class_struct" ConfigName="Release"/>
       <Project Name="union_vector" ConfigName="Release"/>
+      <Project Name="class_friend_func" ConfigName="Release"/>
+      <Project Name="pointer_cast" ConfigName="Release"/>
+      <Project Name="c_defer" ConfigName="Release"/>
+      <Project Name="c++_defer" ConfigName="Release"/>
+      <Project Name="func_try" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
