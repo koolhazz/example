@@ -1,0 +1,10 @@
+-I/Users/ac/Desktop/example/DAG_2
+-I/usr/local/include
+-I/Library/Developer/CommandLineTools/usr/include/c++/v1
+-I/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include
+-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include
+-I/Library/Developer/CommandLineTools/usr/include
+-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
+-std=gnu++11
+-target
+x86_64-apple-darwin20.6.0

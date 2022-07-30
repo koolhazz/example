@@ -401,7 +401,11 @@
   <Project Name="pointer_cast" Path="pointer_cast/pointer_cast.project" Active="No"/>
   <Project Name="c_defer" Path="c_defer/c_defer.project" Active="No"/>
   <Project Name="c++_defer" Path="c++_defer/c++_defer.project" Active="No"/>
-  <Project Name="func_try" Path="func_try/func_try.project" Active="Yes"/>
+  <Project Name="func_try" Path="func_try/func_try.project" Active="No"/>
+  <Project Name="DAG" Path="DAG/DAG.project" Active="No"/>
+  <Project Name="DAG_2" Path="DAG_2/DAG_2.project" Active="No"/>
+  <Project Name="var_namespace" Path="var_namespace/var_namespace.project" Active="No"/>
+  <Project Name="exception_uncatch" Path="exception_uncatch/exception_uncatch.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
@@ -409,12 +413,12 @@
       <Project Name="aligned_malloc" ConfigName="Debug"/>
       <Project Name="array_address" ConfigName="Debug"/>
       <Project Name="array_init" ConfigName="Debug"/>
-      <Project Name="array_poiner" ConfigName="Debug"/>
       <Project Name="array_malloc" ConfigName="Debug"/>
       <Project Name="array_member" ConfigName="Debug"/>
       <Project Name="array_name" ConfigName="Debug"/>
       <Project Name="array_new" ConfigName="Debug"/>
       <Project Name="array_parameter" ConfigName="Debug"/>
+      <Project Name="array_poiner" ConfigName="Debug"/>
       <Project Name="array_pp" ConfigName="Debug"/>
       <Project Name="array_return" ConfigName="Debug"/>
       <Project Name="array_sizeof" ConfigName="Debug"/>
@@ -424,6 +428,7 @@
       <Project Name="attribute_alias" ConfigName="Debug"/>
       <Project Name="attribute_aligned" ConfigName="Debug"/>
       <Project Name="attribute_con_des" ConfigName="Debug"/>
+      <Project Name="attribute_error" ConfigName="Debug"/>
       <Project Name="attribute_no_instrument_function" ConfigName="Debug"/>
       <Project Name="attribute_nonnull" ConfigName="Debug"/>
       <Project Name="attribute_weak" ConfigName="Debug"/>
@@ -433,6 +438,7 @@
       <Project Name="beformain" ConfigName="Debug"/>
       <Project Name="binary_heap" ConfigName="Debug"/>
       <Project Name="bit" ConfigName="Debug"/>
+      <Project Name="bit_align" ConfigName="Debug"/>
       <Project Name="bit_field" ConfigName="Debug"/>
       <Project Name="bit_op" ConfigName="Debug"/>
       <Project Name="bit_operator" ConfigName="Debug"/>
@@ -447,14 +453,16 @@
       <Project Name="buffer_tree" ConfigName="Debug"/>
       <Project Name="BullFight" ConfigName="Debug"/>
       <Project Name="bump_pointer_allocator" ConfigName="Debug"/>
+      <Project Name="c++_defer" ConfigName="Debug"/>
+      <Project Name="c11" ConfigName="Debug"/>
+      <Project Name="c11_example" ConfigName="Debug"/>
       <Project Name="c_class" ConfigName="Debug"/>
+      <Project Name="c_defer" ConfigName="Debug"/>
       <Project Name="c_exception" ConfigName="Debug"/>
       <Project Name="c_exception_2" ConfigName="Debug"/>
       <Project Name="c_operator_tadpole" ConfigName="Debug"/>
       <Project Name="c_opt_t" ConfigName="Debug"/>
       <Project Name="c_test" ConfigName="Debug"/>
-      <Project Name="c11" ConfigName="Debug"/>
-      <Project Name="c11_example" ConfigName="Debug"/>
       <Project Name="call_static_func" ConfigName="Debug"/>
       <Project Name="case_ex" ConfigName="Debug"/>
       <Project Name="Cast_str_num" ConfigName="Debug"/>
@@ -470,23 +478,25 @@
       <Project Name="class_define" ConfigName="Debug"/>
       <Project Name="class_des_private" ConfigName="Debug"/>
       <Project Name="class_explicit" ConfigName="Debug"/>
+      <Project Name="class_friend_func" ConfigName="Debug"/>
       <Project Name="class_inherit" ConfigName="Debug"/>
       <Project Name="class_inline" ConfigName="Debug"/>
       <Project Name="class_inline_2" ConfigName="Debug"/>
       <Project Name="class_member" ConfigName="Debug"/>
       <Project Name="class_member_offset" ConfigName="Debug"/>
       <Project Name="class_method" ConfigName="Debug"/>
-      <Project Name="class_method_3" ConfigName="Debug"/>
       <Project Name="class_method2" ConfigName="Debug"/>
+      <Project Name="class_method_2" ConfigName="Debug"/>
+      <Project Name="class_method_3" ConfigName="Debug"/>
       <Project Name="class_method_4" ConfigName="Debug"/>
       <Project Name="class_method_static_var" ConfigName="Debug"/>
-      <Project Name="class_method_2" ConfigName="Debug"/>
       <Project Name="class_multi_inherit" ConfigName="Debug"/>
       <Project Name="class_new_heap" ConfigName="Debug"/>
       <Project Name="class_private_cons" ConfigName="Debug"/>
       <Project Name="class_protected_cons_des" ConfigName="Debug"/>
       <Project Name="class_size" ConfigName="Debug"/>
       <Project Name="class_static_member" ConfigName="Debug"/>
+      <Project Name="class_struct" ConfigName="Debug"/>
       <Project Name="class_typename_cast" ConfigName="Debug"/>
       <Project Name="class_virtual_dtor" ConfigName="Debug"/>
       <Project Name="class_vt" ConfigName="Debug"/>
@@ -513,6 +523,7 @@
       <Project Name="cxx11_range_for" ConfigName="Debug"/>
       <Project Name="cxx11_raw_string" ConfigName="Debug"/>
       <Project Name="cxx11_rvalue" ConfigName="Debug"/>
+      <Project Name="DAG" ConfigName="Debug"/>
       <Project Name="DataType" ConfigName="Debug"/>
       <Project Name="DataType_def" ConfigName="Debug"/>
       <Project Name="delete_null" ConfigName="Debug"/>
@@ -535,26 +546,27 @@
       <Project Name="extern_gcc" ConfigName="Debug"/>
       <Project Name="file_size" ConfigName="Debug"/>
       <Project Name="file_size_fstream" ConfigName="Debug"/>
-      <Project Name="float_IEEE" ConfigName="Debug"/>
       <Project Name="find" ConfigName="Debug"/>
+      <Project Name="float_IEEE" ConfigName="Debug"/>
       <Project Name="for_test" ConfigName="Debug"/>
-      <Project Name="func_overload" ConfigName="Debug"/>
       <Project Name="friend_class_div" ConfigName="Debug"/>
       <Project Name="func_default_c" ConfigName="Debug"/>
+      <Project Name="func_overload" ConfigName="Debug"/>
       <Project Name="func_param_order" ConfigName="Debug"/>
       <Project Name="func_param_ref" ConfigName="Debug"/>
       <Project Name="func_ref" ConfigName="Debug"/>
       <Project Name="func_static" ConfigName="Debug"/>
       <Project Name="func_static_var" ConfigName="Debug"/>
+      <Project Name="func_try" ConfigName="Debug"/>
       <Project Name="func_va" ConfigName="Debug"/>
+      <Project Name="function-try-lock" ConfigName="Debug"/>
+      <Project Name="function-try-lock-2" ConfigName="Debug"/>
       <Project Name="function_cast" ConfigName="Debug"/>
       <Project Name="function_class" ConfigName="Debug"/>
       <Project Name="function_default" ConfigName="Debug"/>
       <Project Name="function_default_cpp" ConfigName="Debug"/>
       <Project Name="function_type" ConfigName="Debug"/>
       <Project Name="function_type_pointer" ConfigName="Debug"/>
-      <Project Name="function-try-lock" ConfigName="Debug"/>
-      <Project Name="function-try-lock-2" ConfigName="Debug"/>
       <Project Name="Gauss" ConfigName="Debug"/>
       <Project Name="gcc_builtin" ConfigName="Debug"/>
       <Project Name="gcc_compile" ConfigName="Debug"/>
@@ -563,15 +575,12 @@
       <Project Name="get_wordsize" ConfigName="Debug"/>
       <Project Name="getchar" ConfigName="Debug"/>
       <Project Name="getopt" ConfigName="Debug"/>
-      <Project Name="getopt_long" ConfigName="Debug"/>
       <Project Name="getopt2" ConfigName="Debug"/>
+      <Project Name="getopt_long" ConfigName="Debug"/>
       <Project Name="glibc" ConfigName="Debug"/>
       <Project Name="gplusplus_compile" ConfigName="Debug"/>
       <Project Name="group_varint" ConfigName="Debug"/>
-      <Project Name="new_type_call" ConfigName="Debug"/>
       <Project Name="hash" ConfigName="Debug"/>
-      <Project Name="template_method_2" ConfigName="Debug"/>
-      <Project Name="operator" ConfigName="Debug"/>
       <Project Name="hash_map" ConfigName="Debug"/>
       <Project Name="hash_table_2" ConfigName="Debug"/>
       <Project Name="hash_table_3" ConfigName="Debug"/>
@@ -605,16 +614,16 @@
       <Project Name="LockFreeQueue_3" ConfigName="Debug"/>
       <Project Name="LockFreeQueue_4" ConfigName="Debug"/>
       <Project Name="long_string" ConfigName="Debug"/>
-      <Project Name="attribute_error" ConfigName="Debug"/>
-      <Project Name="new" ConfigName="Debug"/>
       <Project Name="macro" ConfigName="Debug"/>
       <Project Name="macro_cloak" ConfigName="Debug"/>
+      <Project Name="macro_delay" ConfigName="Debug"/>
       <Project Name="macro_func" ConfigName="Debug"/>
       <Project Name="macro_generic" ConfigName="Debug"/>
       <Project Name="macro_list" ConfigName="Debug"/>
       <Project Name="macro_list_2" ConfigName="Debug"/>
       <Project Name="macro_namespace" ConfigName="Debug"/>
       <Project Name="macro_narg" ConfigName="Debug"/>
+      <Project Name="macro_narg_2" ConfigName="Debug"/>
       <Project Name="macro_recu" ConfigName="Debug"/>
       <Project Name="macro_scope" ConfigName="Debug"/>
       <Project Name="malloc" ConfigName="Debug"/>
@@ -622,8 +631,8 @@
       <Project Name="malloc_calloc_realloc" ConfigName="Debug"/>
       <Project Name="map_compare" ConfigName="Debug"/>
       <Project Name="map_erase" ConfigName="Debug"/>
-      <Project Name="map_erase_2" ConfigName="Debug"/>
       <Project Name="map_erase3" ConfigName="Debug"/>
+      <Project Name="map_erase_2" ConfigName="Debug"/>
       <Project Name="map_vector" ConfigName="Debug"/>
       <Project Name="member_pointer" ConfigName="Debug"/>
       <Project Name="memcpy" ConfigName="Debug"/>
@@ -632,8 +641,6 @@
       <Project Name="memcpy_tuning_3" ConfigName="Debug"/>
       <Project Name="memcpy_tuning_4" ConfigName="Debug"/>
       <Project Name="memcpy_tuning_5" ConfigName="Debug"/>
-      <Project Name="template_magic" ConfigName="Debug"/>
-      <Project Name="macro_delay" ConfigName="Debug"/>
       <Project Name="mempool" ConfigName="Debug"/>
       <Project Name="mempool_2" ConfigName="Debug"/>
       <Project Name="mempool_3" ConfigName="Debug"/>
@@ -643,37 +650,41 @@
       <Project Name="min_heap_c" ConfigName="Debug"/>
       <Project Name="minheap_c_2" ConfigName="Debug"/>
       <Project Name="minheap_c_3" ConfigName="Debug"/>
-      <Project Name="macro_narg_2" ConfigName="Debug"/>
       <Project Name="MultiMap" ConfigName="Debug"/>
+      <Project Name="MurmurHash" ConfigName="Debug"/>
       <Project Name="mutable" ConfigName="Debug"/>
       <Project Name="my_allocator" ConfigName="Debug"/>
       <Project Name="my_allocator_2" ConfigName="Debug"/>
-      <Project Name="namespace" ConfigName="Debug"/>
       <Project Name="myspinlock" ConfigName="Debug"/>
-      <Project Name="MurmurHash" ConfigName="Debug"/>
+      <Project Name="namespace" ConfigName="Debug"/>
       <Project Name="ncx_mempool" ConfigName="Debug"/>
+      <Project Name="new" ConfigName="Debug"/>
       <Project Name="new_class_construct" ConfigName="Debug"/>
       <Project Name="new_create_array" ConfigName="Debug"/>
       <Project Name="new_overload" ConfigName="Debug"/>
       <Project Name="new_overload_2" ConfigName="Debug"/>
       <Project Name="new_type" ConfigName="Debug"/>
+      <Project Name="new_type_call" ConfigName="Debug"/>
       <Project Name="nginx_mempool" ConfigName="Debug"/>
       <Project Name="ngx_mempool_2" ConfigName="Debug"/>
       <Project Name="noncopyable" ConfigName="Debug"/>
-      <Project Name="number_max" ConfigName="Debug"/>
       <Project Name="number2string" ConfigName="Debug"/>
+      <Project Name="number_max" ConfigName="Debug"/>
       <Project Name="ods" ConfigName="Debug"/>
       <Project Name="offset" ConfigName="Debug"/>
-      <Project Name="operator_ostream" ConfigName="Debug"/>
-      <Project Name="operator_short" ConfigName="Debug"/>
-      <Project Name="operator_string" ConfigName="Debug"/>
+      <Project Name="ooc" ConfigName="Debug"/>
+      <Project Name="operator" ConfigName="Debug"/>
       <Project Name="operator2" ConfigName="Debug"/>
       <Project Name="operator3" ConfigName="Debug"/>
       <Project Name="operator5" ConfigName="Debug"/>
+      <Project Name="operator_ostream" ConfigName="Debug"/>
+      <Project Name="operator_short" ConfigName="Debug"/>
+      <Project Name="operator_string" ConfigName="Debug"/>
       <Project Name="p_c_n" ConfigName="Debug"/>
       <Project Name="packet" ConfigName="Debug"/>
       <Project Name="pair" ConfigName="Debug"/>
       <Project Name="parameter_pack" ConfigName="Debug"/>
+      <Project Name="pointer_cast" ConfigName="Debug"/>
       <Project Name="pointer_data_align" ConfigName="Debug"/>
       <Project Name="pointer_derefence" ConfigName="Debug"/>
       <Project Name="pointer_drift" ConfigName="Debug"/>
@@ -754,13 +765,14 @@
       <Project Name="switch_case" ConfigName="Debug"/>
       <Project Name="switch_down" ConfigName="Debug"/>
       <Project Name="switch_goto" ConfigName="Debug"/>
-      <Project Name="ooc" ConfigName="Debug"/>
       <Project Name="template_1" ConfigName="Debug"/>
       <Project Name="template_2" ConfigName="Debug"/>
       <Project Name="template_class" ConfigName="Debug"/>
       <Project Name="template_class_2" ConfigName="Debug"/>
       <Project Name="template_complie" ConfigName="Debug"/>
+      <Project Name="template_magic" ConfigName="Debug"/>
       <Project Name="template_method" ConfigName="Debug"/>
+      <Project Name="template_method_2" ConfigName="Debug"/>
       <Project Name="template_var_array" ConfigName="Debug"/>
       <Project Name="timer_list" ConfigName="Debug"/>
       <Project Name="timer_list_cpp" ConfigName="Debug"/>
@@ -775,6 +787,7 @@
       <Project Name="union_2" ConfigName="Debug"/>
       <Project Name="union_anon" ConfigName="Debug"/>
       <Project Name="union_anonymous" ConfigName="Debug"/>
+      <Project Name="union_vector" ConfigName="Debug"/>
       <Project Name="upper_bound" ConfigName="Debug"/>
       <Project Name="url_code" ConfigName="Debug"/>
       <Project Name="url_code_2" ConfigName="Debug"/>
@@ -799,14 +812,9 @@
       <Project Name="void_zero" ConfigName="Debug"/>
       <Project Name="wildPointer" ConfigName="Debug"/>
       <Project Name="xxprintf" ConfigName="Debug"/>
-      <Project Name="bit_align" ConfigName="Debug"/>
-      <Project Name="class_struct" ConfigName="Debug"/>
-      <Project Name="union_vector" ConfigName="Debug"/>
-      <Project Name="class_friend_func" ConfigName="Debug"/>
-      <Project Name="pointer_cast" ConfigName="Debug"/>
-      <Project Name="c_defer" ConfigName="Debug"/>
-      <Project Name="c++_defer" ConfigName="Debug"/>
-      <Project Name="func_try" ConfigName="Debug"/>
+      <Project Name="DAG_2" ConfigName="Debug"/>
+      <Project Name="var_namespace" ConfigName="Debug"/>
+      <Project Name="exception_uncatch" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release">
       <Environment/>
@@ -1212,6 +1220,10 @@
       <Project Name="c_defer" ConfigName="Release"/>
       <Project Name="c++_defer" ConfigName="Release"/>
       <Project Name="func_try" ConfigName="Release"/>
+      <Project Name="DAG" ConfigName="Release"/>
+      <Project Name="DAG_2" ConfigName="Release"/>
+      <Project Name="var_namespace" ConfigName="Release"/>
+      <Project Name="exception_uncatch" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

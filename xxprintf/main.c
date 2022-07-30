@@ -46,5 +46,9 @@ main(int argc, char **argv)
 	unsigned int a = 1632222222;
 	printf("Number: %0.4x\n", a);
 	printf("Number: %x\n", a);
+	
+	
+	printf("msg");
+	
 	return 0;
 }

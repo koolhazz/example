@@ -5,6 +5,7 @@
 ## Debug
 ProjectName            :=do_while
 ConfigurationName      :=Debug
+WorkspaceConfiguration :=Debug
 WorkspacePath          :=/Users/ac/Desktop/example
 ProjectPath            :=/Users/ac/Desktop/example/do_while
 IntermediateDirectory  :=$(ConfigurationName)
@@ -13,8 +14,8 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=austin chen
-Date                   :=03/11/2021
-CodeLitePath           :="/Users/ac/Library/Application Support/codelite"
+Date                   :=10/07/2022
+CodeLitePath           :="/Users/ac/Library/Application Support/CodeLite"
 LinkerName             :=/usr/bin/g++
 SharedObjectLinkerName :=/usr/bin/g++ -dynamiclib -fPIC
 ObjectSuffix           :=.o
@@ -27,6 +28,7 @@ OutputSwitch           :=-o
 LibraryPathSwitch      :=-L
 PreprocessorSwitch     :=-D
 SourceSwitch           :=-c 
+OutputDirectory        :=$(IntermediateDirectory)
 OutputFile             :=$(IntermediateDirectory)/$(ProjectName)
 Preprocessors          :=
 ObjectSwitch           :=-o 
@@ -45,7 +47,7 @@ LibPath                := $(LibraryPathSwitch).
 
 ##
 ## Common variables
-## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
+## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overridden using an environment variable
 ##
 AR       := /usr/bin/ar rcu
 CXX      := /usr/bin/g++
@@ -59,7 +61,7 @@ AS       := /usr/bin/as
 ##
 ## User defined environment variables
 ##
-CodeLiteDir:=/Applications/codelite.app/Contents/SharedSupport/
+CodeLiteDir:=/private/var/folders/3_/zzg74jk53fb42lphgyd7d3nr0000gn/T/AppTranslocation/F7D8EB24-4470-4472-94EE-6CB4529BDAE0/d/codelite.app/Contents/SharedSupport/
 Objects0=$(IntermediateDirectory)/main.c$(ObjectSuffix) 
 
 

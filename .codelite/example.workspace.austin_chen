@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace>
   <BuildMatrix SelectedConfiguration="Debug"/>
-  <WorkspaceParserFlags flags="1"/>
-  <WorkspaceParserPaths/>
-  <Environment Name="&lt;Use Defaults&gt;"/>
-  <PinnedProjects>
-    <Project Name="cxx11_rvalue"/>
-  </PinnedProjects>
-  <WorkspaceParserMacros/>
+  <VirtualFoldersColours/>
 </Workspace>

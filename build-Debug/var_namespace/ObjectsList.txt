@@ -1,0 +1,1 @@
+../build-Debug/var_namespace/foo.cc.o ../build-Debug/var_namespace/main.cpp.o
