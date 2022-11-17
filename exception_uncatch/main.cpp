@@ -2,6 +2,14 @@
 #include <string>
 
 
+class Done {
+public:
+	Done() {}
+	~Done() {}
+	
+	void Run() { printf("something has done\n"); }
+};
+
 class Closure {
 public:
 	Closure(std::string _name):name_(_name) {}

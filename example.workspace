@@ -2,7 +2,7 @@
 <CodeLite_Workspace Name="example" Database="" Version="10000">
   <Project Name="Algorithm" Path="Algorithm/Algorithm.project" Active="No"/>
   <Project Name="aligned_malloc" Path="aligned_malloc/aligned_malloc.project" Active="No"/>
-  <Project Name="array_address" Path="array_address/array_address.project" Active="No"/>
+  <Project Name="array_address" Path="array_address/array_address.project" Active="Yes"/>
   <Project Name="array_init" Path="array_init/array_init.project" Active="No"/>
   <Project Name="array_poiner" Path="array_poiner/array_poiner.project" Active="No"/>
   <Project Name="array_malloc" Path="array_malloc/array_malloc.project" Active="No"/>
@@ -405,7 +405,7 @@
   <Project Name="DAG" Path="DAG/DAG.project" Active="No"/>
   <Project Name="DAG_2" Path="DAG_2/DAG_2.project" Active="No"/>
   <Project Name="var_namespace" Path="var_namespace/var_namespace.project" Active="No"/>
-  <Project Name="exception_uncatch" Path="exception_uncatch/exception_uncatch.project" Active="Yes"/>
+  <Project Name="exception_uncatch" Path="exception_uncatch/exception_uncatch.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug">
       <Environment/>
